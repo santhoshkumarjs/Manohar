@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://online.m-tutor.com/mtutor/beta/topics.php?subject=288 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<title>m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor</title> 
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="keywords" content="m-tutor, mobile tutor, learn, videos, lectures, practice, exercises, skills ">	
+	<meta name="description" content=" mtutor provides Animated Video lessons &amp; lectures,Study Material and revision notes,Exercies, Maths, Physics, Chemistry, Biology, Social &amp; English">	
+
+	<!-- CSS-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">	
+	<link rel="stylesheet" href="m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/font-awesome.css">	
+	<link href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/responsive.css" rel="stylesheet" type="text/css">
+	<link href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/mystyle.css" rel="stylesheet">
+	<link rel="stylesheet" href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/bootstrap-select.css">
+    <link href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/star-rating.css" media="all" rel="stylesheet" type="text/css">
+   <link href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/betastyle.css" media="all" rel="stylesheet" type="text/css">	
+	<!-- JS Files-->	
+	<script async="" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/default" charset="UTF-8" crossorigin="*"></script><script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/jquery.min.js"></script>
+	 <script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/star-rating.js"></script>
+		
+
+	 <script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/bootstrap-select.js"></script>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+
+<style>
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.icon_text{font-size:11px;}
+.mrgtb15{margin-top:25px;}
+.grid_div{transition: 0.5s;}
+/*.grid_div:hover{box-shadow: 2px 24px 93px 0px rgba(0,0,0,0.55);vertical-align: middle; cursor:pointer;}*/
+.grid_bg{border: 2px solid #fff;background: rgb(255, 255, 255) none repeat scroll 0% 0%;padding-top: 15px;padding-left: 15px;padding-right: 15px;padding-bottom: 10px;}
+.grid_bg:hover{/*border: 2px solid #eae9e9;*/box-shadow: 2px 10px 5px 0 rgba(0, 0, 0, 0.30);}
+.grid_space{padding:10px;}
+.grid_thumbnil{padding-bottom:10px;}
+.grid_thumbnil_bg {padding: 10px;background: rgb(255, 255, 255) none repeat scroll 0% 0%;border: 1px solid rgb(204, 204, 204);margin-bottom:10px;}
+.thumbnail {position:relative;overflow:hidden;}
+.thumbnail {display: block;padding: 0px;margin-bottom: 0px;line-height: 1.42857143;background-color: #fff;border: 0px solid #ddd;border-radius: 0px;-webkit-transition: border .2s ease-in-out;-o-transition: border .2s ease-in-out;transition: border .2s ease-in-out;}
+.thumbnail:hover{text-decoration:none; cursor:pointer;}
+.thumbnail a:hover{text-decoration:underline;}
+.thumbnail .caption {padding: 0px;color: #333;}
+.thumbnail1{position:relative;overflow:hidden;}
+.thumbnail1 {display: block;padding: 0px;margin-bottom: 0px;line-height: 1.42857143;background-color: #fff;border-top-left-radius: 0px;border-top-right-radius: 5px;   -webkit-transition: border .2s ease-in-out;-o-transition: border .2s ease-in-out;transition: border .2s ease-in-out;}
+.caption {position: absolute;top: 0;right: 0;background: rgba(0, 4, 8, 0.64);width: 100%;height: auto;padding: 2%;display: none;text-align: center;color: #fff !important;z-index: 2;
+cursor: pointer;border-top-left-radius: 0px;border-top-right-radius: 0px;}
+.caption img{margin-top:13px;padding-top:5px;}
+.video-duration{font-size:10px;}
+.video_bg{min-height:140px;/*border: 3px solid #C8C8C8;*/padding: 0px;/*border-top-left-radius: 17px;border-top-right-radius: 17px;*/background: rgb(255, 255, 255) none repeat scroll 0% 0%;}
+h4.grid-title{min-height:35px;color:inherit; font-size:14px; padding:0px; line-height:18px;}
+h4.tutorial_title{color:inherit; font-size:14px; padding:5px;}
+.starrating_set3{background:#fff; margin:0px;}
+.share_icon{margin:0px; padding-left:15px;font-size:11px;}
+.video-times{padding:10px;}
+.ask-doubt{padding-bottom:4px;}
+.ask-doubt1{padding:16px; color:#626262;}
+.ask-doubt1:hover{color:red;}
+.ask-doubt3{border-radius:0px;}
+.ask_coment_4{padding: 0px;background:#fff;margin-top:7px;}
+.glyphicon-star-size{font-size:10px;}
+.rating_text_4{margin-top: 13px;font-size:10px;}
+.number_rating1{margin-top:5px;	font-size:10px;	text-align:left;}
+.number_rating2{font-size:10px;	text-align:left;padding:0px; margin:0px;}
+.social_align{margin: 0px;border-top: 1px solid #d4d4d4;}
+.social_align a{color:#626262;}
+.social_align a:hover{color:red;}
+
+/*Arrow tool tip:*/
+.sharebar{width:180px;height:30px;background-color:#fff;position:absolute;transition:all 0.6s ease-in-out;margin-left:-55px; margin-top:-25px; border:1px solid #d4d4d4 !important;}
+.arrowtooltip{width:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:7px solid #ccc;position:absolute;top:7px;left:179px;}
+.sharebar ul{margin:0;padding:0;}
+.sharebar ul li:hover{transform:translateY(-3px);transition: 0.1s ease-in-out;vertical-align: middle; cursor:pointer;}
+.sharebar ul li{list-style:none;float:left;padding:2px 7px 0px 7px}
+.sharebar ul li a i.fb{color:#3b5997 !important;}
+.sharebar ul li a i.tw{color:#5aaadb !important;}
+.sharebar ul li a i.gpluse{color:#db4d41 !important;}
+.sharebar ul li a i.linkedin{color:#0077B5 !important;}
+.sharebar ul li a i.pinterest{color:#c92228 !important;}
+.sharebar ul li a i.mail{color:#ffcc05 !important;}
+
+/* list view start*/
+.listview_video_bg{/*min-height:140px;border: 0px solid #C8C8C8;*/padding: 0px;/*border-top-left-radius: 0px;border-top-right-radius: 0px;*/background: rgb(255, 255, 255) none repeat scroll 0% 0%;}
+.listview_video_bg img{margin-top:1px; padding:0px; border:none;}
+.listview_social_icon{margin: 0px;border-top: 1px solid rgb(227, 218, 218); padding-top:8px;}
+.listview_social_icon a{color:#626262;}
+.listview_social_icon a:hocver{color:red;}
+.listviewsharebar{width:180px;height:28px;background-color:#fff;position:absolute;transition:all 0.6s ease-in-out;margin-left:136px; margin-top:-26px;border:1px solid #d4d4d4 !important;z-index:9999;}
+.listviewarrowtooltip{width:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:7px solid #ccc;position:absolute;top:7px;left:-8px; transform:rotate(180deg);}
+.listviewsharebar ul{margin:0;padding:0;}
+.listviewsharebar ul li:hover{transform:translateY(-3px);transition: 0.1s ease-in-out;vertical-align: middle; cursor:pointer;}
+.listviewsharebar ul li{list-style:none;float:left;padding:0px 7px 0px 7px;}
+.listviewsharebar ul li a i.fb{color:#3b5997 !important;}
+.listviewsharebar ul li a i.tw{color:#5aaadb !important;}
+.listviewsharebar ul li a i.gpluse{color:#db4d41 !important;}
+.listviewsharebar ul li a i.linkedin{color:#0077B5 !important;}
+.listviewsharebar ul li a i.pinterest{color:#c92228 !important;}
+.listviewsharebar ul li a i.mail{color:#ffcc05 !important;}
+.listviewsharebar ul li a:hover{color:red;}
+.listview_video_bg .caption img{margin-top:13px;}
+.listview_social_icon .listviewask-doubt1 a:hover{color:red;}
+.listviewsharediv a:hover{color:red;}
+.listviewtopic-box{min-height:117px;}
+.listviewtitle{padding-top:7px;}
+.listviewtitle{padding-bottom:9px;}
+/* list view end*/
+
+/* media start*/
+@media screen and (max-width: 768px) {
+.listviewtopic-box{min-height:117px;}
+.grid_bg{margin-bottom:10px;margin-top:10px;}
+/*.grid_bg:hover{margin-top:25px;}*/
+.share_icon {margin: 0px;padding-left: 20px;font-size: 11px;}
+.sharebar{width:180px;height:30px;background-color:#fff;position:absolute;transition:all 0.6s ease-in-out;margin-left:-9px; margin-top:-25px;}
+.thumbnail .caption {padding: 0px;color: #333;}
+.listviewsharebar {width: 180px;height: 28px;background-color: #fff;position: absolute;transition: all 0.6s ease-in-out;margin-left: 152px;margin-top: -26px;
+    border: 1px solid #d4d4d4 !important; z-index:9999;}
+}
+@media screen and (max-width: 640px) {
+.grid_bg{margin-bottom:10px;margin-top:10px;}
+/*.grid_bg:hover{margin-top:25px;}*/
+.share_icon {margin: 0px;padding-left: 15px;font-size: 11px;}
+.sharebar{width:180px;height:30px;background-color:#fff;position:absolute;transition:all 0.6s ease-in-out;margin-left:-40px; margin-top:-24px;}
+.listviewsharebar{width:180px;height:28px;background-color:#fff;position: absolute;transition:all 0.6s ease-in-out;margin-left:-21px; margin-top:-26px;}
+.listviewarrowtooltip{width:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:7px solid #ccc;position:absolute;top:6px;left:179px; transform:rotate(0deg);}
+.listview_video_bg .caption img{margin-top:35px;}
+.listviewask-doubt1{text-align:center; padding-top:5px;}
+.listviewsharediv{text-align:right;}
+.listviewtitle{padding-bottom:0px;}
+.listviewtopic-box{padding-bottom:1px;}
+.thumbnail .caption {padding: 0px;color: #333;}
+}
+@media screen and (max-width: 320px) {
+.sharebar{width:180px;height:30px;background-color:#fff;position:absolute;transition:all 0.6s ease-in-out;margin-left:-65px; margin-top:-25px;}
+.listview_video_bg .caption img{margin-top:35px;}
+.listviewask-doubt1{text-align:center; padding-top:5px;}
+.listviewsharebar{width:180px;height:26px;background-color:#fff;position: absolute;transition:all 0.6s ease-in-out;margin-left:-46px; margin-top:-26px;}
+.listviewarrowtooltip{width:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:7px solid #ccc;position:absolute;top:6px;left:179px; transform:rotate(0deg);}
+.listviewsharediv{text-align:right;}
+.listviewtitle{padding-bottom:0px;}
+.listviewtopic-box{padding-bottom:1px;}
+.thumbnail .caption {padding: 0px;color: #333;}
+}
+/* media end*/
+</style>
+<script>
+$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').fadeIn(500); //.slideDown(250)
+        },
+        function(){
+            $(this).find('.caption').fadeOut(500); //slideUp(250)
+        }
+    );
+$('.sharebar').css('display','none');
+
+$('.sharediv').click(function(){
+	$(this).closest('div').find('.sharebar').toggle();
+	});
+	
+$('.listviewsharebar').css('display','none')
+
+$('.listviewsharediv').click(function(){
+	$(this).closest('div').find('.listviewsharebar').toggle();
+	});
+});
+</script>	
+ </head>
+ 
+<body class="textureBg">
+<input type="hidden" id="sub_name" value="Applied Mathematics - II">
+<a href="http://online.m-tutor.com/mtutor/beta/index.php" class="home-btn"><i class="fa fa-home fa-2x"></i></a>
+    <header>
+	<section class="container">
+	<div class="row">
+		<div class="col-md-3 col-xs-3"> 
+			<a href="http://online.m-tutor.com/mtutor/beta/index.php"><img src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/mtutor-logo.png" alt="Mobile Tutor" title="Mobile Tutor" class="logo"></a>
+		</div>		
+		<div class="col-md-6 col-xs-6">		
+		   <form method="get" action="http://online.m-tutor.com/mtutor/beta/topics.php" onsubmit="return validateForm()" name="searchfrm">
+			<div class="input-group stylish-input-group">			   
+					<input type="text" class="form-control" name="searchTxt" placeholder="Search topic" style="color:#fff;" value="">
+					<span class="input-group-addon">
+					<button type="submit">
+						<span class="glyphicon glyphicon-search"></span>
+					</button> 
+					</span>
+			</div>	</form>
+		</div>		
+		<div class="col-md-3 col-xs-3 text-right">					
+			<div class="user-panel navbar-right">		
+				<div class="user-panel-inner dropdown">
+				   
+					<a data-toggle="dropdown" class="dropdown-toggle" href="http://online.m-tutor.com/mtutor/beta/topics.php?subject=288#"> 
+					 
+					 						<img alt="User Image" class="img-circle" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/50_3816577951465380252.jpg">
+					 					</a>			
+					  
+					<ul role="menu" class="dropdown-menu">
+						<li>
+							<h5 class="userinfo">ramya							<small>ramya@gmail.com</small></h5>
+						</li>
+						<li class="divider"></li>
+						<li><a href="http://online.m-tutor.com/mtutor/beta/dashboard.php"><i class="fa fa-comments"></i> Ask a doubt</a></li>
+						<li><a href="http://online.m-tutor.com/mtutor/beta/profile.php"><i class="fa fa-user"> </i> My profile</a></li>
+                        <!-- <li><a href="#"><i class="fa fa-credit-card"> </i> Unique User Code</a></li>-->						
+						<li><a href="http://online.m-tutor.com/mtutor/beta/logout.php"><i class="fa fa-power-off"> </i> Logout</a></li>
+					  </ul>
+					  
+				</div>
+			</div>	
+			</div>
+			</div>
+	</section>
+</header>
+<script>
+	function validateForm() {
+    var x = document.forms["searchfrm"]["searchTxt"].value;
+    if (x == null || x == "") {
+        alert("Search must be filled out");
+        return false;
+    }
+}
+</script>
+	
+	<nav style="display:block;">
+          <ul class="nav nav-justified">
+            <li class="active"><a href="http://online.m-tutor.com/mtutor/beta/topics.php?subject=288">TOPIC LIST</a></li>
+            <li><a href="http://online.m-tutor.com/mtutor/beta/revision.php?subject=288">MULTIPLE CHOICE QUESTIONS</a></li>
+          </ul>
+    </nav>
+
+	<!-- Content part start here-->
+	<main>
+		<section class="container">	
+			<div class="col-md-12">			<!-- tutrl-part-right -->
+				<div class="row" style="border-bottom:1px solid #d5d5d5;margin:10px 0px;">
+					<div class="col-md-4 col-xs-12 subject-name"><h2>Applied Mathematics - II <small>(25 Topics)</small></h2></div>
+
+
+					<div class="col-md-4 col-xs-12" id="unitselect">	
+						<!--<label for="pwd">Unit:</label>
+						<select name="unit_dropdown" id="unit_dropdown" class="" onchange="unitChange(&#39;288&#39;,&#39;50&#39;);" style="display: none;">
+						<option value="">All Unit</option>
+												      
+							<option value="602">unit 1</option>							 		
+												      
+							<option value="611">unit 2</option>							 		
+												      
+							<option value="603">unit 3</option>							 		
+												      
+							<option value="616">unit 4</option>							 		
+																						
+						</select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" data-id="unit_dropdown" title="All Unit"><span class="filter-option pull-left">All Unit</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;All Unit&lt;/span&gt;"><span class="text">All Unit</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;unit 1&lt;/span&gt;"><span class="text">unit 1</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;unit 2&lt;/span&gt;"><span class="text">unit 2</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;unit 3&lt;/span&gt;"><span class="text">unit 3</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="&lt;span class=&quot;text&quot;&gt;unit 4&lt;/span&gt;"><span class="text">unit 4</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>	-->									
+					</div>	
+					
+					<div class="col-md-4 col-xs-12 text-right">
+						<div id="viewcontrols" class="view-controls-list"> View By : 
+		<a href="#gridview" id="gridview" class="btn btn-default btn-sm active" title="Grid View"><i class="fa fa-th fa-lg"></i></a>
+		<a href="#listview" id="listview" class="btn btn-default btn-sm" title="List View"><i class="fa fa-list fa-lg"></i></a>						
+
+						</div>
+					</div>	
+										
+				</div>
+				
+				
+				
+								
+				
+				
+				
+			<!-- LIST VIEW BOX -->
+							
+			<div id="listviewrow" style="display:none;">
+				<div class="topic-box listviewtopic-box">
+					<div class="row">
+					<div class="col-md-2 col-sm-3 col-xs-12 list-topic-box">
+					<div class="thumbnail listview_video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle" width="35px;" height="35px;" class="image_center"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+						<img src="img/videobg01.png" alt="...">
+					</div>
+					</div>
+					<div class="col-md-10 col-sm-9 col-xs-12">
+					 <div onclick="location.href=&#39;../web/record.php?university=4&amp;course=10&amp;semester=90&amp;branch=0&amp;subject=288&amp;unit=602&amp;topic=4399&amp;language=1&amp;submitval=yes&#39;">
+					    <a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Beta and Gamma Function</h4></a>
+						<div class="topic-description-text">						 
+						    </div>
+					</div>	
+					<div style="margin:10px 0px;" class="clearfix">
+					<div class="row listview_social_icon">
+						<div class="col-md-3 col-sm-2 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+							<div class="listviewsharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+							<div class="listviewsharebar">
+								<div class="listviewarrowtooltip"></div>
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+									<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+	
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12 text-right listviewask-doubt1">
+						<a href=""><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+				</div>					
+					</div>
+					
+					</div>
+				</div>
+				
+				
+				<div class="topic-box listviewtopic-box">
+					<div class="row">
+					<div class="col-md-2 col-sm-3 col-xs-12 list-topic-box">
+					<div class="thumbnail listview_video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle" width="35px;" height="35px;" class="image_center"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+						<img src="img/videobg02.png" alt="...">
+					</div>
+					</div>
+					<div class="col-md-10 col-sm-9 col-xs-12 ">
+					 <div onclick="location.href=&#39;../web/record.php?university=4&amp;course=10&amp;semester=90&amp;branch=0&amp;subject=288&amp;unit=602&amp;topic=4399&amp;language=1&amp;submitval=yes&#39;">
+					    <a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Differential Equations to Simple Electric Circuits</h4></a>
+						<div class="topic-description-text">						 
+						    </div>
+					</div>	
+					<div style="margin:10px 0px;" class="clearfix">
+					<div class="row listview_social_icon">
+						<div class="col-md-3 col-sm-2 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+							<div class="listviewsharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+							<div class="listviewsharebar">
+								<div class="listviewarrowtooltip"></div>
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+									<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+	
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12 text-right listviewask-doubt1">
+						<a href=""><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+				</div>					
+					</div>
+					
+					</div>
+				</div>
+				
+				
+				<div class="topic-box listviewtopic-box">
+					<div class="row">
+					<div class="col-md-2 col-sm-3 col-xs-12 list-topic-box">
+					<div class="thumbnail listview_video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle" width="35px;" height="35px;" class="image_center"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+						<img src="img/videobg03.png" alt="...">
+					</div>
+					</div>
+					<div class="col-md-10 col-sm-9 col-xs-12 ">
+					 <div onclick="location.href=&#39;../web/record.php?university=4&amp;course=10&amp;semester=90&amp;branch=0&amp;subject=288&amp;unit=602&amp;topic=4399&amp;language=1&amp;submitval=yes&#39;">
+					    <a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Cauchy’s and Legendre’s Linear Equations</h4></a>
+						<div class="topic-description-text">						 
+						    </div>
+					</div>	
+					<div style="margin:10px 0px;" class="clearfix">
+					<div class="row listview_social_icon">
+						<div class="col-md-3 col-sm-2 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+							<div class="listviewsharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+							<div class="listviewsharebar">
+								<div class="listviewarrowtooltip"></div>
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+									<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+	
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12 text-right listviewask-doubt1">
+						<a href=""><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+				</div>					
+					</div>
+					
+					</div>
+				</div>
+				
+				<div class="topic-box listviewtopic-box">
+					<div class="row">
+					<div class="col-md-2 col-sm-3 col-xs-12 list-topic-box">
+					<div class="thumbnail listview_video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle" width="35px;" height="35px;" class="image_center"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+						<img src="img/videobg02.png" alt="...">
+					</div>
+					</div>
+					<div class="col-md-10 col-sm-9 col-xs-12 ">
+					 <div onclick="location.href=&#39;../web/record.php?university=4&amp;course=10&amp;semester=90&amp;branch=0&amp;subject=288&amp;unit=602&amp;topic=4399&amp;language=1&amp;submitval=yes&#39;">
+					    <a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Divergence - Curl and Properties</h4></a>
+						<div class="topic-description-text">						 
+						    </div>
+					</div>	
+					<div style="margin:10px 0px;" class="clearfix">
+					<div class="row listview_social_icon">
+						<div class="col-md-3 col-sm-2 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+							<div class="listviewsharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+							<div class="listviewsharebar">
+								<div class="listviewarrowtooltip"></div>
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+									<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+	
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12 text-right listviewask-doubt1">
+						<a href=""><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+				</div>					
+					</div>
+					
+					</div>
+				</div>
+                				
+ 			</div>
+						<!---- END LIST VIEW BOD ----->
+
+			<!----- GRID VIEW BOX ----->
+				<div id="gridviewrow" style="display:block;">
+				<div class="row mrgtb15">
+				<div class="col-md-3 col-sm-6 col-xs-12 grid_div">
+					<div class="grid_bg">
+					<div class="thumbnail video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+                <img src="img/videobg01.png" alt="...">
+				<a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Beta and Gamma Function</h4></a>
+				</div>
+				<div class="starrating_set3">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-right ask-doubt" style="padding-left: 0px; padding-right: 0px;">
+						 <a href="" class="ask-doubt1"><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+					<div class="row social_align">
+						<div class="col-sm-4 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-sm-8 col-xs-8 text-right" style="padding-left: 0px; padding-right: 0px;">
+							<div class="sharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+							<div class="sharebar">
+								<div class="arrowtooltip"></div>
+								<ul>
+								<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+	
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+								
+				
+															
+					<div class="col-md-3 col-sm-6 col-xs-12 grid_div">
+					<div class="grid_bg">
+					<div class="thumbnail video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+                <img src="img/videobg02.png" alt="...">
+				<a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Cauchy’s and Legendre’s Linear Equations</h4></a>
+				</div>
+				<div class="starrating_set3">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-right ask-doubt" style="padding-left: 0px; padding-right: 0px;">
+						 <a href="" class="ask-doubt1"><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+					<div class="row social_align">
+						<div class="col-sm-4 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-sm-8 col-xs-8 text-right" style="padding-left: 0px; padding-right: 0px;">
+							<div class="sharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+							<div class="sharebar">
+								<div class="arrowtooltip"></div>
+								<ul>
+								<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+								
+					<div class="visible-sm-block clearfix"></div>
+
+															
+					<div class="col-md-3 col-sm-6 col-xs-12 grid_div">
+					<div class="grid_bg">
+					<div class="thumbnail video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+                <img src="img/videobg03.png" alt="...">
+				<a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Differential Equations to Simple Electric Circuits</h4></a>
+				</div>
+				<div class="starrating_set3">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-right ask-doubt" style="padding-left: 0px; padding-right: 0px;">
+						 <a href="" class="ask-doubt1"><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+					<div class="row social_align">
+						<div class="col-sm-4 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-sm-8 col-xs-8 text-right" style="padding-left: 0px; padding-right: 0px;">
+							<div class="sharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+								<div class="sharebar">
+								<div class="arrowtooltip"></div>
+								<ul>
+								<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+								
+				
+															
+					<div class="col-md-3 col-sm-6 col-xs-12 grid_div">
+					<div class="grid_bg">
+					<div class="thumbnail video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+                <img src="img/videobg01.png" alt="...">
+				<a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Divergence - Curl and Properties</h4></a>
+				</div>
+				<div class="starrating_set3">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-right ask-doubt" style="padding-left: 0px; padding-right: 0px;">
+						 <a href="" class="ask-doubt1"><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+					<div class="row social_align">
+						<div class="col-sm-4 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-sm-8 col-xs-8 text-right" style="padding-left: 0px; padding-right: 0px;">
+							<div class="sharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+								<div class="sharebar">
+								<div class="arrowtooltip"></div>
+								<ul>
+								<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+				</div>
+				
+				<!--second grid row -->
+				<div class="row mrgtb15">
+				<div class="col-md-3 col-sm-6 col-xs-12 grid_div">
+					<div class="grid_bg">
+					<div class="thumbnail video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+                <img src="img/videobg01.png" alt="...">
+				<a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Evaluating Integrals by Laplace</h4></a>
+				</div>
+				<div class="starrating_set3">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-right ask-doubt" style="padding-left: 0px; padding-right: 0px;">
+						 <a href="" class="ask-doubt1"><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+					<div class="row social_align">
+						<div class="col-sm-4 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-sm-8 col-xs-8 text-right" style="padding-left: 0px; padding-right: 0px;">
+							<div class="sharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+							<div class="sharebar">
+								<div class="arrowtooltip"></div>
+								<ul>
+								<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+	
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+								
+				
+															
+					<div class="col-md-3 col-sm-6 col-xs-12 grid_div">
+					<div class="grid_bg">
+					<div class="thumbnail video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+                <img src="img/videobg02.png" alt="...">
+				<a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Evaluation of Integrals by Leibnitz's Rule</h4></a>
+				</div>
+				<div class="starrating_set3">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-right ask-doubt" style="padding-left: 0px; padding-right: 0px;">
+						 <a href="" class="ask-doubt1"><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+					<div class="row social_align">
+						<div class="col-sm-4 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-sm-8 col-xs-8 text-right" style="padding-left: 0px; padding-right: 0px;">
+							<div class="sharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+							<div class="sharebar">
+								<div class="arrowtooltip"></div>
+								<ul>
+								<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+								
+					<div class="clearfix visible-sm-block"></div>
+															
+					<div class="col-md-3 col-sm-6 col-xs-12 grid_div">
+					<div class="grid_bg">
+					<div class="thumbnail video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+                <img src="img/videobg03.png" alt="...">
+				<a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Exact ODEs, Integrating-Linear ODEs</h4></a>
+				</div>
+				<div class="starrating_set3">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-right ask-doubt" style="padding-left: 0px; padding-right: 0px;">
+						 <a href="" class="ask-doubt1"><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+					<div class="row social_align">
+						<div class="col-sm-4 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-sm-8 col-xs-8 text-right" style="padding-left: 0px; padding-right: 0px;">
+							<div class="sharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+								<div class="sharebar">
+								<div class="arrowtooltip"></div>
+								<ul>
+								<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+								
+				
+															
+					<div class="col-md-3 col-sm-6 col-xs-12 grid_div">
+					<div class="grid_bg">
+					<div class="thumbnail video_bg">
+						<div class="caption">
+							<img src="img/ea-play.svg" alt="icon" align="middle"/>
+							<h4 class="tutorial_title">View Tutorial</h4>
+						</div>
+                <img src="img/videobg01.png" alt="...">
+				<a href="#"><h4 class="grid-title" style="padding-left: 0px; padding-right: 0px;">Existence and Elementary Functions</h4></a>
+				</div>
+				<div class="starrating_set3">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-right ask-doubt" style="padding-left: 0px; padding-right: 0px;">
+						 <a href="" class="ask-doubt1"><i class="fa fa-comments" aria-hidden="true"></i> Ask a doubts</a>
+					</div>
+					</div>
+					<div class="row social_align">
+						<div class="col-sm-4 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
+							<span class="video-duration"><strong>12025</strong> Views</span> 
+						</div>
+						<div class="col-sm-8 col-xs-8 text-right" style="padding-left: 0px; padding-right: 0px;">
+							<div class="sharediv">
+							<i class="fa fa-star share_icon"></i> <a href="#"><span class="icon_text">2.5</span></a>
+							<i class="fa fa-heart share_icon"></i> <a href="#"><span class="icon_text">1400</span></a>
+							<a href="javascript:void(0)"><i class="fa fa-share-alt share_icon"></i>
+								<div class="sharebar">
+								<div class="arrowtooltip"></div>
+								<ul>
+								<li><a href="#"><i class="fa fa-facebook-square fa-lg fb" title="Facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square fa-lg tw" title="Twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-lg gpluse" title="Google pluse"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square fa-lg linkedin" title="Linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest-square fa-lg pinterest" title="Pinterest"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope-square fa-lg mail" title="Mail"></i></a></li>
+								</ul>
+								</div>
+								</a>
+								</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+				</div>
+					
+					
+				 
+				</div>   
+						<!----- END GRID VIEW BOX ----->
+		
+			<div class="text-right row" id="pageinfo">
+					<div class="col-md-12">
+					<ul class="pagination pull-right"><li class="disabled"><a href="http://online.m-tutor.com/mtutor/beta/topics.php?subject=288#">«</a></li><li class="active"><a>1</a></li><li><a href="http://online.m-tutor.com/mtutor/beta/topics.php?subject=288&amp;page_number=2">2</a></li><li><a href="http://online.m-tutor.com/mtutor/beta/topics.php?subject=288&amp;page_number=3">3</a></li><li><a href="http://online.m-tutor.com/mtutor/beta/topics.php?subject=288&amp;page_number=4">4</a></li><li><a href="http://online.m-tutor.com/mtutor/beta/topics.php?subject=288&amp;page_number=2">»</a></li></ul>					</div>	
+				</div>
+				
+		</div></section>	
+	</main><!-- content part end here //-->
+	
+	<div class="sidebar">
+		<div id="asktutor_sidebar" class="topics"><ul class="mainul"><li class="list first"><ul class="scli" style="background-color:#FF9908"><li>Ask a Doubt<img src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/doubt-icon.png"></li></ul></li></ul></div> 
+	</div>
+	
+	<!--- ASK TUTOR POPUP PART START HERE --->
+		<div id="askModal" class="modal fade bs-example-modal-sm4" role="dialog">
+		<form class="form-horizontal" style="height:100%" role="form" id="ask_question_form" onsubmit="return false;" name="ask_question_form">
+			   <input name="ask_subject" id="subject_id" type="hidden" value="288">
+				   <input name="ask_register" id="idregister" type="hidden" value="50">
+				   <input name="ask_topic" id="topicid" type="hidden" value="">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Ask a doubt ?</h4>
+      </div>
+
+      <div class="modal-body">
+	  	  <input name="subjectdropdown" value="1" type="hidden" id="subjectdropdown">
+				<div class="form-group subjectdrop" name="subject_part">
+					<!-- <label class="col-sm-2 col-md-2 control-label">Subject</label> -->
+					<div class="col-sm-12 col-md-12">
+						<select name="subject_dropdown" id="subject_dropdown" class="form-control">
+							<option value="">--Select subject--</option>
+							 
+							<option value="288">Applied Mathematics - II</option>
+							 
+							<option value="289">Applied Physics - II</option>
+													</select>
+
+					</div>								
+				</div>
+						
+	  		<div id="topicmsg">
+        <p style="font-size:16px;font-weight:bold;margin:0px" id="subject_name">Applied mathematics - ii</p>
+		<p id="topic_name"></p>
+			<textarea rows="3" cols="50" maxlength="1000" name="question" id="question" class="form-control" placeholder="Type your question here..."></textarea>
+			<small>Maximum 1000 characters</small>
+			<span class="errmsg" style="display:none; color:red;"><br>Enter Your Questions</span>
+			<span class="suerrmsg" style="display:none; color:red;"></span>
+
+		</div>
+		<div id="thanksmsg">
+		
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" name="ask_submit" id="ask_submit" value="ask_question" class="btn btn-success submit" data-dismiss="modal"><i class="fa fa-check"></i> Submit your question</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
+      </div>
+    </div>
+  </div>
+</form>
+		</div>	
+		
+<style>
+.modal-footer {
+    border: 0 none;
+    padding: 0 15px 15px;
+}
+#thanksmsg {
+    font-size: 1.3em;
+    padding: 15px 0;
+    text-align: center;
+}
+</style>		<script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/asktutor.js"></script>
+	<!--- ASK TUTOR POPUP END HERE --->
+
+	
+    <footer>
+	<p>Copyright © 2016 Mobile Tutor Private Ltd., | <i class="fa fa-phone"> </i>  1800 102 5831  |  <i class="fa fa-envelope"></i> <a href="mailto:support@m-tutor.com"> support@m-tutor.com </a>  </p>
+</footer>
+<script>
+function checksessionvalid() {
+	$.ajax({
+		type:"GET",
+		url:"../web/checksession.php",
+		data :{
+			sessionid:'3icm956l413nvcg7ir9fl41745',
+			idreg:'50', 
+		},          
+		success:function(res){ 
+			console.log("result :: "+res);
+			if(res == 1){
+				window.location = "index.php?logout=fr";
+			}
+		}
+	});
+}
+
+$(document).ready(function() {
+	
+setInterval(function(){
+		console.log("in check session function");
+		checksessionvalid();
+},60000);
+
+});
+
+
+</script>
+<link rel="stylesheet" href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/font-style.css">	
+
+
+<script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/bootstrap.min.js"></script>
+<script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/classie.js"></script>
+<script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/cbpAnimatedHeader.js"></script>
+
+
+<!--<script src="js/jquery-2.1.1.js"></script> -->
+<script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/jquery.menu-aim.js"></script> <!-- menu aim -->
+<!--  <script src="js/main.js"></script> Resource jQuery -->
+
+<script>
+$(document).ready(function() {  
+
+var x = getCookie('listview');
+	
+	console.log("x"+x);
+	
+		
+	if(x=="yes"){
+		$('#listview').click();
+	}else{
+		$('#gridview').click();
+	}
+	
+	
+	function getCookie(c_name) {
+    var i, x, y, ARRcookies = document.cookie.split(";");
+    for (i = 0; i < ARRcookies.length; i++) {
+        x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+        y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+        x = x.replace(/^\s+|\s+$/g, "");
+        if (x == c_name) {
+            return unescape(y);
+        }
+    }
+}
+});
+	
+
+$('#gridview').click(function(){
+	   $('#listviewrow').hide();
+       $('#gridviewrow').show();
+	   $('#gridview').addClass('active');
+	   $('#listview').removeClass('active');
+	   document.cookie = "listview=no";
+});
+$('#listview').click(function(){
+	   $('#gridviewrow').hide();
+       $('#listviewrow').show();
+	   $('#gridview').removeClass('active');
+	   $('#listview').addClass('active');
+		document.cookie = "listview=yes";	   
+});	
+function unitChange(subject, userId){
+	unit = $("#unit_dropdown").val(); 
+	//alert(unit);
+	if(unit >= 0)
+		window.location = "topics.php?subject="+subject+"&unit="+unit;
+}
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/56dd9185b9f7e845271ffb22/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+	})();
+</script>
+<script>
+
+$(document).ready(function() {
+	$('.container').find('[name="unit_dropdown"]')
+					.selectpicker()
+					.change(function(e) {
+						
+					})
+					.end();
+});
+
+
+</script>
+<!--End of Tawk.to Script-->
+
+<div id="tawkchat-iframe-container" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; position: fixed !important; border: 0px !important; min-height: 0px !important; min-width: 0px !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: auto !important; z-index: 2000000000 !important; cursor: auto !important; float: none !important; bottom: 0px !important; right: 0px !important; left: auto !important; display: block; background: none transparent !important;"><iframe id="tawkchat-maximized-iframe-element" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/saved_resource.html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 320px !important; height: 400px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; display: none !important; background: none transparent !important;"></iframe><iframe id="tawkchat-minified-iframe-element" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/saved_resource(1).html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; height: 40px !important; min-height: 40px !important; max-height: 40px !important; width: 320px !important; min-width: 320px !important; max-width: 320px !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center 0px !important; margin: 0px !important; top: auto !important; bottom: 0px !important; right: 10px !important; left: auto !important; display: block !important; background: none transparent !important;"></iframe><iframe id="chat-indicator-iframe" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/saved_resource(2).html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px 0px 0px -330px !important; transition-property: none !important; transform: none !important; display: none !important; z-index: 1000002 !important; cursor: auto !important; float: none !important; top: auto !important; bottom: 40px !important; right: 10px !important; left: auto !important; width: 320px !important; max-width: 320px !important; min-width: 320px !important; height: 37px !important; max-height: 37px !important; min-height: 37px !important; background: none transparent !important;"></iframe><div id="tawkchat-drag-element" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 0 !important; top: 1px !important; bottom: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: 45px !important; display: block !important; z-index: 999997 !important; cursor: move !important; float: none !important; left: 150px !important; right: 96px !important; background: none rgb(255, 255, 255) !important;"></div><div id="tawkchat-resize-left" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: 96px !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-right" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: e-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-top" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-bottom" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: s-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-top-left" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-top-right" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: ne-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-bottom-left" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: 0px !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: sw-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-bottom-right" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999999 !important; cursor: se-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-overlay" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important; background: none transparent !important;"></div></div><iframe src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/saved_resource(3).html" style="display: none !important;"></iframe></body></html>

@@ -1,0 +1,7 @@
+.fa-facebook, .fa-google-plus, .fa-linkedin, .fa-twitter{font-size:14px !important;border-radius:20px;border:2px solid ;padding:8px;margin-top:15px;margin-right:20px;color:#fff;} 
+ul li{display:inline;}
+
+.fa-twitter{background:#2caae1;border-color:#2caae1}
+.fa-facebook{background:#3b579d;border-color:#3b579d;border-radius:20px;fon-size:12px;}
+.fa-google-plus{background:#2caae1;border-color:#2caae1}
+.fa-linkedin{background:#007bb6;border-color:#007bb6}

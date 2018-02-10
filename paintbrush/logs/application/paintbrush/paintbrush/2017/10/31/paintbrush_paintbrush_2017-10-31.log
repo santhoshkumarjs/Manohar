@@ -1,0 +1,11 @@
+#paintbrush/paintbrush/localhost.localdomain/192.168.100.140/2017-10-31/11:53:32/
+31/10/2017 11:53:32.842108|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+31/10/2017 11:53:32.851762|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select * from product where featured = 'yes' and status = 'active' and quantity != 0 limit 5
+31/10/2017 11:53:32.852683|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select * from product where status = 'active' and quantity != 0 and new_status = 1 order by id desc limit 5
+31/10/2017 11:53:32.853564|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select * from banner where status = 'active' and show_status = 'active'
+31/10/2017 11:53:32.854438|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select id,name from category where status = 'active'
+31/10/2017 11:53:32.855155|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select name from style where id = 1
+31/10/2017 11:53:32.858468|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select name from style where id = 2
+31/10/2017 11:53:32.858943|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select name from style where id = 3
+31/10/2017 11:53:32.859380|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select name from style where id = 3
+31/10/2017 11:53:32.859657|192.168.64.68| [debug] [0ba25d883b764ae35f86dc27c930fb8b] database.class.inc (48) Database->query() : select name from style where id = 7

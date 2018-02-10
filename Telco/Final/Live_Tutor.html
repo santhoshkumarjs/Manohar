@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LIVE TUTOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+  $( document ).ready(function() {
+       $('.select-modules').on('click', 'li', function(){
+			$('.select-modules  li').removeClass('active');
+			$(this).addClass('active');
+			$('.gradeDiv').css("display", "block");
+		});
+		$('.livetutorgrade').on('click', 'li', function(){
+			$('.livetutorgrade  li').removeClass('active');
+			$(this).addClass('active');
+		});
+		$('.closebtn').on('click', function(){
+			$('.select-modules  li').removeClass('active');
+			$('.livetutorgrade  li').removeClass('active');
+			$('.gradeDiv').css("display", "none");
+		});
+    });
+  </script>
+  
+</head>
+<body>
+	<!-- header part-->
+	<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<a href="index.html"><img src="img/logo.png"/></a>
+					</div>
+					<div class="col-md-6 col-xs-6 userlogin">
+						<a href="#"><span class="fa fa-user fa-4x pull-right fauser"></span></a>
+					</div>
+				</div>
+			</div>
+	</div><!-- header part-->
+	<!-- main content -->
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xs-6">
+					<h3 class="title">Live Tutor</h3>	
+				</div>
+				<div class="col-md-6 col-xs-6 text-right backbtn">
+					<a href="index.html" class="btn btn-success"><i class="fa fa fa-arrow-left"></i> Back to home</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 co1-xs-12 text-center">				
+					<h4 class="subject_select">Selects the subject :-</h4>
+				</div>
+				<div class="col-md-3 co1-sm-6 col-xs-12 select-modules livetutor">
+					<ul>
+						<li><a href="#">English</a></li>
+						<li><a href="#">Mathematics</a></li>
+						<li><a href="#">Physics</a></li>
+						<li><a href="#">Chemistry</a></li>
+						<li><a href="#">EVS</a></li>
+						<li><a href="#">Computer science</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row gradeDiv">
+				<div class="col-md-4 text-center">				
+					<h4 class="subject_select">Select your class/grade :-</h4>
+				</div>
+				<div class="col-md-2 livetutorgrade">
+					<ul>
+						<li><a href="#" data-toggle="modal" data-target="#myModal">Grade 9</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal">Grade 11</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 livetutorgrade">
+					<ul>
+						<li><a href="#" data-toggle="modal" data-target="#myModal">Grade 10</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal">Grade 12</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header modal-header-primary">
+				  <button type="button" class="close closebtn" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Enter your Question</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+						  <label for="recipient-name" class="form-control-label">Mail ID:</label>
+						  <input type="text" class="form-control" id="recipient-name" value="support@m-tutor.com">
+						</div>
+						<div class="form-group">
+						  <label for="message-text" class="form-control-label">Question:</label>
+						  <textarea class="form-control" id="message-text" rows="5"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+				 <button type="button" class="btn btn-secondary closebtn" data-dismiss="modal">Cancel</button>
+				 <button type="button" class="btn btn-primary">Send message</button>
+				</div>
+			  </div>
+      
+    </div>
+  </div>
+		</div>	
+	</div>
+	<div class="footer">
+		<p>&copy; 2016 Mobile Tutor Private Ltd., Privacy Policy. Terms & conditions</p>
+	</div>
+</body>
+</html>

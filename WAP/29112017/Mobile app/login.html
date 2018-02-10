@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mtutor Mobile Apps</title>
+	
+	<!-- CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" rel="stylesheet">
+	<link href="resource/css/bootstrap.css" rel="stylesheet">
+	<link href="resource/css/font-awesome.css" rel="stylesheet">
+	<link href="resource/css/themify-icons.css" rel="stylesheet">
+	<link href="resource/css/custom.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="resource/js/jqueryValidate.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+	
+<script>
+	$(function(){
+		$("#submit").on("click",function (e){
+			/*e.preventDefault();*/
+			$("#mainForm").validate({
+				callback:function(input){
+					$(input).parent("form-control").addClass("has-error");
+				},
+				validCallback:function(input){
+					$(input).parent("form-control").removeClass("has-error");
+				},
+				success:function(data){
+					console.log(data);
+				}
+			});
+		});
+	});
+</script>
+
+<style>
+.has-error .form-control {
+border-color: #a94442;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.input-field label {color: #333;position: absolute;top: 0.8rem;left: 0.75rem;font-size: 14px;cursor: text;-webkit-transition: 0.2s ease-out;-moz-transition:0.2s ease-out;-o-transition: 0.2s ease-out;-ms-transition: 0.2s ease-out;transition: 0.2s ease-out;font-weight:normal;}
+.input-field label.active{font-size:14px;color:#f0b600;}
+.input-field label:focus{font-size:14px;color:#f0b600;}
+.input-field input[type=text],.input-field input[type=password]{font-size:14px;}
+.input-field input[type=text]:focus+label{color:#f0b600;}
+.input-field input[type=password]:focus+label{color:#f0b600;}
+.input-field input[type=text]:focus{border-bottom:1px solid #f0b600 !important;box-shadow: 0 1px 0 0 #f0b600;}
+.input-field input[type=password]:focus{border-bottom:1px solid #f0b600 !important;box-shadow: 0 1px 0 0 #f0b600;}
+.inputrow{margin-bottom:0px !important;padding: 10px 0px 0px 0px;}
+.btn-facebook:hover{background-color:#3b5999;}
+.btn-google:hover{background-color:#dd4e40;}
+</style>
+</head>
+<body>
+	<header class="big_header">
+		<div class="container">
+			<a href="index.html" class="btn-back"><i class="ti-arrow-left"></i></a>
+			<div class="logo">
+				<img src="resource/images/mtutor-logo.png" class="img-responsive" title="mtutor-logo" alt="mtutor-logo" />
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<p class="log_tagline">
+				Welcome Back<br>
+				Please login to start particpating
+			</p>
+		</div>
+	</header>
+	<div class="cards">
+		<section id="section1">
+			<div class="row box">
+				<div class="title">LOGIN</div>
+				<form class="form-horizontal" action="profile.html" method="post" id="mainForm">
+					<div class="inputrow">
+						<div class="input-field col s12">
+							<input type="text" name="email" data-validation="required email" id="email">
+							<label for="email">Email ID / Mobile No (Prefix country code*)</label>
+						</div>
+					</div>
+					<div class="inputrow">
+						<div class="input-field col s12">
+							<input type="password" name="pass" id="pass" data-validation="required min-length" data-validation-length="8">
+							<label for="pass">Password</label>
+						</div>
+					</div>
+					<div>
+						<a href="" class="pass-forgot pull-right">Forgot password?</a>
+					</div>	
+					<div class="row">
+						<div class="col-xs-12">
+							<button id="submit" class="waves-effect waves-light btn btn-warning btn-block">Submit</button>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="text-center or">OR</div>
+					<div class="row">
+						<div class="col-xs-6">
+							 <a href="https://www.facebook.com/login" type="submit" class="waves-effect waves-light btn btn-facebook" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="https://accounts.google.com/signin" type="submit" class="waves-effect waves-light btn btn-google" target="_blank"><i class="fa fa-google-plus" ></i> Google+</a>
+						</div>
+					</div>	
+					
+					<div class="clearfix"></div>
+					<div >
+						<p class="text-center top_bottom">Don't have an account ? <a href="signup.html" class="pass-forgot">Signup</a></p>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* jshint esnext: true */
+export {default as Nav} from 'assets/scripts/modules/Nav';
+export {default as Dropdown} from 'assets/scripts/modules/Dropdown';
+export {default as SliderHome} from 'assets/scripts/modules/SliderHome';
+export {default as SliderPage} from 'assets/scripts/modules/SliderPage';
+export {default as SliderProject} from 'assets/scripts/modules/SliderProject';
+export {default as LightboxVideo} from 'assets/scripts/modules/LightboxVideo';
+export {default as HeaderPage} from 'assets/scripts/modules/HeaderPage';
+export {default as Carousel} from 'assets/scripts/modules/Carousel';
+export {default as CarouselTimer} from 'assets/scripts/modules/CarouselTimer';
+export {default as CarouselNews} from 'assets/scripts/modules/CarouselNews';
+export {default as SmoothScrolling} from 'assets/scripts/modules/SmoothScrolling';
+export {default as NavNews} from 'assets/scripts/modules/NavNews';
+export {default as News} from 'assets/scripts/modules/News';
+export {default as LocationSwitcher} from 'assets/scripts/modules/LocationSwitcher';
+export {default as Filters} from 'assets/scripts/modules/Filters';
+export {default as ContactForm} from 'assets/scripts/modules/ContactForm';
+export {default as PageTransitionsManager} from 'assets/scripts/modules/PageTransitionsManager';
+export {default as Search} from 'assets/scripts/modules/Search';
+export {default as SimilarSwitcher} from 'assets/scripts/modules/SimilarSwitcher';

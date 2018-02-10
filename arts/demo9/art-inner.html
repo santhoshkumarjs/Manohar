@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paint Brush</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="js/jquery-1.11.0.min.js"></script>	
+	
+<script>
+$( document ).ready(function() {
+
+    $(function () {
+        $('.mm_tooltip').tooltip({
+            selector: "[data-toggle=tooltip]",
+            container: "body"
+        })
+    });
+ 
+    $('.thumbnails').hover(
+        function(){
+            $(this).find('.caption').slideDown(300); //.fadeIn(250)
+			$(this).find('.buynow').css("display","block"); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(200); //.fadeOut(205)
+			$(this).find('.buynow').css("display","none"); //.fadeIn(250)
+        }
+    );
+	$('.orbit-container').hover(
+        function(){
+			$(this).find('.like_add').css("display","block"); //.fadeIn(250)
+        },
+        function(){
+			$(this).find('.like_add').css("display","none"); //.fadeIn(250)
+        }
+    );
+	$(".btn-pref .btn").click(function () {
+    $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+    // $(".tab").addClass("active"); // instead of this do the below 
+    $(this).removeClass("btn-default").addClass("btn-primary");   
+});
+});
+
+$(document).ready(function(){
+    $(".like_add a").tooltip();
+});
+</script>
+</head><!--/head-->
+
+<body id="home">
+	<div class="header-v5 header-static header-fixed-shrink">
+		<!-- Navbar -->
+		<div class="navbar navbar-default navbar-custom navbar-fixed-top mega-menu" role="navigation">
+			<!-- Topbar v3 -->
+			<div class="topbar-v3">
+				<div class="container">
+					<div class="row padlr15">
+						<div class="col-sm-6">
+							<!-- Topbar Navigation -->
+							<ul class="left-topbar">
+								<li><a href="mailto:info@artgallery.com">Info@artgallery.com</a></li>
+								<li><a href="callto:+91 98840 98840">+91 98840 98840</a></li>
+								<li>We deliver worldwide</li>
+							</ul><!--/end left-topbar-->
+						</div>
+						<div class="col-sm-6 tb_right">
+								<ul class="list-inline right-topbar pull-right">
+									<li>
+										<div class="tbr-info">
+											<span><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></span>
+											<div class="tbr-inner">
+												<a href="account.html">My Account</a>
+												<a href="wishlist.html">My Wishlist</a>
+												<a href="model.html" data-toggle="modal" data-target="#login-modal">Login</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tbr-info"><span><i class="fa fa-heart"></i> <a href="wishlist.html"> Wishlist (0)</a></span></div>
+									</li>
+									<li>
+										<div class="tbr-info topcart">
+											<span><i class="ti-shopping-cart"></i><a href="#">cart (2)</a></span>
+											<div class="header-xtra pull-right">
+												<div class="cart-info">
+													<div>
+														<div class="col-md-6 col-xs-6">
+															<a href="cart.html" class="btn btn-grey">View Cart</a>
+														</div>
+														<div class="col-md-6 col-xs-6">
+															<a href="checkout.html" class="btn btn-grey">Checkout</a>
+														</div>
+													</div>
+													<div class="ci-total">Subtotal: $750.00</div>
+													<small>You have <em class="highlight">2 item(s)</em> in your shopping bag</small>
+													<div class="ci-item">
+														<a href="art-inner.html"><img src="images/art/01.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Lorem Ipsum is simply dummy</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													<div class="ci-item">
+														<a href="print-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="print-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>	
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													<div class="ci-item">
+														<a href="art-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</li>
+								</ul>
+							</div>
+					</div>
+				</div><!--/container-->
+			</div>
+		<!-- End Topbar v3 -->
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="row mrg_0">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand page-scroll" href="index.html">
+							<img id="logo-header" class="mobileview" src="images/paintbrush-logomobile.png" alt="Logo">
+							<img id="logo-header1" class="webview" src="images/paintbrush-logo.png" alt="Logo">
+						</a>
+					</div>
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+					<script>
+						new UISearch( document.getElementById( 'sb-search' ) );
+					</script>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+					<!-- Nav Menu -->
+					<ul class="nav navbar-nav">
+						
+						<li class="active"><a href="art.html" class="dropdown-toggle">art</a></li>
+						<li><a href="print.html" class="dropdown-toggle">print</a></li>
+						<li><a href="artist.html" class="dropdown-toggle">artist</a></li>
+						<li class="dropdown"><a href="collection.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">collections <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="collection.html">All</a></li>
+								<li><a href="illustration.html">Illustration</a></li>
+								<li><a href="illustration.html">Image</a></li>
+								<li><a href="illustration.html">Impressionism</a></li>
+								<li><a href="illustration.html">Minimalism</a></li>
+								<li><a href="illustration.html">Naive</a></li>
+								<li><a href="illustration.html">Photorealism</a></li>
+								<li><a href="illustration.html">Realism</a></li>
+								<li><a href="illustration.html">Surrealism</a></li>
+								<li><a href="illustration.html">Traditional</a></li>
+								<li><a href="illustration.html">Tribal</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="offer.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">offers <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="offer.html">Art Work</a></li>
+								<li><a href="offer.html">Object Art</a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown"><a href="more.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">more <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="soon.html">Gift Vouchers</a></li>
+								<li><a href="soon.html"> Artify</a></li>
+								<li><a href="soon.html"> the world of mojarto</a></li>
+								<li><a href="soon.html"> events</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- End Nav Menu -->
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- End Navbar -->
+	</div>
+	<!--=== End Header v5 ===-->
+	<div class="clearfix"></div>
+	
+	<section class="sectiontop">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<!--art-detail-breadcrumb-->
+				<div class="col-md-12 col-xs-12">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item"><a href="art.html">ART</a></li>
+						<li class="breadcrumb-item"><a href="art.html">Painting</a></li>
+						<li class="breadcrumb-item"><a href="art.html">Expressionism</a></li>
+						<li class="breadcrumb-item active">Drummer</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="container">	
+		<div class="row mrg_0"><!-- art-row--me-->
+			<article class="art-detail" itemscope="" itemtype="">
+				<div role="main">
+					<!-- art-detail-body -->
+					<div class="art-detail-body">
+						<div class="row mrg_0">
+							<div class="col-md-1 col-sm-2 pad15">
+								<ul class="list-unstyled text-center" id="thums">
+									<li class="col-md-12 col-xs-4 col-sm-12"><a href="#" id="" actual-img="images/art/image1.jpg"><img src="images/art/smallimage01.jpg" alt=""/></a></li>
+									<li class="col-md-12 col-xs-4 col-sm-12"><a href="#" actual-img="images/art/image2.jpg"><img src="images/art-on-wall-click.jpg" alt=""/></a></li>
+									<li class="col-md-12 col-xs-4 col-sm-12"><a href="#" actual-img="images/art/image1.jpg"><img src="images/art-on-video.jpg" alt=""/></a></li>
+								</ul>
+							</div>
+							
+							<div class="col-xs-12 col-md-6 col-sm-10">
+								<div class="orbit-container">
+									<a href="">
+										<img src="images/art/image1.jpg" alt="" itemprop="image" class="img-responsive" id="switcher" />
+										<div class="like_add">
+											<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+										</div>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-md-5 col-xs-12 col-sm-12 martop15">
+								<div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="..." style="border-bottom: 2px solid #b60801;">
+									<div class="btn-group" role="group">
+										<button type="button" id="favorites" class="btn btn-primary btn1" href="#tab1" data-toggle="tab">
+											<div class="">Original</div>
+										</button>
+									</div>
+									<div class="btn-group" role="group">
+										<button type="button" id="following" class="btn btn-default btn1" href="#tab2" data-toggle="tab">
+											<div class="">Printing</div>
+										</button>
+									</div>
+								</div>
+								<div class="well">
+									<div class="tab-content">
+										<div class="tab-pane fade in active" id="tab1">
+											<div class="tab-title">
+												<h4>Lorem Ipsum is simply dummy text of the printing</h4>
+												<p>By Surendra Pal Singh , Delhi 110052<br>
+												Original Artwork</p>
+											</div>
+											<div class="art-price">
+												<h4>Price: $32,630</h4>
+												<p>Inclusive of Shipping and Handling</p>
+											</div>
+											<div class="butn">
+												<div class="col-md-6 col-xs-6">
+													<a class="pur_btn btn-yellow"><i class="ti-shopping-cart icon-cart "></i> <p class="add">Add to cart</p></a>
+												</div>
+												<div class="col-md-6 col-xs-6">
+													<a href="checkout.html" class="pur_btn btn-orange"><i class="ti-bolt icon-cart "></i> <p class="add">Buy now</p></a>
+												</div>
+											</div>
+											<div class="tab-para">
+												<p>10.7 X 19.5 In | 27 X 50 Cm<br>
+												Watercolor on Paper<br>
+												Expressionism<br>
+												Created in 2017<br>
+												Sold by Artist, Shipped Rolled unless rolling not possible<br>
+												Lot No 227630<br></p>
+											</div>
+											
+											<div class="clearfix"></div>
+											<div class="row view_detail">
+												<div class="col-md-6 col-xs-6">
+													<div class="view_title">
+														<h4>144<br><small>Views</small></h4>
+													</div>
+												</div>
+												<div class="col-md-6 col-xs-6">
+													<div class="view_title">
+														<h4>0<br><small>Favorite</small></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade in" id="tab2">
+											<div class="tab2-title">
+												<h4>Lorem Ipsum is simply dummy text of the printing</h4>
+												<p>By Surendra Pal Singh , Delhi 110052<br>
+												Original Artwork</p>
+											</div>
+											<div class="tab2-para">
+												<h4>Open Edition Prints Available:</h4>
+												<div class="buy-material">
+													<h5>1. Select a Material</h5>
+													<select id="selectMaterial" class="print-options select2-offscreen" tabindex="-1">
+														<option value="">Choose from List</option>
+														<option value="rag_print">Fine Art Paper</option> 
+													</select>
+												</div>
+												<div class="add-size">
+													<h5>2. Select a Size</h5>
+													<select id="rag-selectSize" class="print-options product-select select2-offscreen" tabindex="-1">
+														<option class="select-print-size" data-price="$80.00" data-frame="" data-height="10" data-width="8" data-type="rag" data-wrap="undefined" name="rag-print-size-select" value="P108-U327433-A2370232">8 x 10 in($80.00)</option>
+														<option class="select-print-size" data-price="$84.00" data-frame="" data-height="14" data-width="11" data-type="rag" data-wrap="undefined" name="rag-print-size-select" value="P109-U327433-A2370232">11 x14 in($84.00)</option>
+													</select>
+												</div>
+												<div class="add-Frame">
+													<h5>3. Add a Frame</h5>
+													<select id="selectFrame" class="print-options select2-offscreen" tabindex="-1">
+														<option value="" data-total_price="$84.00" data-description="">Choose from List</option>
+														<option class="select-frame" value="F3">1 ¼" Wide Black Frame (without mat)($58.00)</option>
+														<option class="select-frame" value="F1">1 ¼" Wide Black Frame($74.00)</option>
+														<option class="select-frame" value="F4">1 ¼" Wide White Frame (without mat)($58.00)</option>
+														<option class="select-frame" value="F2">1 ¼" Wide White Frame($74.00)</option>
+														<option class="select-frame" value="F3">1 ¼" Wide Black Frame (without mat)($58.00)</option>
+														<option class="select-frame" value="F1">1 ¼" Wide Black Frame($74.00)</option>
+														<option class="select-frame" value="F4">1 ¼" Wide White Frame (without mat)($58.00)</option>
+														<option class="select-frame" value="F2">1 ¼" Wide White Frame($74.00)</option>
+													</select>
+												</div>
+											</div>
+										
+											<div class="tab2-art-price">
+												<h4>Price: $32,630</h4>
+												<p>Inclusive of Shipping and Handling</p>
+											</div>
+											
+											<div class="butn">
+												<div class="col-md-6 col-xs-6">
+													<a class="pur_btn btn-yellow"><i class="ti-shopping-cart icon-cart "></i> <p class="add">Add to cart</p></a>
+												</div>
+												<div class="col-md-6 col-xs-6">
+													<a href="checkout.html" class="pur_btn btn-orange"><i class="ti-bolt icon-cart "></i> <p class="add">Buy now</p></a>
+												</div>
+											</div>
+											
+											<div class="clearfix"></div>
+											<div class="row view_detail">
+												<div class="col-md-6 col-xs-6">
+													<div class="view_title">
+														<h4>144<br><small>Views</small></h4>
+													</div>
+												</div>
+												<div class="col-md-6 col-xs-6">
+													<div class="view_title">
+														<h4>0<br><small>Favorite</small></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- art-detail-body -->
+				</div>
+			</article>
+		</div>
+		<div class="row description_row mrg_0">
+			<h4><b>Description</b></h4>
+			<p>Everyday scenes are portrayed with stylized figures of men & women often with birds adding a dimension to the canvas, and defining his inspiration from nature. The human element in various situations has always been an important part of his work, and his work is a blend of the modern and the traditional life of India. Surendra Pal Singh's canvases are recognized for their interesting mix of colours, and his palette of colours is subdued yet vibrant and expressive.</p>
+		</div>
+		
+			<div class="morelik-bg">
+				<div class="row mrg_0"><!-- more_like-->
+					<div class="col-md-12 col-xs-12 sub_title"><!-- style="padding-left:0px;"-->
+						<h4><b>Related Arts</b></h4>
+					</div>
+				</div>
+				<div class="row mrg_0">
+					<ul id="flexiselDemo2"> 
+						<li>
+							<div class="thumbnails">
+								<div class="thumbnails_caption">
+									<a title="Image 1" href="#"><img class="img-responsive" src="images/art/like02.jpg"></a>
+									<div class="thirdrow">
+										<h4>Couple</h4>
+										<p class="pull-right" style="font-size:14px;"><b>$ 32,630</b></p>
+										<p>by <b>Surendra Pal Singh</b></p>
+										<a href="#" class="buynow pull-right" style="display:none;">Add to cart</a>
+										<p>Painting, 10.7 X 19.5 In</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>		
+							</div>
+						</li>   
+						<li>
+							<div class="thumbnails">
+								<div class="thumbnails_caption">
+									<a title="Image 1" href="#"><img class="img-responsive" src="images/art/like04.jpg"></a>
+									<div class="thirdrow">
+										<h4>Couple</h4>
+										<p class="pull-right" style="font-size:14px;"><b>$ 32,630</b></p>
+										<p>by <b>Surendra Pal Singh</b></p>
+										<a href="#" class="buynow pull-right" style="display:none;">Add to cart</a>
+										<p>Painting, 10.7 X 19.5 In</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>		
+							</div>
+						</li> 
+						<li>
+							<div class="thumbnails">
+								<div class="thumbnails_caption">
+									<a title="Image 1" href="#"><img class="img-responsive" src="images/art/like03.jpg"></a>
+									<div class="thirdrow">
+										<h4>Couple</h4>
+										<p class="pull-right" style="font-size:14px;"><b>$ 32,630</b></p>
+										<p>by <b>Surendra Pal Singh</b></p>
+										<a href="#" class="buynow pull-right" style="display:none;">Add to cart</a>
+										<p>Painting, 10.7 X 19.5 In</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>		
+							</div>
+						</li> 
+						<li>
+							<div class="thumbnails">
+								<div class="thumbnails_caption">
+									<a title="Image 1" href="#"><img class="img-responsive" src="images/art/like01.jpg"></a>
+									<div class="thirdrow">
+										<h4>Couple</h4>
+										<p class="pull-right" style="font-size:14px;"><b>$ 32,630</b></p>
+										<p>by <b>Surendra Pal Singh</b></p>
+										<a href="#" class="buynow pull-right" style="display:none;">Add to cart</a>
+										<p>Painting, 10.7 X 19.5 In</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>		
+							</div>
+						</li> 
+						<li>
+							<div class="thumbnails">
+								<div class="thumbnails_caption">
+									<a title="Image 1" href="#"><img class="img-responsive" src="images/art/like05.jpg"></a>
+									<div class="thirdrow">
+										<h4>Couple</h4>
+										<p class="pull-right" style="font-size:14px;"><b>$ 32,630</b></p>
+										<p>by <b>Surendra Pal Singh</b></p>
+										<a href="#" class="buynow pull-right" style="display:none;">Add to cart</a>
+										<p>Painting, 10.7 X 19.5 In</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>		
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="soon.html">Online Help</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="soon.html">Order Status</a></li>
+								<li><a href="soon.html">Change Location</a></li>
+								<li><a href="policy.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Terms of Use</a></li>
+								<li><a href="policy.html">Privecy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Company Information</a></li>
+								<li><a href="soon.html">Careers</a></li>
+								<li><a href="soon.html">Store Location</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-widget">
+							<h2>newsletter</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+						<div>
+							<ul class="social_media padd0">
+								<li class="circle"><a href="#"><i class="ti-facebook"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-google"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-pinterest"></i></a></li>
+							</ul>
+						</div>
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-12">
+						<p class="pull-left">Copyright © 2017 paintbrush Inc. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<ul class="pay_cards">
+							<li><img src="images/cards/visa.jpg" alt="Visa Card" title="Visa Card" /></li>
+							<li><img src="images/cards/master.jpg" alt="Master Card" title="Master Card" /></li>
+							<li><img src="images/cards/discover.jpg" alt="Discover Card" title="Discover Card" /></li>
+							<li><img src="images/cards/american.jpg" alt="American Card" title="American Card" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	<!--Modal Window--->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	
+	</div>
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/hallooou.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/smoothScroll.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	<script>
+	 wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>
+	<script type="text/javascript">
+		$(window).load(function() {
+
+			$("#flexiselDemo2").flexisel({
+				visibleItems: 4,
+				itemsToScroll: 1,
+				animationSpeed: 200,
+				infinite: true,
+				navigationTargetSelector: null,
+				autoPlay: {
+					enable: false,
+					interval: 5000,
+					pauseOnHover: true
+				},
+				responsiveBreakpoints: { 
+					portrait: { 
+						changePoint:480,
+						visibleItems: 1,
+						itemsToScroll: 1
+					}, 
+					landscape: { 
+						changePoint:640,
+						visibleItems: 1,
+						itemsToScroll: 2
+					},
+					tablet: { 
+						changePoint:768,
+						visibleItems: 2,
+						itemsToScroll: 1
+					},
+					tabletlandscape: { 
+						changePoint:1024,
+						visibleItems: 2,
+						itemsToScroll: 1
+					},
+					largescreen: { 
+						changePoint:1025,
+						visibleItems: 3,
+						itemsToScroll: 1
+					}
+					
+				},
+				loaded: function(object) {
+					console.log('Slider loaded...');
+				},
+				before: function(object){
+					console.log('Before transition...');
+				},
+				after: function(object) {
+					console.log('After transition...');
+				}
+			});
+		});
+	</script>
+	
+</body>
+
+</html>

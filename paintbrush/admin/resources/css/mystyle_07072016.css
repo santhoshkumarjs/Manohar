@@ -1,0 +1,191 @@
+/**Symbiotic Issue Tracking CSS*/
+
+html {position: relative; min-height: 100%;}
+body {background: url("../images/bg01.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);color: #838383; font-family:"sans-serif",arial; font-size:12px; margin-bottom: 60px;}
+.inner-body {background:#fff; margin-bottom: 60px;}
+.mrgtop15{margin-top:15px;}
+hr{margin-top:10px !important; margin-bottom:10px !important;}
+
+/*Top Nav Bar Custom CSS*/
+header{background: url("../images/topbg.jpg") no-repeat top center;}
+
+
+
+
+.navbar-default{background:#000928 url("../images/topbg.jpg") !important;padding:0px 0px;padding:0px 0px;border:none !important; box-shadow:none !important;}
+.navbar-brand{color:#fff !important; font-size: 20px; position:relative;top:-60px;}
+.navbar-default .navbar-nav > li > a {color:#fff !important;}
+.navbar-default .navbar-nav > li > a:hover {color:#fff !important;}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+background: none !important;color: #555555;}
+.navbar{border-radius:0px !important; margin-bottom: 20px; padding-top:68px;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+background-color: #fff !important;color: #000928  !important; border-radius: 5px 5px 0px 0px;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #000 !important;}
+.navbar-default .navbar-toggle .icon-bar {background-color: #ccc !important;}
+
+.navbar-default .navbar-nav > .active > a{background:#fff !important;}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {background-color: #fff !important;color: #262626;text-decoration: none;}
+
+
+.container-inner{background:#fff;padding:10px 15px;margin-bottom:25px;}
+.bootstrap-select > .btn {padding-right: 25px;width: 100%;text-align:left;}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {width:100%;}
+.bootstrap-select .btn-default{background:#fff !important}
+.bootstrap-select.btn-group .btn .caret {
+    margin-top: -2px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    vertical-align: middle;
+}
+
+.bootstrap-select .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #4b66a0 !important;
+    background-image: linear-gradient(to bottom, #6384cb  0px, #4b66a0 100%) !important;
+    background-repeat: repeat-x;
+	color:#fff;
+}
+
+.mandatory{color:#ff0000;}
+
+	form.cmxform label.error, label.error {
+	color: red;
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 3px;
+	}
+
+
+/*Login details*/	
+.account-container{margin:100px auto;display:block;max-width:380px; position:relative; background:#fff; border:1px solid #ccc; box-shadow: 0px 20px 10px #132b73;}
+.account-container .circle {
+    background: #fff none repeat scroll 0 0;
+    border: 3px solid #1f4488;
+    border-radius: 50%;
+    left: 33%;
+    padding: 31px 15px;
+    position: absolute;
+    top: -68px;
+}
+.account-container .content{padding:60px 25px 40px 25px;  }
+.account-container h4{color:#525252;font-size:1.5em;margin:1em 0;}
+.login-fields p{color:#525252;}
+.login-fields .field{margin-bottom:1.25em;}
+p {font: 12px/1.7em 'verdana';}
+.frgt-pass{padding-top:5px !important;}
+.mrgtop100{margin-top:100px;}
+
+/*Form*/
+.form-horizontal .control-label {text-align: left !important;}
+hr{border-color:#dadada !important;}
+
+fieldset.scheduler-border {
+    background: #f3f3f3 none repeat scroll 0 0 !important;
+    border: 1px groove #ddd !important;
+    box-shadow: 0 5px 5px #e7e7e7 !important;
+    margin: 0 0 1.5em !important;
+    padding: 1.5em  3em !important;
+}
+legend.scheduler-border {
+    border: medium none;
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    margin-bottom: 0 !important;
+    padding: 0 10px;
+    text-align: left !important;
+    width: 40%;
+}
+
+/*Input style*/
+
+input[type="text"], input[type="password"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  /*font-size: 18px;*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+.input-style input[type="text"], input[type="password"]{
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #ccc;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+}
+.input-style input[type="text"]:focus, .input-style input[type="text"].focus , .input-style input[type="password"]:focus, .input-style input[type="password"].focus {border-bottom: solid 2px #66afe9;}
+
+/*Pagination*/
+.pagination{margin:0px 0px 10px 0px; !important;}
+
+/*Alert box*/
+.alert{padding:8px 30px !important;}
+.modal-header {
+    background: none repeat scroll 0 0 #428bca !important;
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+}
+
+	.table > thead > tr {
+    background: linear-gradient(to bottom, #f8f8f8 0px, #ececec 100%) repeat-x scroll 0 0 #f2f2f2;
+    color: #707070;
+    font-weight: 400;
+}
+
+
+.gallery h4 {
+    color: #000;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/*Footer*/
+
+.footer {position: absolute; bottom: 0; height:62px; width: 100%; /* Set the fixed height of the footer here */
+background-color: #f1f1f1;}
+.container .text-muted {margin: 20px 0; text-align:center; color:#333 !important;}
+.signfooter{background:#132b73 !important; color:#fff !important;}
+.signfooter .text-muted{color:#84c1f2 !important;}
+
+
+
+/*Media queries */
+
+@media (max-width:979px)
+{
+.sub-navbar .container > ul > li{min-width:85px;}
+.sub-navbar .container{padding-left:0px;padding-right:0px;}
+}
+
+@media (max-width:767px)
+{
+.sub-navbar{margin-left:0px;margin-right:0px;}
+.sub-navbar-inner{height:auto;}
+.sub-navbar .container > ul {width:100%;height:auto;border:none;}
+.sub-navbar .container > ul > li {width:33%; border:none;margin-bottom:0px;height:70px;}
+.sub-navbar .container{padding-left:0px;padding-right:0px;}
+}
+
+@media (max-width:480px){
+
+.account-container{margin:115px auto;}
+#bigstat .stat{float: left;display: block;margin-bottom: 1em;width:50%;}
+#bigstat .stat:nth-child(2){border:none;}
+}

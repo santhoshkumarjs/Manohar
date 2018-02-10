@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paint Brush</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/component.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/hallooou.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+	$( document ).ready(function() {
+			
+				$('.mm_tooltip').tooltip({
+					selector: "[data-toggle=tooltip]",
+					container: "body"
+				})
+			
+		 
+			$('.thumbnails').hover(
+				function(){
+					$(this).find('.caption').slideDown(300); //.fadeIn(250)
+					$(this).find('.buynow').css("display","block"); //.fadeIn(250)
+				},
+				function(){
+					$(this).find('.caption').slideUp(200); //.fadeOut(205)
+					$(this).find('.buynow').css("display","none"); //.fadeIn(250)
+				}
+			);
+			$('.orbit-container').hover(
+				function(){
+					$(this).find('.like_add').css("display","block"); //.fadeIn(250)
+				},
+				function(){
+					$(this).find('.like_add').css("display","none"); //.fadeIn(250)
+				}
+			);
+			$(".btn-pref .btn").click(function () {
+			$(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+			// $(".tab").addClass("active"); // instead of this do the below 
+			$(this).removeClass("btn-default").addClass("btn-primary");   
+		});
+		
+		
+		$(".like_add a").tooltip();
+		
+		//TOGGLE ACTION
+		$('[data-toggle="collapse"]').on('click', function() {
+					var $this = $(this),
+							$parent = typeof $this.data('parent')!== 'undefined' ? $($this.data('parent')) : undefined;
+					if($parent === undefined) { /* Just toggle my  */
+						$this.find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+						return true;
+					}
+
+					/* Open element will be close if parent !== undefined */
+					var currentIcon = $this.find('.glyphicon');
+					currentIcon.toggleClass('glyphicon-plus glyphicon-minus');
+					$parent.find('.glyphicon').not(currentIcon).removeClass('glyphicon-minus').addClass('glyphicon-plus');
+
+		});
+		
+		//BOTTOM SCRIPT
+			   var readURL = function(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+					$('.profile-pic').attr('src', e.target.result);
+				}
+		
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+		
+
+		$(".file-upload").on('change', function(){
+			readURL(this);
+		});
+		
+		$(".upload-button").on('click', function() {
+		   $(".file-upload").click();
+		});
+		
+		/* count */
+		$('.qtyplus').click(function(e){
+			// Stop acting like a button
+			e.preventDefault();
+			var currenttextbox = $(this).closest('form').find('.qty');
+
+			var currentVal = parseInt(currenttextbox.val());
+			// If is not undefined
+			if (!isNaN(currentVal)) {
+				currenttextbox.val(currentVal + 1);
+			} else {
+				currenttextbox.val(0);
+			}
+		});
+		// This button will decrement the value till 0
+		$(".qtyminus").click(function(e) { 
+			// Stop acting like a button
+			e.preventDefault();
+			var currenttextbox = $(this).closest('form').find('.qty');
+			var currentVal = parseInt(currenttextbox.val());
+			if (!isNaN(currentVal) && currentVal > 0) {
+				currenttextbox.val(currentVal - 1);
+			} else {
+				currenttextbox.val(0);
+			}
+		});
+		/* count end */
+		/* payment Tab */
+		$('.paymentsection h4').click(function(event) {
+		  event.preventDefault();
+		  $(this).addClass('active arrow');
+		  $(this).siblings().removeClass('active arrow');
+
+		  var ph = $(this).parent().height();
+		  var ch = $(this).next().height();
+
+		  if (ch > ph) {
+			$(this).parent().css({
+			  'min-height': ch + 'px'
+			});
+		  } else {
+			$(this).parent().css({
+			  'height': 'auto'
+			});
+		  }
+		});
+
+		function tabParentHeight() {
+		  var ph = $('.paymentsection').height();
+		  var ch = $('.paymentsection ul').height();
+		  if (ch > ph) {
+			$('.paymentsection').css({
+			  'height': ch + 'px'
+			});
+		  } else {
+			$(this).parent().css({
+			  'height': 'auto'
+			});
+		  }
+		}
+
+		$(window).resize(function() {
+		  tabParentHeight();
+		});
+
+		$(document).resize(function() {
+		  tabParentHeight();
+		});
+		tabParentHeight();
+		
+		/* payment Tab End */
+		
+		//newBill Address
+		$(document).ready(function() {
+			$('input[type="radio"]').click(function() {
+				if($(this).attr('id') == 'NewBillAddress') {
+					$('#show-me').show('slow');           
+				}
+				else {
+					$('#show-me').hide('slow');   
+				}
+			});
+		});
+
+	});
+</script>
+</head><!--/head-->
+
+<body id="home">
+	<div class="header-v5 header-static header-fixed-shrink">
+			<!-- Navbar -->
+			<div class="navbar navbar-default navbar-custom navbar-fixed-top mega-menu" role="navigation">
+				<!-- Topbar v3 -->
+				<div class="topbar-v3 disabled">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<!-- Topbar Navigation -->
+								<ul class="left-topbar">
+									<li><a href="mailto:info@artgallery.com" target="_blank">Info@artgallery.com</a></li>
+									<li><a href="callto:+91 98840 98840">+91 98840 98840</a></li>
+									<li>We deliver worldwide</li>
+								</ul><!--/end left-topbar-->
+							</div>
+							<div class="col-sm-6 tb_right">
+								<ul class="list-inline right-topbar pull-right">
+									<li>
+										<div class="tbr-info">
+											<span><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></span>
+											<div class="tbr-inner">
+												<a href="account.html">My Account</a>
+												<a href="wishlist.html">My Wishlist</a>
+												<a href="model.html" data-toggle="modal" data-target="#login-modal">Login</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tbr-info"><span><i class="fa fa-heart"></i> <a href="wishlist.html"> Wishlist (0)</a></span></div>
+									</li>
+									<li>
+										<div class="tbr-info topcart">
+											<span><i class="ti-shopping-cart"></i><a href="#">cart (2)</a></span>
+											<div class="header-xtra pull-right">
+												<div class="cart-info">
+													<div>
+														<div class="col-md-6 col-xs-6">
+															<a href="cart.html" class="btn btn-grey">View Cart</a>
+														</div>
+														<div class="col-md-6 col-xs-6">
+															<a href="checkout.html" class="btn btn-grey">Checkout</a>
+														</div>
+													</div>
+													<div class="ci-total">Subtotal: $750.00</div>
+													<small>You have <em class="highlight">2 item(s)</em> in your shopping bag</small>
+													<div class="ci-item">
+														<a href="art-inner.html"><img src="images/art/01.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Lorem Ipsum is simply dummy</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													<div class="ci-item">
+														<a href="print-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="print-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>	
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													<div class="ci-item">
+														<a href="art-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div><!--/container-->
+				</div>
+			<!-- End Topbar v3 -->
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="row mrg_0">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand page-scroll" href="index.html">
+								<img id="logo-header" class="mobileview" src="images/paintbrush-logomobile.png" alt="Logo">
+								<img id="logo-header1" class="webview" src="images/paintbrush-logo.png" alt="Logo">
+							</a>
+						</div>
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<!-- Nav Menu -->
+						<ul class="nav navbar-nav cl-effect-5">
+							<!-- Pages -->
+							<li>
+								<a href="art.html" class="dropdown-toggle">art</a>
+							</li>
+							<li>
+								<a href="print.html" class="dropdown-toggle">print</a>
+							</li>
+							<li>
+								<a href="artist.html" class="dropdown-toggle">artist</a>
+							</li>
+							<li class="dropdown">
+								<a href="collection.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									collections <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="collection.html">All</a></li>
+									<li><a href="illustration.html">Illustration</a></li>
+									<li><a href="illustration.html">Image</a></li>
+									<li><a href="illustration.html">Impressionism</a></li>
+									<li><a href="illustration.html">Minimalism</a></li>
+									<li><a href="illustration.html">Naive</a></li>
+									<li><a href="illustration.html">Photorealism</a></li>
+									<li><a href="illustration.html">Realism</a></li>
+									<li><a href="illustration.html">Surrealism</a></li>
+									<li><a href="illustration.html">Traditional</a></li>
+									<li><a href="illustration.html">Tribal</a></li>
+								</ul>
+							</li>
+							<!-- End Gifts -->
+
+							<!-- Books -->
+							<li class="dropdown">
+								<a href="offer.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									offers <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="offer.html">Art Work</a></li>
+									<li><a href="offer.html">Object Art</a></li>
+								</ul>
+							</li>
+							<!-- End Books -->
+							<!-- Clothes -->
+							<li class="dropdown">
+								<a href="more.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									more <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="soon.html">Gift Vouchers</a></li>
+									<li><a href="soon.html">Artify</a></li>
+									<li><a href="soon.html">the world of mojarto</a></li>
+									<li><a href="soon.html">events</a></li>
+								</ul>
+							</li>
+							<!-- End Clothes -->
+						</ul>
+						<!-- End Nav Menu -->
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- End Navbar -->
+		</div>
+		<!--=== End Header v5 ===-->
+	<div class="clearfix"></div>
+	<section class="sectiontop">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 content_left checkout">
+					<div class="panel-group" id="accordion" style="min-height:200px;">
+						<div class="panel panel-default">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									<div class="deliver_address">
+										<div class="panel-title">
+											<h5 class="order_header bordertopbtm edit"><span class="one">1</span> Enter Address Information</small> </h5>
+										</div>
+									</div>
+								</a>
+								<div id="collapseOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="form-horizontal scheduler-border">
+											<form role="form">
+												<fieldset class="">
+													<h5 class="shipping_title">Shipping Address</h5>
+													<div style="background:#f3f3f3;">
+													<div class="form-group">
+														<label class="col-md-12" for="card-number">Name</label>
+														<div class="col-md-12">
+															<input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Name" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-12" for="card-holder-name">Your Email</label>
+														<div class="col-md-12">
+															<input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Email"  />
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-12" for="card-number">Phone Number</label>
+														<div class="col-md-12">
+															<input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Phone Number" />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12 col-xs-12">
+															<label>Shipping Address</label>
+															<textarea class="form-control" rows="2" id="comment"placeholder="Address"></textarea>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-6 col-xs-12">
+														<label>Country</label>
+															<select id="country" name="country" class="form-control" value="" >
+																<option value="1">Select Country</option>
+																<option value="2">Afghanistan</option>
+																<option value="3">Albania</option>
+																<option value="4">Algeria</option>
+																<option value="5">Andorra</option>
+																<option value="6">Belgium</option>
+																<option value="7">Canada</option>
+																<option value="8">Dominica</option>
+																<option value="9">Estonia</option>
+																<option value="10">Germany</option>
+																<option value="11">Hong Kong</option>
+																<option value="12">India</option>
+																<option value="13">Japan</option>
+																<option value="14">Kenya</option>
+																<option value="15">Lithuania</option>
+																<option value="16">Malaysia</option>
+																<option value="17">New Zealand</option>
+															</select>
+														</div>
+														<div class="col-md-6 col-xs-12">
+														<label>State</label>
+															<select id="state" name="state" class="form-control" value="" >
+																<option value="1">Select state</option>
+																<option value="2">Afghanistan</option>
+																<option value="3">Albania</option>
+																<option value="4">Algeria</option>
+																<option value="5">Andorra</option>
+																<option value="6">Belgium</option>
+																<option value="7">Canada</option>
+																<option value="8">Dominica</option>
+																<option value="9">Estonia</option>
+																<option value="10">Germany</option>
+																<option value="11">Hong Kong</option>
+																<option value="12">India</option>
+																<option value="13">Japan</option>
+																<option value="14">Kenya</option>
+																<option value="15">Lithuania</option>
+																<option value="16">Malaysia</option>
+																<option value="17">New Zealand</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-6 col-xs-12">
+														<label>City</label>
+															<select id="city" name="city" class="form-control" value="" >
+																<option value="1">Select City</option>
+																<option value="2">Afghanistan</option>
+																<option value="3">Albania</option>
+																<option value="4">Algeria</option>
+																<option value="5">Andorra</option>
+																<option value="6">Belgium</option>
+																<option value="7">Canada</option>
+																<option value="8">Dominica</option>
+																<option value="9">Estonia</option>
+																<option value="10">Germany</option>
+																<option value="11">Hong Kong</option>
+																<option value="12">India</option>
+																<option value="13">Japan</option>
+																<option value="14">Kenya</option>
+																<option value="15">Lithuania</option>
+																<option value="16">Malaysia</option>
+																<option value="17">New Zealand</option>
+															</select>
+														</div>
+														<div class="span1"></div>
+														<div class="col-md-6 col-xs-12">
+															<label>Zip / Postal Code</label>
+															<input maxlength="6" type="text" required="required" class="form-control" placeholder="Enter Postal code" />
+														</div>
+													</div>
+													</div>
+												</fieldset>
+											</form>
+											<form  role="form">
+												<fieldset>
+													<h5 class="shipping_title">Billing Address</h5>
+													<ul class="question-col billing_add" style="background:#f3f3f3; padding:0px 0px 92px">
+														<li class="col-md-12 col-sm-12  col-xs-12">
+															<label>
+																<input checked="checked" name="radio" type="radio">
+																<span class="lbl padding-8">Same as shipping address</span>
+															</label>
+														</li>
+														<li class="col-md-12 col-sm-12  col-xs-12">
+															<label>
+																<input name="radio" type="radio" id="NewBillAddress">
+																<span class="lbl padding-8">Enter a new billing address</span>
+															</label>
+														</li>
+													</ul>
+												</fieldset>		
+											</form>
+											<form style="display:none;" class="billFields" id="show-me">
+												<fieldset>
+													<div style="background:#f3f3f3;">
+													<div class="form-group">
+														<label class="col-md-12" for="card-number">Name</label>
+														<div class="col-md-12">
+															<input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Name" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-12" for="card-holder-name">Your Email</label>
+														<div class="col-md-12">
+															<input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Email"  />
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-12" for="card-number">Phone Number</label>
+														<div class="col-md-12">
+															<input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Phone Number" />
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-12 col-xs-12">
+															<label>Billing Address</label>
+															<textarea class="form-control" rows="2" id="comment" placeholder="Address"></textarea>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-6 col-xs-12">
+														<label>Country</label>
+															<select id="country" name="country" class="form-control" value="" >
+																<option value="1">Select Country</option>
+																<option value="2">Afghanistan</option>
+																<option value="3">Albania</option>
+																<option value="4">Algeria</option>
+																<option value="5">Andorra</option>
+																<option value="6">Belgium</option>
+																<option value="7">Canada</option>
+																<option value="8">Dominica</option>
+																<option value="9">Estonia</option>
+																<option value="10">Germany</option>
+																<option value="11">Hong Kong</option>
+																<option value="12">India</option>
+																<option value="13">Japan</option>
+																<option value="14">Kenya</option>
+																<option value="15">Lithuania</option>
+																<option value="16">Malaysia</option>
+																<option value="17">New Zealand</option>
+															</select>
+														</div>
+														<div class="col-md-6 col-xs-12">
+														<label>State</label>
+															<select id="state" name="state" class="form-control" value="" >
+																<option value="1">Select state</option>
+																<option value="2">Afghanistan</option>
+																<option value="3">Albania</option>
+																<option value="4">Algeria</option>
+																<option value="5">Andorra</option>
+																<option value="6">Belgium</option>
+																<option value="7">Canada</option>
+																<option value="8">Dominica</option>
+																<option value="9">Estonia</option>
+																<option value="10">Germany</option>
+																<option value="11">Hong Kong</option>
+																<option value="12">India</option>
+																<option value="13">Japan</option>
+																<option value="14">Kenya</option>
+																<option value="15">Lithuania</option>
+																<option value="16">Malaysia</option>
+																<option value="17">New Zealand</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-md-6 col-xs-12">
+														<label>City</label>
+															<select id="city" name="city" class="form-control" value="" >
+																<option value="1">Select City</option>
+																<option value="2">Afghanistan</option>
+																<option value="3">Albania</option>
+																<option value="4">Algeria</option>
+																<option value="5">Andorra</option>
+																<option value="6">Belgium</option>
+																<option value="7">Canada</option>
+																<option value="8">Dominica</option>
+																<option value="9">Estonia</option>
+																<option value="10">Germany</option>
+																<option value="11">Hong Kong</option>
+																<option value="12">India</option>
+																<option value="13">Japan</option>
+																<option value="14">Kenya</option>
+																<option value="15">Lithuania</option>
+																<option value="16">Malaysia</option>
+																<option value="17">New Zealand</option>
+															</select>
+														</div>
+														<div class="span1"></div>
+														<div class="col-md-6 col-xs-12">
+															<label>Zip / Postal Code</label>
+															<input maxlength="6" type="text" required="required" class="form-control" placeholder="Enter Postal code" />
+														</div>
+													</div>
+												</div>	
+												</fieldset>
+											</form>
+											<div>
+												<a href="#" class="btn btn-default add-to-cart pull-right" style="margin:5px 0px 5px 0px;"> Continue</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="panel panel-default review_order">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									<div class="deliver_address">
+										<div class="panel-title">
+											<h5 class="order_header bordertopbtm edit"><span class="one">2</span>  Review Your Order </h5>
+										</div>
+									</div>
+								</a>
+								<div id="collapseTwo" class="panel-collapse collapse order_item">
+									<div class="panel-body">
+										<div class="panel">
+										<div class="row favo_list">
+											<div class="col-md-3 col-xs-12">
+												<a href="art-inner.html"><img class="img-responsive" src="images/art/01.jpg" alt=" " title="" /></a>
+											</div>
+											<div class="col-md-9 col-xs-12">
+												<h4><a href="art-inner.html">Lorem Ipsum is simply dummy text of the printing</a><span class="items"><b>$32,630</b> <span class="off_price">(-45%)</span> </span></h4>
+												<div class="thirdrow">
+													<p>by <b>Surendra Pal Singh</b></p>
+												</div>
+												<p >Type : Original Artwork<br>
+												Size : 26 X 28</p>
+												<form id='myform' method='POST' action='#'>
+													<label>QTY : </label>
+													<input type='button' value='-' class='qtyminus' field='quantity1' />
+													<input type='text' name='quantity1' value='0' class='qty' />
+													<input type='button' value='+' class='qtyplus' field='quantity1' />
+												</form>
+												<p class="action">
+													<a href="#"><i class="fa fa-trash-o" ></i> Remove</a>
+												</p>
+											</div>
+										</div>
+										<div class="row favo_list">
+											<div class="col-md-3 col-xs-12">
+												<a href="art-inner.html"><img class="img-responsive" src="images/art/01.jpg" alt=" " title="" /></a>
+											</div>
+											<div class="col-md-9 col-xs-12">
+												<h4><a href="art-inner.html">Lorem Ipsum is simply dummy text of the printing</a><span class="items"><b>$32,630</b> <span class="off_price">(-45%)</span> </span></h4>
+												<div class="thirdrow">
+													<p>by <b>Surendra Pal Singh</b></p>
+												</div>
+												<p >Type : Original Artwork<br>
+												Size : 26 X 28</p>
+												<form id='myform' method='POST' action='#'>
+													<label>QTY : </label>
+													<input type='button' value='-' class='qtyminus' field='quantity1' />
+													<input type='text' name='quantity1' value='0' class='qty' />
+													<input type='button' value='+' class='qtyplus' field='quantity1' />
+												</form>
+												<p class="action">
+													<a href="#"><i class="fa fa-trash-o" ></i> Remove</a>
+												</p>
+											</div>
+											
+										</div>
+										<div>
+											<a href="#" class="btn btn-default add-to-cart pull-right" style="margin:10px 15px;"> Continue</a>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default review_order">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									<div class="deliver_address">
+										<div class="panel-title">
+											<h5 class="order_header bordertopbtm edit"><span class="one">3</span>  Enter Payment Info </h5>
+										</div>
+									</div>
+								</a>
+								<div id="collapseThree" class="panel-collapse collapse order_item">
+									<div class="panel-body">
+										<div class="panel">
+											<div class="paymentsection">
+											<h4 class="active arrow">Net Banking</h4>
+											  <ul class="question-col">
+													<lh><h5 class="netbank_label"><label>Pay using by Net Banking</label></h5></lh>
+													<lh><p class="netbank_para">Popular banks</p></lh>
+												  <li class="col-md-4 col-sm-4  col-xs-6">
+													<label>
+													  <input name="radio" type="radio">
+													  <span class="lbl padding-8"><img src="images/HDFC.png"></span> </label>
+												  </li>
+												  <li class="col-md-4 col-sm-4  col-xs-6">
+													<label>
+													  <input checked="checked" name="radio" type="radio">
+													  <span class="lbl padding-8"><img src="images/ICICI.png"></span> </label>
+												  </li>
+												  <li class="col-md-4 col-sm-4  col-xs-6">
+													<label>
+													  <input name="radio" type="radio">
+													  <span class="lbl padding-8"><img src="images/SBI.png"></span></span> </label>
+												  </li>
+												  <li class="col-md-4 col-sm-4  col-xs-6">
+													<label>
+													  <input name="radio" type="radio">
+													  <span class="lbl padding-8"><img src="images/AXIX.png"></span> </label>
+												  </li>
+												  <li class="col-md-4 col-sm-4  col-xs-6">
+													<label>
+													  <input name="radio" type="radio">
+													  <span class="lbl padding-8"><img src="images/KOTAK.png"></span> </label>
+												  </li>
+												  <li class="col-md-4 col-sm-4  col-xs-6">
+													<label>
+													  <input name="radio" type="radio">
+													  <span class="lbl padding-8"><img src="images/CITY.png"></span> </label>
+												  </li>
+												   <lh><p class="netbank_para">Select Your Own Banking</p></lh>
+													<lh>
+														<div class="col-md-12">
+														<select id="CreditCardType" name="CreditCardType" class="form-control">
+															<option value="00">-- Select Bank --</option>
+															<option value="01">Allahabad Bank</option>
+															<option value="02">Andhra Bank</option>
+															<option value="03">Axis Bank</option>
+															<option value="04">Bank of India</option>
+															<option value="05">Bank of Baroda</option>
+															<option value="06">Canara Bank</option>
+															<option value="07">Central Bank of India</option>
+															<option value="08">Corporation Bank</option>
+															<option value="09">HDFC Bank</option>
+															<option value="10">Indian Bank</option>
+															<option value="11">Indian Overseas Bank</option>
+															<option value="12">IDBI Bank</option>
+															<option value="13">ICICI Bank</option>
+															<option value="14">Karur Vysya Bank</option>
+															<option value="15">Kotak Mahindra Bank</option>
+															<option value="16">Oriental Bank of Commerce</option>
+															<option value="17">Punjab & Sindh Bank</option>
+															<option value="18">Punjab National Bank</option>
+															<option value="19">State Bank of India</option>
+															<option value="20">Syndicate Bank</option>
+															<option value="21">UCO Bank</option>
+															<option value="22">Vijaya Bank</option>
+														</select>
+													</div>
+													<div>
+													<a href="#" class="btn btn-default add-to-cart pull-right" style="margin:0px 15px;"> Continue</a>
+													</div>
+												</lh>
+											</ul>	
+											  <h4>Credit Card</h4>
+											<ul>
+												<li>
+													<div class="form-horizontal">
+														<form role="form">
+															<fieldset>
+															<div id="paymentOptionCreditCard" class="paymentOption">
+																<label>Pay using by Credit Card</label>
+																<img alt="" src="images/cc_visa.gif" class="cc ccIcon" style="display: inline;">
+																<img alt="" src="images/cc_mc.gif" class="cc ccIcon" style="display: inline;">
+																<img alt="" src="images/cc_amex.gif" class="cc ccIcon" style="display: inline;">
+															</div>
+																<div class="form-group">
+																	<div class="col-md-12">Card Type</div>
+																	<div class="col-md-12">
+																		<select id="CreditCardType" name="CreditCardType" class="form-control">
+																			<option value="01">Select Card</option>
+																			<option value="02">Visa</option>
+																			<option value="03">MasterCard</option>
+																			<option value="04">American Express</option>
+																			<option value="05">Discover</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-12">Card Number</div>
+																	<div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-12">Card Holder Name</div>
+																	<div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-5">Card CVV <input type="text" class="form-control" name="car_code" value="" /></div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-12">
+																		Expiration Date
+																	</div>
+																	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+																		<select class="form-control" name="">
+																			<option value="">Month</option>
+																			<option value="01">01</option>
+																			<option value="02">02</option>
+																			<option value="03">03</option>
+																			<option value="04">04</option>
+																			<option value="05">05</option>
+																			<option value="06">06</option>
+																			<option value="07">07</option>
+																			<option value="08">08</option>
+																			<option value="09">09</option>
+																			<option value="10">10</option>
+																			<option value="11">11</option>
+																			<option value="12">12</option>
+																	</select>
+																	</div>
+																	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+																		<select class="form-control" name="">
+																			<option value="">Year</option>
+																			<option value="2015">2015</option>
+																			<option value="2016">2016</option>
+																			<option value="2017">2017</option>
+																			<option value="2018">2018</option>
+																			<option value="2019">2019</option>
+																			<option value="2020">2020</option>
+																			<option value="2021">2021</option>
+																			<option value="2022">2022</option>
+																			<option value="2023">2023</option>
+																			<option value="2024">2024</option>
+																			<option value="2025">2025</option>
+																	</select>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-12">
+																		<span>Pay secure using your credit card.</span>
+																	</div>
+																</div>
+															</fieldset>
+														</form>
+													</div>
+												</li>
+												<div>
+													<a href="#" class="btn btn-default add-to-cart pull-right" style="margin:10px 15px;"> Continue</a>
+												</div>
+											</ul>
+											  <h4>Debit Card</h4>
+											  <ul>
+												<li>
+													<div class="form-horizontal">
+														<form role="form">
+															<fieldset>
+															<div id="paymentOptionCreditCard" class="paymentOption">
+																<label>Pay using by Debit Card</label>
+																<img alt="" src="images/cc_visa.gif" class="cc ccIcon" style="display: inline;">
+																<img alt="" src="images/cc_mc.gif" class="cc ccIcon" style="display: inline;">
+																<img alt="" src="images/cc_amex.gif" class="cc ccIcon" style="display: inline;">
+															</div>
+																<div class="form-group">
+																	<div class="col-md-12">Card Type</div>
+																	<div class="col-md-12">
+																		<select id="CreditCardType" name="CreditCardType" class="form-control">
+																			<option value="01">Select Card</option>
+																			<option value="02">Visa</option>
+																			<option value="03">MasterCard</option>
+																			<option value="04">American Express</option>
+																			<option value="05">Discover</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-12">Card Number</div>
+																	<div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-12">Card Holder Name</div>
+																	<div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-5">Card CVV <input type="text" class="form-control" name="car_code" value="" /></div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-12">
+																		Expiration Date
+																	</div>
+																	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+																		<select class="form-control" name="">
+																			<option value="">Month</option>
+																			<option value="01">01</option>
+																			<option value="02">02</option>
+																			<option value="03">03</option>
+																			<option value="04">04</option>
+																			<option value="05">05</option>
+																			<option value="06">06</option>
+																			<option value="07">07</option>
+																			<option value="08">08</option>
+																			<option value="09">09</option>
+																			<option value="10">10</option>
+																			<option value="11">11</option>
+																			<option value="12">12</option>
+																	</select>
+																	</div>
+																	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+																		<select class="form-control" name="">
+																			<option value="">Year</option>
+																			<option value="2015">2015</option>
+																			<option value="2016">2016</option>
+																			<option value="2017">2017</option>
+																			<option value="2018">2018</option>
+																			<option value="2019">2019</option>
+																			<option value="2020">2020</option>
+																			<option value="2021">2021</option>
+																			<option value="2022">2022</option>
+																			<option value="2023">2023</option>
+																			<option value="2024">2024</option>
+																			<option value="2025">2025</option>
+																	</select>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="col-md-12">
+																		<span>Pay secure using your Debit card.</span>
+																	</div>
+																</div>
+															</fieldset>
+														</form>
+													</div>
+												</li>
+												<div>
+													<a href="#" class="btn btn-default add-to-cart pull-right" style="margin:10px 15px;"> Continue</a>
+												</div>
+											  </ul>
+											  
+											  <h4>Gift Card</h4>
+											  <ul>
+												<li>
+													<div class="form-horizontal">
+														<form role="form">
+															<fieldset>
+																<div class="form-group">
+																	<div class="col-md-4 col-xs-6 text-right"><label>Coupen code</label></div>
+																	<div class="col-md-4 col-xs-6 "><input type="text" class="form-control coupen_code" name="car_number" value="" /></div>
+																	<div class="col-md-4 col-xs-12"><a href="#" class="btn btn-default pull-right apply" > Apply</a></div>
+																</div>
+															</fieldset>
+														</form>	
+													</div>
+												</li>
+											  </ul>
+											  <h4>Delivery Method</h4>
+											  <ul class="question-col">
+													<lh><h5 class="netbank_label"><label>Pay using by Delivery Method</label></h5></lh>
+												  <li class="col-md-6 col-sm-6  col-xs-12">
+													<label>
+													  <input name="radio" type="radio">
+													  <span class="lbl padding-8">Cash On Delivery</label>
+												  </li>
+												  <li class="col-md-6 col-sm-6  col-xs-12">
+													<label>
+													  <input checked="checked" name="radio" type="radio">
+													  <span class="lbl padding-8">Card On Delivery</label>
+												  </li>
+												  <div>
+													<a href="#" class="btn btn-default add-to-cart pull-right" style="margin:10px 15px;"> Continue</a>
+												</div>
+											</ul>
+											</div>
+									</div>
+									</div>
+								</div>
+							</div>							
+					</div>
+				</div>
+				
+				<div class="col-md-4 content_right" >
+					<div class="deliver_address" ><!-- style="position:fixed" -->
+						<h5 class="order_header bordertopbtm edit"> Your Orders </h5>
+						<div class="well">
+							<div class="order_content">
+								<div class="tab-pane">
+									<div class="art-price">
+										<h4>Total Price :<span class="prices"> $72,630</span></h4>
+										<p>Inclusive of Shipping and Handling</p>
+									</div>
+									<div class="order_para">
+										<p class="summary_header">ORDER SUMMARY</p>
+										<p>Price (<small style="color: #000"> Item 2 </small>)<span class="items">$72,630</span></p>
+										<p>Handling Charges<span class="items color_free">FREE</span></p>
+										<p>Estimated VAT/CST*<span class="items">$32.19</span></p>
+										<p><b>Grand Total Price<span class="items">$104.82</span></b></p>
+									</div>
+									<div class="arttocart">
+										<a href="#" class="btn btn-orange btn-block"> TRACK YOUR ORDER </a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>	
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="soon.html">Online Help</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="soon.html">Order Status</a></li>
+								<li><a href="soon.html">Change Location</a></li>
+								<li><a href="policy.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Terms of Use</a></li>
+								<li><a href="policy.html">Privecy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Company Information</a></li>
+								<li><a href="soon.html">Careers</a></li>
+								<li><a href="soon.html">Store Location</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-widget">
+							<h2>newsletter</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+						<div>
+							<ul class="social_media padd0">
+								<li class="circle"><a href="#"><i class="ti-facebook"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-google"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-pinterest"></i></a></li>
+							</ul>
+						</div>
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-12">
+						<p class="pull-left">Copyright © 2017 paintbrush Inc. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<ul class="pay_cards">
+							<li><img src="images/cards/visa.jpg" alt="Visa Card" title="Visa Card" /></li>
+							<li><img src="images/cards/master.jpg" alt="Master Card" title="Master Card" /></li>
+							<li><img src="images/cards/discover.jpg" alt="Discover Card" title="Discover Card" /></li>
+							<li><img src="images/cards/american.jpg" alt="American Card" title="American Card" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	<!--Modal Window--->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	
+	</div>
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+   	<script>
+	 wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>
+</body>
+
+</html>

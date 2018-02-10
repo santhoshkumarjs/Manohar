@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="images/favicon.png" >
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css" media="screen,projection" />
+
+	<link rel="stylesheet" href="css/animate.min.css" media="screen,projection" />
+	<link rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<link rel="stylesheet" href="css/owl.carousel.css" media="screen,projection" />
+	<link rel="stylesheet" href="css/owl.transitions.css" media="screen,projection" />
+	<link rel="stylesheet" href="css/owl.theme.css" media="screen,projection" />
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<!-- Choose your default colors -->
+	<link rel="stylesheet" href="css/color1.css">
+	
+<style>
+	.bg{ width:100%; height:100vh;background: transparent linear-gradient(to bottom, rgba(240,176,0,0.9) 0%, rgba(208, 201, 140, 0.5) 100%) repeat scroll 0% 0%;/*background: transparent linear-gradient(to bottom, rgba(0, 169, 255, 0.75) 0%, rgba(156, 231, 198, 0.75) 100%) repeat scroll 0% 0%;*//*background: transparent linear-gradient(to bottom, rgba(31, 126, 232, 0.75) 0%, rgba(4, 227, 182, 0.75) 100%) repeat scroll 0% 0%;*/}
+	#wstoggle:before{color:#000;}
+	.brandBg{ width:100%; height:100%;	background: transparent linear-gradient(to bottom, rgba(0, 169, 255, 0.75) 0%, rgba(156, 231, 198, 0.75) 100%) repeat scroll 0% 0%;	/*background: transparent linear-gradient(to bottom, rgba(31, 126, 232, 0.75) 0%, rgba(4, 227, 182, 0.75) 100%) repeat scroll 0% 0%;*/}
+	.orange{border-radius: 0;color:#580141;text-transform: uppercase;font-size:15px;position: relative;transition:all 0.5s ease 0s;}
+	.orange:after{content: "";position: absolute;top:0;left:0;width: 0;height:100%;background: #580141;z-index: -1;transition:all 0.5s ease 0s;}
+	.orange:hover:after{width:100%;}
+	.orange:hover{color:#fff;}
+	.orange{color: #e67e22;}
+	.orange:after{background: #FF9900;}
+</style>
+</head>
+
+<body>
+  <!-- Preloader --> 
+    <div id="preloader">
+		<div class="loader">
+            <svg class="circle-loader" height="50" width="50">
+              <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6" stroke-miterlimit="10" />
+            </svg>
+        </div>    
+    </div><!--preloader end-->
+  <!-- Main Container -->
+<main id="app" class="main-section">
+    <!-- header navigation start -->
+    <div class="bg">
+		<div class="logo clearfix"><img src="images/logo.png" alt=""/></div>
+		<div id="wstoggle"><span></span></div>
+		<div class="wsfullmain clearfix">
+			<div class="wsf-halfpart wsfleftpart wsfanimatedcolors">
+				<div class="wsfrightpart-inner clearfix">
+					<ul class="wsfbiglink">
+						<li><a href="#home" class="menuli">Home</a></li>
+						<li><a href="#about" class="menuli">About us</a></li>
+						<li><a href="#resume" class="menuli">Resume</a></li>
+						<li><a href="#experience" class="menuli">Experience</a></li>
+						<li><a href="#education" class="menuli">Education</a></li>
+						<li><a href="#portfolio" class="menuli">Portfolio</a></li>
+						<li><a href="#testimonial" class="menuli">Testimonial</a></li>
+						<!--<li><a href="#ourteam" class="menuli">Our Team</a></li>-->
+						<li><a href="#contact" class="menuli">Contact </a></li>
+					</ul>
+					<div class="wsfbottomdiv clearfix">
+					<ul class="wsfsociallinks">
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+					  <div class="wsfbottomcopytxt">© 2017 www.manoharrpm20.net</div>
+					</div>
+				</div>
+			</div>
+			<div class="wsf-halfpart wsfrightpart clearfix">
+				<div class="wsfleftpart-inner clearfix">
+					<div class="" style="margin:0 auto; text-align:center;"> <img src="images/Login-Student1.png" alt="" /></div>
+					<div class="wsfnamecompany clearfix">My Company Inc.</div>
+					<a href="mailto:manohar.r@m-tutor.com" class="fsfmaillink">manohar.r@m-tutor.com</a> <a href="tel:9791257708" class="fsfmaillink">979-1257-708</a><br><span class="wsfaddresstext">1343, TNHB COLONY<br>Velachery Chennai, 600042</span>
+				</div>
+			</div>
+		</div>
+		<div class="sec-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="home-inner">
+							<div class="center-align home-content">
+								<h1 class="home-title">HI! I'm <span>MANOHAR</span></h1>
+								<h2 class="home-subtitle">UX/UI Designer from Chennai, India</h2>
+								<a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text orange">Hire Me <i class="mdi-content-send left"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-call-to-area">
+					<div class="container">
+						<div class="row">
+						  <a href="#about" class="btn-floating btn-large button-middle call-to-about section-call-to-btn animated btn-up btn-hidden" data-section="#about">
+							<i class="mdi-navigation-expand-more"></i>
+						  </a>
+						</div>
+					</div>
+				  <!-- .container end -->
+				</div>
+			</div>
+			<!-- .container end -->
+		</div>
+	</div>
+    <!-- #header  navigation end -->
+    <!-- Home Section start -->
+    <section id="home" class="scroll-section root-sec grey lighten-5 home-wrap">      
+    </section>
+    <!-- #home Section end -->
+
+<!-- About Section start -->
+<section id="about" class="scroll-section root-sec padd-tb-60 grey lighten-5 about-wrap">
+  <div class="container">
+	<div class="row">
+	  <div class="clearfix about-inner">
+
+		<div class="col-sm-12 col-md-4">
+		  <div class="person-about">
+			<h3 class="about-subtitle">My Story</h3>
+			<p>Hello, I’m a UI/UX Designer &amp; Front End Developer from Chennai, India.</p>
+			<a class="waves-effect waves-light btn-large brand-bg white-text orange" href="resume/ManoharRajendran.doc"><i class="mdi-content-archive left"></i> Download Resume</a>
+		  </div>
+		</div>
+		<!-- about me description -->
+
+		<div class="col-sm-6 col-md-4">
+		  <div class="person-img wow fadeIn">
+			<img class="z-depth-1" src="images/person.jpg" alt="">
+		  </div>
+		</div>
+		<!-- about me image -->
+
+		<div class="col-sm-6 col-md-4">
+		  <div class="person-info">
+			<h3 class="about-subtitle">Personal Information</h3>
+			<h5><span>Name :</span> R.Manohar</h5>
+			<h5><span>Age :</span> 36 Years</h5>
+			<h5><span>Phone :</span> +91-9791257708</h5>
+			<h5><span>Email :</span> manoharrpm20@gmail.com</h5>
+			<h5><span>Address :</span>1343 TNHB Colony, Velachery, Chennai, India</h5>
+		  </div>
+		  <div class="about-social">
+			<ul>
+			  <li><a href="#" class="btn-floating waves-effect waves-light white"><i class="fa fa-facebook"></i></a></li>
+			  <li><a href="#" class="btn-floating waves-effect waves-light white"><i class="fa fa-twitter"></i></a></li>
+			  <li><a href="#" class="btn-floating waves-effect waves-light white"><i class="fa fa-google-plus"></i></a></li>
+			  <li><a href="#" class="btn-floating waves-effect waves-light white"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+		  </div>
+		</div>
+		<!-- about me info -->
+
+	  </div>
+	</div>
+  </div>
+  <!-- .container end -->
+</section>
+<!-- #about Section end -->
+<!-- Resume Section start -->
+<section id="resume" class="scroll-section ">
+	<section id="skill" class="root-sec white skill-wrap">
+	  <div class="sec-overlay">
+		<div class="container">
+		  <div class="row">
+			<div class="clearfix skill-inner">
+			  <div class="col-sm-12 col-md-3">
+				<div class="skill-left">
+				  <h2 class="title">Skills</h2>
+				  <p class="regular-text">Man behind the gun, any sophisticated weapons. Human remains that taking the role. We are experienced in utilizing all resources.</p>
+				</div>
+			  </div>
+
+			  <!-- skills container -->
+			  <div class="col-sm-12 col-md-6 col-md-offset-1">
+				<div class="skill-right">
+				  <div id="skillSlider" class="clearfix skill-graph">
+					
+					<!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="90%">
+							<div class="skill-visiable">
+							  <span class="skill-title">HTML</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">90%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+					
+					<!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="85%">
+							<div class="skill-visiable">
+							  <span class="skill-title">CSS</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">85%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+					
+					<!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="90%">
+							<div class="skill-visiable">
+							  <span class="skill-title">Bootstrap</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">90%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+					
+					<!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="40%">
+							<div class="skill-visiable">
+							  <span class="skill-title">JavaScript</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">40%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+
+					<!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="60%">
+							<div class="skill-visiable">
+							  <span class="skill-title">Jquery</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">60%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+					
+					<!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="90%">
+							<div class="skill-visiable">
+							  <span class="skill-title">Photoshop</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">90%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+					
+					 <!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="60%">
+							<div class="skill-visiable">
+							  <span class="skill-title">Illustrator</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">60%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+
+					<!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="50%">
+							<div class="skill-visiable">
+							  <span class="skill-title">Wordpress</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">50%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+
+					<!-- single skill -->
+					<div class="single-skill">
+					  <div class="after-li">
+						<div class="singel-hr">
+						  <div class="singel-hr-inner" data-height="65%">
+							<div class="skill-visiable">
+							  <span class="skill-title">InDesign</span>
+							  <div class="hr-wrap">
+								<div class="hrc"></div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="skill-count">65%</span>
+						</div>
+					  </div>
+					</div>
+					<!-- /single skill-->
+					
+				  </div>
+				</div>
+			  </div>
+			  <!-- /skills container -->
+			</div>
+		  </div>
+		  <div class="btn-wrapp skl-ctrl">
+			<a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-left"><i class="mdi-navigation-chevron-left "></i></a>
+			<a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-right"><i class="mdi-navigation-chevron-right "></i></a>
+		  </div>
+		</div>
+	  </div>
+		<!-- .container end -->
+    </section>
+
+    <section id="experience" class="root-sec padd-tb-120 experience_bg brand-bg experience-wrap" >
+		<div class="container">
+		  <div class="row">
+			<div class="experience-inner">
+			  <div class="col-sm-12 col-md-10 card-box-wrap">
+				<div class="row">
+				  <div class="clearfix section-head experience-text">
+					<div class="col-sm-12">
+					  <h2 class="title">Experience</h2>
+					  <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+					</div>
+				  </div>
+				  <div class="col-lg-12">
+					<div class="overflow-hidden">
+					  <div class="row">
+						<div id="experienceSlider" class="clearfix card-element-wrapper">
+						  <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+							<div class="card">
+							  <div class="card-image waves-effect waves-block waves-light">
+								<h2 class="left-align card-title-top">March 2016 - Present</h2>
+								<div class="valign-wrapper card-img-wrap">
+								  <img class="activator" src="images/mobile_tutor.jpg" alt="">
+								</div>
+							  </div>
+							  <div class="card-content">
+								<span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-more-vert right"></i></span>
+								<p>mobile tutor pvt(Ltd)</p>
+							  </div>
+							  <div class="card-reveal">
+								<div class="rev-title-wrap">
+								  <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-close right"></i></span>
+								  <p>mobile tutor pvt(Ltd)</p>
+								</div>
+								<p class="rev-content">M-Tutor is an online education platform, offering Engineering Courses that complement classroom learning.</p>
+							  </div>
+							</div>
+						  </div>
+						  <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+							<div class="card">
+							  <div class="card-image waves-effect waves-block waves-light">
+								<h2 class="left-align card-title-top">May 2015 - February 2016</h2>
+								<div class="valign-wrapper card-img-wrap">
+								  <img class="activator" src="images/elumina.jpg" alt="">
+								</div>
+							  </div>
+							  <div class="card-content">
+								<span class="card-title activator brand-text">Lead Web Developer<i class="mdi-navigation-more-vert right"></i></span>
+								<p>Elumina Elearning Services pvt(Ltd) </p>
+							  </div>
+							  <div class="card-reveal">
+								<div class="rev-title-wrap">
+								  <span class="card-title activator brand-text">Lead Web Developer<i class="mdi-navigation-close right"></i></span>
+								  <p>Elumina Elearning Services pvt(Ltd)</p>
+								</div>
+								<p class="rev-content">
+								  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+								</p>
+							  </div>
+							</div>
+						  </div>
+						  <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+							<div class="card">
+							  <div class="card-image waves-effect waves-block waves-light">
+								<h2 class="left-align card-title-top">January 2014 - Present</h2>
+								<div class="valign-wrapper card-img-wrap">
+								  <img class="activator" src="images/datamatics.jpg" alt="">
+								</div>
+							  </div>
+							  <div class="card-content">
+								<span class="card-title activator brand-text">Team Leader<i class="mdi-navigation-more-vert right"></i></span>
+								<p>Datamatics Global Services Limited</p>
+							  </div>
+							  <div class="card-reveal">
+								<div class="rev-title-wrap">
+								  <span class="card-title activator brand-text">Team Leader<i class="mdi-navigation-close right"></i></span>
+								  <p>Datamatics Global Services Limited</p>
+								</div>
+								<p class="rev-content">
+								  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+								</p>
+							  </div>
+							</div>
+						  </div>
+						  <div class="col-sm-4 cold-xs-12 single-card-box">
+							<div class="card">
+							  <div class="card-image waves-effect waves-block waves-light">
+								<h2 class="left-align card-title-top">January 2014 - Present</h2>
+								<div class="valign-wrapper card-img-wrap">
+								  <img class="activator" src="images/mps.jpg" alt="">
+								</div>
+							  </div>
+							  <div class="card-content">
+								<span class="card-title activator brand-text">Senior Executive<i class="mdi-navigation-more-vert right"></i></span>
+								<p>MPS Limited</p>
+							  </div>
+							  <div class="card-reveal">
+								<div class="rev-title-wrap">
+								  <span class="card-title activator brand-text">Senior Executive<i class="mdi-navigation-close right"></i></span>
+								  <p>MPS Limited</p>
+								</div>
+								<p class="rev-content">
+								  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+								</p>
+							  </div>
+							</div>
+						  </div>
+						  <div class="col-sm-4 cold-xs-12 single-card-box">
+							<div class="card">
+							  <div class="card-image waves-effect waves-block waves-light">
+								<h2 class="left-align card-title-top">January 2014 - Present</h2>
+								<div class="valign-wrapper card-img-wrap">
+								  <img class="activator" src="images/zendata.jpg" alt="">
+								</div>
+							  </div>
+							  <div class="card-content">
+								<span class="card-title activator brand-text">Quality Analyst<i class="mdi-navigation-more-vert right"></i></span>
+								<p>codeMantra Pvt Ltd.(Zen data)</p>
+							  </div>
+							  <div class="card-reveal">
+								<div class="rev-title-wrap">
+								  <span class="card-title activator brand-text">Quality Analyst<i class="mdi-navigation-close right"></i></span>
+								  <p>codeMantra Pvt Ltd.(Zen data)</p>
+								</div>
+								<p class="rev-content">
+								  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+								</p>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="btn-wrapp exp-ctrl">
+				<a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+				<a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+    </section>
+
+  <section id="education" class="root-sec grey lighten-5 padd-tb-120 education-wrap">
+	<div class="container">
+	  <div class="row">
+		<div class="education-inner">
+		  <div class="col-sm-12 col-md-10 card-box-wrap">
+			<div class="row">
+			  <div class="clearfix section-head education-text">
+				<div class="col-sm-12">
+				  <h2 class="title">education</h2>
+				  <p>Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+				</div>
+			  </div>
+			  <div class="col-lg-12">
+				<div class="overflow-hidden">
+				  <div class="row">
+					<div id="educationSlider" class="clearfix card-element-wrapper">
+
+					<!-- single education -->
+					  <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+						<div class="card">
+						  <div class="card-image waves-effect waves-block waves-light">
+							<h2 class="left-align card-title-top">2001 - 2003</h2>
+							<div class="card-img-wrap">
+							  <img class="activator" src="images/grad-cap.png" alt="">
+							</div>
+						  </div>
+						  <div class="card-content">
+							<span class="card-title activator brand-text">Masters of Information Technology<i class="mdi-navigation-more-vert right"></i></span>
+							<p>Thanthai Hands Roever College</p>
+						  </div>
+						  <!-- Reveal content-->
+						  <div class="card-reveal">
+							<div class="rev-title-wrap">
+							  <span class="card-title activator brand-text">Masters of Information Technology<i class="mdi-navigation-close right"></i></span>
+							  <p>Thanthai Hands Roever College</p>
+							</div>
+							<p class="rev-content">
+							  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+							</p>
+						  </div>
+						</div>
+					  </div> <!-- single education end -->
+
+					  <!-- single education -->
+					  <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<h2 class="left-align card-title-top">1998 - 2001</h2>
+								<div class="card-img-wrap">
+								  <img class="activator" src="images/grad-cap.png" alt="">
+								</div>
+							</div>
+							<div class="card-content">
+								<span class="card-title activator brand-text">Bachelor of Industrial Electronics<i class="mdi-navigation-more-vert right"></i></span>
+								<p>Thanthai Hands Roever College</p>
+							</div>
+							<div class="card-reveal">
+								<div class="rev-title-wrap">
+								  <span class="card-title activator brand-text">Bachelor of Industrial Electronics<i class="mdi-navigation-close right"></i></span>
+								  <p>Thanthai Hands Roever College</p>
+								</div>
+								<p class="rev-content">
+								  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+								</p>
+							</div>
+						</div>
+					  </div> <!-- single education -->
+
+					<!-- single education -->
+					  <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+						<div class="card">
+						  <div class="card-image waves-effect waves-block waves-light">
+							<h2 class="left-align card-title-top">1997 - 1998</h2>
+							<div class="card-img-wrap">
+							  <img class="activator" src="images/grad-cap.png" alt="">
+							</div>
+						  </div>
+						  <div class="card-content">
+							<span class="card-title activator brand-text">12<sup>th</sup><i class="mdi-navigation-more-vert right"></i></span>
+							<p>Government Boys Higher Secondary School</p>
+						  </div>
+						  <div class="card-reveal">
+							<div class="rev-title-wrap">
+							  <span class="card-title activator brand-text">12<sup>th</sup><i class="mdi-navigation-close right"></i></span>
+							  <p>Government Boys Higher Secondary School</p>
+							</div>
+							<p class="rev-content">
+							  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+							</p>
+						  </div>
+						</div>
+					  </div> <!-- single education -->
+
+					<!-- single education -->
+					  <div class="col-sm-4 single-card-box">
+						<div class="card">
+						  <div class="card-image waves-effect waves-block waves-light">
+							<h2 class="left-align card-title-top">1995 - 1996</h2>
+							<div class="card-img-wrap">
+							  <img class="activator" src="images/grad-cap.png" alt="">
+							</div>
+						  </div>
+						  <div class="card-content">
+							<span class="card-title activator brand-text">10<sup>th</sup><i class="mdi-navigation-more-vert right"></i></span>
+							<p>Government Boys Higher Secondary School</p>
+						  </div>
+						  <div class="card-reveal">
+							<div class="rev-title-wrap">
+							  <span class="card-title activator brand-text">10<sup>th</sup><i class="mdi-navigation-close right"></i></span>
+							  <p>Government Boys Higher Secondary School</p>
+							</div>
+							<p class="rev-content">
+							  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+							</p>
+						  </div>
+						</div>
+					  </div> <!-- single education -->
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="btn-wrapp edu-ctrl">
+			<a class="btn-floating waves-effect waves-light btn-large brand-bg go go-left"><i class="mdi-navigation-chevron-left"></i></a>
+			<a class="btn-floating waves-effect waves-light btn-large brand-bg go go-right"><i class="mdi-navigation-chevron-right"></i></a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+</section>
+    <!-- #resume Section end -->
+
+    <!-- Portfolio Section start -->
+    <section id="portfolio" class="scroll-section root-sec white portfolio-wrap">
+      <div class="padd-tb-120 brand-bg portfolio-top">
+        <div class="portfolio-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="title">PORTFOLIO</h2>
+                <ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">
+                  <li class="active"><a href="#" data-target="*">All</a>
+                  </li>
+                  <li><a href="#" data-target=".category-1">Web Design</a>
+                  </li>
+                  <li><a href="#" data-target=".category-2">Graphics Design</a>
+                  </li>
+                  <li><a href="#" data-target=".category-3">UX Design</a>
+                  </li>
+                  <li><a href="#" data-target=".category-4">Markup</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .container end -->
+      </div>
+      <div id="portfolioModal" class="modal white">
+        <div class="model-img"></div>
+        <div class="modal-content">
+          <h2 class="title">Lorem ipsum dolor sit fugit dolore.</h2>
+          <p class="m-content">A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior.</p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Live Demo</a>
+          <a href="#" class="waves-effect btn-flat brand-text modal-action modal-close">cancel</a>
+        </div>
+      </div>
+
+      <div class="portfolio-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="clearfix protfolio-item" id="protfolio-msnry">
+              
+              <!-- Single Portfolio-->
+                <li class="single-port-item category-1 category-3">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#"> <!-- Portfolio pop-up content-->
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/pf1.jpg" alt="portfolio"> <!-- portfolio thumbnail-->
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">item name</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-2 category-1">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/pf2.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">item name</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-1 category-2">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/pf3.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">item name</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-3">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/pf4.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">item name</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-1 category-3 category-4">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/pf5.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">item name</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-2 category-4">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                    <div class="protfolio-image">
+                      <img src="images/portfolio/pf6.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">item name</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+              </ul>
+              <!-- portfolio load more button-->
+              <a id="portfolio-item-loader" href="#" class="btn-floating btn-large waves-effect waves-light brand-bg"><i class="mdi-content-add"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #portfolio Section end -->
+
+	<!-- Testimonial Section end-->
+    <section id="testimonial" class="scroll-section root-sec brand-bg padd-tb-120 testimonial-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="testimonial-inner">
+            <div class="col-sm-12 col-md-10 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head testimonial-text">
+                  <div class="col-sm-12">
+                    <h2 class="title">testimonial</h2>
+                    <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="overflow-hidden">
+                    <div class="row">
+                      <div id="testimonialSlider" class="clearfix card-element-wrapper">
+                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/client5.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/client1.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/client2.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/client3.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/client4.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapp tmo-ctrl">
+              <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+              <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+	<!-- testimonial Section end -->
+	
+    <!-- Funfacts Section end -->
+    <section id="funfacts" class="root-sec grey lighten-5 funfact-wrap">
+    <div class="sec-inner padd-tb-120">
+      <div class="container">
+        <div class="row">
+          <div class="funfact-inner">
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="mdi-editor-insert-emoticon"></i>
+                      <span class="num countNumb">150</span>
+                    </div>
+                    <div class="context">Happy clients</div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- ./single fun fact box -->
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="mdi-action-wallet-travel"></i>
+                      <span class="num countNumb">230</span>
+                    </div>
+                    <div class="context">Project Completed</div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- ./single fun fact box -->
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="mdi-action-wallet-giftcard"></i>
+                      <span class="num countNumb">79</span>
+                    </div>
+                    <div class="context">Award Won</div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- ./single fun fact box -->
+          </div>
+        </div>
+
+      </div>  <!-- .container end -->
+    </div>
+    </section>
+    <!-- #funfacts Section end -->
+
+    <!-- Contact Section end -->
+    <section id="contact" class="scroll-section root-sec brand-bg padd-tb-120 contact-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="contact-inner">
+            <div class="col-sm-12 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head contact-text">
+                  <div class="col-sm-12">
+                    <h2 class="title">Contact</h2>
+                    <p class="regular-text">1343, TNHB COLONY<br>Velachery Chennai - 600042</p>
+                    <ul class="clearfix contact-info">
+                      <li><a href="#">+91-9791257708</a>
+                      </li>
+                      <li><a href="#">manohar.r@m-tutor.com</a>
+                      </li>
+                      <li><a href="#">www.manoharrpm20.net</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> <!-- contact text end -->
+
+                <div class="clearfix contact-form">
+
+                <!-- Map Start -->
+                  <div class="col-sm-7">
+                    <div class="map-wrapper">
+                      <div id="map"></div>
+                    </div>
+                  </div> <!-- Map end -->
+
+                <!-- Contact Form start -->
+                  <div class="col-sm-5">
+                    <div class="clearfix card-panel grey lighten-5 cform-wrapper">
+                      <form action="#" id="contactForm" novalidate>
+                        <div class="input-field">
+                          <input id="contact_name" type="text" name="contactName" class="validate input-box">
+                          <label for="contact_name" class="input-label">Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="email" type="email" name="contactEmail" class="validate input-box">
+                          <label for="email" class="input-label">Email</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="subject" type="text" name="contactSubject" class="validate input-box">
+                          <label for="subject" class="input-label">Subject</label>
+                        </div>
+                        <div class="input-field textarea-input">
+                          <textarea id="textarea1" name="contactMessage" class="validate materialize-textarea" style="height: 22px;"></textarea>
+                          <label for="textarea1" class="input-label">Message</label>
+                        </div>
+                        <div class="input-field submit-wrap clearfix">
+                          <button type="submit" class="left waves-effect btn-flat brand-text submit-btn">send message</button>
+                          <div class="right form-loader-area">
+                            <svg class="circular size-20" height="20" width="20">
+                              <circle class="path" cx="10" cy="10" r="7" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                            </svg>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div> <!-- ./contact form end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container end -->
+      <div class="section-call-to-area">
+        <div class="container">
+          <div class="row">
+            <a href="#home" class="btn-floating btn-large button-middle call-to-home section-call-to-btn animated btn-up btn-hidden" data-section="#home">
+              <i class="mdi-navigation-expand-less"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #contact Section end -->
+
+    <!-- Footer Section end -->
+    <footer id="footer" class="root-sec white root-sec footer-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="clearfix footer-inner">
+              <ul class="left social-icons">
+                <li><a href="#" class="tooltips tooltipped facebook" data-position="top" data-delay="50" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#" class="tooltips tooltipped linkedin" data-position="top" data-delay="50" data-tooltip="Linkdin"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li><a href="#" class="tooltips tooltipped twitter" data-position="top" data-delay="50" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#" class="tooltips tooltipped google-plus" data-position="top" data-delay="50" data-tooltip="Google Plus"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li><a href="#" class="tooltips tooltipped dribbble" data-position="top" data-delay="50" data-tooltip="Dribbble"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li><a href="#" class="tooltips tooltipped behance" data-position="top" data-delay="50" data-tooltip="Behance"><i class="fa fa-behance"></i></a>
+                </li>
+              </ul> <!-- ./social icons end -->
+              <div class="right copyright">
+                <p>Manoharrpm &copy; All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container end-->
+    </footer>
+    <!-- #footer end -->
+
+  </main>
+  <!-- Main Container end-->
+  <!-- JavaScripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/detectmobilebrowser.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/waypoints.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="js/gmaps.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/jwplayer.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/webslidemenu.js"></script>
+  <script>
+    $(function(){
+		$(".menuli").click(function() {
+			$('#wstoggle').trigger('click');
+		});
+	});
+  </script>
+</body>
+</html>

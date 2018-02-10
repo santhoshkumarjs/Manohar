@@ -1,0 +1,377 @@
+/* 6. color palate css
+   ===================================
+*/
+
+.home_yellow .home_area_btn a, .home_yellow .section_headins_line:before, .home_yellow .section_headins_line:after, .home_yellow .section_headings h1:before, .home_yellow .progress-bar, .home_yellow .single_service_icon [class^="flaticon-"]:before, .home_yellow .single_service_icon [class*=" flaticon-"]:before, .home_yellow .single_service_icon [class^="flaticon-"]:after, .home_yellow .single_service_icon [class*=" flaticon-"]:after, .home_yellow .single_service:before, .home_yellow .mainmenu_area nav.mainmenu ul li a:after, .home_yellow .mainmenu_area nav.mainmenu ul li a:before, .home_yellow .mainmenu_area nav.mainmenu ul li.active a:after, .home_yellow .mainmenu_area nav.mainmenu ul li.active a:before, .home_yellow .single_blog_form form .single_blog_contact_button input[type=submit], .home_yellow .testimonial_user_img:before, .home_yellow .map_content, .home_yellow .color_palate_icon, .home_yellow .btn_hover_style a, .about_social ul li:hover, .home_yellow .service_area_btn a, .home_yellow .portfolio_area_btn a, .home_yellow .blog_area_btn a, .home_yellow .single_blog_form form .single_blog_contact_button button, .home_yellow .testimonial_slider_wrapper .owl-dots .owl-dot.active {
+    background-color: #ffd600;
+    transition: 0.5s;
+}
+.home_perple .home_area_btn a, .home_perple .section_headins_line:before, .home_perple .section_headins_line:after, .home_perple .section_headings h1:before, .home_perple .progress-bar, .home_perple .single_service_icon [class^="flaticon-"]:before, .home_perple .single_service_icon [class*=" flaticon-"]:before, .home_perple .single_service_icon [class^="flaticon-"]:after, .home_perple .single_service_icon [class*=" flaticon-"]:after, .home_perple .single_service:before, .home_perple .mainmenu_area nav.mainmenu ul li a:after, .home_perple .mainmenu_area nav.mainmenu ul li a:before, .home_perple .mainmenu_area nav.mainmenu ul li.active a:after, .home_perple .mainmenu_area nav.mainmenu ul li.active a:before, .home_perple .single_blog_form form .single_blog_contact_button input[type=submit], .home_perple .testimonial_user_img:before, .home_perple .map_content, .home_perple .color_palate_icon, .home_perple .btn_hover_style a, .home_perple .about_social ul li:hover, .home_perple .service_area_btn a, .home_perple .portfolio_area_btn a, .home_perple .blog_area_btn a, .home_perple .single_blog_form form .single_blog_contact_button button, .home_perple .testimonial_slider_wrapper .owl-dots .owl-dot.active {
+    background-color: #526cfd;
+    transition: 0.5s;
+}
+.home_orange .home_area_btn a, .home_orange .section_headins_line:before, .home_orange .section_headins_line:after, .home_orange .section_headings h1:before, .home_orange .progress-bar, .home_orange .single_service_icon [class^="flaticon-"]:before, .home_orange .single_service_icon [class*=" flaticon-"]:before, .home_orange .single_service_icon [class^="flaticon-"]:after, .home_orange .single_service_icon [class*=" flaticon-"]:after, .home_orange .single_service:before, .home_orange .mainmenu_area nav.mainmenu ul li a:after, .home_orange .mainmenu_area nav.mainmenu ul li a:before, .home_orange .mainmenu_area nav.mainmenu ul li.active a:after, .home_orange .mainmenu_area nav.mainmenu ul li.active a:before, .home_orange .single_blog_form form .single_blog_contact_button input[type=submit], .home_orange .testimonial_user_img:before, .home_orange .map_content, .home_orange .color_palate_icon, .home_orange .btn_hover_style a, .home_orange .about_social ul li:hover, .home_orange .service_area_btn a, .home_orange .portfolio_area_btn a, .home_orange .blog_area_btn a, .home_orange .single_blog_form form .single_blog_contact_button button, .home_orange .testimonial_slider_wrapper .owl-dots .owl-dot.active {
+    background-color: #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .home_area_btn a, .home_blue .section_headins_line:before, .home_blue .section_headins_line:after, .home_blue .section_headings h1:before, .home_blue .progress-bar, .home_blue .single_service_icon [class^="flaticon-"]:before, .home_blue .single_service_icon [class*=" flaticon-"]:before, .home_blue .single_service_icon [class^="flaticon-"]:after, .home_blue .single_service_icon [class*=" flaticon-"]:after, .home_blue .single_service:before, .home_blue .mainmenu_area nav.mainmenu ul li a:after, .home_blue .mainmenu_area nav.mainmenu ul li a:before, .home_blue .mainmenu_area nav.mainmenu ul li.active a:after, .home_blue .mainmenu_area nav.mainmenu ul li.active a:before, .home_blue .single_blog_form form .single_blog_contact_button input[type=submit], .home_blue .testimonial_user_img:before, .home_blue .map_content, .home_blue .color_palate_icon, .home_blue .btn_hover_style a, .home_blue .about_social ul li:hover, .home_blue .service_area_btn a, .home_blue .portfolio_area_btn a, .home_blue .blog_area_btn a, .home_blue .single_blog_form form .single_blog_contact_button button, .home_blue .testimonial_slider_wrapper .owl-dots .owl-dot.active {
+    background-color: #2196f3;
+    transition: 0.5s;
+}
+.home_green .home_area_btn a, .home_green .section_headins_line:before, .home_green .section_headins_line:after, .home_green .section_headings h1:before, .home_green .progress-bar, .home_green .single_service_icon [class^="flaticon-"]:before, .home_green .single_service_icon [class*=" flaticon-"]:before, .home_green .single_service_icon [class^="flaticon-"]:after, .home_green .single_service_icon [class*=" flaticon-"]:after, .home_green .single_service:before, .home_green .mainmenu_area nav.mainmenu ul li a:after, .home_green .mainmenu_area nav.mainmenu ul li a:before, .home_green .mainmenu_area nav.mainmenu ul li.active a:after, .home_green .mainmenu_area nav.mainmenu ul li.active a:before, .home_green .single_blog_form form .single_blog_contact_button input[type=submit], .home_green .testimonial_user_img:before, .home_green .map_content, .home_green .color_palate_icon, .home_green .btn_hover_style a, .home_green .about_social ul li:hover, .home_green .service_area_btn a, .home_green .portfolio_area_btn a, .home_green .blog_area_btn a, .home_green .single_blog_form form .single_blog_contact_button button, .home_green .testimonial_slider_wrapper .owl-dots .owl-dot.active {
+    background-color: #00bfa5;
+    transition: 0.5s;
+}
+.home_red .home_area_btn a, .home_red .section_headins_line:before, .home_red .section_headins_line:after, .home_red .section_headings h1:before, .home_red .progress-bar, .home_red .single_service_icon [class^="flaticon-"]:before, .home_red .single_service_icon [class*=" flaticon-"]:before, .home_red .single_service_icon [class^="flaticon-"]:after, .home_red .single_service_icon [class*=" flaticon-"]:after, .home_red .single_service:before, .home_red .mainmenu_area nav.mainmenu ul li a:after, .home_red .mainmenu_area nav.mainmenu ul li a:before, .home_red .mainmenu_area nav.mainmenu ul li.active a:after, .home_red .mainmenu_area nav.mainmenu ul li.active a:before, .home_red .single_blog_form form .single_blog_contact_button input[type=submit], .home_red .testimonial_user_img:before, .home_red .map_content, .home_red .color_palate_icon, .home_red .btn_hover_style a, .home_red .about_social ul li:hover, .home_red .service_area_btn a, .home_red .portfolio_area_btn a, .home_red .blog_area_btn a, .home_red .single_blog_form form .single_blog_contact_button button, .home_red .testimonial_slider_wrapper .owl-dots .owl-dot.active {
+    background-color: #ff5252;
+    transition: 0.5s;
+}
+
+
+
+.home_yellow .home_area_text, .home_yellow .about_img_wrapper img, .home_yellow .about_social ul li, .home_yellow .single_portfolio, .home_yellow .single_blog_form form .single_blog_contact_left input[type=text]:focus, .home_yellow .single_blog_form form .single_blog_contact_left input[type=email]:focus, .home_yellow .single_blog_form form .single_blog_contact_right textarea:focus, .home_yellow .comments_text, .home_yellow .single_commentors img, .home_yellow .contact_map_area #my_location {
+    border: 1px solid #ffd600;
+    transition: 0.5s;
+}
+.home_perple .home_area_text, .home_perple .about_img_wrapper img, .home_perple .about_social ul li, .home_perple .single_portfolio, .home_perple .single_blog_form form .single_blog_contact_left input[type=text]:focus, .home_perple .single_blog_form form .single_blog_contact_left input[type=email]:focus, .home_perple .single_blog_form form .single_blog_contact_right textarea:focus, .home_perple .comments_text, .home_perple .single_commentors img, .home_perple .contact_map_area #my_location {
+    border: 1px solid #526cfd;
+    transition: 0.5s;
+}
+.home_orange .home_area_text, .home_orange .about_img_wrapper img, .home_orange .about_social ul li, .home_orange .single_portfolio, .home_orange .single_blog_form form .single_blog_contact_left input[type=text]:focus, .home_orange .single_blog_form form .single_blog_contact_left input[type=email]:focus, .home_orange .single_blog_form form .single_blog_contact_right textarea:focus, .home_orange .comments_text, .home_orange .single_commentors img, .home_orange .contact_map_area #my_location {
+    border: 1px solid #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .home_area_text, .home_blue .about_img_wrapper img, .home_blue .about_social ul li, .home_blue .single_portfolio, .home_blue .single_blog_form form .single_blog_contact_left input[type=text]:focus, .home_blue .single_blog_form form .single_blog_contact_left input[type=email]:focus, .home_blue .single_blog_form form .single_blog_contact_right textarea:focus, .home_blue .comments_text, .home_blue .single_commentors img, .home_blue .contact_map_area #my_location {
+    border: 1px solid #2196f3;
+    transition: 0.5s;
+}
+.home_green .home_area_text, .home_green .about_img_wrapper img, .home_green .about_social ul li, .home_green .single_portfolio, .home_green .single_blog_form form .single_blog_contact_left input[type=text]:focus, .home_green .single_blog_form form .single_blog_contact_left input[type=email]:focus, .home_green .single_blog_form form .single_blog_contact_right textarea:focus, .home_green .comments_text, .home_green .single_commentors img, .home_green .contact_map_area #my_location {
+    border: 1px solid #00bfa5;
+    transition: 0.5s;
+}
+.home_red .home_area_text, .home_red .about_img_wrapper img, .home_red .about_social ul li, .home_red .single_portfolio, .home_red .single_blog_form form .single_blog_contact_left input[type=text]:focus, .home_red .single_blog_form form .single_blog_contact_left input[type=email]:focus, .home_red .single_blog_form form .single_blog_contact_right textarea:focus, .home_red .comments_text, .home_red.single_commentors img, .home_red .contact_map_area #my_location {
+    border: 1px solid #ff5252;
+    transition: 0.5s;
+}
+
+
+.home_yellow .testimonial_user_img, .home_yellow .testimonial_text_wrapper {
+    border: 2px solid #ffd600;
+    transition: 0.5s;
+}
+.home_perple .testimonial_user_img, .home_perple .testimonial_text_wrapper {
+    border: 2px solid #526cfd;
+    transition: 0.5s;
+}
+.home_orange .testimonial_user_img, .home_orange .testimonial_text_wrapper {
+    border: 2px solid #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .testimonial_user_img, .home_blue .testimonial_text_wrapper {
+    border: 2px solid #2196f3;
+    transition: 0.5s;
+}
+.home_green .testimonial_user_img, .home_green .testimonial_text_wrapper {
+    border: 2px solid #00bfa5;
+    transition: 0.5s;
+}
+.home_red .testimonial_user_img, .home_red .testimonial_text_wrapper {
+    border: 2px solid #ff5252;
+    transition: 0.5s;
+}
+
+
+.home_yellow .single_service_icon {
+    border: 3px solid #ffd600;
+    transition: 0.5s;
+}
+.home_perple .single_service_icon {
+    border: 3px solid #526cfd;
+    transition: 0.5s;
+}
+.home_orange .single_service_icon {
+    border: 3px solid #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .single_service_icon {
+    border: 3px solid #2196f3;
+    transition: 0.5s;
+}
+.home_green .single_service_icon {
+    border: 3px solid #00bfa5;
+    transition: 0.5s;
+}
+.home_red .single_service_icon {
+    border: 3px solid #ff5252;
+    transition: 0.5s;
+}
+
+
+.home_yellow .comments_arrow:before {
+    border-right: 20px solid #ffd500;
+    transition: 0.5s;
+}
+.home_perple .comments_arrow:before {
+    border-right: 20px solid #526cfd;
+    transition: 0.5s;
+}
+.home_orange .comments_arrow:before {
+    border-right: 20px solid #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .comments_arrow:before {
+    border-right: 20px solid #2196f3;
+    transition: 0.5s;
+}
+.home_green .comments_arrow:before {
+    border-right: 20px solid #00bfa5;
+    transition: 0.5s;
+}
+.home_red .comments_arrow:before {
+    border-right: 20px solid #ff5252;
+    transition: 0.5s;
+}
+
+
+.home_yellow .logo_middle, .home_yellow .menu_bar_icon .menu_icon_line_1, .home_yellow .menu_bar_icon .menu_icon_line_2, .home_yellow .menu_bar_icon .menu_icon_line_3, .home_yellow .menu_bar_icon .svg.menu_cross {
+    fill: #ffd600;
+    transition: 0.5s;
+}
+.home_perple .logo_middle, .home_perple .menu_bar_icon .menu_icon_line_1, .home_perple .menu_bar_icon .menu_icon_line_2, .home_perple .menu_bar_icon .menu_icon_line_3, .home_perple .menu_bar_icon .svg.menu_cross {
+    fill: #526cfd;
+    transition: 0.5s;
+}
+.home_orange .logo_middle, .home_orange .menu_bar_icon .menu_icon_line_1, .home_orange .menu_bar_icon .menu_icon_line_2, .home_orange .menu_bar_icon .menu_icon_line_3, .home_orange .menu_bar_icon .svg.menu_cross {
+    fill: #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .logo_middle, .home_blue .menu_bar_icon .menu_icon_line_1, .home_blue .menu_bar_icon .menu_icon_line_2, .home_blue .menu_bar_icon .menu_icon_line_3, .home_blue .menu_bar_icon .svg.menu_cross {
+    fill: #2196f3;
+    transition: 0.5s;
+}
+.home_green .logo_middle, .home_green .menu_bar_icon .menu_icon_line_1, .home_green .menu_bar_icon .menu_icon_line_2, .home_green .menu_bar_icon .menu_icon_line_3, .home_green .menu_bar_icon .svg.menu_cross {
+    fill: #00bfa5;
+    transition: 0.5s;
+}
+.home_red .logo_middle, .home_red .menu_bar_icon .menu_icon_line_1, .home_red .menu_bar_icon .menu_icon_line_2, .home_red .menu_bar_icon .menu_icon_line_3, .home_red .menu_bar_icon .svg.menu_cross {
+    fill: #ff5252;
+    transition: 0.5s;
+}
+
+
+.home_yellow .logo_border {
+    stroke: #ffd600;
+    transition: 0.5s;
+}
+.home_perple .logo_border {
+    stroke: #526cfd;
+    transition: 0.5s;
+}
+.home_orange .logo_border {
+    stroke: #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .logo_border {
+    stroke: #2196f3;
+    transition: 0.5s;
+}
+.home_green .logo_border {
+    stroke: #00bfa5;
+    transition: 0.5s;
+}
+.home_red .logo_border {
+    stroke: #ff5252;
+    transition: 0.5s;
+}
+
+
+.home_yellow .about_info ul li a i, .home_yellow .single_service_headings h2:hover a, .home_yellow .single_service:hover .single_service_icon i, .home_yellow .portfolio_area .portfolio_sidebar_menu ul li.current_menu_item, .home_yellow .single_contact_info i[class^="flaticon-"]:before, .home_yellow .single_contact_info i[class*=" flaticon-"]:before, .home_yellow .single_contact_info i[class^="flaticon-"]:after, .home_yellow .single_contact_info i[class*=" flaticon-"]:after, .home_yellow .mainmenu_area nav.mainmenu ul li a, .home_yellow .comments_text:hover .comments_reply span, .home_yellow .single_blog_main_content_list ul li i[class^="flaticon-"]:before, .home_yellow .single_blog_main_content_list ul li i[class*=" flaticon-"]:before, .home_yellow .single_blog_main_content_list ul li i[class^="flaticon-"]:after, .home_yellow [class*=" flaticon-"]:after, .home_yellow .single_blog_content:hover figure figcaption .blog_content a, .home_yellow .portfolio_area .portfolio_sidebar_menu ul li:hover {
+    color: #ffd600;
+    transition: 0.5s;
+}
+.home_perple .about_info ul li a i, .home_perple .single_service_headings h2:hover a, .home_perple .single_service:hover .single_service_icon i, .home_perple .portfolio_area .portfolio_sidebar_menu ul li.current_menu_item, .home_perple .single_contact_info i[class^="flaticon-"]:before, .home_perple .single_contact_info i[class*=" flaticon-"]:before, .home_perple .single_contact_info i[class^="flaticon-"]:after, .home_perple .single_contact_info i[class*=" flaticon-"]:after, .home_perple .mainmenu_area nav.mainmenu ul li a, .home_perple .comments_text:hover .comments_reply span, .home_perple .single_blog_main_content_list ul li i[class^="flaticon-"]:before, .home_perple .single_blog_main_content_list ul li i[class*=" flaticon-"]:before, .home_perple .single_blog_main_content_list ul li i[class^="flaticon-"]:after, .home_perple [class*=" flaticon-"]:after, .home_perple .single_blog_content:hover figure figcaption .blog_content a, .home_perple .portfolio_area .portfolio_sidebar_menu ul li:hover {
+    color: #526cfd;
+    transition: 0.5s;
+}
+.home_orange .about_info ul li a i, .home_orange .single_service_headings h2:hover a, .home_orange .single_service:hover .single_service_icon i, .home_orange .portfolio_area .portfolio_sidebar_menu ul li.current_menu_item, .home_orange .single_contact_info i[class^="flaticon-"]:before, .home_orange .single_contact_info i[class*=" flaticon-"]:before, .home_orange .single_contact_info i[class^="flaticon-"]:after, .home_orange .single_contact_info i[class*=" flaticon-"]:after, .home_orange .mainmenu_area nav.mainmenu ul li a, .home_orange .comments_text:hover .comments_reply span, .home_orange .single_blog_main_content_list ul li i[class^="flaticon-"]:before, .home_orange .single_blog_main_content_list ul li i[class*=" flaticon-"]:before, .home_orange .single_blog_main_content_list ul li i[class^="flaticon-"]:after, .home_orange [class*=" flaticon-"]:after, .home_orange .single_blog_content:hover figure figcaption .blog_content a, .home_orange .portfolio_area .portfolio_sidebar_menu ul li:hover {
+    color: #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .about_info ul li a i, .home_blue .single_service_headings h2:hover a, .home_blue .single_service:hover .single_service_icon i, .home_blue .portfolio_area .portfolio_sidebar_menu ul li.current_menu_item, .home_blue .single_contact_info i[class^="flaticon-"]:before, .home_blue .single_contact_info i[class*=" flaticon-"]:before, .home_blue .single_contact_info i[class^="flaticon-"]:after, .home_blue .single_contact_info i[class*=" flaticon-"]:after, .home_blue .mainmenu_area nav.mainmenu ul li a, .home_blue .comments_text:hover .comments_reply span, .home_blue .single_blog_main_content_list ul li i[class^="flaticon-"]:before, .home_blue .single_blog_main_content_list ul li i[class*=" flaticon-"]:before, .home_blue .single_blog_main_content_list ul li i[class^="flaticon-"]:after, .home_blue [class*=" flaticon-"]:after, .home_blue .single_blog_content:hover figure figcaption .blog_content a, .home_blue .portfolio_area .portfolio_sidebar_menu ul li:hover {
+    color: #2196f3;
+    transition: 0.5s;
+}
+.home_green .about_info ul li a i, .home_green .single_service_headings h2:hover a, .home_green .single_service:hover .single_service_icon i, .home_green .portfolio_area .portfolio_sidebar_menu ul li.current_menu_item, .home_green .single_contact_info i[class^="flaticon-"]:before, .home_green .single_contact_info i[class*=" flaticon-"]:before, .home_green .single_contact_info i[class^="flaticon-"]:after, .home_green .single_contact_info i[class*=" flaticon-"]:after, .home_green .mainmenu_area nav.mainmenu ul li a, .home_green .comments_text:hover .comments_reply span, .home_green .single_blog_main_content_list ul li i[class^="flaticon-"]:before, .home_green .single_blog_main_content_list ul li i[class*=" flaticon-"]:before, .home_green .single_blog_main_content_list ul li i[class^="flaticon-"]:after, .home_green [class*=" flaticon-"]:after, .home_green .single_blog_content:hover figure figcaption .blog_content a, .home_green .portfolio_area .portfolio_sidebar_menu ul li:hover {
+    color: #00bfa5;
+    transition: 0.5s;
+}
+.home_red .about_info ul li a i, .home_red .single_service_headings h2:hover a, .home_red .single_service:hover .single_service_icon i, .home_red .portfolio_area .portfolio_sidebar_menu ul li.current_menu_item, .home_red .single_contact_info i[class^="flaticon-"]:before, .home_red .single_contact_info i[class*=" flaticon-"]:before, .home_red .single_contact_info i[class^="flaticon-"]:after, .home_red .single_contact_info i[class*=" flaticon-"]:after, .home_red .mainmenu_area nav.mainmenu ul li a, .home_red .comments_text:hover .comments_reply span, .home_red .single_blog_main_content_list ul li i[class^="flaticon-"]:before, .home_red .single_blog_main_content_list ul li i[class*=" flaticon-"]:before, .home_red .single_blog_main_content_list ul li i[class^="flaticon-"]:after, .home_red [class*=" flaticon-"]:after, .home_red .single_blog_content:hover figure figcaption .blog_content a, .home_red .portfolio_area .portfolio_sidebar_menu ul li:hover {
+    color: #ff5252;
+    transition: 0.5s;
+}
+
+
+.home_yellow .single_portfolio figure figcaption, .home_yellow .single_blog_content figure:before {
+    background-color: rgba(255,214,0,0.85);
+    transition: 0.5s;
+}
+.home_perple .single_portfolio figure figcaption, .home_perple .single_blog_content figure:before {
+    background-color: rgba(82,108,253,0.85);
+    transition: 0.5s;
+}
+.home_orange .single_portfolio figure figcaption, .home_orange .single_blog_content figure:before {
+    background-color: rgba(255,61,0,0.85);
+    transition: 0.5s;
+}
+.home_blue .single_portfolio figure figcaption, .home_blue .single_blog_content figure:before {
+    background-color: rgba(33,150,243,0.85);
+    transition: 0.5s;
+}
+.home_green .single_portfolio figure figcaption, .home_green .single_blog_content figure:before {
+    background-color: rgba(0,191,165,0.85);
+    transition: 0.5s;
+}
+.home_red .single_portfolio figure figcaption, .home_red .single_blog_content figure:before {
+    background-color: rgba(255,82,82,0.85);
+    transition: 0.5s;
+}
+
+
+.home_yellow .single_blog_main_content_img_wrapper:before, .home_yellow .single_blog_main_content_img_wrapper:after, .home_yellow .single_blog_main_content_img:before, .home_yellow .single_blog_main_content_img:after {
+    background-color: rgba(255,214,0,0.8);
+    transition: 0.5s;
+}
+.home_perple .single_blog_main_content_img_wrapper:before, .home_perple .single_blog_main_content_img_wrapper:after, .home_perple .single_blog_main_content_img:before, .home_perple .single_blog_main_content_img:after {
+    background-color: rgba(82,108,253,0.8);
+    transition: 0.5s;
+}
+.home_orange .single_blog_main_content_img_wrapper:before, .home_orange .single_blog_main_content_img_wrapper:after, .home_orange .single_blog_main_content_img:before, .home_orange .single_blog_main_content_img:after {
+    background-color: rgba(255,61,0,0.8);
+    transition: 0.5s;
+}
+.home_blue .single_blog_main_content_img_wrapper:before, .home_blue .single_blog_main_content_img_wrapper:after, .home_blue .single_blog_main_content_img:before, .home_blue .single_blog_main_content_img:after {
+    background-color: rgba(33,150,243,0.8);
+    transition: 0.5s;
+}
+.home_green .single_blog_main_content_img_wrapper:before, .home_green .single_blog_main_content_img_wrapper:after, .home_green .single_blog_main_content_img:before, .home_green .single_blog_main_content_img:after {
+    background-color: rgba(0,191,165,0.8);
+    transition: 0.5s;
+}
+.home_red .single_blog_main_content_img_wrapper:before, .home_red .single_blog_main_content_img_wrapper:after, .home_red .single_blog_main_content_img:before, .home_red .single_blog_main_content_img:after {
+    background-color: rgba(255,82,82,0.8);
+    transition: 0.5s;
+}
+
+
+.home_yellow .contact_info_wrapper {
+    border: 1px solid #ffe45b;
+    transition: 0.5s;
+}
+.home_perple .contact_info_wrapper {
+    border: 1px solid #526cfd;
+    transition: 0.5s;
+}
+.home_orange .contact_info_wrapper {
+    border: 1px solid #ff3d00;
+    transition: 0.5s;
+}
+.home_blue .contact_info_wrapper {
+    border: 1px solid #2196f3;
+    transition: 0.5s;
+}
+.home_green .contact_info_wrapper {
+    border: 1px solid #00bfa5;
+    transition: 0.5s;
+}
+.home_red .contact_info_wrapper {
+    border: 1px solid #ff5252;
+    transition: 0.5s;
+}
+
+
+.home_yellow .mainmenu_area nav.mainmenu ul li.active a, .home_yellow .mainmenu_area nav.mainmenu ul li:hover a {
+    color: #b09400;
+    transition: 0.5s;
+}
+.home_perple .mainmenu_area nav.mainmenu ul li.active a, .home_perple .mainmenu_area nav.mainmenu ul li:hover a {
+    color: #3d498e;
+    transition: 0.5s;
+}
+.home_orange .mainmenu_area nav.mainmenu ul li.active a, .home_orange .mainmenu_area nav.mainmenu ul li:hover a {
+    color: #a03513;
+    transition: 0.5s;
+}
+.home_blue .mainmenu_area nav.mainmenu ul li.active a, .home_blue .mainmenu_area nav.mainmenu ul li:hover a {
+    color: #18619b;
+    transition: 0.5s;
+}
+.home_green .mainmenu_area nav.mainmenu ul li.active a, .home_green .mainmenu_area nav.mainmenu ul li:hover a {
+    color: #0e7b6c;
+    transition: 0.5s;
+}
+.home_red .mainmenu_area nav.mainmenu ul li.active a, .home_red .mainmenu_area nav.mainmenu ul li:hover a {
+    color: #b52c2c;
+    transition: 0.5s;
+}
+
+
+.home_yellow .map_form > form > ::-webkit-input-placeholder, .home_yellow .map_form > form > input[type=text], .home_yellow .map_form > form > input[type=email], .home_yellow .map_form > form > textarea, .home_yellow .map_form > form > :-moz-placeholder, .home_yellow .map_form > form > :-ms-input-placeholder, .home_yellow .map_form > form > ::-moz-placeholder {
+    color: #a68b02;
+    transition: 0.5s;
+}
+.home_perple .map_form > form > ::-webkit-input-placeholder, .home_perple .map_form > form > input[type=text], .home_perple .map_form > form > input[type=email], .home_perple .map_form > form > textarea, .home_perple .map_form > form > :-moz-placeholder, .home_perple .map_form > form > :-ms-input-placeholder, .home_perple .map_form > form > ::-moz-placeholder {
+    color: #3d498e;
+    transition: 0.5s;
+}
+.home_orange .map_form > form > ::-webkit-input-placeholder, .home_orange .map_form > form > input[type=text], .home_orange .map_form > form > input[type=email], .home_orange .map_form > form > textarea, .home_orange .map_form > form > :-moz-placeholder, .home_orange .map_form > form > :-ms-input-placeholder, .home_orange .map_form > form > ::-moz-placeholder {
+    color: #a03513;
+    transition: 0.5s;
+}
+.home_blue .map_form > form > ::-webkit-input-placeholder, .home_blue .map_form > form > input[type=text], .home_blue .map_form > form > input[type=email], .home_blue .map_form > form > textarea, .home_blue .map_form > form > :-moz-placeholder, .home_blue .map_form > form > :-ms-input-placeholder, .home_blue .map_form > form > ::-moz-placeholder {
+    color: #18619b;
+    transition: 0.5s;
+}
+.home_green .map_form > form > ::-webkit-input-placeholder, .home_green .map_form > form > input[type=text], .home_green .map_form > form > input[type=email], .home_green .map_form > form > textarea, .home_green .map_form > form > :-moz-placeholder, .home_green .map_form > form > :-ms-input-placeholder, .home_green .map_form > form > ::-moz-placeholder {
+    color: #00bfa5;
+    transition: 0.5s;
+}
+.home_red .map_form > form > ::-webkit-input-placeholder, .home_red .map_form > form > input[type=text], .home_red .map_form > form > input[type=email], .home_red .map_form > form > textarea, .home_red .map_form > form > :-moz-placeholder, .home_red .map_form > form > :-ms-input-placeholder, .home_red .map_form > form > ::-moz-placeholder {
+    color: #ff5252;
+    transition: 0.5s;
+}
+
+
+/* color theme css */
+
+.color_theme li:nth-child(1) {
+    background-color: #ffd600; 
+}
+.color_theme li:nth-child(2) {
+    background-color: #526cfd; 
+}
+.color_theme li:nth-child(3) {
+    background-color: #ff3d00; 
+}
+.color_theme li:nth-child(4) {
+    background-color: #2196f3; 
+}
+.color_theme li:nth-child(5) {
+    background-color: #00bfa5; 
+}
+.color_theme li:nth-child(6) {
+    background-color: #ff5252; 
+}
+
+
+
+/* white text button */
+
+.home_perple .home_area_btn a, .home_perple .btn_hover_style a, .home_perple .service_area_btn a, .home_perple .portfolio_area_btn a, .home_perple .blog_area_btn a, .home_perple .single_blog_form form .single_blog_contact_button button, .home_orange .home_area_btn a, .home_orange .btn_hover_style a, .home_orange .service_area_btn a, .home_orange .portfolio_area_btn a, .home_orange .blog_area_btn a, .home_orange .single_blog_form form .single_blog_contact_button button {
+    color: #ffffff;
+}
+.home_perple .settings_fill_color, .home_orange .settings_fill_color {
+    fill: #ffffff;
+}
+.home_perple .single_service:hover .single_service_content, .home_perple .map_content_headings h3, .home_orange .single_service:hover .single_service_content, .home_orange .map_content_headings h3 {
+    color: #f8f8f8;
+}

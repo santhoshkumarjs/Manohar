@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mtutor Mobile Apps</title>
+	
+	<!-- CSS -->
+	<link href="resource/css/bootstrap.css" rel="stylesheet">
+	<link href="resource/css/font-awesome.css" rel="stylesheet">
+	<link href="resource/css/themify-icons.css" rel="stylesheet">
+	<link href="resource/css/custom.css" rel="stylesheet">
+	<link href="resource/css/owl.carousel.min.css"rel="stylesheet" />
+	
+	<!-- JS -->
+	<script src="resource/js/jquery-3.1.1.min.js"></script>
+			
+	<style>
+	body{background-image:url('resource/images/homescreen.jpg');
+	background-repeat:no-repeat;
+	background-position:top;
+	width:360px;
+	height:640px;
+	margin-bottom:0px !important;
+	}
+	.logo_images{position: absolute;width: 100%;text-align:center;color:#fff;z-index: 2;top: 50%;-webkit-transform: translateY(-50%);-moz-transform:translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);transform: translateY(-50%);}
+	.logo_images h3{margin:10px; font-size:20px; font-weight:bold;}
+	.swapping_container{position:absolute;bottom:70px;width:100%}
+	.swapping_btn {margin: 0px auto;width: 260px;font: 18px;color: #fff;text-align: center;border: 1px solid #f2f2f2;border-radius: 50px;}
+	.swapping_btn p{margin-bottom:0px;}
+	.swapping_btn a {color: #fff;text-decoration: none;border-radius: 50px;-webkit-transition: background 0.1s;-moz-transition: background 0.1s;-o-transition: background 0.1s;transition: background 0.1s;font-weight:bold;}
+	.swapping-links {height: 30px;}
+	.swapping-links > a {float: left;width: 50%;line-height: 30px;font-size: 16px;}
+	.swapping-links .active {text-decoration: none;background: #fff;color:#333 !important;}
+</style>
+<script>
+$(document).ready(function() {
+$('.swapping-links a').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+});
+});
+</script>
+</head>
+<body>
+	<div class="container logo_container">
+			<div class="row logo_images">
+				<img src="resource/images/mtutor-logo.png" alt="logo"/>
+				<h3>Stay Learned, stay Ahead</h3>
+			</div>	
+		</div>
+	<div class="container swapping_container">
+		<div class="swapping_btn">
+			<p class="swapping-links">
+			  <a href="login.html" class="active" target="_parent">Login</a>
+			  <a href="signup.html" target="_parent">Sign up</a>
+			</p>
+		</div>
+	</div>
+
+	<script src="resource/js/smooth-scroll.min.js"></script>
+	<script src="resource/js/jquery.min.js" type="text/javascript"></script>
+	<script src="resource/js/webslidemenu.js" type="text/javascript"></script>
+	<script src="resource/js/search.js" type="text/javascript"></script>
+	<!--js-->
+	<script src="resource/js/hammer.2.0.8.min.js"></script>
+	<script src="resource/js/free-simple-slider.js"></script>
+	<script src="resource/js/scripts.js"></script>
+	<script type="text/javascript" src="resource/js/owl.carousel.min.js"></script>
+</body>
+</html>

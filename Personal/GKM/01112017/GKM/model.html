@@ -1,0 +1,179 @@
+	<div class="modal-dialog">		
+		<div class="box">
+    <div class="content">
+        <form class="form-vertical login-form" action="index.html" method="post" novalidate="novalidate" style="display: block;">
+            <h3 class="form-title">Sign In to your Account</h3>
+            <div class="alert fade in alert-danger" style="display: none;"> <i class="icon-remove close" data-dismiss="alert"></i> Enter any username and password. </div>
+            <div class="form-group">
+                <div class="input-icon"> <i class="icon-user"></i>
+                    <input type="text" name="username" class="form-control" placeholder="Username" autofocus="autofocus" data-rule-required="true" data-msg-required="Please enter your username."> </div>
+            </div>
+            <div class="form-group">
+                <div class="input-icon"> <i class="icon-lock"></i>
+                    <input type="password" name="password" class="form-control" placeholder="Password" data-rule-required="true" data-msg-required="Please enter your password."> </div>
+            </div>
+            <div class="form-actions">
+                <label class="checkbox pull-left">
+                    <div class="checker"><span><input type="checkbox" class="uniform" name="remember"></span></div> Remember me</label>
+                <button type="submit" class="submit btn btn-primary pull-right"> Sign In <i class="icon-angle-right"></i> </button>
+            </div>
+        </form>
+        <form class="form-vertical register-form" action="index.html" method="post" style="display: none;" novalidate="novalidate">
+            <h3 class="form-title">Sign Up for Free</h3>
+            <div class="form-group">
+                <div class="input-icon"> <i class="icon-user"></i>
+                    <input type="text" name="username" class="form-control" placeholder="Username" autofocus="autofocus" data-rule-required="true"> </div>
+            </div>
+            <div class="form-group">
+                <div class="input-icon"> <i class="icon-lock"></i>
+                    <input type="password" name="password" class="form-control" placeholder="Password" id="register_password" data-rule-required="true"> </div>
+            </div>
+            <div class="form-group">
+                <div class="input-icon"> <i class="icon-ok"></i>
+                    <input type="password" name="password_confirm" class="form-control" placeholder="Confirm Password" data-rule-required="true" data-rule-equalto="#register_password"> </div>
+            </div>
+            <div class="form-group">
+                <div class="input-icon"> <i class="icon-envelope"></i>
+                    <input type="text" name="Email" class="form-control" placeholder="Email address" data-rule-required="true" data-rule-email="true"> </div>
+            </div>
+            <div class="form-group spacing-top">
+                <label class="checkbox">
+                    <div class="checker"><span><input type="checkbox" class="uniform" name="remember" data-rule-required="true" data-msg-required="Please accept ToS first."></span></div> I agree to the <a href="javascript:void(0);">Terms of Service</a></label>
+                <label for="remember" class="has-error help-block" generated="true" style="display:none;"></label>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="back btn btn-default pull-left"> <i class="icon-angle-left"></i> Back </button>
+                <button type="submit" class="submit btn btn-primary pull-right"> Sign Up <i class="icon-angle-right"></i> </button>
+            </div>
+        </form>
+    </div>
+    <div class="inner-box">
+        <div class="content"> <i class="icon-remove close hide-default"></i> <a href="#" class="forgot-password-link">Forgot Password?</a>
+            <form class="form-vertical forgot-password-form hide-default" action="login.html" method="post" novalidate="novalidate">
+                <div class="form-group">
+                    <div class="input-icon"> <i class="icon-envelope"></i>
+                        <input type="text" name="email" class="form-control" placeholder="Enter email address" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email."> </div>
+                </div>
+                <button type="submit" class="submit btn btn-default btn-block"> Reset your Password </button>
+            </form>
+            <div class="forgot-password-done hide-default"> <i class="icon-ok success-icon"></i> <span>Great. We have sent you an email.</span> </div>
+        </div>
+    </div>
+</div>
+	</div>
+<script>
+	function clickLogin() {
+		$('.popup-field').hide();
+		$('.fields-login').show();
+		$('.form_btn').show();
+		$('.forgot_btn').hide();
+		$('.lblfooter').show();	
+		$('.lblHeader').html('Login');	
+	}
+	
+	function clickRegister() {
+		$('.popup-field').hide();
+		$('.fields-register').show();
+		$('.form_btn').show();
+		$('.forgot_btn').hide();		
+		$('.lblHeader').html('Sign Up');
+		$('.lblfooter').show();	
+	}
+
+	function clickForgot() {
+		$('.popup-field').hide();
+		$('.fields-forgot').show();
+		$('.form_btn').hide();
+		$('.forgot_btn').show();
+		$('.lblHeader').html('Forgot Password');
+		$('.lblfooter').hide();	
+	}
+	</script>	
+		<script>
+		$(function() {
+    
+    var $formLogin = $('#login-form');
+    var $formLost = $('#lost-form');
+    var $formRegister = $('#register-form');
+    var $divForms = $('#div-forms');
+    var $modalAnimateTime = 300;
+    var $msgAnimateTime = 150;
+    var $msgShowTime = 2000;
+
+    $("form").submit(function () {
+        switch(this.id) {
+            case "login-form":
+                var $lg_username=$('#login_username').val();
+                var $lg_password=$('#login_password').val();
+                if ($lg_username == "ERROR") {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+                } else {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+                }
+                return false;
+                break;
+            case "lost-form":
+                var $ls_email=$('#lost_email').val();
+                if ($ls_email == "ERROR") {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+                } else {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+                }
+                return false;
+                break;
+            case "register-form":
+                var $rg_username=$('#register_username').val();
+                var $rg_email=$('#register_email').val();
+                var $rg_password=$('#register_password').val();
+                if ($rg_username == "ERROR") {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+                } else {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+                }
+                return false;
+                break;
+            default:
+                return false;
+        }
+        return false;
+    });
+    
+    $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+    $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+    $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+    $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+    $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+    $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+    
+    function modalAnimate ($oldForm, $newForm) {
+        var $oldH = $oldForm.height();
+        var $newH = $newForm.height();
+        $divForms.css("height",$oldH);
+        $oldForm.fadeToggle($modalAnimateTime, function(){
+            $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                $newForm.fadeToggle($modalAnimateTime);
+            });
+        });
+    }
+    
+    function msgFade ($msgId, $msgText) {
+        $msgId.fadeOut($msgAnimateTime, function() {
+            $(this).text($msgText).fadeIn($msgAnimateTime);
+        });
+    }
+    
+    function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+        var $msgOld = $divTag.text();
+        msgFade($textTag, $msgText);
+        $divTag.addClass($divClass);
+        $iconTag.removeClass("glyphicon-chevron-right");
+        $iconTag.addClass($iconClass + " " + $divClass);
+        setTimeout(function() {
+            msgFade($textTag, $msgOld);
+            $divTag.removeClass($divClass);
+            $iconTag.addClass("glyphicon-chevron-right");
+            $iconTag.removeClass($iconClass + " " + $divClass);
+  		}, $msgShowTime);
+    }
+});
+	</script>

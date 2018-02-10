@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>GKM</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<!-- Library - Loader CSS -->
+	<link rel="stylesheet" type="text/css" href="libraries/loader/loaders.min.css">
+
+	<!-- Library - Google Font Familys -->
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Philosopher:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/bootstrap/bootstrap.min.css">
+	<!-- Font Icons -->
+	<link rel="stylesheet" type="text/css" href="libraries/fonts/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="libraries/fonts/elegant-icons.css">
+
+	<!-- Library - OWL Carousel V.2.0 beta -->
+	<link rel="stylesheet" type="text/css" href="libraries/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="libraries/owl-carousel/owl.theme.css">
+	
+	<!-- Library - Animate CSS -->
+	<link rel="stylesheet" type="text/css" href="libraries/animate/animate.min.css">
+	<!-- Library - Magnific Popup -->
+	<link rel="stylesheet" type="text/css" href="libraries/magnific-popup/magnific-popup.css">
+	<!-- Custom - Common CSS -->
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">	
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcodes.css">
+	
+<style>
+.middle-header .phone a {
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #222;
+	margin-top: 0;
+	letter-spacing: 0.5px;
+	border: 1px solid #fff;
+	height: 50%;
+	border-radius: 30px;
+	padding: 0px 15px;
+	text-decoration: none;
+}
+.middle-header .phone {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 15px;
+	background: #fbb800;	
+	height: 50%;
+	border-radius: 30px; 
+	padding:5px 5px;	
+}
+
+/*============================================
+    SLIDER SECTION
+===============================================*/
+#section-slider{
+    background: url("images/slider-1.jpg") fixed 50% 50%;
+    min-height: 580px;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.slider-caption{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.7) ;
+    text-align: left;
+    padding: 15px 40px;
+    color: #fff;
+    margin-top:150px;
+	height:250px;
+}
+.slider-caption h2{
+    color: #fbb800;
+	text-transform:uppercase;
+	margin-bottom:24px;
+}
+.slider-caption p{color: #fff;line-height:30px;}
+.bg-overlay{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32,32,32,0.8);
+}
+
+#slider-carousel .carousel-control{}
+#slider-carousel .carousel-control{
+    text-shadow: none;
+    top: 100%;
+    background: #fff;
+    left: 42.35%;
+}
+
+#slider-carousel .carousel-control.left ,#slider-carousel .carousel-control.right{
+    background-image:  none ;
+    background-repeat: repeat-x;
+}
+#slider-carousel .carousel-control.left ,#slider-carousel .carousel-control.right{
+    background: #fbb800;
+    color: #000;
+    width: 90px;
+    height: 45px;
+    line-height: 20px;
+    padding-top: 10px;
+	opacity:1;
+}
+.arrow{
+	position:absolute;
+}
+#slider-carousel .carousel-control.left{
+    left: 0px !important;
+}
+#slider-carousel .carousel-control.right{
+    left: 95px !important;
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 768px) and (max-width: 991px) {
+	.slider-caption{width: 80%;margin-top: 277px;}
+}
+@media (min-width : 320px) and (max-width: 767px)  {
+	.slider-caption{width: 100%;margin-top: 277px;}
+}
+
+.banner-image{position: absolute;right: 0;top: 3%;}
+.section-header{background: #fbb800;padding: 20px;height: 400px;}
+.welcome-section{left: 0px;z-index: 999999;top: 25px;padding:0px;}
+.welcome-section img{position: absolute;}
+#service-section .col-md-7{padding:0px;top:0px;}
+hr{width: 20%;border-top: 2px solid #fbb800;margin-top: 20px;margin-bottom: 20px;}
+
+.video-prev {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    background-size: cover;
+    border-radius: 0px;
+	background-color:#fbb800;
+}
+.video-prev .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	background: url("images/overlay.png");
+    width: 100%;
+    -webkit-background-size: center;
+    background-size: center;
+	background-repeat: no-repeat;
+	background-color:#fbb800;
+	opacity:.2;
+	
+   
+}
+.video-prev * {
+    border-radius: 0px;
+}
+.video-prev i.fa-play {
+    width: 90px;
+	line-height: 84px;
+	padding-left: 8px;
+	font-size: 25px;
+	color: #000;
+	border: 2px solid #000;
+	text-align: center;
+	border-radius: 49px;
+	position: absolute;
+	left: 50%;
+	margin-left: -49px;
+	top: 50%;
+	margin-top: -49px;
+	z-index: 999;
+	opacity: 0.85;
+}
+.video-prev embed, .video-prev iframe, .video-prev object, .video-prev video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.slide{
+	z-index:1;
+}
+
+
+
+@media only screen and (min-width : 992px) {
+	.logo{
+		display:none;
+	}
+	.what-we-do-left-img{
+		display: none;
+		
+	}
+	.what-we-do-left-img1{
+		display: block;
+	}
+}
+@media only screen and (max-width : 991px) {
+	.ow-navigation .navbar-toggle {
+		margin-top: 30px;
+	}
+	.logo{
+		width: 260px;
+		padding: 10px;
+		display:block;
+	}
+	.what-we-do-left-img{
+		height: 250px;
+		width: 100%;
+		background: url('./images/what-we-do-best.jpg');
+		background-position: center;
+		background-size: cover;
+		display: block;
+	}
+	.what-we-do-left-img1{
+		display: none;
+		
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.welcomeimg{
+		clear: both;
+	}
+	#welcomesection img {
+		z-index: 99;
+		position: relative;
+		left: 0px;
+		top: 0px;
+	}
+	#welcomesection{
+		background: #fbb800;
+	}
+	#welcomesection h3{
+		color: #222;
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: left;
+	}
+	#welcomesection .welcome-block {
+		background-color: #fbb800;
+		padding: 15px;
+		z-index: 9999;
+		margin-left: 0px;
+		height: auto;
+	}
+}
+
+
+
+
+
+/*@media screen and (min-width: 767px) and (max-width: 991px) {
+	.what-we-do-left-img1{
+		display: none;
+	}
+
+
+}*/
+
+
+
+.command {
+    list-style-type: none;
+}
+.command .user .comment_img {
+    float: left;
+    margin-right: 10px;
+}
+.command .user{
+	margin-bottom: 15px;
+	clear: both;
+}
+
+.comment_img {
+    border: 1px solid #fff;
+    background: #4184f5;
+    width: 50px;
+    height: 50px;
+}
+
+.comment_detail{
+	color: #968c6b;
+}
+
+
+
+
+
+
+.profile_bg ul{
+	padding-left: 40px;
+}
+
+.profile_bg p, .profile_bg li {
+	line-height: 25px;
+	list-style: none;
+}
+
+</style>	
+	
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<!-- Loader -->
+	<!--<div id="site-loader" class="load-complete">
+		<div class="loader">
+			<div class="loader-inner ball-clip-rotate">
+				<div></div>
+			</div>
+		</div>
+	</div>-->
+	<!-- Loader /- -->
+	
+	<a id="top"></a>
+	<!-- Main Container -->
+	<div class="main-container">
+		<!-- Header -->
+		<header class="header-main">
+			<!-- Top Header -->
+			<div class="top-header container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p>We believe every interaction with our patients is an opportunity!</p>
+						</div>
+						<div class="col-md-6 text-right">
+							<ul>
+								<li><a href="#" title="Facebook">Login</a></li>	
+								<li><a href="#" title="Twitter">Register</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- container /- -->
+			</div><!-- Top Header /- -->
+			<!-- Logo Block -->
+			<div class="middle-header container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 logo-block pull-left hidden-xs hidden-sm">
+							<a href="#" title="Logo"><img src="images/logo.png" alt="Logo" /></a>
+						</div>
+						<div class="col-md-9 col-sm-6 col-xs-12 text-right pull-right">
+							<div class="phone">
+								<a href="#" title="Book Appointment"><span>+</span>Book Appointment</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- Container -->
+			</div><!-- Logo Block /- -->
+			<!-- Navigation -->
+			<nav class="navbar ow-navigation">
+				<div class="container">
+					<div class="row">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="#" ><img class="logo" src="images/logo.png" alt="Logo" /></a>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Home</a></li>
+								<li class="active"><a href="about.html">About Us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="gallery.html">Gallery </a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact-us.html">Contact</a></li>
+							</ul>						
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Banner Section -->
+
+		<!-- Page Banner -->
+		<div class="page-banner about-banner container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<h3>About Us</h3>
+				<p>Qualified Staff With Expertise in Services We Offer for more Resonable</p>
+				<p>cost with love, Just explore about More!</p>
+				<ol class="breadcrumb">
+					<li><a href="#">Home</a></li>				
+					<li class="active">About Us</li>
+				</ol>
+			</div><!-- Container /- -->
+			<!-- Shape -->
+			<div class="banner-shape container-fluid no-padding">
+				<div class="col-md-6 col-sm-6 col-xs-6 shape-left no-padding">
+					<div class="left-shape-blue">				
+						<svg width="100%" height="100%">
+							<clipPath id="clipPolygon2" clipPathUnits="objectBoundingBox">
+								<polygon points="0 0, 0 100, 120 100, 0 0"></polygon>
+							</clipPath>
+						</svg>
+					</div>	
+					<div class="left-shape">				
+						<svg width="100%" height="100%">
+							<clipPath id="clipPolygon1" clipPathUnits="objectBoundingBox">
+								<polygon points="0 0, 0 100, 100 100, 0 0"></polygon>
+							</clipPath>
+						</svg>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 shape-right no-padding">
+					<div class="right-shape-blue">				
+						<svg width="100%" height="100%">
+							<clipPath id="clipPolygon3" clipPathUnits="objectBoundingBox">
+								<polygon points="1 0.2, 0 1, 0 0.835, 1 0"></polygon>
+							</clipPath>
+						</svg>
+					</div>	
+					<div class="right-shape">				
+						<svg width="100%" height="100%">
+							<clipPath id="clipPolygon4" clipPathUnits="objectBoundingBox">
+								<polygon points="1 0, 0 1, 100 100, 100 0"></polygon>
+							</clipPath>
+						</svg>
+					</div>
+				</div>
+			</div><!-- Shape -->
+		</div><!-- Page Banner /- -->
+		
+		
+		<!-- Who We Are -->
+		<div class="container-fluid no-paddding who-we-are">
+			<!-- Container -->
+			<div class="container">
+				<div class="who-we-are-block">
+					<!-- Section Header -->
+					<div class=""><!--section-header-->
+						<!--<h2 class="text-center">About me</h2>-->
+						<div class="col-md-4">
+							<img src="images/banner-main.png" alt="me" title="me" />
+						</div>
+						<div class="col-md-8">
+							<!--<div class="welcome-block">
+								<h3 class="hidden-xs"><span>About me</span></h3>
+								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in...</p>
+								<a href="#" class="readmorebtn">Read more <i class="fa  fa-long-arrow-right " aria-hidden="true"></i></a>
+							</div>-->
+							<div class="profile_bg">
+								<h3>About</h3>
+								<p><b>Ashoke Mullick</b> born in Kolkata is a first class graduate from Government college of Arts and Craft. He was awarded the Cultural Scholarship by Department of Culture, Government of India during 1981-82. His paintings include a strong focus on the ordinary person – more specifically womankind and their contradictions that faced. The artist likes to portray the contemporary age where people have lost the human touch and have become increasingly impersonal in their behaviour; he touches the facts of life and reality. He canvases his beautiful thoughts on real and unreal world into a bold, vibrant imagination and energetic which is extremely appealing.</p>
+								<h5><b>Solo Exhibition – Recent</b></h5>
+								<ul>
+									<li><i class="ti-check"></i> Aakriti Art Gallery, Kolkata</li>
+									<li><i class="ti-check"></i> Gallery Nvya, New Delhi</li>
+									<li><i class="ti-check"></i> Maximasia, Jakarta-Indonesia</li>
+									<li><i class="ti-check"></i> Jehangir Art Gallery, Mumbai</li>
+								</ul>
+								<h5><b>Others</b></h5>
+								<ul>
+									<li><i class="ti-check"></i> 1986 Academy of Fine Arts, Kolkata</li>
+									<li><i class="ti-check"></i> 1989 Pundole Art Gallery, Mumbai</li>
+									<li><i class="ti-check"></i> 1991 Display Gallery, New Delhi, organized by Pundole Art Gallery</li>
+									<li><i class="ti-check"></i> 1992 Galerie '88, Kolkata</li>
+									<li><i class="ti-check"></i> 1993 Galerie '88, Kolkata</li>
+									<li><i class="ti-check"></i> 1994 Park Hotel, Kolkata</li>
+									<li><i class="ti-check"></i> "Works on Paper", Pundole Art Gallery,</li>
+									<li><i class="ti-check"></i> 1995 The Gallery,Chennai</li>
+									<li><i class="ti-check"></i> 1996 Crimson, Bangalore</li>
+									<li><i class="ti-check"></i> 1997 Art Today, New Delhi</li>
+									<li><i class="ti-check"></i> 1998 Jehangir Art Gallery, Mumbai</li>
+									<li><i class="ti-check"></i> 2001 Galerie '88, Kolkata</li>
+								</ul>
+								<h5><b>Group Exhibitions and Workshops</b></h5>
+								<p>His works were featured in numerous group shows across the country and abroad, some of the noted shows include ‘Calling Bengal’, at Nitanjali Art Gallery, New Delhi; ‘Art of Drawing’ curated by Shuvaprasanna Bhattacharya at Gallery La Mere, Kolkata; ‘Evam’, presented by The Company Theatre at Tao Art Gallery, Mumbai; ‘Vote Tumikar’, CIMA Art Gallery, Kolkata; ‘Different strokes’, Polka Art Gallery, New Delhi; ‘Roots in Hue’, Jehangir Art Gallery, Mumbai; ‘India Surrealism’ curated by Prof. Sovam Som at Aakriti Art Gallery, Kolkata; ‘Digressing Domains’ curated by Sushma k Bahl presented at Nitanjal Art Gallery, New Delhi; ‘Unayan’, Nvya Art Gallery, New Delhi besides shows abroad in New York, France, Singapore, Dubai, Malaysia, Dhaka, Hong Kong, Japan, Germany, Stuttgart, and Sweden.</p>
+								<p>Mullick has participated in several art camps and workshops held at Max Muller Bhavan, Kolkata; Kalakriti Art Gallery, Hyderabad; 100 years of Cellular Jail, at Andaman & Nicobar Islands; Tata Steel, Jamshedpur; Khulana Art College, Khulana - Bangladesh; Koh-Samui, Thailand besides many more. Mullick’s works are a part of several Individual and Institutional collections in India and abroad.</p>
+							</div>
+						</div>
+					</div><!-- Section Header /- -->
+				</div>
+			</div><!-- Container /- -->
+		</div><!-- Who We Are /- -->	
+		
+		
+		
+
+		
+		<!-- Testimonial Section -->
+		<!--
+		<div id="testimonial-section" class="container-fluid no-padding testimonial-section">
+			<div class="container">
+				<div class="section-header">
+					<h3>What Our Patients Are Saying</h3>
+				</div>
+				<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">				
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<p>It’s really Awesome Theme & specialy made for Hospitality &amp; Medical, so this theme uniqe elements use to create your dream website and help to promote your Business.</p>
+							<div class="testimonial-quote">
+								<i><img src="images/quote.png" alt="quote"></i>
+								<h4>San michle</h4>
+								<p>Cancer Patient - Newyork</p>
+							</div>
+						</div>
+						<div class="item">
+							<p>It’s really Awesome Theme & specialy made for Hospitality &amp; Medical, so this theme uniqe elements use to create your dream website and help to promote your Business.</p>
+							<div class="testimonial-quote">
+								<i><img src="images/quote.png" alt="quote"></i>
+								<h4>San michle</h4>
+								<p>Cancer Patient - Newyork</p>
+							</div>
+						</div>
+						<div class="item">						
+							<p>It’s really Awesome Theme & specialy made for Hospitality &amp; Medical, so this theme uniqe elements use to create your dream website and help to promote your Business.</p>
+							<div class="testimonial-quote">
+								<i><img src="images/quote.png" alt="quote"></i>
+								<h4>San michle</h4>
+								<p>Cancer Patient - Newyork</p>
+							</div>
+						</div>
+					</div>			
+					<ol class="carousel-indicators">
+						<li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#testimonial-carousel" data-slide-to="1"></li>
+						<li data-target="#testimonial-carousel" data-slide-to="2"></li>
+					</ol>
+				</div>
+			</div>
+		</div>-->
+		<!-- Testimonial Section /- -->
+
+		<!-- Footer -->
+		<footer class="footer-main container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<!-- Contact Detail -->
+				<div class="contact-details">
+					<div class="col-md-4 col-sm-4 address-box detail-box">
+						<i><img src="images/ftr-location.png" alt="Loactaion" /></i>
+						<h4>hospital address</h4>
+						<p>E44, Design Street, Web Corner</p>
+						<p>Melbourne - 005</p>
+					</div>
+					<div class="col-md-4 col-sm-4 phone-box detail-box">
+						<i><img src="images/ftr-phone.png" alt="Phone" /></i>
+						<h4>EMERGENCY ( 24X7 )</h4>
+						<p>Mobile: (+1) 800 433 633</p>
+						<p>Toll Free : (+1) 800 123 456</p>
+					</div>
+					<div class="col-md-4 col-sm-4 mail-box detail-box">
+						<i><img src="images/ftr-email.png" alt="Email" /></i>
+						<h4>hospital address</h4>
+						<p><a href="mailto:info@maxihealth.com">info@maxihealth.com</a></p>
+						<p><a href="mailto:support@maxihealth.com">support@maxihealth.com</a></p>
+					</div>
+				</diV><!-- Contact Detail /- -->
+				
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<aside class="widget widget-about">
+							<h3><img src="images/logo-ftr.png" alt="Logo" /></h3>
+							<p>Aqui blanditiis praesentium voluptatum delenitia atque corrupti quos dolores.</p>
+							<div class="time-schedule">
+								<p>Monday - Friday <span>8.00 - 18.00</span></p>
+								<p>Saturday <span>8.00 - 18.00</span></p>
+								<p>Sunday <span>8.00 - 13.00</span></p>
+							</div>
+						</aside>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="widget">
+							<h3 class="widget-title">Latest News</h3>
+							<ul class="command">
+								<li class="user">
+									<img class="comment_img" src="images/comment-1.jpg" alt="user-1" title="user-1" />
+									<span>
+										<div class="comment_title">Aqui blanditiis praesentium voluptatum blanditiis</div>
+										<div class="comment_detail">
+											<small>Sep 22 2017</small>
+										</div>
+									</span>
+								</li>
+								<li class="user">
+									<img class="comment_img" src="images/comment-2.jpg" alt="user-1" title="user-1" />
+									<span>
+										<div class="comment_title">Aqui blanditiis praesentium Aqui blanditiisvoluptatum</div>
+										<div class="comment_detail">
+											<small>Sep 22 2017</small>
+										</div>
+									</span>
+								</li>
+								<li class="user">
+									<img class="comment_img" src="images/comment-3.jpg" alt="user-1" title="user-1" />
+									<span>
+										<div class="comment_title">Aqui blanditiis praesentium Aqui blanditiis praesentium voluptatum</div>
+										<div class="comment_detail">
+											<small>Sep 22 2017</small>
+										</div>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<!--<aside class="widget widget-links">
+							<h3 class="widget-title">Our Services</h3>
+							<ul>
+								<li><a href="#" title="Births">Births</a></li>
+								<li><a href="#" title="Dental">Dental</a></li>
+								<li><a href="#" title="Pulmonary">Pulmonary</a></li>
+								<li><a href="#" title="Nuclear magnetic">Nuclear magnetic</a></li>
+								<li><a href="#" title="Cardiology">Cardiology</a></li>
+								<li><a href="#" title="Pregnancy">Pregnancy</a></li>
+								<li><a href="#" title="Neurology">Neurology</a></li>
+								<li><a href="#" title="For disabled">For disabled</a></li>
+								<li><a href="#" title="Traumatology">Traumatology</a></li>
+								<li><a href="#" title="X-ray">X-ray</a></li>
+								<li><a href="#" title="Neurology">Neurology</a></li>
+								<li><a href="#" title="Prostheses">Prosthese</a></li>
+							</ul>
+						</aside>-->
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<aside class="widget widget-newsletter">
+							<h3 class="widget-title">Get Updates</h3>
+							<p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium quas molestias except.</p>
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Email Address">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-send-o"></i></button>
+								</span>
+							</div><!-- /input-group -->
+							<div class="social">
+								<h3 class="widget-title">Stay Connected</h3>
+								<ul>
+									<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>	
+									<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#" title="Tumblr"><i class="fa fa-tumblr"></i></a></li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div><!-- Container /- -->
+			<!-- Bottom Footer -->
+			<div class="container-fluid no-padding bottom-footer">
+				<p>&copy; 2017 GKM Holitsic Sex Clinic., Privacy policy. Terms and conditions</p>
+			</div><!-- Bottom Footer /- -->
+		</footer>
+		<!-- Footer /- -->
+		
+	</div><!-- Main Container -->
+	
+	<!-- JQuery v1.11.3 -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Library - Modernizer -->
+	<script src="libraries/modernizr/modernizr.js"></script>
+	
+	<!-- Library - Bootstrap v3.3.5 -->
+	<script src="libraries/bootstrap/bootstrap.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
+
+	<!-- jQuery Easing v1.3 -->
+	<script src="js/jquery.easing.min.js"></script>
+
+	<!-- Library - jQuery.appear -->
+	<script src="libraries/appear/jquery.appear.js"></script>
+	
+	<!-- Library - OWL Carousel V.2.0 beta -->
+	<script src="libraries/owl-carousel/owl.carousel.min.js"></script>
+	
+	<!-- jQuery For Number Counter -->
+	<script src="libraries/number/jquery.animateNumber.min.js"></script>
+	
+	<!-- Library - Isotope Portfolio Filter -->
+	<script src="libraries/isotope/isotope.pkgd.min.js"></script>
+	
+	<!-- Library - Magnific Popup - v1.0.0 -->
+	<script src="libraries/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	<!-- Library - Google Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	
+	<!-- Library - Theme JS -->
+	<script src="js/functions.js"></script>
+</body>
+
+<!--
+<div class="col-md-4 col-sm-12 col-xs-12">
+	<form class="appoinment-form">
+		<h3><img src="images/appoinment.png" alt="appoinment"/>Appointment form</h3>
+		<div class="form-group col-md-12 no-padding">							
+			<input type="text" id="your-name" class="form-control" placeholder="Your Name">
+		</div>					
+		<div class="form-group col-md-12 no-padding">							
+			<input type="email" id="email" class="form-control" placeholder="Email Address">
+		</div>
+		<div class="form-group input-group col-md-12 no-padding">
+			<div class="col-md-7 no-padding">
+				<div class="col-md-6 col-sm-4 col-xs-4 no-left-padding">
+					<select class="form-control">
+						<option>Day</option>
+						<option>Sunday</option>
+						<option>Monday</option>
+					</select>
+				</div>
+				<div class="col-md-6 col-sm-4 col-xs-4 no-left-padding">
+					<select class="form-control">
+						<option>Time</option>
+						<option>AM</option>
+						<option>PM</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-5 col-sm-4 col-xs-4 no-padding">
+				<select class="form-control">
+					<option>Doctor Name</option>
+					<option>Mr.XYZ</option>
+					<option>Mr.ABC</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding">							
+			<textarea rows="4" id="textarea_message" class="form-control" placeholder="Your Message..."></textarea>
+		</div>
+		<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding">
+			<input type="checkbox"><span>Send Email Notification</span>							
+			<button type="submit" id="btn_submit" class="btn-submit pull-right">
+			<img src="images/heart-sm.png" alt="heart-sm">Submit</button>
+		</div>
+	</form>
+</div>-->
+</html>

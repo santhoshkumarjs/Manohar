@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/mystyle.css" rel="stylesheet"/>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui.js"></script>
+<style>
+tr.detail-row.open {
+    display: block;
+    display: table-row;
+	background: #fff;
+}
+
+tr.detail-row {
+    display: none;
+}
+</style>
+<script>
+$(document).ready(function () {
+    $(".btn-select").each(function (e) {
+        var value = $(this).find("ul li.selected").html();
+        if (value != undefined) {
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+    });
+	
+	$('#result > table').hide();
+	
+	$('#list-data li').click(function(){
+	             
+	           $(this).addClass('selected');
+			   var index =$(this).index();
+			   $('#result > table').hide();
+			   $('#result > table:eq('+index+')').show();
+	});
+	
+	
+	
+});
+
+$(document).on('click', '.btn-select', function (e) {
+    e.preventDefault();
+    var ul = $(this).find("ul");
+    if ($(this).hasClass("active")) {
+        if (ul.find("li").is(e.target)) {
+            var target = $(e.target);
+            target.addClass("selected").siblings().removeClass("selected");
+            var value = target.html();
+            $(this).find(".btn-select-input").val(value);
+            $(this).find(".btn-select-value").html(value);
+        }
+        ul.hide();
+        $(this).removeClass("active");
+    }
+    else {
+        $('.btn-select').not(this).each(function () {
+            $(this).removeClass("active").find("ul").hide();
+        });
+        ul.slideDown(300);
+        $(this).addClass("active");
+    }
+});
+
+$(document).on('click', function (e) {
+    var target = $(e.target).closest(".btn-select");
+    if (!target.length) {
+        $(".btn-select").removeClass("active").find("ul").hide();
+    }
+});
+</script>
+</head>
+<body>
+<div class="navbar navbar-default" role="navigation">		
+		<div class="container-fluid">
+			<!-- Toggle Btn -->
+			<div class="navbar-header">
+			 <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+				<a href="index.html"><img src="img/logo.png" alt="m-tutor"/></a>
+			</div>
+			<!-- Nav bar -->
+			 <div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Dashboard</a></li>
+					<li><a href="dashboard_2.html">Expert Dashboard</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"> </i> 
+					  admin	<span class="caret"></span></a>
+					  <ul class="dropdown-menu" role="menu">
+						<li><a href="#">Logout</a></li>
+					  </ul>
+					</li>
+				  </ul>
+			</div><!-- Nav bar end-->	
+		</div>
+</div><!--header end-->
+<!--main part-->
+<div class="main">
+		<div class="container-fluid">
+		<div class="bg_border">
+			<div class="header_bg">
+			<div class="row dash_title">
+				<div class="col-sm-4 col-xs-12">
+					<h4><i class="fa fa-dashboard"> </i> Dashboard</h4>
+				</div>
+				<div class="col-sm-4 col-xs-12 pull-right">
+					<div class="right-inner-addon">
+						<i class="fa fa-search"></i>
+						<input type="search" class="form-control form-control_new" placeholder="Search" />
+					</div>
+
+				</div>
+			</div>
+			</div>
+					<!-- Responsive Table-->
+					<div class="row dash_table">
+					<div class="col-md-12">
+					<div class="table-responsive">
+						<table class="table table-striped table-hover table-bordered table-condensed">
+							<thead>
+								<th></th>
+								<th>ID</th>
+								<th>Question</th>								
+								<th>Name</th>
+								<th>Which College</th>								
+								<th>Status</th>																
+							</thead>
+							<tr class="trmain" auto="1">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-info full-width"  data-toggle="modal" data-target="#myModal">New</label></td>
+							</tr>
+							<tr class="detail-row_1 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-4">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+											</div>
+										</div>	
+									</td>
+							</tr>
+							<tr class="trmain" auto="2">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-success full-width"  data-toggle="modal" data-target="#myModal">Replied</label></td>
+							</tr>
+							<tr class="detail-row_2 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-4">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+											</div>
+										</div>	
+									</td>
+							</tr>
+							<tr class="trmain" auto="3">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-danger full-width"  data-toggle="modal" data-target="#myModal">Pending</label></td>
+							</tr>
+							<tr class="detail-row_3 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-4">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+											</div>
+										</div>	
+									</td>
+							</tr>
+							<tr class="trmain" auto="4">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-success full-width"  data-toggle="modal" data-target="#myModal">Replied</label></td>
+							</tr>
+							<tr class="detail-row_4 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-4">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+											</div>
+										</div>	
+									</td>
+							</tr>
+							<tr class="trmain" auto="5">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-info full-width"  data-toggle="modal" data-target="#myModal">New</label></td>
+							</tr>
+							<tr class="detail-row_5 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-6">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+											</div>
+										</div>	
+									</td>
+							</tr>
+							<tr class="trmain" auto="6">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-info full-width"  data-toggle="modal" data-target="#myModal">New</label></td>
+							</tr>
+							<tr class="detail-row_6 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-6">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+											</div>
+										</div>	
+									</td>
+							</tr>
+							<tr class="trmain" auto="7">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-info full-width"  data-toggle="modal" data-target="#myModal">New</label></td>
+							</tr>
+							<tr class="detail-row_7 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-6">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+										</div>
+										</div>	
+									</td>
+							</tr>
+							<tr class="trmain" auto="8">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-info full-width"  data-toggle="modal" data-target="#myModal">New</label></td>
+							</tr>
+							<tr class="detail-row_8 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-6">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+											</div>
+										</div>	
+									</td>
+							</tr>
+							<tr class="trmain" auto="9">
+									<td class="center"><div class="action-buttons"><a href="#" class="blue bigger-140 show-details-btn" title="Show Details"><i class="fa fa-plus-circle"></i><span class="sr-only">Details</span></a></div></td>
+									<td>Qid_01</td>
+									<td>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief, Lorem Ipsum is not simply random text.
+									</td>
+									<td>Satish Chandra</td>
+									<td>S. A. Engineering College</td>
+								<td><label class="label label-info full-width"  data-toggle="modal" data-target="#myModal">New</label></td>
+							</tr>
+							<tr class="detail-row_9 detail-row">
+									<td colspan="6">
+									<div class="table-detail">
+											<div class="row">
+												<div class="col-xs-4 col-sm-4">
+													<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Subject...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													<li>Mechanical Engineering</li>
+													<li>Engineering Chemistry</li>
+													<li>Engineering Physics</li>
+													<li>Chemical Engineering</li>
+													</ul>
+													</a>
+												</div>
+											<div class="col-xs-4 col-sm-4">
+												<a class="btn btn-default btn-select btn-select-light">
+													<input type="hidden" class="btn-select-input" id="" name="" value="" />
+													<span class="btn-select-value">-Select Expert...</span>
+													<span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+													<ul id="list-data">
+														<li>Prof. Satish Chandra</li>
+														<li>Prof. Partha Roy</li>
+														<li>Prof. Deepak Khare</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. A.K. Singh</li>
+														<li>Prof. M. Parida</li>
+														<li>Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+														<li>Prof. Prof. D.K. Mehra</li>
+														<li>Prof. M.R. Maurya</li>
+													</ul>
+												</a>
+											</div>
+											<div class="col-sm-4 col-xs-6">
+											<a class="btn btn-primary btn-block" href="dashboard_2.html">Submit</a>
+											</div>
+											</div>
+										</div>
+									</td>
+							</tr>
+										
+						</table>					
+					</div><!-- Responsive Table end-->
+					</div><!--table col1 end-->
+					<div class="row text-right" style="margin:0px;">
+					<nav>
+						  <ul class="pagination index_page">
+							<li>
+							  <a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							  </a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+							  <a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							  </a>
+							</li>
+						  </ul>
+						</nav>
+					</div>
+
+</div>					
+</div>
+</div>
+</div>
+</div><!--main part end-->
+	<!-- Footer part-->
+	<div class="footer">
+	  <div class="container">
+		<p class="foot-text">&copy; 2016 m-tutor.com, All Rights Reserved.</p>
+	  </div>
+	</div>
+	<!-- Footer part end-->
+<script>
+   $(document).ready(function(){
+		$(".trmain").each(function(){
+			$(this).on('click', function(){
+				var clss = $(this).attr('auto');
+				$(".detail-row_"+clss).toggleClass('open').siblings().removeClass('open');
+                var findauto = $(".detail-row_"+clss).parents().find("[auto=" +clss+ "] i");
+				var overall  = $(".detail-row").parents().find("i.fa-minus-circle");
+				 
+				 if($(".detail-row_"+clss).hasClass('open')){
+				  findauto.addClass('fa-minus-circle');
+				  findauto.removeClass('fa-plus-circle');
+				 }else{
+				  findauto.removeClass('fa-minus-circle');
+				  findauto.addClass('fa-plus-circle');
+				 }
+				 
+				 if($(".fa-minus-circle").length > 1){
+				  overall.removeClass('fa-minus-circle').addClass('fa-plus-circle')
+				  findauto.addClass('fa-minus-circle'); 
+				 }
+			});
+		});
+   });
+  </script>
+</body>
+</html>

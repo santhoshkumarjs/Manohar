@@ -1,0 +1,486 @@
+#rating-view ul li, .share-bar ul li {
+    float: left;
+    list-style: outside none none;
+    text-align: center;
+}
+.rating, svg:not(:root) {
+    overflow: hidden;
+}
+a {
+    background-color: transparent;
+    outline: 0 none;
+}
+a:active, a:hover {
+    outline-width: 0;
+}
+b, strong {
+    font-weight: bolder;
+}
+.share-bar ul, body {
+    margin: 0;
+    padding: 0;
+}
+.hidden {
+    display: none !important;
+    opacity: 0;
+}
+.visible {
+    display: block !important;
+    opacity: 1;
+}
+.m-r-10 {
+    margin-right: 10px !important;
+}
+.m-r {
+    margin-right: 10px !important;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+body {
+    color: #222;
+    font-family: Raleway,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.share-bar ul::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.share-bar ul li {
+    height: 35px;
+    margin: 0;
+    min-width: 39px;
+    position: relative;
+}
+.share-bar ul li a {
+    color: #4a4a4a;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+#main-view .share-title {
+    color: #4a4a4a;
+    display: none;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    margin-right: 2px;
+    min-width: 40px;
+}
+#main-view .soc-item {
+    border-radius: 50%;
+    margin-right: 5px;
+    min-width: 35px;
+    padding: 5px;
+    width: 35px;
+}
+#main-view .soc-item svg {
+    display: inline-block;
+    height: 18px;
+    vertical-align: middle;
+    width: 18px;
+}
+#main-view .soc-item .soc-item__counter, #main-view .vuukle-item__counter {
+    background: #179dba none repeat scroll 0 0;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-left: -5px;
+    padding: 0 4px;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    z-index: 500;
+}
+.top-counters #main-view .soc-item .soc-item__counter, .top-counters #main-view .vuukle-item .vuukle-item__counter {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #4a4a4a;
+    font-size: 13px;
+    font-weight: 700;
+    left: 0;
+    right: 0;
+    top: -20px;
+}
+.top-counters #main-view .share-title, .top-counters #main-view .soc-item, .top-counters #main-view .vuukle-item, .top-counters #rating-view {
+    margin-top: 20px;
+}
+.top-counters #main-view .vuukle-item {
+    overflow: visible;
+}
+.top-counters #main-view li.vuukle-item .vuukle-item__desc {
+    transition: none 0s ease 0s !important;
+}
+#main-view .more-item {
+    border-right: medium none;
+    min-width: 35px;
+    padding: 5px 0;
+    width: 35px;
+}
+#main-view .more-item svg {
+    height: 18px;
+    width: 18px;
+}
+#main-view.expanded .soc-item__google-plus, #main-view.expanded .soc-item__email, #main-view.expanded .soc-item__linkedin, #main-view.expanded .soc-item__stumbleupo, #main-view.expanded .soc-item__reddit {
+    display: block;
+}
+#main-view.expanded .soc-item__facebook, #main-view.expanded .soc-item__twitter, #main-view.expanded .soc-item__whatsapp, #main-view.expanded .vuukle-item {
+    display: none;
+}
+#main-view .soc-item svg {
+    fill: #fff;
+    transition: all 0.35s ease 0s;
+}
+#main-view .soc-item:hover svg {
+    transform: scale(1.1);
+}
+#main-view .soc-item {
+    transition: all 0.35s ease 0s;
+}
+#main-view .more-item.more-item__social svg {
+    fill: #fff;
+    outline: 0 none;
+    transition: all 0.5s ease 0s;
+}
+#main-view .more-item.more-item__social.active svg {
+    transform: rotate(135deg);
+}
+#main-view .vuukle-item {
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+    width: 39px;
+}
+#main-view .soc-item__twitter {
+    background: #1da1f2 none repeat scroll 0 0;
+    margin-right: 5px;
+}
+#main-view .soc-item__facebook {
+    background: #416bb4 none repeat scroll 0 0;
+}
+#main-view .soc-item__whatsapp {
+    background: #4ac456 none repeat scroll 0 0;
+}
+#main-view .soc-item__google-plus {
+    background: #db4437 none repeat scroll 0 0;
+    display: none;
+}
+#main-view .soc-item__linkedin {
+    background: #1985bc none repeat scroll 0 0;
+    display: none;
+}
+#main-view .soc-item__stumbleupon {
+    background: #eb4924 none repeat scroll 0 0;
+    display: none;
+}
+#main-view .soc-item__email {
+    background: #048ee7 none repeat scroll 0 0;
+    display: none;
+    margin-right: 5px;
+}
+#main-view .soc-item__reddit {
+    background: #5faefd none repeat scroll 0 0;
+    display: none;
+}
+#main-view .more-item.more-item__social {
+    background: #e98b40 none repeat scroll 0 0;
+    margin-right: 0;
+}
+#main-view .vuukle-item a {
+    font-weight: 700;
+    overflow: hidden;
+}
+#main-view .vuukle-item img {
+    margin-top: 2px;
+    max-height: 30px;
+    vertical-align: middle;
+}
+#main-view li.vuukle-item .vuukle-item__desc {
+    display: inline-block;
+    font-weight: 700;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.1s ease 0s;
+}
+#main-view .vuukle-item__counter {
+    right: 0;
+    top: 0;
+    transition: all 0.15s ease 0s;
+}
+#emotes-view .emotes-block {
+    animation: 0.5s ease 0s normal none 1 running fadeIn;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+    color: #45474d;
+    height: 55px;
+    margin-right: 5px;
+    min-width: 42px;
+    outline: 0 none !important;
+    padding: 2px 0;
+    position: relative;
+    transition: all 0.2s ease-in-out 0s;
+}
+#emotes-view a {
+    line-height: 1.3rem;
+}
+#emotes-view .emotes-block_close {
+    border: medium none;
+    color: #fff;
+    padding: 10px 0;
+}
+#emotes-view .emotes-block svg {
+    max-height: 38px;
+    max-width: 34px;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+}
+#emotes-view .emotes-block:hover svg {
+    transform: scale(1.1);
+}
+#emotes-view .emotes-block.active svg {
+    transform: scale(1.15);
+}
+#emotes-view .emotes-block .emotes-block__percentage {
+    color: #777;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: color 0.3s ease 0s;
+}
+#emotes-view .emotes-block__close {
+    background: #cf0002 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    height: 55px;
+    min-width: 33px;
+    padding: 2px;
+    width: 33px;
+}
+#emotes-view .emotes-block__close a {
+    padding: 14px 0;
+}
+#emotes-view .emotes-block__happy.active .emotes-block__percentage, #emotes-view .emotes-block__happy:hover .emotes-block__percentage {
+    color: #32cd32;
+}
+#emotes-view .emotes-block__indifferent.active .emotes-block__percentage, #emotes-view .emotes-block__indifferent:hover .emotes-block__percentage {
+    color: #ff0;
+}
+#emotes-view .emotes-block__amused.active .emotes-block__percentage, #emotes-view .emotes-block__amused:hover .emotes-block__percentage {
+    color: #00bfff;
+}
+#emotes-view .emotes-block__excited.active .emotes-block__percentage, #emotes-view .emotes-block__excited:hover .emotes-block__percentage {
+    color: violet;
+}
+#emotes-view .emotes-block__angry.active .emotes-block__percentage, #emotes-view .emotes-block__angry:hover .emotes-block__percentage {
+    color: #ff4500;
+}
+#emotes-view .emotes-block__sad.active .emotes-block__percentage, #emotes-view .emotes-block__sad:hover .emotes-block__percentage {
+    color: #795548;
+}
+#emotes-view .voted {
+    background: #fbae2f none repeat scroll 0 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    margin: 3px -1px;
+    padding: 0;
+}
+#rating-view ul li {
+    animation: 0.5s ease 0s normal none 1 running fadeIn;
+    color: #fff;
+    height: 36px;
+    margin: 0;
+    min-width: 40px;
+    padding: 7px 0;
+    position: relative;
+}
+#rating-view ul li#close-rating img {
+    max-width: 22px;
+}
+#rating-view ul li.rating-block__title {
+    background-color: #4a4a4a;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    max-width: 120px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 2;
+}
+#rating-view ul li.rating-block__title-right {
+    display: none;
+    margin-left: 0;
+}
+#rating-view ul li.rating-block__left-arrow {
+    display: none;
+    margin-left: -10px;
+    min-width: 0;
+    padding: 0;
+}
+#rating-view ul li.rating-block__left-arrow div {
+    border-bottom: 18px solid transparent;
+    border-right: 11px solid #4a4a4a;
+    border-top: 18px solid transparent;
+    height: 0;
+    width: 0;
+}
+#rating-view ul li.rating-block__right-arrow {
+    min-width: 0;
+    padding: 0;
+    width: 11px !important;
+    z-index: 5;
+}
+#rating-view ul li.rating-block__right-arrow div {
+    border-bottom: 18px solid transparent;
+    border-left: 11px solid #4a4a4a;
+    border-top: 18px solid transparent;
+    height: 0;
+    width: 0;
+}
+#rating-view .close {
+    background-color: #db2425;
+}
+#rating-view .rating-block__stars {
+    margin-left: -10px;
+    padding: 0;
+}
+/*
+.rating {
+    direction: rtl;
+    font-size: 40px;
+    margin: 0 auto;
+    min-width: 120px;
+    padding: 0 15px;
+}
+*/
+.rating input {
+    float: right;
+    opacity: 0;
+    position: absolute;
+}
+.rating a, .rating label {
+    color: #fff !important;
+    float: right;
+    line-height: 33px;
+    text-decoration: none;
+    transition: color 0.4s ease 0s;
+}
+.rating.not-voted a:focus, .rating.not-voted a:focus ~ a, .rating.not-voted a:hover, .rating.not-voted a:hover ~ a, .rating.not-voted input:focus ~ label, .rating.not-voted label:hover, .rating.not-voted label:hover ~ label {
+    color: #fff;
+    cursor: pointer;
+}
+.rating a .star-active {
+    display: none;
+}
+.rating a .star-inactive, .rating.not-voted a:focus .star-active, .rating.not-voted a:focus ~ a .star-active, .rating.not-voted a:hover .star-active, .rating.not-voted a:hover ~ a .star-active, .rating.not-voted input:focus ~ label .star-active, .rating.not-voted label:hover .star-active, .rating.not-voted label:hover ~ label .star-active {
+    display: block;
+}
+.rating.not-voted a:focus .star-inactive, .rating.not-voted a:focus ~ a .star-inactive, .rating.not-voted a:hover .star-inactive, .rating.not-voted a:hover ~ a .star-inactive, .rating.not-voted input:focus ~ label .star-inactive, .rating.not-voted label:hover .star-inactive, .rating.not-voted label:hover ~ label .star-inactive {
+    display: none;
+}
+.rating a.active .star-active, .rating a.active ~ a .star-active, .rating input.active ~ label .star-active, .rating label.active .star-active, .rating label.active ~ label .star-active {
+    display: block;
+}
+.rating a.active .star-inactive, .rating a.active ~ a .star-inactive, .rating input.active ~ label .star-inactive, .rating label.active .star-inactive, .rating label.active ~ label .star-inactive {
+    display: none;
+}
+#main-view .soc-item.hide {
+    display: none;
+    min-width: 0;
+    visibility: hidden;
+    width: 0;
+}
+@media screen and (min-width: 330px) {
+#main-view .share-title {
+    display: block;
+}
+}
+@media screen and (min-width: 360px) {
+#main-view.expanded .share-title {
+    display: none;
+}
+#main-view.expanded .soc-item__facebook, #main-view.expanded .soc-item__twitter, #main-view.expanded .soc-item__whatsapp {
+    display: block;
+}
+#emotes-view .emotes-block {
+    min-width: 46px;
+}
+#emotes-view .emotes-block__close {
+    min-width: 35px;
+    width: 30px;
+}
+}
+@media screen and (min-width: 375px) {
+#main-view .soc-item.soc-item__google-plus {
+    display: block;
+}
+}
+@media screen and (min-width: 480px) {
+.top-counters #emotes-view {
+    margin-top: 20px;
+}
+#rating-view ul li.rating-block__title-right, #rating-view ul li.rating-block__left-arrow, #main-view.expanded .share-title {
+    display: block;
+}
+#emotes-view .emotes-block, #emotes-view .emotes-block__close {
+    height: 40px;
+    min-width: 70px;
+}
+#emotes-view .emotes-block__close {
+    min-width: 30px;
+}
+#emotes-view .emotes-block__close a {
+    padding: 5px 0;
+}
+#emotes-view .emotes-block .emotes-block__percentage {
+    display: inline-block;
+    margin-left: 0;
+}
+#main-view li.vuukle-item:hover .vuukle-item__desc {
+    display: inline-block;
+    opacity: 1;
+    position: relative;
+    top: 0;
+}
+#main-view .vuukle-item.vuukle-item__comments:hover, #main-view .vuukle-item.vuukle-item__emotes:hover, #main-view .vuukle-item.vuukle-item__rating:hover {
+    width: 120px;
+}
+#main-view .vuukle-item:hover .vuukle-item__counter {
+    opacity: 0;
+}
+}
+@media screen and (min-width: 767px) {
+#main-view .soc-item.soc-item__whatsapp {
+    display: none !important;
+}
+#main-view .soc-item .soc-item__counter, #main-view .vuukle-item__counter {
+    font-size: 1rem;
+}
+#main-view .share-title {
+    font-size: 3rem;
+}
+#main-view .soc-item.soc-item__email {
+    display: block;
+}
+}
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}

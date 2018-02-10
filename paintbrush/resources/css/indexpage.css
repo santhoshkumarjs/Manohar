@@ -1,0 +1,93 @@
+.blackoverlay {
+    background-color: black;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 888888888;
+}
+.popupcontainer {
+    background: #fff;
+    box-shadow: 0 0 30px #000;
+    left: 0;
+    margin: 0 auto;
+    min-height: 30%;
+    position: absolute;
+    right: 0;
+    top: 22% !important;
+    width: 796px;
+    z-index: 2147483647;
+	
+}
+
+.popupcontainer .popupform {
+    height: 400px;
+    background: url(images/world-artday.jpg) 0 0px no-repeat;
+    position: relative;
+}
+
+.popupcontainer .btnclose {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.popupcontainer .popupform h4 {
+    color: #14469e;
+    font-family: roboto-regular;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: -1px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+}
+@media only screen and (max-width:992px) {
+    .popupcontainer {
+        padding: 15px;
+        background: none;
+        width: 100%;
+    }
+    .popupcontainer .popupform {
+        width: 100%;
+        height: 400px;
+        background-size: 100% 100%;
+    }
+}
+@media only screen and (max-width:767px) {
+    .popupcontainer {
+        padding: 15px;
+        background: none;
+        width: 100%;
+    }
+    .popupcontainer .popupform {
+        width: 100%;
+        height: 325px;
+        background-size: 100% 100%;
+    }
+}	
+/* Below are added now */
+.ban .image{
+	width: 100%;
+	height: 300px;
+	background-position: center !important;
+	background-size: cover !important;
+}
+
+@media only screen and (max-width:1024px) {
+	.ban .image{
+		width: 100%;
+		height: 250px;
+	}
+}
+/*
+@media only screen and (min-width:1025px) {
+	.ban img{
+		width: 100%;
+		height: 300px;
+	}
+}*/	

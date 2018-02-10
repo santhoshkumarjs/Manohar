@@ -1,0 +1,135 @@
+/*---index css
+.c-header_button{background-color:#555;}
+.c-header_logo {border-bottom: 2px solid #555;}
+.test01{height:28rem;padding: 2rem;}
+.-half{margin-top:4rem;}
+.c-home_section.-last {margin-top: 5.188rem;}
+.c-home_section:first-child {margin-top: 15.875rem;margin-bottom: 12.5rem;}
+.o-form {
+    padding-bottom: 4.25rem;
+}
+.o-form_fieldset {
+    margin-bottom: 1.75rem;
+}
+.o-button.-form {
+    width: 50%;
+	float:left;	
+}
+.modalWindow {
+		position: fixed;
+		font-family: arial;
+		font-size:80%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.2);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+		overflow:auto;
+	}
+	.modalHeader h2 { color: #fff; }
+	.modalWindow:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+	.modalWindow > div {
+		width: 500px;
+		position: relative;
+		margin: 10% auto;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		background: #fff;
+	}
+	.modalWindow .modalHeader  {	padding: 20px;background-color:#000;	}
+	.modalWindow .modalContent {	padding: 35px;	}
+	.modalWindow .modalFooter  {	padding: 8px 20px 8px 20px;	}
+	.modalFooter {
+		background: #F1F1F1;
+		border-top: 1px solid #999;
+		-moz-box-shadow: inset 0px 13px 12px -14px #888;
+		-webkit-box-shadow: inset 0px 13px 12px -14px #888;
+		box-shadow: inset 0px 13px 12px -14px #888;
+	}
+	.modalFooter p {
+		color:#D4482D;
+		text-align:right;
+		margin:0;
+		padding: 5px;
+	}
+	.ok, .close, .cancel {
+		color: #FFFFFF;
+		line-height: 25px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 50px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+	.close {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		width: 22px;
+		height: 22px;
+		font-size: 15px;
+	}
+	.ok, .cancel {
+		width:80px;
+		float:right;
+		margin-left:20px;
+	}
+	.ok:hover { background: #189CDA; }
+	.close:hover, .cancel:hover { background: #fff; color:#000;}
+	.clear { float:none; clear: both; }
+	.active{display:block;}
+	
+@media (max-width:699px) {
+	.modalWindow > div {
+    width: 319px;
+    position: relative;
+    margin: 10% auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fff;
+}
+}index css end --*/
+
+/*---- about us --*/
+.c-box {padding-bottom: 10%;}
+.c-box_link {padding: 1.2rem;}
+/*.c-home_section.-last {margin-top: 16.188rem;}*/
+.c-article.-nobottom {margin-bottom: 2.625rem;}
+.o-list-table.-team .o-list-table_header {width: 100%;margin-right: 0rem;}
+.textalignment{text-align:justify;}
+.c-team_name {font-size: 1rem;}
+.c-team_role{font-size:.9rem;margin-top: -.65rem;}
+/*about us end --*/
+
+
+
+/*-- careers --*/
+.c-article_content {padding-left: 0rem;}
+.c-block_subheading {margin-bottom: 2.5rem;margin-top: 2rem;}
+.c-block_subheading {letter-spacing: .12em;text-transform: uppercase;color: #0084c0;font-weight: 400;font-size: 1rem;}
+.bg {background: #0084c0;padding: 10px;margin-top: 11px;color: #fff;}
+.bg h3{text-align:center;font-weight:normal;margin-top:29px;}
+.z-content-inner.bg1{background-color: #fff;box-shadow: 0 1px 3px -3px rgba(0, 0, 0, 0.15);}
+.z-content-inner.bg2{background-color: #f9f9fa;box-shadow: 0 1px 3px -3px rgba(0, 0, 0, 0.15);}
+.dl-horizontal dt {float: left;width: 160px;overflow: hidden;clear: left;text-align: left;text-overflow: ellipsis;white-space: nowrap;}
+.dl-horizontal dd {margin-left: 180px;}
+@media (min-width: 768px) {
+.dl-horizontal dt {float: left;width: 160px;overflow: hidden;clear: left;text-align: left;text-overflow: ellipsis;white-space: nowrap;}
+.dl-horizontal dd {margin-left: 180px;}
+}
+/*-- careeres end ---*/  

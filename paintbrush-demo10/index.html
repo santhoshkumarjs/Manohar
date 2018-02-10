@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paint Brush</title>
+    <link href="resource/css/bootstrap.min.css" rel="stylesheet">
+	<link href="resource/css/themify-icons.css" rel="stylesheet">
+    <link href="resource/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resource/css/animate.css" rel="stylesheet">
+	<link href="resource/css/main.css" rel="stylesheet">
+	<!--<link href="css/style.css" rel="stylesheet">-->
+	<link href="resource/css/style_002.css" rel="stylesheet">
+	<link href="resource/css/subscribe-better.css" rel="stylesheet" media="screen" />
+	<link href="resource/css/responsive.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="resource/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#popup").css({"display":"block"});
+		$("#popfadelogin").css({"display":"block"});
+			
+	   
+		$('body').delegate('#btnclose','click',function(){
+			$("#popup").hide();
+			$("#popfadelogin").hide();
+		});		
+	});
+
+</script>
+
+<style>
+.blackoverlay {
+    background-color: black;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 888888888;
+}
+.popupcontainer {
+    background: #fff;
+    box-shadow: 0 0 30px #000;
+    left: 0;
+    margin: 0 auto;
+    min-height: 30%;
+    position: absolute;
+    right: 0;
+    top: 22% !important;
+    width: 796px;
+    z-index: 2147483647;
+	
+}
+
+.popupcontainer .popupform {
+    height: 400px;
+    background: url(images/world-artday.jpg) 0 0px no-repeat;
+    position: relative;
+}
+
+.popupcontainer .btnclose {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.popupcontainer .popupform h4 {
+    color: #14469e;
+    font-family: roboto-regular;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: -1px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+}
+@media only screen and (max-width:992px) {
+    .popupcontainer {
+        padding: 15px;
+        background: none;
+        width: 100%;
+    }
+    .popupcontainer .popupform {
+        width: 100%;
+        height: 400px;
+        background-size: 100% 100%;
+    }
+}
+@media only screen and (max-width:767px) {
+    .popupcontainer {
+        padding: 15px;
+        background: none;
+        width: 100%;
+    }
+    .popupcontainer .popupform {
+        width: 100%;
+        height: 325px;
+        background-size: 100% 100%;
+    }
+}	
+
+</style>
+</head><!--/head-->
+<body id="home">
+	<div class="header-v5 header-static header-fixed-shrink">
+			<!-- Navbar -->
+			<div class="navbar navbar-default navbar-custom navbar-fixed-top mega-menu" role="navigation">
+				<!-- Topbar v3 -->
+				<div class="topbar-v3">
+					<div class="container">
+						<div class="row padlr15">
+							<div class="col-sm-6">
+								<!-- Topbar Navigation -->
+								<ul class="left-topbar">
+									<li><a href="mailto:connect@paintbrush.ae">connect@paintbrush.ae</a></li>
+									<!--<li><a href="callto:+91 98840 98840">+91 98840 98840</a></li>-->
+									<li>Free shipping worldwide</li>
+								</ul><!--end left-topbar-->
+							</div>
+							<div class="col-sm-6 tb_right">
+								<ul class="list-inline right-topbar pull-right">
+									<li>
+										<div class="tbr-info">
+											<span><a ><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></a></span>
+											<div class="tbr-inner">
+												<a href="account.html">My Account</a>
+												<a href="wishlist.html">My Wishlist</a>
+												<a href="model.html" data-toggle="modal" data-target="#login-modal">Login</a>
+											</div>
+										</div>
+									</li>
+									<!--<li>
+										<div class="tbr-info"><span><i class="fa fa-heart"></i> <a href="wishlist.html"> Wishlist (0)</a></span></div>
+									</li>-->
+									<li>
+										<div class="tbr-info topcart">
+											<span><a ><i class="ti-shopping-cart"></i>My Cart (2)</a></span>
+											<div class="header-xtra pull-right">
+												<div class="cart-info">
+													<div>
+														<div class="col-md-6 col-xs-6">
+															<a href="soon.html" class="btn btn-grey">View Cart</a>
+														</div>
+														<div class="col-md-6 col-xs-6">
+															<a href="soon.html" class="btn btn-grey">Checkout</a>
+														</div>
+													</div>
+													<!--<div class="ci-total">Subtotal: $750.00</div>-->
+													<small>You have <em class="highlight">2 item(s)</em> in your shopping bag</small>
+													
+													<div class="ci-item trash-header">
+														<a href="art-inner.html"><img src="resource/images/art/01.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Lorem Ipsum is simply dummy</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<!--<p class="infoprice">2 x $250.00</p>-->
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													
+													<div class="ci-item trash-header">
+														<a href="print-inner.html"><img src="resource/images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="print-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<!--<p class="infoprice">2 x $250.00</p>	-->
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													
+													<div class="ci-item trash-header">
+														<a href="art-inner.html"><img src="resource/images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<!--<p class="infoprice">2 x $250.00</p>-->
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div><!--/container-->
+				</div>
+			<!-- End Topbar -->
+				<div class="container">
+					<div class="row mrg_0">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand page-scroll" href="index.html">
+								<img id="logo-header" class="mobileview" src="resource/images/paintbrush-logomobile.png" alt="Logo">
+								<img id="logo-header1" class="webview" src="resource/images/paintbrush-logo.png" alt="Logo">
+							</a>
+						</div>
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+						<script src="resource/js/classie.js"></script>
+						<script src="resource/js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<!-- Nav Menu -->
+						<ul class="nav navbar-nav">
+							<!-- Pages -->
+							<li class="dropdown">
+								<a href="art.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									Art <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="art-all.html" class="dropdown-toggle">All</a></li>
+									<li><a href="acrylic.html">Acrylic</a></li>
+									<li><a href="oil.html">Oil</a></li>
+									<li><a href="charcoal.html">Charcoal</a></li>
+									<li><a href="canvas.html">Canvas</a></li>
+									<li><a href="digital.html">Digital</a></li>
+									<li><a href="drawing.html">Drawing</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="print.html" class="dropdown-toggle">print</a>
+							</li>
+							<li>
+								<a href="artist.html" class="dropdown-toggle">artist</a>
+							</li>
+							<li class="dropdown">
+								<a href="gallery.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									gallery <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="gallery.html">All</a></li>
+									<li><a href="illustration.html">Title 1</a></li>
+									<li><a href="illustration.html">Title 2</a></li>
+									<li><a href="illustration.html">Title 3</a></li>
+									<li><a href="illustration.html">Title 4</a></li>
+								</ul>
+							</li>
+							<!-- End Gifts -->
+
+							<li>
+								<a href="soon.html" class="dropdown-toggle">Art Vacation</a>
+							</li>
+							<li class="dropdown">
+								<a href="more.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									more <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="soon.html">Gift Vouchers</a></li>
+									<li><a href="soon.html"> Artify</a></li>
+									
+									<li><a href="soon.html"> events</a></li>
+								</ul>
+							</li>
+							<!-- End Clothes -->
+						</ul>
+						<!-- End Nav Menu -->
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- End Navbar -->
+		</div>
+		<!-- End Header v5 -->
+	<div class="row">
+		<div class="wishlist_social" style="">
+			<ul class="padd0">
+				<li class="square"><a href="wishlist.html" title="favourite" ><i class="fa fa-heart"></i><span class="like-tooltip">3</span></a></li>
+			</ul>
+			<ul class="padd0 hidden-xs">
+				<li class="square "><a href="https://www.facebook.com/login/" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+				<li class="square"><a href="https://twitter.com/login" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+				<li class="square"><a href="https://plus.google.com/collections/featured" title="google+" target="blank"><i class="ti-google"></i></a></li>
+				<li class="square"><a href="https://in.pinterest.com/login/" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<section id="slider">
+		<!-- Carousel -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<a href="#"><img class="img-responsive" src="resource/images/banner-1.jpg" alt="First slide" /></a>
+				</div>
+				<div class="item">
+					<a href=""><img class="second-slide img-responsive" src="resource/images/banner-2.jpg" alt="Second slide"></a>
+					
+				</div>
+				<div class="item">
+					<a href="#"><img class="third-slide img-responsive" src="resource/images/banner-3.jpg" alt="Third slide"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img class="fourth-slide img-responsive" src="resource/images/banner-4.jpg" alt="fourth slide"></a>
+				</div>
+			</div>
+			<a data-app-prevent-settings="" class="left carousel-control top50" role="button" data-slide="prev" href="#myCarousel">
+					<span class="ti-arrow-circle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a data-app-prevent-settings="" class="right carousel-control top50" role="button" data-slide="next" href="#myCarousel">
+                    <span class="ti-arrow-circle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+		</div><!-- /.carousel -->
+	</section><!--/slider-->
+	<!-- New Arrivals -->
+	<section>
+		<div class="container-fluid productlist">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="product-title1">Featured collections <a href="feature-art.html" class="btn btn-default add-to-cart pull-right">View All</a></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-sm-6 ban banimag">
+						<a href="art-inner.html">
+							<img src="resource/images/newarrivals/001.jpg" class="img-responsive image1" alt="item">
+							<img src="resource/images/newarrivals/001a.jpg" class="img-responsive image2" alt="item">
+							<div class="ban_wrap">
+							  <h2>Acrylic on Canvas</h2>
+							  <h3>Couple</h3>
+							  <div class="shop_now"><span>Shop now!</span></div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-md-4 col-sm-6 ban banimag">
+						<a href="art-inner.html">
+							<img src="resource/images/newarrivals/002.jpg" class="img-responsive image1" alt="item">
+							<img src="resource/images/newarrivals/002a.jpg" class="img-responsive image2" alt="item">
+							<div class="ban_wrap">
+							  <h2>Acrylic on Canvas</h2>
+							  <h3>Women 2</h3>
+							 <div class="shop_now"><span>Shop now!</span></div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 ban">
+						<a href="art-inner.html">
+							<img src="resource/images/newarrivals/003.jpg" class="img-responsive" alt="item">
+							<div class="ban_wrap">
+							  <h2>Acrylic on Canvas</h2>
+							  <h3>BANDMASTER 1</h3>
+							  <div class="shop_now"><span>Shop now!</span></div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 ban">
+						<a href="art-inner.html">
+							<img src="resource/images/newarrivals/004.jpg" class="img-responsive" alt="item">
+							<div class="ban_wrap">
+							  <h2>Mixed on Canvas</h2>
+							  <h3>Festival</h3>
+							  <div class="shop_now"><span>Shop now!</span></div>
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-6 ban banimag1">
+						<a href="art-inner.html">
+							<img src="resource/images/newarrivals/005.jpg" class="img-responsive" alt="item">
+							<div class="ban_wrap">
+							  <h2>Canvas on Canvas</h2>
+							  <h3>Women 3</h3>
+							  <div class="shop_now"><span>Shop now!</span></div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 ban">
+						<a href="art-inner.html">
+							<img src="resource/images/newarrivals/006.jpg" class="img-responsive" alt="item">
+							<div class="ban_wrap">
+							  <h2>Oil on Canvas</h2>
+							  <h3>Happy Within</h3>
+							  <div class="shop_now"><span>Shop now!</span></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="product-title1">NEW ARRIVALS <a href="newarrival.html" class="btn btn-default add-to-cart pull-right">View All</a></h2>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="product-img">
+							<a href="art-inner.html">
+								<img src="resource/images/newarrivals/007.jpg" class="img-responsive" alt="item">
+								<span class="productlist-title-container">
+									<span class="product-titletext">
+										<span class="price1">Landscape4-Silent Moor</span>
+									</span>
+								</span>
+							</a>
+							<a class="product-review" href="art-inner.html"><i class="ti-eye"></i>View Details</a>
+							<a class="add-to-cart1" href="price-request.html" data-toggle="modal" data-target="#submit_form"><i class="ti-money" ></i>Price On Request</a>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="product-img">
+							<a href="art-inner.html">
+								<img src="resource/images/newarrivals/008.jpg" class="img-responsive" alt="item">
+								<span class="productlist-title-container">
+									<span class="product-titletext">
+										<span class="price1">Composition 3</span>
+									</span>
+								</span>
+							</a>
+							<a class="product-review" href="art-inner.html"><i class="ti-eye"></i>View Details</a>
+							<a class="add-to-cart1" href="price-request.html" data-toggle="modal" data-target="#submit_form"><i class="ti-money" ></i>Price On Request</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="product-img">
+							<a href="art-inner.html">
+								<img src="resource/images/newarrivals/009.jpg" class="img-responsive" alt="item">
+								<span class="productlist-title-container">
+									<span class="product-titletext">
+										<span class="price1">BANDMASTER 4</span>
+									</span>
+								</span>
+							</a>
+							<a class="product-review" href="art-inner.html"><i class="ti-eye"></i>View Details</a>
+							<a class="add-to-cart1" href="price-request.html" data-toggle="modal" data-target="#submit_form"><i class="ti-money" ></i>Price On Request</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 banimag">
+						<div class="product-img">
+							<a href="art-inner.html">
+								<img src="resource/images/newarrivals/010.jpg" class="img-responsive image1" alt="item">
+								<img src="resource/images/newarrivals/010a.jpg" class="img-responsive image2" alt="item">
+								<span class="productlist-title-container">
+									<span class="product-titletext">
+										<span class="price1">Landscape2 – Deep Into Nature</span>
+									</span>
+								</span>
+							</a>
+							<a class="product-review" href="art-inner.html"><i class="ti-eye"></i>View Details</a>
+							<a class="add-to-cart1" href="price-request.html" data-toggle="modal" data-target="#submit_form"><i class="ti-money" ></i>Price On Request</a>
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-6 banimag">
+						<div class="product-img">
+							<a href="art-inner.html">
+								<img src="resource/images/newarrivals/011.jpg" class="img-responsive image1" alt="item">
+								<img src="resource/images/newarrivals/011a.jpg" class="img-responsive image2" alt="item">
+								<span class="productlist-title-container">
+									<span class="product-titletext">
+										<span class="price1">Composition 6</span>
+									</span>
+								</span>
+							</a>
+							<a class="product-review" href="art-inner.html"><i class="ti-eye"></i>View Details</a>
+							<a class="add-to-cart1" href="price-request.html" data-toggle="modal" data-target="#submit_form"><i class="ti-money" ></i>Price On Request</a>
+						</div>
+					</div>
+					<div class="col-sm-6 banimag1">
+						<div class="product-img">
+							<a href="art-inner.html">
+								<img src="resource/images/newarrivals/005.jpg" class="img-responsive" alt="item">
+								<span class="productlist-title-container">
+									<span class="product-titletext">
+										<span class="price1">Lorem ipsum dolor sit</span>
+									</span>
+								</span>
+							</a>
+							<a class="product-review" href="art-inner.html"><i class="ti-eye"></i>View Details</a>
+							<a class="add-to-cart1" href="price-request.html" data-toggle="modal" data-target="#submit_form"><i class="ti-money" ></i>Price On Request</a>
+						</div>
+					</div>
+				</div>
+				<!--<div class="row">
+					<div class="col-sm-12">
+						<h2 class="product-title1">Recommendation <a href="recommendation.html" class="btn btn-default add-to-cart pull-right">View All</a></h2>
+					</div>
+					<div class="grid">
+						<div class="col-md-4 col-sm-6">
+							<figure class="effect-marley">
+								<img src="resource/images/recommendations/001.jpg" class="img-responsive" alt="item">
+								<figcaption>
+									<h2>Recommended By <span><br>Dr. Alka Pande</span></h2>
+									<p><a href="recommendation.html" class="btn btn-default add-to-cart">View more</a></p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<figure class="effect-marley">
+								<img src="resource/images/recommendations/002.jpg" class="img-responsive" alt="item">
+								<figcaption>
+									<h2>Recommended By <span><br>Bhupen Khakkar</span></h2>
+									<p><a href="recommendation.html" class="btn btn-default add-to-cart">View more</a></p>
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<figure class="effect-marley">
+								<img src="resource/images/recommendations/003.jpg" class="img-responsive" alt="item">
+								<figcaption>
+									<h2>Recommended By <span><br>Mithun Dutta</span></h2>
+									<p><a href="recommendation.html" class="btn btn-default add-to-cart">View more</a></p>
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<figure class="effect-marley">
+								<img src="resource/images/recommendations/004.jpg" class="img-responsive" alt="item">
+								<figcaption>
+									<h2>Recommended By <span><br>Padmasree Anjolie ela menon</span></h2>
+									<p><a href="recommendation.html" class="btn btn-default add-to-cart">View more</a></p>
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<figure class="effect-marley">
+								<img src="resource/images/recommendations/005.jpg" class="img-responsive" alt="item">
+								<figcaption>
+									<h2>Recommended By <span><br>Paramesh Paul</span></h2>
+									<p><a href="recommendation.html" class="btn btn-default add-to-cart">View more</a></p>
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<figure class="effect-marley">
+								<img src="resource/images/recommendations/006.jpg" class="img-responsive" alt="item">
+								<figcaption>
+									<h2>Recommended By <span><br>M. F. Husain</span></h2>
+									<p><a href="recommendation.html" class="btn btn-default add-to-cart">View more</a></p>
+								</figcaption>			
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="topcat" style="display: block;">
+					<div class="col-sm-12">
+						<h2 class="product-title1">Shop Top Categories <a href="shopcategories.html" class="btn btn-default add-to-cart pull-right">View All</a></h2>
+					</div>
+					<div class="col-sm-4">
+						<a href="botanical.html">
+							<img src="resource/images/newarrivals/top01.jpg" class="img-responsive" alt="item">
+							<span class="productlist-price-container">
+								<span class="product-price">
+									<span class="price1">Botanical</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="modern.html">
+							<img src="resource/images/newarrivals/top02.jpg" class="img-responsive" alt="item">
+							<span class="productlist-price-container">
+								<span class="product-price">
+									<span class="price1">Modern</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="animals.html">
+							<img src="resource/images/newarrivals/top03.jpg" class="img-responsive" alt="item">
+							<span class="productlist-price-container">
+								<span class="product-price">
+									<span class="price1">Animals</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-sm-6">
+						<a href="photography.html">
+							<img src="resource/images/newarrivals/top04.jpg" class="img-responsive" alt="item">
+							<span class="productlist-price-container">
+								<span class="product-price">
+									<span class="price1">Photography</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-sm-6">
+						<a href="scenicart.html">
+							<img src="resource/images/newarrivals/top05.jpg" class="img-responsive" alt="item">
+							<span class="productlist-price-container">
+								<span class="product-price">
+									<span class="price1">Scenic Art</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="fineart.html">
+							<img src="resource/images/newarrivals/top06.jpg" class="img-responsive" alt="item">
+							<span class="productlist-price-container">
+								<span class="product-price">
+									<span class="price1">Fine Art</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="map.html">
+							<img src="resource/images/newarrivals/top07.jpg" class="img-responsive" alt="item">
+							<span class="productlist-price-container">
+								<span class="product-price">
+									<span class="price1">Map</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="abstract.html">
+							<img src="resource/images/newarrivals/top08.jpg" class="img-responsive" alt="item">
+							<span class="productlist-price-container">
+								<span class="product-price">
+									<span class="price1">Abstract</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center show-more">
+						<a href="#" class="btn btn-outline" id="showmore" style="display: none;">Show more</a>
+					</div>	
+				</div>-->
+			</div>
+	</section>
+	
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="contact.html">Join Us</a></li>
+								<li><a href="soon.html">Support</a></li>
+								<li><a href="soon.html">Request Status</a></li>
+								<li><a href="policy.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Terms and condition </a></li>
+								<li><a href="policy.html">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>About</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="soon.html">Testimonials</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-widget">
+							<h2>newsletter</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+						
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<p class="pull-left">Copyright © 2017 paintbrush Inc. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!--<div class="pay_cards">
+							<img class="img-responsive" src="resource/images/cards/payment.png" />
+						</div>-->
+						<div class="pull-right">
+							<ul class="social_media padd0">
+								<li class="circle"><a href="https://www.facebook.com/login/" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+								<li class="circle"><a href="https://twitter.com/login" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+								<li class="circle"><a href="https://plus.google.com/collections/featured" title="google+" target="blank"><i class="ti-google"></i></a></li>
+								<li class="circle"><a href="https://in.pinterest.com/login/" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	<!-- Newsletter -->
+        <!--<div class="subscribe-me">
+            <a href="#close" class="sb-close-btn">x</a>
+            <div id="popup-newsletter">
+                <div class="block-content">
+                    <div class="form-subscribe-header">
+                        <label>Join Our Email Letter</label>
+                    </div>
+                    <div class="clearfix space30"></div>
+                    <span class="promo-panel-sale">TAKE 25% OFF YOUR NEXT PURCHASE !</span>
+                    <div class="clearfix space30"></div>
+                    <span class="promo-panel-text"></span>
+                    <div class="clearfix space30"></div>
+                    <div class="input-box">
+                        <input name="email" id="pnewsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" type="text">
+                    </div>
+                    <div class="actions">
+                        <button type="submit" title="JOIN NOW !" class="btn btn-primary btn-lg btn-block">JOIN NOW !</button>
+                    </div>
+                    <span class="promo-panel-text1">No Thank ! I'm not interested in this promotion </span><br>
+                    <span class="promo-panel-text2">Entering your email also subscribe you to the latest Sunshine furniture news and offers *</span>
+                    <label class="subscribe-bottom"><input type="checkbox"><span>Don't show this popup again</span></label>
+                </div>
+            </div>
+        </div>
+		<div id="popup" class="popupcontainer" style="position:fixed; display:block;" >
+		   <div class="popupform popupbg">
+			<a class="btnclose" id="btnclose" ><img src="resource/images/icon-close.png" width="47" height="47" alt="#" /></a>	
+
+		  </div>
+		</div>
+	<div style="display:block;" id="popfadelogin" class="blackoverlay"></div>-->
+		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+			
+		</div>
+		<div class="modal fade" id="submit_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+			
+		</div>
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+	<script src="resource/js/carousel_silder.js"></script>
+    <script src="resource/js/jquery.js"></script>
+	<script src="resource/js/bootstrap.min.js"></script>
+	<script src="resource/js/jquery.scrollUp.min.js"></script>
+	<script src="resource/js/main.js"></script>
+	<script src="resource/js/wow.min.js"></script>
+	<script>
+	 wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>
+	
+</body>
+
+</html>

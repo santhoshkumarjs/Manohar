@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Telco Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+  $( document ).ready(function() {
+       $('.select-modules').on('click', 'li', function(){
+			$('.select-modules li').removeClass('active');
+			$(this).addClass('active');
+		});
+		$('.submitbtn').click(function(){
+   			window.location.href="High_school_Mathematics.html"
+		})
+    });
+  </script>
+</head>
+<body>
+	<!-- header part-->
+	<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<img src="img/logo.png"/>
+					</div>
+					<div class="col-md-6 col-xs-6 login">
+						<p><a href="#" data-toggle="modal" data-target="#myModal">Login</a></p>
+						<div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+									<!-- Modal content-->
+								  <div class="modal-content">
+									<div class="modal-header modal-header-primary">
+									  <button type="button" class="close closebtn" data-dismiss="modal">&times;</button>
+									  <h4 class="modal-title">Login</h4>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+											  <label for="recipient-name" class="form-control-label">User name</label>
+											  <input type="text" class="form-control">
+											</div>
+											<div class="form-group">
+											  <label for="message-text" class="form-control-label">Password</label>
+											  <input type="password" class="form-control">
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer" style="border-top:none;">
+									 <button type="button" class="btn btn-primary submitbtn" data-dismiss="modal">Submit</button>
+									 <button type="button" class="btn btn-primary">Reset</button>
+									</div>
+								  </div>
+						  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div><!-- header part-->
+	<!-- main content -->
+	<div class="main">
+		<div class="container">
+			<div class="row" style="padding:5px;">
+				<div class="co1-md-12 co1-xs-12 text-center">
+					<h2>Welcome to your Mobile Tutor</h2>	
+					<h3>Please select your modules to experience Mobile Tutor</h3>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-sm-8 col-xs-12 select-modules">
+					<ul>
+						<li><a href="High_school_Mathematics.html">High school Mathematics <i class="fa fa-caret-right pull-right fa-lg caretright"></i></a></li>
+						<li><a href="High_School_Science_PHYSICS.html">High School Science <i class="fa fa-caret-right pull-right fa-lg caretright"></i></a></li>
+						<li><a href="English_Learning.html">English Learning <i class="fa fa-caret-right pull-right fa-lg caretright"></i></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal1">College level Mathematics <i class="fa fa-caret-right pull-right fa-lg caretright"></i></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal1">College level applied sciences <i class="fa fa-caret-right pull-right fa-lg caretright"></i></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal1">Engineering tutorials <i class="fa fa-caret-right pull-right fa-lg caretright"></i></a></li>
+						<li><a href="Live_Tutor.html">Live tutor - High school <i class="fa fa-caret-right pull-right fa-lg caretright"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			<div id="myModal1" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header alert alert-info alertbox">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <strong>Info!</strong> This content is not yet available.
+					  </div>
+					  <div class="modal-footer" style="text-align:center">
+						<button type="button" class="btn btn-info text-center" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+
+				  </div>
+				</div>
+	</div>
+	<div class="footer">
+		<p>&copy; 2016 Mobile Tutor Private Ltd., Privacy Policy. Terms & conditions</p>
+	</div>
+</body>
+</html>

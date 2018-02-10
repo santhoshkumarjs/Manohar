@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paint Brush</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/component.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="js/collection/jquery.min.js"></script>
+	<script src="js/collection/modernizr.custom.js"></script>
+	<script src="js/collection/classie.js"></script>	
+	<script type="text/javascript" src="js/collection/elastic_grid.min.js"></script>
+	<script>
+	$( document ).ready(function() {
+ 
+    $('.thumbnails').hover(
+        function(){
+            $(this).find('.caption').slideDown(300); //.fadeIn(250)
+			$(this).find('.buynow').css("display","block"); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(200); //.fadeOut(205)
+			$(this).find('.buynow').css("display","none"); //.fadeIn(250)
+        }
+    ); 
+	$(".btn-pref .btn").click(function () {
+    $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+    // $(".tab").addClass("active"); // instead of this do the below 
+    $(this).removeClass("btn-default").addClass("btn-primary");   
+});
+});
+</script>
+
+</head><!--/head-->
+
+<body id="home">
+	<div class="header-v5 header-static header-fixed-shrink">
+			<!-- Navbar -->
+			<div class="navbar navbar-default navbar-custom navbar-fixed-top mega-menu" role="navigation">
+				<!-- Topbar v3 -->
+				<div class="topbar-v3">
+					<div class="container">
+						<div class="row"><!-- marl6-->
+							<div class="col-sm-6">
+								<!-- Topbar Navigation -->
+								<ul class="left-topbar">
+									<li><a href="mailto:info@artgallery.com">Info@artgallery.com</a></li>
+									<li><a href="callto:+91 98840 98840">+91 98840 98840</a></li>
+									<li>We deliver worldwide</li>
+								</ul><!--/end left-topbar-->
+							</div>
+							<div class="col-sm-6 tb_right">
+								<ul class="list-inline right-topbar pull-right">
+									<li>
+										<div class="tbr-info">
+											<span><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></span>
+											<div class="tbr-inner">
+												<a href="account.html">My Account</a>
+												<a href="wishlist.html">My Wishlist</a>
+												<a href="model.html" data-toggle="modal" data-target="#login-modal">Login</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tbr-info"><span><i class="fa fa-heart"></i> <a href="wishlist.html"> Wishlist (0)</a></span></div>
+									</li>
+									<li>
+										<div class="tbr-info topcart">
+											<span><i class="ti-shopping-cart"></i><a href="#">cart (2)</a></span>
+											<div class="header-xtra pull-right">
+												<div class="cart-info">
+													<div>
+														<div class="col-md-6 col-xs-6">
+															<a href="cart.html" class="btn btn-grey">View Cart</a>
+														</div>
+														<div class="col-md-6 col-xs-6">
+															<a href="checkout.html" class="btn btn-grey">Checkout</a>
+														</div>
+													</div>
+													<div class="ci-total">Subtotal: $750.00</div>
+													<small>You have <em class="highlight">2 item(s)</em> in your shopping bag</small>
+													<div class="ci-item">
+														<a href="art-inner.html"><img src="images/art/01.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Lorem Ipsum is simply dummy</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													<div class="ci-item">
+														<a href="print-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="print-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>	
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													<div class="ci-item">
+														<a href="art-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div><!--/container-->
+				</div>
+			<!-- End Topbar v3 -->
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="row mrg_0">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand page-scroll" href="index.html">
+								<img id="logo-header" class="mobileview" src="images/paintbrush-logomobile.png" alt="Logo">
+								<img id="logo-header1" class="webview" src="images/paintbrush-logo.png" alt="Logo">
+							</a>
+						</div>
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<!-- Nav Menu -->
+						<ul class="nav navbar-nav cl-effect-5">
+							<!-- Pages -->
+							<li>
+								<a href="art.html" class="dropdown-toggle">art</a>
+							</li>
+							<li>
+								<a href="print.html" class="dropdown-toggle">print</a>
+							</li>
+							<li>
+								<a href="artist.html" class="dropdown-toggle">artist</a>
+							</li>
+							<li class="dropdown active">
+								<a href="collection.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									collections <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="collection.html">All</a></li>
+									<li><a href="illustration.html">Illustration</a></li>
+									<li><a href="illustration.html">Image</a></li>
+									<li><a href="illustration.html">Impressionism</a></li>
+									<li><a href="illustration.html">Minimalism</a></li>
+									<li><a href="illustration.html">Naive</a></li>
+									<li><a href="illustration.html">Photorealism</a></li>
+									<li><a href="illustration.html">Realism</a></li>
+									<li><a href="illustration.html">Surrealism</a></li>
+									<li><a href="illustration.html">Traditional</a></li>
+									<li><a href="illustration.html">Tribal</a></li>
+								</ul>
+							</li>
+							<!-- End Gifts -->
+
+							<!-- Books -->
+							<li class="dropdown">
+								<a href="offer.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									offers <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="offer.html">Art Work</a></li>
+									<li><a href="offer.html">Object Art</a></li>
+								</ul>
+							</li>
+							<!-- End Books -->
+							<!-- Clothes -->
+							<li class="dropdown">
+								<a href="more.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									more <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="soon.html">Gift Vouchers</a></li>
+									<li><a href="soon.html"> Artify</a></li>
+									<li><a href="soon.html"> the world of mojarto</a></li>
+									<li><a href="soon.html"> events</a></li>
+								</ul>
+							</li>
+							<!-- End Clothes -->
+						</ul>
+						<!-- End Nav Menu -->
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- End Navbar -->
+		</div>
+		<!--=== End Header v5 ===-->
+	<div class="clearfix"></div>
+	<section class="sectiontop">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0">
+				<div class="col-md-12 col-xs-12">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item  active">Collection</li>
+						
+					</ol>
+				</div>
+			</div>
+			<div class="row mrg_0">
+				<h2 class="heading"><span>COLLECTIONS</span></h2>
+				<p class="subtitle fancy">1500 ORIGINALS LISTED</p>
+				<p class="text-center">Whether you are looking for an original abstract painting, a modern art painting, or a limited edition watercolor <br>Whether you are looking for an original abstract painting, a modern art painting, or a limited edition watercolor print signed by the artist, Saatchi Art has over 370,000 original paintings</p>
+			</div>
+			<div class="row">
+				<div id="elastic_grid_demo"></div>
+			</div>
+		</div>
+	</section>		
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="soon.html">Online Help</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="soon.html">Order Status</a></li>
+								<li><a href="soon.html">Change Location</a></li>
+								<li><a href="policy.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Terms of Use</a></li>
+								<li><a href="policy.html">Privecy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Company Information</a></li>
+								<li><a href="soon.html">Careers</a></li>
+								<li><a href="soon.html">Store Location</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-widget">
+							<h2>newsletter</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+						<div>
+							<ul class="social_media padd0">
+								<li class="circle"><a href="#"><i class="ti-facebook"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-google"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-pinterest"></i></a></li>
+							</ul>
+						</div>
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-12">
+						<p class="pull-left">Copyright © 2017 paintbrush Inc. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<ul class="pay_cards">
+							<li><img src="images/cards/visa.jpg" alt="Visa Card" title="Visa Card" /></li>
+							<li><img src="images/cards/master.jpg" alt="Master Card" title="Master Card" /></li>
+							<li><img src="images/cards/discover.jpg" alt="Discover Card" title="Discover Card" /></li>
+							<li><img src="images/cards/american.jpg" alt="American Card" title="American Card" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	<!--Modal Window--->
+	<div class="modal fade" id="theModal" tabindex="" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		</div>
+	</div>
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/hallooou.js"></script>
+	<script src="js/smoothScroll.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+	wow = new WOW(
+	{		}	) 
+	.init();
+		
+	new GridScrollFx( document.getElementById( 'grid' ), {
+			viewportFactor : 0.4
+		} );
+	</script>
+	<script type="text/javascript">
+    $(function(){
+        $("#elastic_grid_demo").elastic_grid({
+            'showAllText' : 'All',
+            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 500,
+            'items' :
+            [
+                {
+                    'title'         : 'Illustration',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/Illustration/small/01.jpg', 'images/collection/Illustration/small/02.jpg', 'images/collection/Illustration/small/03.jpg', 'images/collection/Illustration/small/01.jpg', 'images/collection/Illustration/small/03.jpg'],
+                    'large'         : ['images/collection/Illustration/large/01.jpg', 'images/collection/Illustration/large/02.jpg', 'images/collection/Illustration/large/03.jpg', 'images/collection/Illustration/large/01.jpg', 'images/collection/Illustration/large/03.jpg'],
+                    'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Dewashish Das']
+                },
+                {
+                    'title'         : 'Image',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/4.jpg', 'images/collection/small/5.jpg', 'images/collection/small/6.jpg', 'images/collection/small/7.jpg'],
+                    'large'         : ['images/collection/large/4.jpg', 'images/collection/large/5.jpg', 'images/collection/large/6.jpg', 'images/collection/large/7.jpg'],
+                    'img_title'     : ['jquery elastic grid 6 ', 'jquery elastic grid 7 ', 'jquery elastic grid 8', 'jquery elastic grid 9', 'jquery elastic grid 9'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Puspen Nay']
+                },
+                {
+                    'title'         : 'Impressionism',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/Impressionism/small/01.jpg','images/collection/Impressionism/small/02.jpg', 'images/collection/Impressionism/small/03.jpg', 'images/collection/Impressionism/small/04.jpg','images/collection/Impressionism/small/05.jpg'],
+                    'large'         : ['images/collection/Impressionism/large/01.jpg','images/collection/Impressionism/large/02.jpg', 'images/collection/Impressionism/large/03.jpg', 'images/collection/Impressionism/large/04.jpg','images/collection/Impressionism/large/05.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Dewashish Das', 'Puspen Nay']
+                },
+                {
+                    'title'         : 'Minimalism',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/Minimalism/small/01.jpg','images/collection/Minimalism/small/02.jpg', 'images/collection/Minimalism/small/03.jpg', 'images/collection/Minimalism/small/04.jpg','images/collection/Minimalism/small/05.jpg'],
+                    'large'         : ['images/collection/Minimalism/large/01.jpg','images/collection/Minimalism/large/02.jpg', 'images/collection/Minimalism/large/03.jpg', 'images/collection/Minimalism/large/04.jpg','images/collection/Minimalism/large/05.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Puspen Nay']
+                },
+                {
+                    'title'         : 'Naive',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/17.jpg', 'images/collection/small/18.jpg', 'images/collection/small/19.jpg', 'images/collection/small/20.jpg'],
+                    'large'         : ['images/collection/large/17.jpg', 'images/collection/large/18.jpg', 'images/collection/large/19.jpg', 'images/collection/large/20.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Puspen Nay']
+                },
+                {
+                    'title'         : 'Photorealism',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/13.jpg','images/collection/small/15.jpg', 'images/collection/small/11.jpg', 'images/collection/small/10.jpg'],
+                    'large'         : ['images/collection/large/13.jpg','images/collection/large/15.jpg', 'images/collection/large/11.jpg', 'images/collection/large/10.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Sekhar Kar']
+                },
+                {
+                    'title'         : 'Realism',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/7.jpg','images/collection/small/8.jpg', 'images/collection/small/9.jpg', 'images/collection/small/10.jpg'],
+                    'large'         : ['images/collection/large/7.jpg','images/collection/large/8.jpg', 'images/collection/large/9.jpg', 'images/collection/large/10.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Subrata Das']
+                },
+                {
+                    'title'         : 'Surrealism',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/16.jpg', 'images/collection/small/13.jpg', 'images/collection/small/14.jpg', 'images/collection/small/15.jpg', 'images/collection/small/16.jpg'],
+                    'large'         : ['images/collection/large/16.jpg', 'images/collection/large/13.jpg', 'images/collection/large/14.jpg', 'images/collection/large/15.jpg', 'images/collection/large/16.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Sekhar Kar']
+                },
+                {
+                    'title'         : 'Traditional',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/18.jpg', 'images/collection/small/18.jpg', 'images/collection/small/19.jpg', 'images/collection/small/20.jpg'],
+                    'large'         : ['images/collection/large/18.jpg', 'images/collection/large/18.jpg', 'images/collection/large/19.jpg', 'images/collection/large/20.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Puspen Nay']
+                },
+                {
+                    'title'         : 'Tribal',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/11.jpg','images/collection/small/15.jpg', 'images/collection/small/11.jpg', 'images/collection/small/10.jpg'],
+                    'large'         : ['images/collection/large/11.jpg','images/collection/large/15.jpg', 'images/collection/large/11.jpg', 'images/collection/large/10.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Subrata Das']
+                },
+                {
+                    'title'         : 'Fine Art',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/3.jpg','images/collection/small/15.jpg', 'images/collection/small/11.jpg', 'images/collection/small/10.jpg'],
+                    'large'         : ['images/collection/large/3.jpg','images/collection/large/15.jpg', 'images/collection/large/11.jpg', 'images/collection/large/10.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Sekhar Kar']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/5.jpg','images/collection/small/8.jpg', 'images/collection/small/9.jpg', 'images/collection/small/10.jpg'],
+                    'large'         : ['images/collection/large/5.jpg','images/collection/large/8.jpg', 'images/collection/large/9.jpg', 'images/collection/large/10.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Subrata Das', 'Puspen Nay']
+                },
+                {
+                    'title'         : 'Azuki bean',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/6.jpg', 'images/collection/small/13.jpg', 'images/collection/small/14.jpg', 'images/collection/small/15.jpg', 'images/collection/small/16.jpg',],
+                    'large'         : ['images/collection/large/6.jpg', 'images/collection/large/13.jpg', 'images/collection/large/14.jpg', 'images/collection/large/15.jpg', 'images/collection/large/16.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Sekhar Kar']
+                },
+                {
+                    'title'         : 'Swiss chard pumpkin',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/8.jpg', 'images/collection/small/18.jpg', 'images/collection/small/19.jpg', 'images/collection/small/20.jpg'],
+                    'large'         : ['images/collection/large/8.jpg', 'images/collection/large/18.jpg', 'images/collection/large/19.jpg', 'images/collection/large/20.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Puspen Nay']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/9.jpg','images/collection/small/15.jpg', 'images/collection/small/11.jpg', 'images/collection/small/10.jpg'],
+                    'large'         : ['images/collection/large/9.jpg','images/collection/large/15.jpg', 'images/collection/large/11.jpg', 'images/collection/large/10.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Sekhar Kar', 'Puspen Nay']
+                },
+				{
+                    'title'         : 'Spinach winter purslane',
+					'captiontext' 	: '15 Collections',
+                    'description'   : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                    'thumbnail'     : ['images/collection/small/9.jpg','images/collection/small/15.jpg', 'images/collection/small/11.jpg', 'images/collection/small/10.jpg'],
+                    'large'         : ['images/collection/large/9.jpg','images/collection/large/15.jpg', 'images/collection/large/11.jpg', 'images/collection/large/10.jpg'],
+                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                    'button_list'   :
+                    [
+                        { 'title':'More', 'url' : 'illustration.html', 'new_window' : false }
+                    ],
+                    'tags'          : ['Sekhar Kar', 'Puspen Nay']
+                }
+
+            ]
+        });
+    });
+</script>
+	
+</body>
+
+</html>

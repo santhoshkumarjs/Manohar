@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<circle fill="none" stroke="#f0b000" stroke-miterlimit="10" stroke-dasharray="12.4322,12.4322" cx="49.5" cy="50" r="47.5">
+	<animateTransform attributeName="transform"
+		attributeType="XML"
+		type="rotate"
+		from="0 50 50"
+		to="360 50 50"
+		dur="10s"
+		repeatCount="indefinite"/>
+
+</circle>
+<circle fill="#f0b000" cx="50.5" cy="51" r="38.5"/>
+<!--<path fill="#FFFFFF" d="M33,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C28.231,66,27,64.769,27,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>	
+<path fill="#FFFFFF" d="M43,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C38.231,66,37,64.769,37,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		begin=".1"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M52,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C47.231,66,46,64.769,46,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		begin=".2"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M62,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C57.231,66,56,64.769,56,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one3"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		begin=".3"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M72,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C67.231,66,66,64.769,66,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one4"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		begin=".4"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>-->
+<path fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M74.965,29.383v1.23
+		c-1.711,0.305-2.953,0.85-3.727,1.635s-1.16,1.905-1.16,3.358c-0.012,0.54,0.029,1.149,0.124,1.827l3.81,26.297
+		c0.282,1.923,0.933,3.399,1.953,4.43c1.02,1.031,2.515,1.734,4.484,2.109v1.23H59.637v-1.23c1.734-0.445,2.977-1.137,3.727-2.074
+		s1.125-2.285,1.125-4.043c0-0.867-0.082-1.922-0.246-3.164l-3.445-24.047L46.936,71.5h-1.502L31.758,36.941l-3.655,24.75
+		c-0.141,0.984-0.211,1.875-0.211,2.672c0,3.68,1.722,5.648,5.167,5.906v1.23H17.801v-1.23c2.227-0.094,3.902-0.838,5.027-2.232
+		s1.943-3.744,2.457-7.049l4.159-27.497c-1.783-1.849-3.824-2.808-6.123-2.878v-1.23h15.238l10.989,27.771l11.139-27.771H74.965z"/>
+</svg>

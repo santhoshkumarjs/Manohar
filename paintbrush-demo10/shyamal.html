@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paint Brush</title>
+    <link href="resource/css/bootstrap.min.css" rel="stylesheet">
+	<link href="resource/css/themify-icons.css" rel="stylesheet">
+    <link href="resource/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resource/css/animate.css" rel="stylesheet">
+	<link href="resource/css/main.css" rel="stylesheet">
+	<link href="resource/css/responsive.css" rel="stylesheet">
+	<link href="resource/css/component.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="resource/js/jquery-1.11.0.min.js"></script>
+	<script src="resource/js/modernizr.js"></script>
+	<script>
+		$( document ).ready(function() {
+
+			if ($(window).width() > 768) {
+				$('.wall-item').hover(
+					function () {
+						$(this).find('.buynow').css("display","block");
+					},
+					function () {
+						$(this).find('.buynow').css("display","none");
+					});
+				}
+			
+				$(".btn-pref .btn").click(function () {
+				$(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+				// $(".tab").addClass("active"); // instead of this do the below 
+				$(this).removeClass("btn-default").addClass("btn-primary");   
+			});
+		});
+
+		$(document).ready(function(){
+			$(".add_fav a").tooltip();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			if (Modernizr.touch) {
+				// show the close overlay button
+				$(".close-overlay").removeClass("hidden");
+				// handle the adding of hover class when clicked
+				$(".img").click(function(e){
+					if (!$(this).hasClass("hover")) {
+						$(this).addClass("hover");
+					}
+				});
+				// handle the closing of the overlay
+				$(".close-overlay").click(function(e){
+					e.preventDefault();
+					e.stopPropagation();
+					if ($(this).closest(".img").hasClass("hover")) {
+						$(this).closest(".img").removeClass("hover");
+					}
+				});
+			} else {
+				// handle the mouseenter functionality
+				$(".img").mouseenter(function(){
+					$(this).addClass("hover");
+					$(this).find('.buynow').css("display","block"); 
+				})
+				// handle the mouseleave functionality
+				.mouseleave(function(){
+					$(this).removeClass("hover");
+					
+				});
+			}
+			$('#tabs').on('click', 'li', function(){
+				$('#tabs li').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	</script>
+<style>
+
+</style>
+</head><!--/head-->
+
+<body id="home">
+	<div class="header-v5 header-static header-fixed-shrink">
+		<!-- Navbar -->
+		<div class="navbar navbar-default navbar-custom navbar-fixed-top mega-menu" role="navigation">
+			<!-- Topbar v3 -->
+			<div class="topbar-v3">
+				<div class="container">
+					<div class="row padlr15">
+						<div class="col-sm-6">
+							<!-- Topbar Navigation -->
+							<ul class="left-topbar">
+								<li><a href="mailto:connect@paintbrush.ae">connect@paintbrush.ae</a></li>
+								<!--<li><a href="callto:+91 98840 98840">+91 98840 98840</a></li>-->
+								<li>Free shipping worldwide</li>
+							</ul><!--end left-topbar-->
+						</div>
+						<div class="col-sm-6 tb_right">
+							<ul class="list-inline right-topbar pull-right">
+								<li>
+									<div class="tbr-info">
+										<span><a ><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></a></span>
+										<div class="tbr-inner">
+											<a href="account.html">My Account</a>
+											<a href="wishlist.html">My Wishlist</a>
+											<a href="model.html" data-toggle="modal" data-target="#login-modal">Login</a>
+										</div>
+									</div>
+								</li>
+								<!--<li>
+									<div class="tbr-info"><span><i class="fa fa-heart"></i> <a href="wishlist.html"> Wishlist (0)</a></span></div>
+								</li>-->
+								<li>
+									<div class="tbr-info topcart">
+										<span><a ><i class="ti-shopping-cart"></i>My Cart (2)</a></span>
+										<div class="header-xtra pull-right">
+											<div class="cart-info">
+												<div>
+													<div class="col-md-6 col-xs-6">
+														<a href="soon.html" class="btn btn-grey">View Cart</a>
+													</div>
+													<div class="col-md-6 col-xs-6">
+														<a href="soon.html" class="btn btn-grey">Checkout</a>
+													</div>
+												</div>
+												<!--<div class="ci-total">Subtotal: $750.00</div>-->
+												<small>You have <em class="highlight">2 item(s)</em> in your shopping bag</small>
+												<div class="ci-item trash-header">
+													<a href="art-inner.html"><img src="resource/images/art/01.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="art-inner.html">Lorem Ipsum is simply dummy</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="ci-item trash-header">
+													<a href="print-inner.html"><img src="resource/images/art/02.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="print-inner.html">Product fashion</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>	-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="ci-item trash-header">
+													<a href="art-inner.html"><img src="resource/images/art/02.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="art-inner.html">Product fashion</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--/container-->
+			</div>
+			<!-- End Topbar -->
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand page-scroll" href="index.html">
+							<img id="logo-header" class="mobileview" src="resource/images/paintbrush-logomobile.png" alt="Logo">
+							<img id="logo-header1" class="webview" src="resource/images/paintbrush-logo.png" alt="Logo">
+						</a>
+					</div>
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+					<script src="resource/js/classie.js"></script>
+					<script src="resource/js/uisearch.js"></script>
+					<script>
+						new UISearch( document.getElementById( 'sb-search' ) );
+					</script>
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+					<!-- Nav Menu -->
+					<ul class="nav navbar-nav">
+						<!-- Pages -->
+						<li class="dropdown">
+							<a href="art.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								Art <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="art-all.html" class="dropdown-toggle">All</a></li>
+								<li><a href="acrylic.html">Acrylic</a></li>
+								<li><a href="oil.html">Oil</a></li>
+								<li><a href="charcoal.html">Charcoal</a></li>
+								<li><a href="canvas.html">Canvas</a></li>
+								<li><a href="digital.html">Digital</a></li>
+								<li><a href="drawing.html">Drawing</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="print.html" class="dropdown-toggle">print</a>
+						</li>
+						<li>
+							<a href="artist.html" class="dropdown-toggle">artist</a>
+						</li>
+						<li class="dropdown">
+							<a href="gallery.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								gallery <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="gallery.html">All</a></li>
+								<li><a href="illustration.html">Title 1</a></li>
+								<li><a href="illustration.html">Title 2</a></li>
+								<li><a href="illustration.html">Title 3</a></li>
+								<li><a href="illustration.html">Title 4</a></li>
+								<!--<li><a href="illustration.html">Naive</a></li>
+								<li><a href="illustration.html">Photorealism</a></li>
+								<li><a href="illustration.html">Realism</a></li>
+								<li><a href="illustration.html">Surrealism</a></li>
+								<li><a href="illustration.html">Traditional</a></li>
+								<li><a href="illustration.html">Tribal</a></li>-->
+							</ul>
+						</li>
+						<!-- End Gifts -->
+
+						<li>
+							<a href="soon.html" class="dropdown-toggle">Art Vacation</a>
+						</li>
+						<li class="dropdown">
+							<a href="more.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								more <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="soon.html">Gift Vouchers</a></li>
+								<li><a href="soon.html"> Artify</a></li>
+								<li><a href="soon.html"> events</a></li>
+							</ul>
+						</li>
+						<!-- End Clothes -->
+					</ul>
+					<!-- End Nav Menu -->
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- End Navbar -->
+	</div>
+	<!--=== End Header v5 ===-->
+	<div class="row">
+		<div class="wishlist_social" style="">
+			<ul class="padd0">
+				<li class="square"><a href="wishlist.html" title="favourite" ><i class="fa fa-heart"></i><span class="like-tooltip">3</span></a></li>
+			</ul>
+			<ul class="padd0 hidden-xs">
+				<!--<li class="square"><a href="#" title="facebook" target="blank"><i class="fa fa-heart"></i><span class="like-tooltip">0</span></a></li>-->
+				<li class="square "><a href="https://www.facebook.com/login/" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+				<li class="square"><a href="https://twitter.com/login" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+				<li class="square"><a href="https://plus.google.com/collections/featured" title="google+" target="blank"><i class="ti-google"></i></a></li>
+				<li class="square"><a href="https://in.pinterest.com/login/" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<section>
+		<div class="">
+			<div class="artist_banner" style="background: #fff;">
+				<img class="img-responsive" src="resource/images/artist/shyamal/shyamal_banner.jpg" alt="Shyamal artworks" title="Shyamal artworks" />
+				<div class="container-fulid">
+					<div class="container" >
+						<div class="banner_content">
+							<div class="col-md-2 padd0">
+								<img class="artist_image" src="resource/images/artist/shyamal/006.jpg" alt="Shyamal Mukherjee" title="Shyamal Mukherjee" />	
+							</div>
+							<div class="col-md-10 artist_detail padd0">
+								<p class="artist_content"><b>Shyamal Mukherjee</b> – Born in 1961 at Khanpur-West Bengal</br>Based in Kolkata, India</br>Graduate in BFA and MFA from Ravindra Bharati University Kolkata.</p>
+								<ul class="social_media padd0" >
+									<li class="circle artist_follow" ><a href="#" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+									<li class="circle artist_follow"><a href="#" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+									<li class="circle artist_follow"><a href="#" title="google+" target="blank"><i class="ti-google"></i></a></li>
+									<li class="circle artist_follow"><a href="#" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+								</ul>
+								<div class="viewall mobile-view" ><a href="artist.html">VIEW ALL</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="nav_step">
+						<div class="viewall web-view" ><a href="artist.html">VIEW ALL</a></div>
+						<div class="container padd0">
+							<ul id="tabs">
+								<li class="active"><a href="#" name="#tab1">Overview</a></li>
+								<li><a href="#" name="#tab2">Artworks for sale</a></li>
+								<li><a href="#" name="#tab3">Sold Artworks</a></li>
+								<li><a href="#" name="#tab4">Special Features</a></li>
+							</ul>
+						</div>
+					</div>			
+				</div>
+			</div>
+			<div class="artist_bio">
+				<div id="content">
+					<div id="tab1">
+						<div class="container padd_top_botm">
+							<div class="profile_bg">
+								<h3>About</h3>
+								<p><b>Shyamal Mukherjee </b> born in 1961 at Khanpur-West Bengal holds a BFA and MFA qualification from Ravindra Bharati University.</p>
+								<p>He has spent his entire life in Calcutta, only venturing out to attend showings of his works, and only speaking in Bengali. He has spent all of his college years in Santiniketan, first completing his BFA in 1987, and then his MFA in 1989 from the Rabindra Bharati University.</p>
+								<p>In Mukherjee's work, we see the Bengal School strong figurative tradition being carried ahead and interpreted in a very contemporary idiom. Mukherjee loves to travel alone in new places on buses and trains saying that, "Most of my inspiration comes from observing people." It's not surprising that every figure in his body of works has a separate and interesting story to tell. Most of the people Mukherjee paints are performers of some type, putting on an act for everyone else - something all of us do every day of our lives. Mukherjee's figures are dressed in the bright, almost gaudy orange, red and green costumes that street performers wear, but their eyes are gazing and drawn, their faces almost cartoon like and their fingers podgy, making the irony and pathos that surrounds them extremely evident. For one of his recent shows in Mumbai, the artist decided to use beggars and street vendors as the subject of his works, essaying their pitiable condition in his trademark style.</p>
+								<p>The artist also likes to focus on the fact that each individual has a great deal in common with every other one. This is why he paints people in pairs or larger groups, highlighting that though they are physically separate and unlike each other, there is no real difference between their characters and behaviours.</p>
+								<h5><b>Interest</b></h5>
+								<p>Mukherjee's favourite medium is reverse oil or acrylic painting on transparent acrylic sheets, and he swears that although he may change his themes and subjects, inventing new ones for new shows, he will never give up painting in this medium. Although Mukherjee loves to paint, he says he has many other hobbies. He teaches children in his spare time, and says that he learns more from them than they realize. He also collects rural artworks and the crafts of Bengali artisans.</p>
+								<h5><b>Diary</b></h5>
+								<ul>
+									<li><i class="ti-check"></i> With several honours and awards to his credit, he has participated in various exhibitions and workshops in India. </li>
+									<li><i class="ti-check"></i> His works are in collections all over the world. </li>
+									<li><i class="ti-check"></i> He is a life member of The Bombay Art Society</li>
+								</ul>
+								<p>A special mention about the artists working acclaim rests in his acrylic sheets with both sides comprising his paintings.</p> 
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="container">
+						<div class="row effects clearfix" id="effect-1">
+							<div class="wall">
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/oil/01.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Autodriver 1</h4>
+										<p class="pull-right">Code: <b>SM05-AD-001</b></p>
+										<p>by <b>shyamal Mukherjee</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Oil, 36" X 36"</p>
+										<p>Oil on Acrylic</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/oil/02.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Autodriver 2</h4>
+										<p class="pull-right">Code: <b>SM05-AD-002</b></p>
+										<p>by <b>shyamal Mukherjee</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Oil, 36" X 36"</p>
+										<p>Oil on Acrylic</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/oil/03.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Autodriver 3</h4>
+										<p class="pull-right">Code: <b>SM05-AD-003</b></p>
+										<p>by <b>shyamal Mukherjee</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Oil, 36" X 36"</p>
+										<p>Oil on Acrylic</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/08.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Tune of Love1</h4>
+										<p class="pull-right">Code: <b>SD06-TL-001</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 36" X 36"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/09.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Couple</h4>
+										<p class="pull-right">Code: <b>SD06-TL-002</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 40" X 30"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/10.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Tune of Love2</h4>
+										<p class="pull-right">Code: <b>SD06-TL-003</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 30" X 30"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/art/04.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+								<div class="thirdrow">
+									<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+									<!--<p class="pull-right"><b>$ 32,630</b></p>-->
+									<p>by <b>Surendra Pal Singh</b></p>
+									<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+									<p>Painting, 10.7 X 19.5 In</p>
+									<p>Watercolor on Paper</p>
+								</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/art/01.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+								<div class="thirdrow">
+									<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+									<!--<p class="pull-right"><b>$ 32,630</b></p>-->
+									<p>by <b>Surendra Pal Singh</b></p>
+									<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+									<p>Painting, 10.7 X 19.5 In</p>
+									<p>Watercolor on Paper</p>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab3" class="container">
+						<div class="row effects clearfix" id="effect-1">
+							<div class="wall">
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/shyamal/sold/sold_01.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Ashoke Mullick</b></p>
+										<p>Acrylic, 30" X 28"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/shyamal/sold/sold_02.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Ashoke Mullick</b></p>
+										<p>Acrylic, 30" X 28"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/shyamal/sold/sold_03.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Ashoke Mullick</b></p>
+										<p>Acrylic, 30" X 28"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/shyamal/sold/sold_04.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Ashoke Mullick</b></p>
+										<p>Acrylic, 30" X 28"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/shyamal/sold/sold_05.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Ashoke Mullick</b></p>
+										<p>Acrylic, 30" X 28"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/shyamal/sold/sold_06.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Ashoke Mullick</b></p>
+										<p>Acrylic, 30" X 28"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/shyamal/sold/sold_07.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Ashoke Mullick</b></p>
+										<p>Acrylic, 30" X 28"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/shyamal/sold/sold_08.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Ashoke Mullick</b></p>
+										<p>Acrylic, 30" X 28"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab4">
+						<div class="container text-center">
+							<h1 class="soon" > Coming Soon !!! </h1>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+		
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="contact.html">Join Us</a></li>
+								<li><a href="soon.html">Support</a></li>
+								<li><a href="soon.html">Request Status</a></li>
+								<li><a href="policy.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Terms and condition </a></li>
+								<li><a href="policy.html">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>About</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="soon.html">Testimonials</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-widget">
+							<h2>newsletter</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+						
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<p class="pull-left">Copyright © 2017 paintbrush Inc. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!--<div class="pay_cards">
+							<img class="img-responsive" src="resource/images/cards/payment.png" />
+						</div>-->
+						<div class="pull-right">
+							<ul class="social_media padd0">
+								<li class="circle"><a href="https://www.facebook.com/login/" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+								<li class="circle"><a href="https://twitter.com/login" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+								<li class="circle"><a href="https://plus.google.com/collections/featured" title="google+" target="blank"><i class="ti-google"></i></a></li>
+								<li class="circle"><a href="https://in.pinterest.com/login/" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">    	
+	</div>
+	<div class="modal fade" id="submit_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">			
+	</div>
+	
+	<a href="#header" class="scrollup" style="display;none;"><i class="fa fa-chevron-up"></i></a>	
+	
+	<!--<script src="./Final Tiles Grid Gallery _ jQuery plugin_files/addthis_widget.js.download" async="async"></script>-->
+	<script src="resource/js/jquery.js"></script>
+	<script src="resource/js/bootstrap.min.js"></script>
+	<script src="resource/js/jquery.scrollUp.min.js"></script>
+	<script src="resource/js/main.js"></script>
+	<script src="resource/js/wow.min.js"></script>
+	<script src="resource/js/jaliswall.js"></script>
+	<script>
+	 wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>
+<script>
+	$('.wall').jaliswall({item:'.wall-item'});
+</script>
+<script>
+    function resetTabs(){
+        $("#content > div").hide(); //Hide all content
+        $("#tabs a").attr("id",""); //Reset id's      
+    }
+
+    var myUrl = window.location.href; //get URL
+    var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2     
+    var myUrlTabName = myUrlTab.substring(0,4); // For the above example, myUrlTabName = #tab
+
+    (function(){
+        $("#content > div").hide(); // Initially hide all content
+        $("#tabs li:first a").attr("id","current"); // Activate first tab
+        $("#content > div:first").fadeIn(); // Show first tab content
+        
+        $("#tabs a").on("click",function(e) {
+            e.preventDefault();
+            if ($(this).attr("id") == "current"){ //detection for current tab
+             return       
+            }
+            else{             
+            resetTabs();
+            $(this).attr("id","current"); // Activate this
+            $($(this).attr('name')).fadeIn(); // Show content for current tab
+            }
+        });
+
+        for (i = 1; i <= $("#tabs li").length; i++) {
+          if (myUrlTab == myUrlTabName + i) {
+              resetTabs();
+              $("a[name='"+myUrlTab+"']").attr("id","current"); // Activate url tab
+              $(myUrlTab).fadeIn(); // Show url tab content        
+          }
+        }
+    })()
+  </script> 
+	
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>High school Mathematics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/videoscript.js"></script>
+  <script>
+  $( document ).ready(function() {
+       $('.select-modules').on('click', 'li', function(){
+			$('.select-modules li').removeClass('active');
+			$(this).addClass('active');
+		});
+  });
+  
+  </script>
+  
+</head>
+<body onload='load()'>
+	<!-- header part-->
+	<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<a href="#"><img src="img/logo.png"/></a>
+					</div>
+					<div class="col-md-6 col-xs-6 userlogin">
+						<a href="#"><span class="fa fa-user fa-4x pull-right fauser"></span></a>
+					</div>
+				</div>
+			</div>
+	</div><!-- header part-->
+	<!-- main content -->
+	<div class="main">
+		<div class="container">
+			<div class="row titlerow">
+				<div class="col-md-6 col-xs-8">
+					<h3 class="titleheader"><a href="High_School_Science_CHEMISTRY.html" style="color:#ada9a9;">High School Science</a> / <a href="High_School_Science_CHEMISTRY.html" style="color:#ada9a9;">CHEMISTRY</a> <span class="" style="color:#04698a">/ <a href="#">Non Metals & their compounds</a></span></h3>	
+				</div>
+				<div class="col-md-6 col-xs-4 text-right backbtn">
+					<a href="High_School_Science_CHEMISTRY.html" class="btn btn-success"><i class="fa fa fa-arrow-left"></i> Back</a>
+				</div>
+			</div>
+			<div class="row">
+            <div class="col-md-12 col-sm-12 portfolio-item full-width text-center">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+				  <!-- Wrapper for slides -->
+						<div class="item active">
+						<video id="homevideo"  onended="run()" controls width="70%;">
+							<source src="videos/sample1.mp4" type='video/mp4'/>
+						</video>				
+					  </div>
+					<!-- Left and right controls -->
+				</div>
+			</div>
+				<div style="width:69%; margin:0 auto;">
+			<div class="row text-center">
+			<div class="col-sm-4 col-md-2 thumbnilediv" id="btn_1" data-url="videos/sample1.mp4" onclick="buttonclick(this)" style="cursor:pointer;">
+				<a href="#" class="thumbnail-over"><div class="thumbnail_bg">
+					<div class="overlay">
+						<img src="img/play.png" alt="" width="100%"/>
+					</div>
+					<div class="captionbg" style="">
+						<h5 class="titlehead">Bio molecules</h5>
+					</div>
+				</div></a>
+			</div>
+			<div class="col-sm-4 col-md-2 thumbnilediv" id="btn_2" data-url="videos/sample2.mp4" onclick="buttonclick(this)" style="cursor:pointer;">
+				<a href="#" class="thumbnail-over"><div class="thumbnail_bg">
+					<div class="overlay">
+						<img src="img/play.png" alt="" width="100%"/>
+					</div>
+					<div class="captionbg" style="">
+						<h5 class="titlehead">Oxidation & Reduction</h5>
+					</div>
+				</div></a>
+			</div>
+			<div class="col-sm-4 col-md-2 thumbnilediv" id="btn_3" data-url="videos/sample3.mp4" onclick="buttonclick(this)" style="cursor:pointer;">
+				<a href="#" class="thumbnail-over"><div class="thumbnail_bg">
+					<div class="overlay">
+					<img src="img/play.png" alt="" width="100%"/>
+					</div>
+					<div class="captionbg" style="">
+						<h5 class="titlehead">Acid, bases & Salts</h5>
+					</div>
+				</div></a>
+			</div>
+			<div class="col-sm-4 col-md-2 thumbnilediv" id="btn_4" data-url="videos/sample4.mp4" onclick="buttonclick(this)" style="cursor:pointer;">
+				<a href="#" class="thumbnail-over"><div class="thumbnail_bg">
+					<div class="overlay">
+					<img src="img/play.png" alt="" width="100%"/>
+					</div>
+					<div class="captionbg" style="">
+						<h5 class="titlehead">Non Metals & their compounds</h5>
+					</div>
+				</div></a>
+			</div>
+			<div class="col-sm-4 col-md-2 thumbnilediv" id="btn_5" data-url="videos/sample5.mp4" onclick="buttonclick(this)" style="cursor:pointer;">
+				<a href="#" class="thumbnail-over"><div class="thumbnail_bg">
+					<div class="overlay">
+					<img src="img/play.png" alt="" width="100%"/>
+					</div>
+					<div class="captionbg" style="">
+						<h5 class="titlehead">Kinetic theory of matter</h5>
+					</div>
+				</div></a>
+			</div>
+			<div class="col-sm-4 col-md-2 thumbnilediv" >
+				<a href="#" data-toggle="modal" data-target="#myModal" class="thumbnail-more"><div class="thumbnail_bg">
+					<div class="thumbnail_bg">
+						<div class="overlay overlaymore">
+						   More  <i class="fa fa-angle-right"></i> 
+						</div>
+					</div>
+				</div></a>
+			</div>
+		</div>
+		</div>
+		</div>
+				<div id="myModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header alert alert-info alertbox">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <strong>Info!</strong> This is a demo link, only limited topics are listed.
+					  </div>
+					  <div class="modal-footer" style="text-align:center">
+						<button type="button" class="btn btn-info text-center" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+
+				  </div>
+				</div>
+	</div>
+	<div class="footer">
+		<p>&copy; 2016 Mobile Tutor Private Ltd., Privacy Policy. Terms & conditions</p>
+	</div>
+</body>
+</html>

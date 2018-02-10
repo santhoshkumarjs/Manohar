@@ -1,0 +1,3403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paint Brush</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">	
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script>
+		$( document ).ready(function() {
+
+			if ($(window).width() > 768) {
+				$('.wall-item').hover(
+					function () {
+						$(this).find('.buynow').css("display","block");
+					},
+					function () {
+						$(this).find('.buynow').css("display","none");
+					});
+				}
+			
+				$(".btn-pref .btn").click(function () {
+				$(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+				// $(".tab").addClass("active"); // instead of this do the below 
+				$(this).removeClass("btn-default").addClass("btn-primary");   
+			});
+		});
+
+		$(document).ready(function(){
+			$(".add_fav a").tooltip();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			if (Modernizr.touch) {
+				// show the close overlay button
+				$(".close-overlay").removeClass("hidden");
+				// handle the adding of hover class when clicked
+				$(".img").click(function(e){
+					if (!$(this).hasClass("hover")) {
+						$(this).addClass("hover");
+					}
+				});
+				// handle the closing of the overlay
+				$(".close-overlay").click(function(e){
+					e.preventDefault();
+					e.stopPropagation();
+					if ($(this).closest(".img").hasClass("hover")) {
+						$(this).closest(".img").removeClass("hover");
+					}
+				});
+			} else {
+				// handle the mouseenter functionality
+				$(".img").mouseenter(function(){
+					$(this).addClass("hover");
+					$(this).find('.buynow').css("display","block"); 
+				})
+				// handle the mouseleave functionality
+				.mouseleave(function(){
+					$(this).removeClass("hover");
+					
+				});
+			}
+		});
+	</script>
+	<style>
+.home-block {background-color: #fff; display: block; height: 96px; line-height:96px;border: 1px solid #CCC;text-align: center;font-size: 18px; text-transform:uppercase;color:#000;margin-bottom: 20px; background-size: cover;background-position: 1000px 1000px; /*box-shadow: 1px 1px 4px #111;text-shadow: 2px 2px 0 #444; */background-image: inherit;background-repeat: no-repeat;}
+.home-block:hover {background-position: center center !important;color:#fff;transition:background-color .0s ease 0s;}
+.catgr1:hover{background-image:url('images/topcategories/painting.jpg')}
+.catgr2:hover{background-image:url('images/topcategories/photography.jpg')}
+.catgr3:hover{background-image:url('images/topcategories/sculpture.jpg')}
+.catgr4:hover{background-image:url('images/topcategories/print_multiple.jpg')}
+.catgr5:hover{background-image:url('images/topcategories/art.jpg')}
+.catgr6:hover{background-image:url('images/topcategories/drawing.jpg')}
+.catgr7:hover{background-image:url('images/topcategories/Magazine.jpg')}
+.catgr8:hover{background-image:url('images/topcategories/design_wall.jpg')}
+.category{padding: 30px 10px;/*background: #FFF;*/}
+</style>
+</head><!--/head-->
+
+<body id="home">
+	<div class="header-v5 header-static header-fixed-shrink">
+		<!-- Navbar -->
+		<div class="navbar navbar-default navbar-custom navbar-fixed-top mega-menu" role="navigation">
+			<!-- Topbar v3 -->
+			<div class="topbar-v3">
+				<div class="container">
+					<div class="row padlr15">
+						<div class="col-sm-6">
+							<!-- Topbar Navigation -->
+							<ul class="left-topbar">
+								<li><a href="mailto:connect@paintbrush.ae">connect@paintbrush.ae</a></li>
+								<!--<li><a href="callto:+91 98840 98840">+91 98840 98840</a></li>-->
+								<li>Free shipping worldwide</li>
+							</ul><!--end left-topbar-->
+						</div>
+						<div class="col-sm-6 tb_right">
+							<ul class="list-inline right-topbar pull-right">
+								<li>
+									<div class="tbr-info">
+										<span><a ><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></a></span>
+										<div class="tbr-inner">
+											<a href="account.html">My Account</a>
+											<a href="wishlist.html">My Wishlist</a>
+											<a href="model.html" data-toggle="modal" data-target="#login-modal">Login</a>
+										</div>
+									</div>
+								</li>
+								<!--<li>
+									<div class="tbr-info"><span><i class="fa fa-heart"></i> <a href="wishlist.html"> Wishlist (0)</a></span></div>
+								</li>-->
+								<li>
+									<div class="tbr-info topcart">
+										<span><a ><i class="ti-shopping-cart"></i>My Cart (2)</a></span>
+										<div class="header-xtra pull-right">
+											<div class="cart-info">
+												<div>
+													<div class="col-md-6 col-xs-6">
+														<a href="soon.html" class="btn btn-grey">View Cart</a>
+													</div>
+													<div class="col-md-6 col-xs-6">
+														<a href="soon.html" class="btn btn-grey">Checkout</a>
+													</div>
+												</div>
+												<!--<div class="ci-total">Subtotal: $750.00</div>-->
+												<small>You have <em class="highlight">2 item(s)</em> in your shopping bag</small>
+												<div class="ci-item trash-header">
+													<a href="art-inner.html"><img src="images/art/01.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="art-inner.html">Lorem Ipsum is simply dummy</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="ci-item trash-header">
+													<a href="print-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="print-inner.html">Product fashion</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>	-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="ci-item trash-header">
+													<a href="art-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="art-inner.html">Product fashion</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--/container-->
+			</div>
+		<!-- End Topbar -->
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand page-scroll" href="index.html">
+							<img id="logo-header" class="mobileview" src="images/paintbrush-logomobile.png" alt="Logo">
+							<img id="logo-header1" class="webview" src="images/paintbrush-logo.png" alt="Logo">
+						</a>
+					</div>
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+					<script>
+						new UISearch( document.getElementById( 'sb-search' ) );
+					</script>
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+					<!-- Nav Menu -->
+					<ul class="nav navbar-nav">
+						<!-- Pages -->
+						<li class="dropdown">
+							<a href="art.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								Art <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="art-all.html" class="dropdown-toggle">All</a></li>
+								<li><a href="acrylic.html">Acrylic</a></li>
+								<li><a href="oil.html">Oil</a></li>
+								<li><a href="charcoal.html">Charcoal</a></li>
+								<li><a href="canvas.html">Canvas</a></li>
+								<li><a href="digital.html">Digital</a></li>
+								<li><a href="drawing.html">Drawing</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="print.html" class="dropdown-toggle">print</a>
+						</li>
+						<li>
+							<a href="artist.html" class="dropdown-toggle">artist</a>
+						</li>
+						<li class="dropdown">
+							<a href="gallery.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								gallery <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="gallery.html">All</a></li>
+								<li><a href="illustration.html">Title 1</a></li>
+								<li><a href="illustration.html">Title 2</a></li>
+								<li><a href="illustration.html">Title 3</a></li>
+								<li><a href="illustration.html">Title 4</a></li>
+								<!--<li><a href="illustration.html">Naive</a></li>
+								<li><a href="illustration.html">Photorealism</a></li>
+								<li><a href="illustration.html">Realism</a></li>
+								<li><a href="illustration.html">Surrealism</a></li>
+								<li><a href="illustration.html">Traditional</a></li>
+								<li><a href="illustration.html">Tribal</a></li>-->
+							</ul>
+						</li>
+						<!-- End Gifts -->
+
+						<li>
+							<a href="soon.html" class="dropdown-toggle">Art Vacation</a>
+						</li>
+						<li class="dropdown">
+							<a href="more.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								more <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="soon.html">Gift Vouchers</a></li>
+								<li><a href="soon.html"> Artify</a></li>
+								
+								<li><a href="soon.html"> events</a></li>
+							</ul>
+						</li>
+						<!-- End Clothes -->
+					</ul>
+					<!-- End Nav Menu -->
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- End Navbar -->
+	</div>
+	<!--=== End Header v5 ===-->
+	<div class="row">
+		<div class="wishlist_social" style="">
+			<ul class="padd0">
+				<li class="square"><a href="wishlist.html" title="favourite" ><i class="fa fa-heart"></i><span class="like-tooltip">3</span></a></li>
+			</ul>
+			<ul class="padd0 hidden-xs">
+				<!--<li class="square"><a href="#" title="facebook" target="blank"><i class="fa fa-heart"></i><span class="like-tooltip">0</span></a></li>-->
+				<li class="square "><a href="https://www.facebook.com/login/" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+				<li class="square"><a href="https://twitter.com/login" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+				<li class="square"><a href="https://plus.google.com/collections/featured" title="google+" target="blank"><i class="ti-google"></i></a></li>
+				<li class="square"><a href="https://in.pinterest.com/login/" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<!-- Top -->
+	<section class="sectiontop">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0">
+				<div class="col-md-12 col-xs-12">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Categories</li>
+					</ol>
+				</div>
+			</div>
+			<!--<div class="row mrg_0">
+				<h2 class="heading"><span>Top Categories</span></h2>
+			</div>-->
+			<div class="row">
+				<!-- category-section-starts-here -->
+				<section class="category part">
+					<div style="background:#fff; padding:15px;">
+					<div class="row wow fadeInDown">
+						<div class="col-md-3 col-xs-6">
+							<a href="#" class="home-block catgr1" id="CatID01">Painting</a>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<a href="#" class="home-block catgr2" id="CatID02">Photography</a>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<a href="#" class="home-block catgr3" id="CatID03">Sculpture</a>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<a href="#" class="home-block catgr4" id="CatID04">Print & multiple</a>
+						</div>
+					</div>
+					
+					<div class="row wow fadeInDown categ_row2">
+						<div class="col-md-3 col-xs-6">
+							<a href="#" class="home-block catgr5" id="CatID05">Arts</a>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<a href="#" class="home-block catgr6"  id="CatID06">Drawing</a>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<a href="#" class="home-block catgr7" id="CatID07">Magazine</a>
+						</div>
+						<div class="col-md-3 col-xs-6">
+							<a href="#" class="home-block catgr8" id="CatID08">design</a>
+						</div>
+					</div>
+					</div>
+				</section>
+				<!-- category-section-starts-here -->
+			</div>
+			<!-- List grid Image -->
+			<section id="ID01">
+				<div class="row mrg_0"><!-- marl6-->
+					<h2 class="heading"><span>ART</span></h2>
+						<p class="subtitle fancy">12345 ORIGINALS LISTED</p>
+						<p class="text-center">Whether you are looking for an original abstract painting, a modern art painting, or a limited edition watercolor <br>Whether you are looking for an original abstract painting, a modern art painting, or a limited edition watercolor print signed by the artist, Saatchi Art has over 370,000 original paintings</p>
+				</div>
+				<div class="row"><!-- mar30-->
+					<div class="col-md-3 col-sm-3 pad_left">
+						<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+							<option value="/art/SIZE">Size</option>
+							<option value="/art/ALL SIZE">ALL SIZE</option>
+							<option value="/art/SMALL">SMALL</option>
+							<option value="/art/MEDIUM">MEDIUM</option>
+							<option value="/art/LARGE">LARGE</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+							<option value="">Price</option>
+								<option value="/art/All prices">All prices</option>
+								<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+								<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+								<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+								<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+								<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+							</select>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+							<option value="">Category</option>
+							<option value="/art/All Categories">All Categories</option>
+							<option value="/art/Digital Art">Digital Art</option>
+							<option value="/art/Drawing">Drawing</option>
+							<option value="/art/Drawing">Drawing</option>
+							<option value="/art/Photography">Photography</option>
+							<option value="/art/Printmaking">Printmaking</option>
+							<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+							<option value="/art/Serigraph">Serigraph</option>
+							<option value="/art/Textile">Textile</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-sm-3 pad_right">
+						<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+							<option value="">Styles</option>
+							<option value="/art/All Styles">All Styles</option>
+							<option value="/art/Abstract">Abstract</option>
+							<option value="/art/Art Deco">Art Deco</option>
+							<option value="/art/Conceptual">Conceptual</option>
+							<option value="/art/Cubism">Cubism</option>
+							<option value="/art/dada">Dada</option>
+							<option value="/art/documentary">Documentary</option>
+							<option value="/art/expressionism">Expressionism</option>
+							<option value="/art/figurative">Figurative</option>
+							<option value="/art/fine-art">Fine Art</option>
+							<option value="/art/folk">Folk</option>
+							<option value="/art/illustration">Illustration</option>
+						</select>
+					</div>
+				</div>
+				<!-- List grid Image -->
+				<div class="row effects clearfix" id="effect-1">
+					<div class="wall">
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/01.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/02.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/03.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/07.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/05.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/06.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/04.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/01.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/03.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/07.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/02.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+						<div class="wall-item">
+							<div class="img">
+								<a href="art-inner.html"><img src="images/art/05.jpg" alt="" class="img-responsive"></a>
+								<div class="overlay">
+									<div class="add_fav">
+										<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+									</div>
+									<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+									<!-- <a class="close-overlay hidden">x</a> -->
+								</div>
+							</div>
+							<div class="thirdrow">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+								
+								<p>by <b>Surendra Pal Singh</b></p>
+								<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+								<p>Painting, 10.7 X 19.5 In</p>
+								<p>Watercolor on Paper</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<!-- Top End -->
+	<!-- Abstract -->
+	<section class="sectiontop" id="Abstract" style="display:none;">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<div class="col-md-12 col-xs-12">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Abstract</li>
+					</ol>
+				</div>
+			</div>
+			<div class="row mrg_0"><!-- marl6-->
+				<h2 class="heading"><span>Abstract</span></h2>
+					<p class="subtitle fancy">500 ORIGINALS LISTED</p>
+					<p class="text-center">Through abstract photography, even the most mundane objects can be artistically represented in fresh, exciting ways. Via an array of photographic tools and techniques such as extreme close-up, specialty lenses, filters, simple cropping, and lighting, a photographer can translate figurative subject matter into beautiful abstract forms. If you’d like to discover new abstract works by emerging photographers, we invite you to explore the international selection of abstract photography for sale on Paint Brush Art.</p>
+			</div>
+			<div class="row"><!-- mar30-->
+				<div class="col-md-3 col-sm-3 pad_left">
+					<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="/art/SIZE">Size</option>
+						<option value="/art/ALL SIZE">ALL SIZE</option>
+						<option value="/art/SMALL">SMALL</option>
+						<option value="/art/MEDIUM">MEDIUM</option>
+						<option value="/art/LARGE">LARGE</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Price</option>
+							<option value="/art/All prices">All prices</option>
+							<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+							<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+							<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+							<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+							<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+						</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Category</option>
+						<option value="/art/All Categories">All Categories</option>
+						<option value="/art/Digital Art">Digital Art</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Photography">Photography</option>
+						<option value="/art/Printmaking">Printmaking</option>
+						<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+						<option value="/art/Serigraph">Serigraph</option>
+						<option value="/art/Textile">Textile</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3 pad_right">
+					<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Styles</option>
+						<option value="/art/All Styles">All Styles</option>
+						<option value="/art/Abstract">Abstract</option>
+						<option value="/art/Art Deco">Art Deco</option>
+						<option value="/art/Conceptual">Conceptual</option>
+						<option value="/art/Cubism">Cubism</option>
+						<option value="/art/dada">Dada</option>
+						<option value="/art/documentary">Documentary</option>
+						<option value="/art/expressionism">Expressionism</option>
+						<option value="/art/figurative">Figurative</option>
+						<option value="/art/fine-art">Fine Art</option>
+						<option value="/art/folk">Folk</option>
+						<option value="/art/illustration">Illustration</option>
+					</select>
+				</div>
+			</div>
+			<!-- List grid Image -->
+			<div class="row effects clearfix" id="effect-1">
+				<div class="wall">
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/01.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/06.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/abstract/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Abstract End -->
+	<!--Botanical -->
+	<section class="sectiontop" id="Botanical" style="display:none;">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<div class="col-md-6 col-xs-6">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Botanical</li>
+					</ol>
+				</div>
+				<div class="col-md-6 col-xs-6" style="padding:0px;">
+					<div class="viewall">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+			</div>
+			<div class="row mrg_0"><!-- marl6-->
+				<h2 class="heading"><span>Botanical</span></h2>
+					<p class="subtitle fancy">500 ORIGINALS LISTED</p>
+					<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</div>
+			<div class="row"><!-- mar30-->
+				<div class="col-md-3 col-sm-3 pad_left">
+					<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="/art/SIZE">Size</option>
+						<option value="/art/ALL SIZE">ALL SIZE</option>
+						<option value="/art/SMALL">SMALL</option>
+						<option value="/art/MEDIUM">MEDIUM</option>
+						<option value="/art/LARGE">LARGE</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Price</option>
+							<option value="/art/All prices">All prices</option>
+							<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+							<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+							<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+							<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+							<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+						</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Category</option>
+						<option value="/art/All Categories">All Categories</option>
+						<option value="/art/Digital Art">Digital Art</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Photography">Photography</option>
+						<option value="/art/Printmaking">Printmaking</option>
+						<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+						<option value="/art/Serigraph">Serigraph</option>
+						<option value="/art/Textile">Textile</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3 pad_right">
+					<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Styles</option>
+						<option value="/art/All Styles">All Styles</option>
+						<option value="/art/Abstract">Abstract</option>
+						<option value="/art/Art Deco">Art Deco</option>
+						<option value="/art/Conceptual">Conceptual</option>
+						<option value="/art/Cubism">Cubism</option>
+						<option value="/art/dada">Dada</option>
+						<option value="/art/documentary">Documentary</option>
+						<option value="/art/expressionism">Expressionism</option>
+						<option value="/art/figurative">Figurative</option>
+						<option value="/art/fine-art">Fine Art</option>
+						<option value="/art/folk">Folk</option>
+						<option value="/art/illustration">Illustration</option>
+					</select>
+				</div>
+			</div>
+			<!-- List grid Image -->
+			<div class="row effects clearfix" id="effect-1">
+				<div class="wall">
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/06.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/botanical/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Botanical End -->
+	<!--Modern -->
+	<section class="sectiontop" id="Modern" style="display:none;">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<div class="col-md-6 col-xs-6">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Modern</li>
+					</ol>
+				</div>
+				<div class="col-md-6 col-xs-6" style="padding:0px;">
+					<div class="viewall">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+			</div>
+			<div class="row mrg_0"><!-- marl6-->
+				<h2 class="heading"><span>Modern</span></h2>
+					<p class="subtitle fancy">500 ORIGINALS LISTED</p>
+					<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			<div class="row"><!-- mar30-->
+				<div class="col-md-3 col-sm-3 pad_left">
+					<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="/art/SIZE">Size</option>
+						<option value="/art/ALL SIZE">ALL SIZE</option>
+						<option value="/art/SMALL">SMALL</option>
+						<option value="/art/MEDIUM">MEDIUM</option>
+						<option value="/art/LARGE">LARGE</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Price</option>
+							<option value="/art/All prices">All prices</option>
+							<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+							<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+							<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+							<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+							<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+						</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Category</option>
+						<option value="/art/All Categories">All Categories</option>
+						<option value="/art/Digital Art">Digital Art</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Photography">Photography</option>
+						<option value="/art/Printmaking">Printmaking</option>
+						<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+						<option value="/art/Serigraph">Serigraph</option>
+						<option value="/art/Textile">Textile</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3 pad_right">
+					<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Styles</option>
+						<option value="/art/All Styles">All Styles</option>
+						<option value="/art/Abstract">Abstract</option>
+						<option value="/art/Art Deco">Art Deco</option>
+						<option value="/art/Conceptual">Conceptual</option>
+						<option value="/art/Cubism">Cubism</option>
+						<option value="/art/dada">Dada</option>
+						<option value="/art/documentary">Documentary</option>
+						<option value="/art/expressionism">Expressionism</option>
+						<option value="/art/figurative">Figurative</option>
+						<option value="/art/fine-art">Fine Art</option>
+						<option value="/art/folk">Folk</option>
+						<option value="/art/illustration">Illustration</option>
+					</select>
+				</div>
+			</div>
+			<!-- List grid Image -->
+			<div class="row effects clearfix" id="effect-1">
+				<div class="wall">
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/01.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/06.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/06.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/modern/01.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Modern End -->
+	<!--Animals -->
+	<section class="sectiontop" id="Animals" style="display:none;">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<div class="col-md-6 col-xs-6">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Animals</li>
+					</ol>
+				</div>
+				<div class="col-md-6 col-xs-6" style="padding:0px;">
+					<div class="viewall">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+			</div>
+			<div class="row mrg_0"><!-- marl6-->
+				<h2 class="heading"><span>Animals</span></h2>
+					<p class="subtitle fancy">500 ORIGINALS LISTED</p>
+					<p class="text-center">The earliest-known animal drawings and paintings, found in Paleolithic caves, date as far back 30,000 years. It’s no surprise, as animals not only awe is with their beauty, but they fascinate and endear us with their actions. If you’re an animal lover, or are looking for a one-of-a-kind gift for someone who is, we invite you to explore the original animal drawings for sale on Saatchi Art by talented emerging artists from around the world. From the fierce and majestic to the cuddly and cute, our selection of animal drawings contains the perfect works for your style and space.</p>
+			</div>
+			<div class="row"><!-- mar30-->
+				<div class="col-md-3 col-sm-3 pad_left">
+					<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="/art/SIZE">Size</option>
+						<option value="/art/ALL SIZE">ALL SIZE</option>
+						<option value="/art/SMALL">SMALL</option>
+						<option value="/art/MEDIUM">MEDIUM</option>
+						<option value="/art/LARGE">LARGE</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Price</option>
+							<option value="/art/All prices">All prices</option>
+							<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+							<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+							<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+							<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+							<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+						</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Category</option>
+						<option value="/art/All Categories">All Categories</option>
+						<option value="/art/Digital Art">Digital Art</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Photography">Photography</option>
+						<option value="/art/Printmaking">Printmaking</option>
+						<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+						<option value="/art/Serigraph">Serigraph</option>
+						<option value="/art/Textile">Textile</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3 pad_right">
+					<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Styles</option>
+						<option value="/art/All Styles">All Styles</option>
+						<option value="/art/Abstract">Abstract</option>
+						<option value="/art/Art Deco">Art Deco</option>
+						<option value="/art/Conceptual">Conceptual</option>
+						<option value="/art/Cubism">Cubism</option>
+						<option value="/art/dada">Dada</option>
+						<option value="/art/documentary">Documentary</option>
+						<option value="/art/expressionism">Expressionism</option>
+						<option value="/art/figurative">Figurative</option>
+						<option value="/art/fine-art">Fine Art</option>
+						<option value="/art/folk">Folk</option>
+						<option value="/art/illustration">Illustration</option>
+					</select>
+				</div>
+			</div>
+			<!-- List grid Image -->
+			<div class="row effects clearfix" id="effect-1">
+				<div class="wall">
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/01.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/06.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/animals/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Animals Wnd -->
+	<!--Photography -->
+	<section class="sectiontop" id="Photography" style="display:none;">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<div class="col-md-6 col-xs-6">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Photography</li>
+					</ol>
+				</div>
+				<div class="col-md-6 col-xs-6" style="padding:0px;">
+					<div class="viewall">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+			</div>
+			<div class="row mrg_0"><!-- marl6-->
+				<h2 class="heading"><span>Photography</span></h2>
+					<p class="subtitle fancy">500 ORIGINALS LISTED</p>
+					<p class="text-center">The earliest-known animal drawings and paintings, found in Paleolithic caves, date as far back 30,000 years. It’s no surprise, as animals not only awe is with their beauty, but they fascinate and endear us with their actions. If you’re an animal lover, or are looking for a one-of-a-kind gift for someone who is, we invite you to explore the original animal drawings for sale on Saatchi Art by talented emerging artists from around the world. From the fierce and majestic to the cuddly and cute, our selection of animal drawings contains the perfect works for your style and space.</p>
+			</div>
+			<div class="row"><!-- mar30-->
+				<div class="col-md-3 col-sm-3 pad_left">
+					<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="/art/SIZE">Size</option>
+						<option value="/art/ALL SIZE">ALL SIZE</option>
+						<option value="/art/SMALL">SMALL</option>
+						<option value="/art/MEDIUM">MEDIUM</option>
+						<option value="/art/LARGE">LARGE</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Price</option>
+							<option value="/art/All prices">All prices</option>
+							<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+							<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+							<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+							<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+							<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+						</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Category</option>
+						<option value="/art/All Categories">All Categories</option>
+						<option value="/art/Digital Art">Digital Art</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Photography">Photography</option>
+						<option value="/art/Printmaking">Printmaking</option>
+						<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+						<option value="/art/Serigraph">Serigraph</option>
+						<option value="/art/Textile">Textile</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3 pad_right">
+					<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Styles</option>
+						<option value="/art/All Styles">All Styles</option>
+						<option value="/art/Abstract">Abstract</option>
+						<option value="/art/Art Deco">Art Deco</option>
+						<option value="/art/Conceptual">Conceptual</option>
+						<option value="/art/Cubism">Cubism</option>
+						<option value="/art/dada">Dada</option>
+						<option value="/art/documentary">Documentary</option>
+						<option value="/art/expressionism">Expressionism</option>
+						<option value="/art/figurative">Figurative</option>
+						<option value="/art/fine-art">Fine Art</option>
+						<option value="/art/folk">Folk</option>
+						<option value="/art/illustration">Illustration</option>
+					</select>
+				</div>
+			</div>
+			<!-- List grid Image -->
+			<div class="row effects clearfix" id="effect-1">
+				<div class="wall">
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/01.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/photography/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Photography End -->
+	<!--MAP -->
+	<section class="sectiontop" id="Map" style="display:none;">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<div class="col-md-6 col-xs-6">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Map</li>
+					</ol>
+				</div>
+				<div class="col-md-6 col-xs-6" style="padding:0px;">
+					<div class="viewall">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+			</div>
+			<div class="row mrg_0"><!-- marl6-->
+				<h2 class="heading"><span>Map</span></h2>
+					<p class="subtitle fancy">500 ORIGINALS LISTED</p>
+					<p class="text-center">The earliest-known animal drawings and paintings, found in Paleolithic caves, date as far back 30,000 years. It’s no surprise, as animals not only awe is with their beauty, but they fascinate and endear us with their actions. If you’re an animal lover, or are looking for a one-of-a-kind gift for someone who is, we invite you to explore the original animal drawings for sale on Saatchi Art by talented emerging artists from around the world. From the fierce and majestic to the cuddly and cute, our selection of animal drawings contains the perfect works for your style and space.</p>
+			</div>
+			<div class="row"><!-- mar30-->
+				<div class="col-md-3 col-sm-3 pad_left">
+					<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="/art/SIZE">Size</option>
+						<option value="/art/ALL SIZE">ALL SIZE</option>
+						<option value="/art/SMALL">SMALL</option>
+						<option value="/art/MEDIUM">MEDIUM</option>
+						<option value="/art/LARGE">LARGE</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Price</option>
+							<option value="/art/All prices">All prices</option>
+							<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+							<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+							<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+							<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+							<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+						</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Category</option>
+						<option value="/art/All Categories">All Categories</option>
+						<option value="/art/Digital Art">Digital Art</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Photography">Photography</option>
+						<option value="/art/Printmaking">Printmaking</option>
+						<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+						<option value="/art/Serigraph">Serigraph</option>
+						<option value="/art/Textile">Textile</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3 pad_right">
+					<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Styles</option>
+						<option value="/art/All Styles">All Styles</option>
+						<option value="/art/Abstract">Abstract</option>
+						<option value="/art/Art Deco">Art Deco</option>
+						<option value="/art/Conceptual">Conceptual</option>
+						<option value="/art/Cubism">Cubism</option>
+						<option value="/art/dada">Dada</option>
+						<option value="/art/documentary">Documentary</option>
+						<option value="/art/expressionism">Expressionism</option>
+						<option value="/art/figurative">Figurative</option>
+						<option value="/art/fine-art">Fine Art</option>
+						<option value="/art/folk">Folk</option>
+						<option value="/art/illustration">Illustration</option>
+					</select>
+				</div>
+			</div>
+			<!-- List grid Image -->
+			<div class="row effects clearfix" id="effect-1">
+				<div class="wall">
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/01.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/map/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--MAP End -->
+	<!--Scenic Art -->
+	<section class="sectiontop" id="ScenicArt" style="display:none;">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<div class="col-md-6 col-xs-6">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Scenic Art</li>
+					</ol>
+				</div>
+				<div class="col-md-6 col-xs-6" style="padding:0px;">
+					<div class="viewall">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+			</div>
+			<div class="row mrg_0"><!-- marl6-->
+				<h2 class="heading"><span>Scenic Art</span></h2>
+					<p class="subtitle fancy">500 ORIGINALS LISTED</p>
+					<p class="text-center">The earliest-known animal drawings and paintings, found in Paleolithic caves, date as far back 30,000 years. It’s no surprise, as animals not only awe is with their beauty, but they fascinate and endear us with their actions. If you’re an animal lover, or are looking for a one-of-a-kind gift for someone who is, we invite you to explore the original animal drawings for sale on Saatchi Art by talented emerging artists from around the world. From the fierce and majestic to the cuddly and cute, our selection of animal drawings contains the perfect works for your style and space.</p>
+			</div>
+			<div class="row"><!-- mar30-->
+				<div class="col-md-3 col-sm-3 pad_left">
+					<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="/art/SIZE">Size</option>
+						<option value="/art/ALL SIZE">ALL SIZE</option>
+						<option value="/art/SMALL">SMALL</option>
+						<option value="/art/MEDIUM">MEDIUM</option>
+						<option value="/art/LARGE">LARGE</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Price</option>
+							<option value="/art/All prices">All prices</option>
+							<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+							<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+							<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+							<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+							<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+						</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Category</option>
+						<option value="/art/All Categories">All Categories</option>
+						<option value="/art/Digital Art">Digital Art</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Photography">Photography</option>
+						<option value="/art/Printmaking">Printmaking</option>
+						<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+						<option value="/art/Serigraph">Serigraph</option>
+						<option value="/art/Textile">Textile</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3 pad_right">
+					<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Styles</option>
+						<option value="/art/All Styles">All Styles</option>
+						<option value="/art/Abstract">Abstract</option>
+						<option value="/art/Art Deco">Art Deco</option>
+						<option value="/art/Conceptual">Conceptual</option>
+						<option value="/art/Cubism">Cubism</option>
+						<option value="/art/dada">Dada</option>
+						<option value="/art/documentary">Documentary</option>
+						<option value="/art/expressionism">Expressionism</option>
+						<option value="/art/figurative">Figurative</option>
+						<option value="/art/fine-art">Fine Art</option>
+						<option value="/art/folk">Folk</option>
+						<option value="/art/illustration">Illustration</option>
+					</select>
+				</div>
+			</div>
+			<!-- List grid Image -->
+			<div class="row effects clearfix" id="effect-1">
+				<div class="wall">
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/01.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/scenicart/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Scenic End -->
+	<!--Fine Art -->
+	<section class="sectiontop" id="FineArt" style="display:none;">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0"><!--marl6-->
+				<div class="col-md-6 col-xs-6">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Fine Art</li>
+					</ol>
+				</div>
+				<div class="col-md-6 col-xs-6" style="padding:0px;">
+					<div class="viewall">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+			</div>
+			<div class="row mrg_0"><!-- marl6-->
+				<h2 class="heading"><span>Fine Art</span></h2>
+					<p class="subtitle fancy">500 ORIGINALS LISTED</p>
+					<p class="text-center">The earliest-known animal drawings and paintings, found in Paleolithic caves, date as far back 30,000 years. It’s no surprise, as animals not only awe is with their beauty, but they fascinate and endear us with their actions. If you’re an animal lover, or are looking for a one-of-a-kind gift for someone who is, we invite you to explore the original animal drawings for sale on Saatchi Art by talented emerging artists from around the world. From the fierce and majestic to the cuddly and cute, our selection of animal drawings contains the perfect works for your style and space.</p>
+			</div>
+			<div class="row"><!-- mar30-->
+				<div class="col-md-3 col-sm-3 pad_left">
+					<select id="selectSize" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="/art/SIZE">Size</option>
+						<option value="/art/ALL SIZE">ALL SIZE</option>
+						<option value="/art/SMALL">SMALL</option>
+						<option value="/art/MEDIUM">MEDIUM</option>
+						<option value="/art/LARGE">LARGE</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectPrice" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Price</option>
+							<option value="/art/All prices">All prices</option>
+							<option value="/art/Under Rs. 20,000">Under Rs. 20,000</option>
+							<option value="/art/Rs. 20,000 to Rs. 40,000">Rs. 20,000 to Rs. 40,000</option>
+							<option value="/art/Rs. 40,000 to Rs. 80,000">Rs. 40,000 to Rs. 80,000</option>
+							<option value="/art/Rs. 80,000 to Rs. 150,000">Rs. 80,000 to Rs. 150,000</option>
+							<option value="/art/Over Rs. 150,000">Over Rs. 150,000</option>
+						</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<select id="selectCategory" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Category</option>
+						<option value="/art/All Categories">All Categories</option>
+						<option value="/art/Digital Art">Digital Art</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Drawing">Drawing</option>
+						<option value="/art/Photography">Photography</option>
+						<option value="/art/Printmaking">Printmaking</option>
+						<option value="/art/Sculpture | 3D">Sculpture | 3D</option>
+						<option value="/art/Serigraph">Serigraph</option>
+						<option value="/art/Textile">Textile</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3 pad_right">
+					<select id="selectStyle" class="filter-options" onchange="window.location = $(this).val();">
+						<option value="">Styles</option>
+						<option value="/art/All Styles">All Styles</option>
+						<option value="/art/Abstract">Abstract</option>
+						<option value="/art/Art Deco">Art Deco</option>
+						<option value="/art/Conceptual">Conceptual</option>
+						<option value="/art/Cubism">Cubism</option>
+						<option value="/art/dada">Dada</option>
+						<option value="/art/documentary">Documentary</option>
+						<option value="/art/expressionism">Expressionism</option>
+						<option value="/art/figurative">Figurative</option>
+						<option value="/art/fine-art">Fine Art</option>
+						<option value="/art/folk">Folk</option>
+						<option value="/art/illustration">Illustration</option>
+					</select>
+				</div>
+			</div>
+			<!-- List grid Image -->
+			<div class="row effects clearfix" id="effect-1">
+				<div class="wall">
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/01.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/05.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/04.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/03.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/02.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/07.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+					<div class="wall-item">
+						<div class="img">
+							<a href="art-inner.html"><img src="images/fineart/08.jpg" alt="" class="img-responsive"></a>
+							<div class="overlay">
+								<div class="add_fav">
+									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+								</div>
+								<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+								<!-- <a class="close-overlay hidden">x</a> -->
+							</div>
+						</div>
+						<div class="thirdrow">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+							
+							<p>by <b>Surendra Pal Singh</b></p>
+							<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+							<p>Painting, 10.7 X 19.5 In</p>
+							<p>Watercolor on Paper</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- End -->
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="contact.html">Join Us</a></li>
+								<li><a href="soon.html">Support</a></li>
+								<li><a href="soon.html">Request Status</a></li>
+								<li><a href="policy.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Terms and condition </a></li>
+								<li><a href="policy.html">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>About</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="soon.html">Testimonials</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-widget">
+							<h2>newsletter</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<p class="pull-left">Copyright © 2017 paintbrush Inc. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!--<div class="pay_cards">
+							<img class="img-responsive" src="images/cards/payment.png" />
+						</div>-->
+						<div class="pull-right">
+							<ul class="social_media padd0">
+								<li class="circle"><a href="https://www.facebook.com/login/" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+								<li class="circle"><a href="https://twitter.com/login" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+								<li class="circle"><a href="https://plus.google.com/collections/featured" title="google+" target="blank"><i class="ti-google"></i></a></li>
+								<li class="circle"><a href="https://in.pinterest.com/login/" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	<!--Modal Window--->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	
+	</div>
+	<div class="modal fade" id="submit_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">			
+	</div>
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/hallooou.js"></script>
+	<script src="js/smoothScroll.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jaliswall.js"></script>
+	<script>
+	 wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>
+	<script>$('.wall').jaliswall({item:'.wall-item'});</script>
+	
+	
+	
+</body>
+
+</html>

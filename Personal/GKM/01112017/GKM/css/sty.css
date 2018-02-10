@@ -1,0 +1,384 @@
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Mukta+Vaani:300,700|Playfair+Display:700,700i');
+
+   
+html {
+  font-size: 100%;
+}  
+
+
+h1, .h1, h2, .h2, h3, .h3 {
+	font-family: 'Playfair Display', serif;
+}
+
+h4, .h4, h5, .h5, h6, .h6, p, .p, body, button, .btn, .nav-item, .side-menu-items, .mc_embed_signup input.email, .form-control, .products-list li, label {
+  font-family: 'Mukta Vaani', sans-serif;
+}
+
+/*----------------Utilities-----------------*/
+a {
+  color: inherit;
+  text-decoration-color: currentcolor;
+  text-decoration: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  text-decoration-color: currentcolor;
+  color: inherit;
+  outline: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+p a {
+	color: #614063;
+}
+p a:hover {
+	color: #845586;
+}
+
+
+/*----------------Margins-----------------*/
+.m-b-1 {
+  margin-bottom: 1rem !important;
+}
+/*----------------Padding-----------------*/
+.p-x-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.p-b-4 {
+  padding-bottom: 4rem !important;
+}
+
+.p-y-4 {
+  padding-bottom: 4rem !important;
+  padding-top: 4rem !important;
+}
+
+
+
+/*----------------Main Colors-----------------*/
+.white, .white p {
+	color: #F7F5F5;
+}
+.black {
+	color: #222223;
+}
+
+/*----------------Background Colors-----------------*/
+.bg-white {
+	/*background: #F7F5F5;*/
+	background: #ffb800;
+}
+
+
+
+/* FadeIn */
+.fadeIn {
+  /* initially hide animatable objects */
+  visibility: hidden;
+  
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;   
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+  
+}
+
+.fadeIn.in-view {
+  visibility: visible;
+  
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 0.45s;
+  -moz-animation-duration: 0.45s;
+  -ms-animation-duration: 0.45s;
+  -o-animation-duration: 0.45s;
+  animation-duration: 0.45s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+  
+  -webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+/*---------Line Seperator-------*/
+.line-seperator {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	max-width: 1600px;
+	height: 30px;
+	overflow: hidden;
+	opacity: 0.4;
+	z-index: 2;
+}
+
+.line-seperator.sm {
+	max-width: 600px;
+}
+
+.diamond {
+	position: absolute;
+	margin: auto;
+	margin-top: 0.4rem;
+	left: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #98959B;
+	
+	-webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.line {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: 0;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-left-color: currentcolor;
+  border-left-style: none;
+  border-left-width: 0;
+  border-right-color: currentcolor;
+  border-right-style: none;
+  border-right-width: 0;
+  border-top-color: #98959B;
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+  width: 100%;
+	max-width: 500px;
+}
+
+.line.left {
+	left: -530px;
+	margin-right: 53%;
+}
+
+.line.right {
+	right: -530px;
+	margin-left: 53%;
+}
+
+/*---------Lline Seperator White-------*/
+.line-seperator.white .diamond {
+	border: 1px solid #ffffff;
+}
+
+.line-seperator.white .line {
+	border-top-color: #ffffff;
+}
+
+/*-----------------Content Boxes------------------*/
+.box-image {
+	width: 120%;
+	margin-top: -50px;
+	height: 70vh;
+	min-height: 620px;
+}
+
+.box-content {
+	height: 70vh;
+	min-height: 620px;
+	padding: 8%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;/*
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;*/
+}
+
+.box-content .btn {
+	align-self: flex-start;
+}
+
+.box-image.menu-loop {
+	width: 150%;
+	height: 400px;
+	min-height: 400px;
+}
+
+.box-content.menu-loop {
+	height: 400px;
+	min-height: 400px;
+}
+
+
+a.more {
+	position: absolute;
+	z-index: 2;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	-webkit-transition: all 0.55s ease-in-out;
+  -moz-transition: all 0.55s ease-in-out;
+  -o-transition: all 0.55s ease-in-out;
+  transition: all 0.55s ease-in-out;
+}
+
+a.more:hover {
+	margin-right: 30px;
+	-webkit-transition: all 0.55s ease-in-out;
+  -moz-transition: all 0.55s ease-in-out;
+  -o-transition: all 0.55s ease-in-out;
+  transition: all 0.55s ease-in-out;
+}
+
+
+/*---------------Modal------------------*/
+.post-type-archive-products iframe {
+	width: 100%;
+	height: 400px;
+}
+
+
+/* ==========================================================================
+   Mobile Styles
+   ========================================================================== */
+/* Landscape phones and down */
+@media (max-width: 543px) { 
+
+/*----------Content Box-----------*/
+.box-image.menu-loop {
+	width: 100%;
+	min-height: 200px;
+	height: 200px;
+}
+
+.box-image {
+	height: 350px;
+	min-height: 350px;
+	width: 100%;
+	margin-bottom: auto;
+}
+
+.box-content {
+	height: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.bg-image {
+	max-height: 400px;
+}
+
+/*----------Shop-----------*/
+.product-container {
+	height: auto;
+	min-height: auto;
+	padding-top: 150px;
+}
+
+
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 544px) and (max-width: 767px) { 
+
+/*----------Content Box-----------*/
+.box-image.menu-loop {
+	width: 100%;
+	min-height: 300px;
+	height: 300px
+}
+
+.box-image {
+	height: 350px;
+	min-height: 350px;
+	width: 100%;
+	margin-bottom: auto;
+}
+
+.box-content {
+	height: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.bg-image {
+	max-height: 400px;
+}
+
+	
+}

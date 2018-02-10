@@ -1,0 +1,137 @@
+	<div class="modal-dialog">		
+		<div class="modal-content">
+			<div class="modal-header" align="center">
+				<img id="img_logo" src="images/paintbrush-logo.png">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span class="ti-close" aria-hidden="true"></span>
+				</button>
+			</div>
+                
+			<!-- Begin # DIV Form -->
+			<div id="div-forms">
+				<!-- Begin # Submit Form -->
+				<form id="submit_form">
+					<div class="modal-body">
+						<div id="div-login-msg">
+							<div id="icon-login-msg" class="ti-angle-right"></div>
+							<span id="text-login-msg">Price On Request.</span>
+						</div>
+						<div class="border margin10">
+							<p class="pad7 text-center"><b>Product Code:</b> DD01-Comp-002</p>
+						</div>
+						<div class="row">
+							<div class="col-md-6 margin10">
+								<input id="username" class="form-control" type="text" placeholder="Name" required>
+							</div>
+							<div class="col-md-6 margin10">
+								<input id="mobile_no" class="form-control" type="text" placeholder="Mobile No" required>
+							</div>
+							<div class="col-md-6 margin10">
+								<input id="email_id" class="form-control" type="text" placeholder="E-mail id" required>
+							</div>
+							<div class="add-Frame col-md-6 margin10">
+								<select id="select_size" class="print-options select2-offscreen" tabindex="-1">
+									<option value="" data-total_price="$84.00" data-description="">Choose from Size</option>
+									<option class="select-frame" value="F3">1 ¼" Wide Black Frame (without mat)($58.00)</option>
+									<option class="select-frame" value="F1">1 ¼" Wide Black Frame($74.00)</option>
+									<option class="select-frame" value="F4">1 ¼" Wide White Frame (without mat)($58.00)</option>
+									<option class="select-frame" value="F2">1 ¼" Wide White Frame($74.00)</option>
+									<option class="select-frame" value="F3">1 ¼" Wide Black Frame (without mat)($58.00)</option>
+									<option class="select-frame" value="F1">1 ¼" Wide Black Frame($74.00)</option>
+									<option class="select-frame" value="F4">1 ¼" Wide White Frame (without mat)($58.00)</option>
+									<option class="select-frame" value="F2">1 ¼" Wide White Frame($74.00)</option>
+								</select>
+							</div>
+						</div>
+						<textarea id="your_message" class="form-control" type="textarea" placeholder="* Write Your Message" required />
+					</div>
+					<div class="modal-footer">
+						<div>
+							<button type="submit" class="btn btn-primary btn-lg btn-block">Send Email & SMS</button>
+						</div>
+					</div>
+				</form>
+				<!-- End # Login Form -->
+			</div>
+			<!-- End # DIV Form -->
+        </div>
+	</div>      
+<style>
+	.border{border: 2px solid #f1f1f1;}
+	.pad7{padding: 7px 0px;margin-bottom: 0px;}
+</style>
+	<script>
+		$(function() {
+    
+    var $formLogin = $('#submit_form');
+    var $divForms = $('#div-forms');
+    var $modalAnimateTime = 300;
+    var $msgAnimateTime = 150;
+    var $msgShowTime = 2000;
+
+    $("form").submit(function () {
+        switch(this.id) {
+            case "submit_form":
+                var $lg_username=$('#username').val();
+				var $lg_username=$('#mobile_no').val();
+				var $lg_username=$('#email_id').val();
+				var $lg_username=$('#select_size').val();
+				var $lg_username=$('#your_message').val();
+                if ($lg_username == "ERROR") {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "unsuccessful");
+                } else {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Successful");
+                }
+                return false;
+                break;
+            
+            default:
+                return false;
+        }
+        return false;
+    });
+    
+    $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+    $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+    $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+    $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+    $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+    $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+    
+    function modalAnimate ($oldForm, $newForm) {
+        var $oldH = $oldForm.height();
+        var $newH = $newForm.height();
+        $divForms.css("height",$oldH);
+        $oldForm.fadeToggle($modalAnimateTime, function(){
+            $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                $newForm.fadeToggle($modalAnimateTime);
+            });
+        });
+    }
+    
+    function msgFade ($msgId, $msgText) {
+        $msgId.fadeOut($msgAnimateTime, function() {
+            $(this).text($msgText).fadeIn($msgAnimateTime);
+        });
+    }
+    
+    function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+        var $msgOld = $divTag.text();
+        msgFade($textTag, $msgText);
+        $divTag.addClass($divClass);
+        $iconTag.removeClass("glyphicon-chevron-right");
+        $iconTag.addClass($iconClass + " " + $divClass);
+        setTimeout(function() {
+            msgFade($textTag, $msgOld);
+            $divTag.removeClass($divClass);
+            $iconTag.addClass("glyphicon-chevron-right");
+            $iconTag.removeClass($iconClass + " " + $divClass);
+  		}, $msgShowTime);
+    }
+});
+	</script>
+	<style>
+		#submit_form{z-index:99990;top: 50px;}
+		.margin10{margin: 10px 0px;}
+		#select_size{border: 1px solid #ccc;padding: 5px 7px;}
+	</style>

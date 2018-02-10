@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paint Brush</title>
+    <link href="resource/css/bootstrap.min.css" rel="stylesheet">
+	<link href="resource/css/themify-icons.css" rel="stylesheet">
+    <link href="resource/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resource/css/animate.css" rel="stylesheet">
+	<link href="resource/css/main.css" rel="stylesheet">
+	<link href="resource/css/responsive.css" rel="stylesheet">
+	<link href="resource/css/component.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="resource/js/jquery-1.11.0.min.js"></script>
+	<script src="resource/js/modernizr.js"></script>
+	<script>
+		$( document ).ready(function() {
+
+			if ($(window).width() > 768) {
+				$('.wall-item').hover(
+					function () {
+						$(this).find('.buynow').css("display","block");
+					},
+					function () {
+						$(this).find('.buynow').css("display","none");
+					});
+				}
+			
+				$(".btn-pref .btn").click(function () {
+				$(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+				// $(".tab").addClass("active"); // instead of this do the below 
+				$(this).removeClass("btn-default").addClass("btn-primary");   
+			});
+		});
+
+		$(document).ready(function(){
+			$(".add_fav a").tooltip();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			if (Modernizr.touch) {
+				// show the close overlay button
+				$(".close-overlay").removeClass("hidden");
+				// handle the adding of hover class when clicked
+				$(".img").click(function(e){
+					if (!$(this).hasClass("hover")) {
+						$(this).addClass("hover");
+					}
+				});
+				// handle the closing of the overlay
+				$(".close-overlay").click(function(e){
+					e.preventDefault();
+					e.stopPropagation();
+					if ($(this).closest(".img").hasClass("hover")) {
+						$(this).closest(".img").removeClass("hover");
+					}
+				});
+			} else {
+				// handle the mouseenter functionality
+				$(".img").mouseenter(function(){
+					$(this).addClass("hover");
+					$(this).find('.buynow').css("display","block"); 
+				})
+				// handle the mouseleave functionality
+				.mouseleave(function(){
+					$(this).removeClass("hover");
+					
+				});
+			}
+			
+			$('#tabs').on('click', 'li', function(){
+				$('#tabs li').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	</script>
+<style>
+
+</style>
+</head><!--/head-->
+
+<body id="home">
+	<div class="header-v5 header-static header-fixed-shrink">
+		<!-- Navbar -->
+		<div class="navbar navbar-default navbar-custom navbar-fixed-top mega-menu" role="navigation">
+			<!-- Topbar v3 -->
+			<div class="topbar-v3">
+				<div class="container">
+					<div class="row padlr15">
+						<div class="col-sm-6">
+							<!-- Topbar Navigation -->
+							<ul class="left-topbar">
+								<li><a href="mailto:connect@paintbrush.ae">connect@paintbrush.ae</a></li>
+								<!--<li><a href="callto:+91 98840 98840">+91 98840 98840</a></li>-->
+								<li>Free shipping worldwide</li>
+							</ul><!--end left-topbar-->
+						</div>
+						<div class="col-sm-6 tb_right">
+							<ul class="list-inline right-topbar pull-right">
+								<li>
+									<div class="tbr-info">
+										<span><a ><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></a></span>
+										<div class="tbr-inner">
+											<a href="account.html">My Account</a>
+											<a href="wishlist.html">My Wishlist</a>
+											<a href="model.html" data-toggle="modal" data-target="#login-modal">Login</a>
+										</div>
+									</div>
+								</li>
+								<!--<li>
+									<div class="tbr-info"><span><i class="fa fa-heart"></i> <a href="wishlist.html"> Wishlist (0)</a></span></div>
+								</li>-->
+								<li>
+									<div class="tbr-info topcart">
+										<span><a ><i class="ti-shopping-cart"></i>My Cart (2)</a></span>
+										<div class="header-xtra pull-right">
+											<div class="cart-info">
+												<div>
+													<div class="col-md-6 col-xs-6">
+														<a href="soon.html" class="btn btn-grey">View Cart</a>
+													</div>
+													<div class="col-md-6 col-xs-6">
+														<a href="soon.html" class="btn btn-grey">Checkout</a>
+													</div>
+												</div>
+												<!--<div class="ci-total">Subtotal: $750.00</div>-->
+												<small>You have <em class="highlight">2 item(s)</em> in your shopping bag</small>
+												<div class="ci-item trash-header">
+													<a href="art-inner.html"><img src="resource/images/art/01.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="art-inner.html">Lorem Ipsum is simply dummy</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="ci-item trash-header">
+													<a href="print-inner.html"><img src="resource/images/art/02.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="print-inner.html">Product fashion</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>	-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="ci-item trash-header">
+													<a href="art-inner.html"><img src="resource/images/art/02.jpg" width="80" alt=""/></a>
+													<div class="ci-item-info">
+														<h5><a href="art-inner.html">Product fashion</a></h5>
+														<p>by Surendra Pal Singh</p>
+														<!--<p class="infoprice">2 x $250.00</p>-->
+														<div class="ci-edit">
+															<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+															<a href="#" class="edit trash"><i class="fa fa-trash-o"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--/container-->
+			</div>
+			<!-- End Topbar -->
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand page-scroll" href="index.html">
+							<img id="logo-header" class="mobileview" src="resource/images/paintbrush-logomobile.png" alt="Logo">
+							<img id="logo-header1" class="webview" src="resource/images/paintbrush-logo.png" alt="Logo">
+						</a>
+					</div>
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+					<script src="resource/js/classie.js"></script>
+					<script src="resource/js/uisearch.js"></script>
+					<script>
+						new UISearch( document.getElementById( 'sb-search' ) );
+					</script>
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+					<!-- Nav Menu -->
+					<ul class="nav navbar-nav">
+						<!-- Pages -->
+						<li class="dropdown">
+							<a href="art.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								Art <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="art-all.html" class="dropdown-toggle">All</a></li>
+								<li><a href="acrylic.html">Acrylic</a></li>
+								<li><a href="oil.html">Oil</a></li>
+								<li><a href="charcoal.html">Charcoal</a></li>
+								<li><a href="canvas.html">Canvas</a></li>
+								<li><a href="digital.html">Digital</a></li>
+								<li><a href="drawing.html">Drawing</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="print.html" class="dropdown-toggle">print</a>
+						</li>
+						<li>
+							<a href="artist.html" class="dropdown-toggle">artist</a>
+						</li>
+						<li class="dropdown">
+							<a href="gallery.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								gallery <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="gallery.html">All</a></li>
+								<li><a href="illustration.html">Title 1</a></li>
+								<li><a href="illustration.html">Title 2</a></li>
+								<li><a href="illustration.html">Title 3</a></li>
+								<li><a href="illustration.html">Title 4</a></li>
+								<!--<li><a href="illustration.html">Naive</a></li>
+								<li><a href="illustration.html">Photorealism</a></li>
+								<li><a href="illustration.html">Realism</a></li>
+								<li><a href="illustration.html">Surrealism</a></li>
+								<li><a href="illustration.html">Traditional</a></li>
+								<li><a href="illustration.html">Tribal</a></li>-->
+							</ul>
+						</li>
+						<!-- End Gifts -->
+
+						<li>
+							<a href="soon.html" class="dropdown-toggle">Art Vacation</a>
+						</li>
+						<li class="dropdown">
+							<a href="more.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+								more <i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="soon.html">Gift Vouchers</a></li>
+								<li><a href="soon.html"> Artify</a></li>
+								
+								<li><a href="soon.html"> events</a></li>
+							</ul>
+						</li>
+						<!-- End Clothes -->
+					</ul>
+					<!-- End Nav Menu -->
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- End Navbar -->
+	</div>
+	<!--=== End Header v5 ===-->
+	<div class="row">
+		<div class="wishlist_social" style="">
+			<ul class="padd0">
+				<li class="square"><a href="wishlist.html" title="favourite" ><i class="fa fa-heart"></i><span class="like-tooltip">3</span></a></li>
+			</ul>
+			<ul class="padd0 hidden-xs">
+				<!--<li class="square"><a href="#" title="facebook" target="blank"><i class="fa fa-heart"></i><span class="like-tooltip">0</span></a></li>-->
+				<li class="square "><a href="https://www.facebook.com/login/" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+				<li class="square"><a href="https://twitter.com/login" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+				<li class="square"><a href="https://plus.google.com/collections/featured" title="google+" target="blank"><i class="ti-google"></i></a></li>
+				<li class="square"><a href="https://in.pinterest.com/login/" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<!--<section class="sectiontop">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0">
+				<div class="col-md-12 col-xs-12">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item"><a href="artist.html">Artist</a></li>
+						<li class="breadcrumb-item active">Subrata Das</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>	-->
+	
+	<section>
+		<div class="">
+			<div class="artist_banner" style="background: #fff;">
+				<img class="img-responsive" src="resource/images/artist/subrata/subrata_banner.jpg" alt="Subrata artworks" title="Subrata artworks" />
+				<div class="container-fulid">
+					<div class="container" >
+						<div class="banner_content">
+							<div class="col-md-2 padd0">
+								<img class="artist_image" src="resource/images/artist/subrata/007.jpg" alt="Subrata Das" title="Subrata Das" />	
+							</div>
+							<div class="col-md-10 artist_detail padd0">
+								<p class="artist_content"><b>Subrata Das</b> – Born in Kolkata, West Bengal</br>Based in Kolkata, India</br>Graduate from college of Visual Arts, Kolkata.</p>
+								<ul class="social_media padd0" >
+									<li class="circle artist_follow" ><a href="#" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+									<li class="circle artist_follow"><a href="#" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+									<li class="circle artist_follow"><a href="#" title="google+" target="blank"><i class="ti-google"></i></a></li>
+									<li class="circle artist_follow"><a href="#" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+								</ul>
+								<div class="viewall mobile-view" ><a href="artist.html">VIEW ALL</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="nav_step">
+						<div class="viewall web-view" ><a href="artist.html">VIEW ALL</a></div>
+						<div class="container padd0">
+							<ul id="tabs">
+								<li class="active"><a href="#" name="#tab1">Overview</a></li>
+								<li><a href="#" name="#tab2">Artworks for sale</a></li>
+								<li><a href="#" name="#tab3">Sold Artworks</a></li>
+								<li><a href="#" name="#tab4">Special Features</a></li>
+							</ul>
+						</div>
+					</div>			
+				</div>
+			</div>
+			<div class="artist_bio">
+				<div id="content">
+					<div id="tab1">
+						<div class="container padd_top_botm">
+							<div class="profile_bg">
+								<h3>About</h3>
+								<p><b>Subrata Das</b> born in Kolkata and studied a Foundation Course from “College of Visual Arts “ Kolkata. The works of Subrata Das have been very poetic representation. He depicts characters from the Indian Mythology. His current series focuses on the Divine love of Radha Krishna, His canvases have a lot of Flora and Fauna Elements, Flute being a constant motif in his paintings giving a surreal mood. Subrata works are Traditional and ethnic with a touch of the Modern. His medium is Acrylic on Canvas & Mixed medium with semi realistic and expressive features and colours.</p>
+								<p>Subrata has received GOLD and SILVER Awards from “Avantika International Art Exhibition” and Certificate of Merit from “All India Youth Art Exhibition”. His paintings are in collection of UNESCO, TATA steel ITC Group, Raj Bhavan – Kolkata, Bangladesh High Commission, RPG Enterprises, TAJ Group of Hotels and various corporate houses and private collections in India and abroad.</p>
+								<h5><b>Solo Exhibition</b></h5>
+								<p>He has held over ten solo shows in Mumbai, Delhi, Bangalore, Gurgaon, Hyderabad, Pune and Kolkata, Dubai, Singapore.</p>
+								<h5><b>Group Shows And Exhibition</b></h5>
+								<p>And several prestigious groups show in India and abroad. Participated Annual Shows of Birla Academy</p>
+								<ul>
+									<li><i class="ti-check"></i> Academy of Fine Arts</li>
+									<li><i class="ti-check"></i> AIFACS, National Exhibition</li>
+									<li><i class="ti-check"></i> Avantika International Art Exhibition</li>
+									<li><i class="ti-check"></i> Bengal Art Festival in LONDON, etc.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="container">
+						<div class="row effects clearfix" id="effect-1">
+							<div class="wall">
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/08.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Tune of Love1</h4>
+										<p class="pull-right">Code: <b>SD06-TL-001</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 36" X 36"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/09.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Couple</h4>
+										<p class="pull-right">Code: <b>SD06-TL-002</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 40" X 30"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/10.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Tune of Love2</h4>
+										<p class="pull-right">Code: <b>SD06-TL-003</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 30" X 30"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/08.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Tune of Love1</h4>
+										<p class="pull-right">Code: <b>SD06-TL-001</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 36" X 36"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/09.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Couple</h4>
+										<p class="pull-right">Code: <b>SD06-TL-002</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 40" X 30"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/acrylic/10.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Add&nbsp;to&nbsp;Favourite" class="red-tooltip"><i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<!-- <a class="close-overlay hidden">x</a> -->
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Tune of Love2</h4>
+										<p class="pull-right">Code: <b>SD06-TL-003</b></p>
+										<p>by <b>Subrata Das</b></p>
+										<a href="price-request.html" data-toggle="modal" data-target="#submit_form" class="buynow pull-right" >Price on Request</a>
+										<p>Acrylic, 30" X 30"</p>
+										<p>Acrylic on Canvas</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab3" class="container">
+						<div class="row effects clearfix" id="effect-1">
+							<div class="wall">
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_01.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_02.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_03.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_04.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_05.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_06.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_07.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_08.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+								<div class="wall-item">
+									<div class="img">
+										<a href="art-inner.html"><img src="resource/images/artist/subrata/sold/sold_09.jpg" alt="" class="img-responsive"></a>
+										<div class="overlay">
+											<div class="add_fav">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="red-tooltip" data-original-title="Add&nbsp;to&nbsp;Favourite">
+												<i class="fa fa-heart"></i></a>
+											</div>
+											<a href="art-inner.html" class="expand">View Art <i class="ti-arrow-circle-right tiarrow"></i></a>
+											<div class="sold">
+												<p>Sold</p>
+											</div>
+										</div>
+									</div>
+									<div class="thirdrow">
+										<h4>Untitled</h4>
+										<p>by <b>Subrata Das</b></p>
+										<p>Painting, 30" X 28"</p>
+										<p>Watercolor on Paper</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab4" class="container">
+						<div class="container text-center">
+							<h1 class="soon" > Coming Soon !!! </h1>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="contact.html">Join Us</a></li>
+								<li><a href="soon.html">Support</a></li>
+								<li><a href="soon.html">Request Status</a></li>
+								<li><a href="policy.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Terms and condition </a></li>
+								<li><a href="policy.html">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>About</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="soon.html">Testimonials</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-widget">
+							<h2>newsletter</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+						
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<p class="pull-left">Copyright © 2017 paintbrush Inc. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<!--<div class="pay_cards">
+							<img class="img-responsive" src="resource/images/cards/payment.png" />
+						</div>-->
+						<div class="pull-right">
+							<ul class="social_media padd0">
+								<li class="circle"><a href="https://www.facebook.com/login/" title="facebook" target="blank"><i class="ti-facebook"></i></a></li>
+								<li class="circle"><a href="https://twitter.com/login" title="twitter" target="blank"><i class="ti-twitter-alt"></i></a></li>
+								<li class="circle"><a href="https://plus.google.com/collections/featured" title="google+" target="blank"><i class="ti-google"></i></a></li>
+								<li class="circle"><a href="https://in.pinterest.com/login/" title="pinterest" target="blank"><i class="ti-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">    	
+	</div>
+	<div class="modal fade" id="submit_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">			
+	</div>
+	
+	<a href="#header" class="scrollup" style="display;none;"><i class="fa fa-chevron-up"></i></a>	
+	
+	<script src="resource/js/jquery.js"></script>
+	<script src="resource/js/bootstrap.min.js"></script>
+	<script src="resource/js/jquery.scrollUp.min.js"></script>
+	<script src="resource/js/main.js"></script>
+	<script src="resource/js/wow.min.js"></script>
+	<script src="resource/js/jaliswall.js"></script>
+
+	<script>
+	 wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>
+	<script>
+		$('.wall').jaliswall({item:'.wall-item'});
+	</script>
+<script>
+    function resetTabs(){
+        $("#content > div").hide(); //Hide all content
+        $("#tabs a").attr("id",""); //Reset id's      
+    }
+
+    var myUrl = window.location.href; //get URL
+    var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2     
+    var myUrlTabName = myUrlTab.substring(0,4); // For the above example, myUrlTabName = #tab
+
+    (function(){
+        $("#content > div").hide(); // Initially hide all content
+        $("#tabs li:first a").attr("id","current"); // Activate first tab
+        $("#content > div:first").fadeIn(); // Show first tab content
+        
+        $("#tabs a").on("click",function(e) {
+            e.preventDefault();
+            if ($(this).attr("id") == "current"){ //detection for current tab
+             return       
+            }
+            else{             
+            resetTabs();
+            $(this).attr("id","current"); // Activate this
+            $($(this).attr('name')).fadeIn(); // Show content for current tab
+            }
+        });
+
+        for (i = 1; i <= $("#tabs li").length; i++) {
+          if (myUrlTab == myUrlTabName + i) {
+              resetTabs();
+              $("a[name='"+myUrlTab+"']").attr("id","current"); // Activate url tab
+              $(myUrlTab).fadeIn(); // Show url tab content        
+          }
+        }
+    })()
+  </script> 
+	
+</body>
+
+</html>

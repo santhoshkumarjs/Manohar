@@ -1,0 +1,12 @@
+{
+  "short_name": "My Resume",
+  "name": "Manohar Rajendran - UI / UX Designer",
+  "start_url": "index.html",
+  "display": "standalone", 
+  "icons": [
+	{
+      "src": "assets/images/home-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+}

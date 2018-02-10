@@ -1,0 +1,271 @@
+.fixed_width_modal_dialog {
+    top: 20px
+}
+
+.fixed_width_modal_content {
+    left: 12%;
+    width: 75%;
+    border: 0;
+    overflow: hidden;
+    box-shadow: none;
+    position: relative;
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+
+.fixed_width_modal_header {
+    border: 0;
+    text-align: left;
+    padding: 20px 10px
+}
+
+.fixed_width_modal_header img {
+    width: 250px
+}
+
+.fixed_width_modal_header>button {
+    opacity: 1;
+    z-index: 1;
+    left: 10px;
+    border: 0;
+    bottom: 10px;
+    outline: 0;
+    font-size: 35px;
+    text-shadow: none;
+    position: relative;
+    font-weight: normal;
+    padding: 0 9px 0 9px;
+    -webkit-transition: color .5s ease-in-out 0s;
+    transition: color .5s ease-in-out 0s
+}
+
+.fixed_width_modal_header>button:hover,
+.fixed_width_modal_header>button:active,
+.fixed_width_modal_header>button:focus {
+    opacity: 1;
+    border: 0;
+    box-shadow: none;
+    outline: none!important
+}
+
+.fixed_width_modal_body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif
+}
+
+#fixed_width_modal_user_image {
+    text-align: center
+}
+
+#fixed_width_modal_user_image img {
+    width: 90px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+
+#fixed_width_modal_user_image h3 {
+    font-weight: bold
+}
+.fixed_width_modal_body_form>div {
+    margin-top: 10px;
+    margin-bottom: 25px;
+	position: relative;
+}
+.fixed_width_modal_body_form div input {
+    height: 42px;
+    box-shadow: none;
+    border-left: none;
+    border-right: 0;
+	 border-top: 0;
+    padding: 0 0 0 0px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: background .5s ease-in-out 0s, border .5s ease-in-out 0s;
+    transition: background .5s ease-in-out 0s, border .5s ease-in-out 0s
+}
+
+.fixed_width_checkbox input {
+    height: initial!important
+}
+
+.fixed_width_modal_body_form div input:focus,
+.fixed_width_modal_body_form div textarea:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.fixed_width_modal_body_form button {
+    border: 0;
+    display: block;
+    font-size: 16px;
+    overflow: hidden;
+    box-shadow: none;
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    vertical-align: middle;
+    padding: 10px 35px 10px 35px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: color .3s ease-in-out 0s;
+    transition: color .3s ease-in-out 0s
+}
+
+.fixed_width_modal_body_form button:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition: -webkit-transform .3s ease-in-out 0s;
+    transition: transform .3s ease-in-out 0s
+}
+
+.fixed_width_modal_body_form button:hover,
+.fixed_width_modal_body_form button:focus,
+.fixed_width_modal_body_form button:active {
+    border: 0;
+    box-shadow: none;
+    outline: none!important
+}
+
+.fixed_width_modal_body_form button:hover:before,
+.fixed_width_modal_body_form button:focus:before,
+.fixed_width_modal_body_form button:active:before {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0)
+}
+
+.fixed_width_modal_footer {
+    border: 0;
+    text-align: left;
+    padding: 3px 0 10px 20px
+}
+
+@media only screen and (max-width:767px) {
+    .fixed_width_modal_content {
+        width: 100%;
+        position: static
+    }
+}
+
+.fixed_width_modal_fade {
+    background: rgba(255, 255, 255, 0.4)
+}
+
+.fixed_width_modal_header>button,
+.fixed_width_modal_body_form button
+{
+    color: #fff
+}
+
+.fixed_width_modal_header {
+    background: #000
+}
+
+.fixed_width_modal_header>button:hover,
+.fixed_width_modal_header>button:active,
+.fixed_width_modal_header>button:focus {
+    color: #8ac007
+}
+
+.fixed_width_modal_body_form button:hover,
+.fixed_width_modal_body_form button:active,
+.fixed_width_modal_body_form button:focus {
+    color: #ffffff!important
+}
+
+.fixed_width_modal_body,
+.fixed_width_modal_body_form div input,
+.fixed_width_modal_body_form div textarea {
+    background: #fff
+}
+
+.fixed_width_modal_body_form div input,
+.fixed_width_modal_body_form div textarea {
+    color: #000
+}
+
+.fixed_width_modal_body_form button:before {
+    background: #8ac007
+}
+.fixed_width_modal_body_form div input {
+	
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	/*background: #fafafa;*/
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+/*.fixed_width_modal_body_form div input,
+.fixed_width_modal_body_form div textarea {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd
+}*/
+
+.fixed_width_modal_body_form div input:focus{
+    /*border-top: 1px solid #8ac007;*/
+    /*border-bottom: 1px solid #8ac007*/
+	outline: none;
+}
+.fixed_width_modal_body_form div label {
+	color: #999; 
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left:0px;
+	top: 0px;
+	transition: all 0.2s ease;
+}
+.fixed_width_modal_body_form div input:focus ~ label, .fixed_width_modal_body_form div input.used ~ label {
+	top: -15px;
+	transform: scale(.75); left:-6px;
+	color: #4a89dc;
+}
+
+.fixed_width_modal_body_form div .bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.fixed_width_modal_body_form div .bar:before, .bar:after {
+	content: '';
+	height: 1px; 
+	width: 0;
+	bottom: 1px; 
+	position: absolute;
+	background: #4a89dc; 
+	transition: all 0.2s ease;
+}
+.fixed_width_modal_body_form div .bar:before { left: 50%; }
+.fixed_width_modal_body_form div .bar:after { right: 50%; }
+/* active */
+.fixed_width_modal_body_form div input:focus ~ .bar:before, .fixed_width_modal_body_form div input:focus ~ .bar:after { width: 50%; }
+.fixed_width_modal_body_form button,
+#fixed_width_contact_us_modal_social_icons ul li a:before {
+    background: #000
+}
+
+.fixed_width_modal_body_form button:hover,
+.fixed_width_modal_body_form button:active,
+.fixed_width_modal_body_form button:focus {
+    background: #000000!important
+}
+.fixed_width_modal_footer a {
+    color: #000
+}

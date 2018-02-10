@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paint Brush</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/component.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script>
+		jQuery(function ($) {
+				$('[data-toggle="collapse"]').on('click', function() {
+					var $this = $(this),
+							$parent = typeof $this.data('parent')!== 'undefined' ? $($this.data('parent')) : undefined;
+					if($parent === undefined) { /* Just toggle my  */
+						$this.find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+						return true;
+					}
+
+					/* Open element will be close if parent !== undefined */
+					var currentIcon = $this.find('.glyphicon');
+					currentIcon.toggleClass('glyphicon-plus glyphicon-minus');
+					$parent.find('.glyphicon').not(currentIcon).removeClass('glyphicon-minus').addClass('glyphicon-plus');
+
+				});
+		});
+	</script>
+</head><!--/head-->
+
+<body id="home">
+	<div class="header-v5 header-static header-fixed-shrink">
+			<!-- Navbar -->
+			<div class="navbar navbar-default navbar-custom navbar-fixed-top mega-menu" role="navigation">
+				<!-- Topbar v3 -->
+				<div class="topbar-v3">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<!-- Topbar Navigation -->
+								<ul class="left-topbar">
+									<li><a href="mailto:info@artgallery.com" target="_blank">Info@artgallery.com</a></li>
+									<li><a href="callto:+91 98840 98840">+91 98840 98840</a></li>
+									<li>We deliver worldwide</li>
+								</ul><!--/end left-topbar-->
+							</div>
+							<div class="col-sm-6 tb_right">
+								<ul class="list-inline right-topbar pull-right">
+									<li>
+										<div class="tbr-info">
+											<span><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></span>
+											<div class="tbr-inner">
+												<a href="account.html">My Account</a>
+												<a href="wishlist.html">My Wishlist</a>
+												<a href="model.html" data-toggle="modal" data-target="#login-modal">Login</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tbr-info"><span><i class="fa fa-heart"></i> <a href="wishlist.html"> Wishlist (0)</a></span></div>
+									</li>
+									<li>
+										<div class="tbr-info topcart">
+											<span><i class="ti-shopping-cart"></i><a href="#">cart (2)</a></span>
+											<div class="header-xtra pull-right">
+												<div class="cart-info">
+													<div>
+														<div class="col-md-6 col-xs-6">
+															<a href="cart.html" class="btn btn-grey">View Cart</a>
+														</div>
+														<div class="col-md-6 col-xs-6">
+															<a href="checkout.html" class="btn btn-grey">Checkout</a>
+														</div>
+													</div>
+													<div class="ci-total">Subtotal: $750.00</div>
+													<small>You have <em class="highlight">2 item(s)</em> in your shopping bag</small>
+													<div class="ci-item">
+														<a href="art-inner.html"><img src="images/art/01.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Lorem Ipsum is simply dummy</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													<div class="ci-item">
+														<a href="print-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="print-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>	
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+													<div class="ci-item">
+														<a href="art-inner.html"><img src="images/art/02.jpg" width="80" alt=""/></a>
+														<div class="ci-item-info">
+															<h5><a href="art-inner.html">Product fashion</a></h5>
+															<p>by Surendra Pal Singh</p>
+															<p class="infoprice">2 x $250.00</p>
+															<div class="ci-edit">
+																<a href="#" class="edit"><i class="fa fa-heart"></i></a>
+																<a href="#" class="edit"><i class="fa fa-trash-o"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div><!--/container-->
+				</div>
+			<!-- End Topbar v3 -->
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="row mrg_0">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand page-scroll" href="index.html">
+								<img id="logo-header" class="mobileview" src="images/paintbrush-logomobile.png" alt="Logo">
+								<img id="logo-header1" class="webview" src="images/paintbrush-logo.png" alt="Logo">
+							</a>
+						</div>
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<!-- Nav Menu -->
+						<ul class="nav navbar-nav cl-effect-5">
+							<!-- Pages -->
+							<li>
+								<a href="art.html" class="dropdown-toggle">art</a>
+							</li>
+							<li>
+								<a href="print.html" class="dropdown-toggle">print</a>
+							</li>
+							<li>
+								<a href="artist.html" class="dropdown-toggle">artist</a>
+							</li>
+							<li class="dropdown">
+								<a href="collection.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									collections <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="collection.html">All</a></li>
+									<li><a href="illustration.html">Illustration</a></li>
+									<li><a href="illustration.html">Image</a></li>
+									<li><a href="illustration.html">Impressionism</a></li>
+									<li><a href="illustration.html">Minimalism</a></li>
+									<li><a href="illustration.html">Naive</a></li>
+									<li><a href="illustration.html">Photorealism</a></li>
+									<li><a href="illustration.html">Realism</a></li>
+									<li><a href="illustration.html">Surrealism</a></li>
+									<li><a href="illustration.html">Traditional</a></li>
+									<li><a href="illustration.html">Tribal</a></li>
+								</ul>
+							</li>
+							<!-- End Gifts -->
+
+							<!-- Books -->
+							<li class="dropdown">
+								<a href="offer.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									offers <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="offer.html">Art Work</a></li>
+									<li><a href="offer.html">Object Art</a></li>
+								</ul>
+							</li>
+							<!-- End Books -->
+							<!-- Clothes -->
+							<li class="dropdown">
+								<a href="more.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+									more <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="soon.html">Gift Vouchers</a></li>
+									<li><a href="soon.html"> Artify</a></li>
+									<li><a href="soon.html"> the world of mojarto</a></li>
+									<li><a href="soon.html"> events</a></li>
+								</ul>
+							</li>
+							<!-- End Clothes -->
+						</ul>
+						<!-- End Nav Menu -->
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- End Navbar -->
+		</div>
+		<!--=== End Header v5 ===-->
+	<div class="clearfix"></div>
+	<section class="sectiontop">
+		<div class="container">
+			<div class="row breadcrumb_row mrg_0">
+				<div class="col-md-12 col-xs-12">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Wishlist</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<section class="grid-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 produ_info">
+					<div class="profile_img">
+						<img class="profile-pic" src="images/cart/001.png" />
+						<p style="font-size:18px;text-align:left;">Manohar</p>
+						<div class="profile_edit">
+							<a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+							<input class="file-upload" type="file" accept="image/*"/>
+						</div>
+					</div>
+					<div class="panel-bg">
+						<div class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<i class="glyphicon glyphicon-plus glyphiconsize"></i> Account
+										</h4>
+									</div>
+								</a>
+								<div id="collapseOne" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul class="table">
+											<li>
+												<span class="glyphicon glyphicon-pencil text-primary"></span><a href="account.html">My Profile</a>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-flash text-success"></span><a href="#">Change Password</a>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-file text-info"></span><a href="#">Address</a>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-trash text-danger"></span><a href="#">Deactive Account</a>
+												<!--<span class="badge">42</span>-->
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<i class="glyphicon glyphicon-plus glyphiconsize"></i> Orders
+										</h4>
+									</div>
+								</a>
+								<div id="collapseTwo" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul class="table">
+											<li>
+												<a href="#">My Orders</a>
+												<!-- <span class="label label-success">$ 320</span>-->
+											</li>
+											<li>
+												<a href="#">Invoices</a>
+											</li>
+											<li>
+												<a href="#">Shipments</a>
+											</li>
+											<li>
+												<a href="#">Tex</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<i class="glyphicon glyphicon-minus glyphiconsize"></i> Wishlist
+										</h4>
+									</div>
+								</a>
+								<div id="collapseThree" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<ul class="table">
+											<li>
+												<a href="wishlist.html">MY Wishlist</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<i class="glyphicon glyphicon-plus glyphiconsize"></i> Reports
+										</h4>
+									</div>
+								</a>	
+								<div id="collapseFour" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul class="table">
+											<li>
+												<span class="glyphicon glyphicon-usd"></span><a href="#">Review</a>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-user"></span><a href="#">Customers</a>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-tasks"></span><a href="#">Products</a>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-shopping-cart"></span><a href="#">Shopping Cart</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 details order_item">
+					<h4 class="page-header">My Wishlist<span class="items">Item (2)</span></h4>
+					<div class="clearfix"></div>	
+						<div class="panel">
+							<div class="row favo_list">
+								<div class="col-md-3 col-xs-12">
+									<a href="art-inner.html"><img class="img-responsive" src="images/art/01.jpg" alt=" " title="" /></a>
+								</div>
+								<div class="col-md-9 col-xs-12">
+									<h4><a href="art-inner.html">Lorem Ipsum is simply dummy text of the printing</a><span class="items"><b>$32,630</b> <span class="off_price">(-45%)</span> </span></h4>
+									<div class="thirdrow">
+										<p>by <b>Surendra Pal Singh</b></p>
+									</div>
+									<p >Type : Original Artwork<br>
+									Size : 26 X 28</p>
+									<!--<form id='myform' method='POST' action='#'>
+										<label>QTY : </label>
+										<input type='button' value='-' class='qtyminus' field='quantity1' />
+										<input type='text' name='quantity1' value='0' class='qty' />
+										<input type='button' value='+' class='qtyplus' field='quantity1' />
+									</form>-->
+									<p class="action">
+										<a href="#" class="buynow">Add to cart</a>
+										<a href="#" class="pull-right"><i class="fa fa-trash-o" ></i> Remove</a>
+									</p>
+								</div>
+							</div>
+							<div class="row favo_list">
+								<div class="col-md-3 col-xs-12">
+									<a href="art-inner.html"><img class="img-responsive" src="images/art/02.jpg" alt=" " title="" /></a>
+								</div>
+								<div class="col-md-9 col-xs-12">
+									<h4><a href="art-inner.html">Lorem Ipsum is simply dummy text of the printing</a><span class="items"><b>$32,630</b> <span class="off_price">(-45%)</span> </span></h4>
+									<div class="thirdrow">
+										<p>by <b>Surendra Pal Singh</b></p>
+									</div>
+									<p >Type : Original Artwork<br>Size : 26 X 28</p>
+									<p class="action">
+										<a href="#" class="buynow">Add to cart</a>
+										<a href="#" class="pull-right"><i class="fa fa-trash-o" ></i> Remove</a>
+									</p>
+								</div>
+							</div>
+							<div class="row favo_list">
+								<div class="col-md-3 col-xs-12">
+									<a href="art-inner.html"><img class="img-responsive" src="images/art/06.jpg" alt=" " title="" /></a>
+								</div>
+								<div class="col-md-9 col-xs-12">
+									<h4><a href="art-inner.html">Lorem Ipsum is simply dummy text of the printing</a><span class="items"><b>$32,630</b> <span class="off_price">(-45%)</span> </span></h4>
+									<div class="thirdrow">
+										<p>by <b>Surendra Pal Singh</b></p>
+									</div>
+									<p >Type : Original Artwork<br>Size : 26 X 28</p>
+									<p class="action">
+										<a href="#" class="buynow">Add to cart</a>
+										<a href="#" class="pull-right"><i class="fa fa-trash-o" ></i> Remove</a>
+									</p>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer"><!--Footer-->		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row mrg_0">
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="soon.html">Online Help</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="soon.html">Order Status</a></li>
+								<li><a href="soon.html">Change Location</a></li>
+								<li><a href="policy.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Terms of Use</a></li>
+								<li><a href="policy.html">Privecy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-stacked">
+								<li><a href="policy.html">Company Information</a></li>
+								<li><a href="soon.html">Careers</a></li>
+								<li><a href="soon.html">Store Location</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-widget">
+							<h2>newsletter</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+						<div>
+							<ul class="social_media padd0">
+								<li class="circle"><a href="#"><i class="ti-facebook"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-google"></i></a></li>
+								<li class="circle"><a href="#"><i class="ti-pinterest"></i></a></li>
+							</ul>
+						</div>
+							
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-12">
+						<p class="pull-left">Copyright © 2017 paintbrush Inc. All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<ul class="pay_cards">
+							<li><img src="images/cards/visa.jpg" alt="Visa Card" title="Visa Card" /></li>
+							<li><img src="images/cards/master.jpg" alt="Master Card" title="Master Card" /></li>
+							<li><img src="images/cards/discover.jpg" alt="Discover Card" title="Discover Card" /></li>
+							<li><img src="images/cards/american.jpg" alt="American Card" title="American Card" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	<!--Modal Window--->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	
+	</div>
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/hallooou.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+	 wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>
+	<script>
+	$(document).ready(function() {
+
+    
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.profile-pic').attr('src', e.target.result);
+            }
+    
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+    
+    $(".upload-button").on('click', function() {
+       $(".file-upload").click();
+    });
+});
+</script>
+</body>
+
+</html>

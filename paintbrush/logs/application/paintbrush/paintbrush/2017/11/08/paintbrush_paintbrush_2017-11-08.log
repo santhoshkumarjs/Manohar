@@ -1,0 +1,121 @@
+#paintbrush/paintbrush/localhost.localdomain/192.168.100.140/2017-11-08/10:19:37/
+08/11/2017 10:19:37.286055|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:19:37.336513|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select * from product where featured = 'yes' and status = 'active' and quantity != 0 limit 5
+08/11/2017 10:19:37.390187|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select * from product where status = 'active' and quantity != 0 and new_status = 1 order by id desc limit 5
+08/11/2017 10:19:37.391001|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select * from banner where status = 'active' and show_status = 'active'
+08/11/2017 10:19:37.416440|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select id,name from category where status = 'active'
+08/11/2017 10:19:37.437542|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select name from style where id = 1
+08/11/2017 10:19:37.445081|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select name from style where id = 2
+08/11/2017 10:19:37.445540|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select name from style where id = 3
+08/11/2017 10:19:37.445952|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select name from style where id = 3
+08/11/2017 10:19:37.446394|192.168.90.106| [debug] [48f40ee0c748652d3eb4ff2c6e535cc2] database.class.inc (48) Database->query() : select name from style where id = 7
+08/11/2017 10:19:47.241813|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:19:47.245496|192.168.90.106| [info] [f4f5a9a7453d835986d1f824f8395cd4] product.php (113) require() : array ( 'id' => '78', )
+08/11/2017 10:19:47.245896|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select * from product where id = 78
+08/11/2017 10:19:47.246428|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] product.php (48) Database->query() : update product set noOfViews = noOfViews + 1
+08/11/2017 10:19:47.296073|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:19:47.298424|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select * from product where categoryid = 5 and quantity != 0 and id != 78  limit 5
+08/11/2017 10:19:47.304682|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select id, size, type from printsize where productid = 78 and status = 'active' and type='paper'
+08/11/2017 10:19:47.308453|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select id, size, type from printsize where productid = 78 and status = 'active' and type='canvas'
+08/11/2017 10:19:47.308751|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select count(id) as total from favorite where productid = 78 and status = 'active'
+08/11/2017 10:19:47.314325|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select id,name from category where status = 'active'
+08/11/2017 10:19:47.314785|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from category where id = 5
+08/11/2017 10:19:47.315092|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:19:47.315424|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from style where id = 5
+08/11/2017 10:19:47.315705|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:19:47.316000|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from style where id = 6
+08/11/2017 10:19:47.316270|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:19:47.316615|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from style where id = 6
+08/11/2017 10:19:47.316912|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:19:47.317183|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from style where id = 5
+08/11/2017 10:19:47.317496|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:19:47.317765|192.168.90.106| [debug] [f4f5a9a7453d835986d1f824f8395cd4] database.class.inc (48) Database->query() : select name from style where id = 9
+08/11/2017 10:20:46.717912|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:20:46.725158|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select * from category where id =
+08/11/2017 10:20:46.725462|192.168.90.106| [error] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (51) Database->query() : Error in query. select * from category where id =  . Details You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+08/11/2017 10:20:46.725642|192.168.90.106| [error] [ada947515240c4fe2bd0a99208ed7864] art.php (94) Database->getOneRow() : Error in query select * from category where id =
+08/11/2017 10:20:46.725774|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select * from category where status = 'active'
+08/11/2017 10:20:46.726227|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select * from style where status = 'active'
+08/11/2017 10:20:46.726562|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select * from product where status = 'active' and quantity != 0
+08/11/2017 10:20:46.727679|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select id,name from category where status = 'active'
+08/11/2017 10:20:46.728148|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:20:46.728547|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:20:46.728826|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:20:46.729100|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:20:46.729399|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:20:46.729677|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:20:46.729995|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:20:46.730335|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 3
+08/11/2017 10:20:46.730614|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 3
+08/11/2017 10:20:46.730889|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 3
+08/11/2017 10:20:46.731179|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 3
+08/11/2017 10:20:46.731507|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 3
+08/11/2017 10:20:46.731781|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 3
+08/11/2017 10:20:46.732079|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 3
+08/11/2017 10:20:46.732436|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 4
+08/11/2017 10:20:46.732718|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 4
+08/11/2017 10:20:46.733019|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 4
+08/11/2017 10:20:46.733335|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 5
+08/11/2017 10:20:46.733617|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 5
+08/11/2017 10:20:46.733922|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 5
+08/11/2017 10:20:46.734196|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 5
+08/11/2017 10:20:46.734519|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 6
+08/11/2017 10:20:46.734795|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 6
+08/11/2017 10:20:46.735069|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 6
+08/11/2017 10:20:46.735384|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 7
+08/11/2017 10:20:46.735682|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 7
+08/11/2017 10:20:46.735976|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 7
+08/11/2017 10:20:46.736258|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.736562|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.736857|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.737134|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.737437|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.737740|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.738019|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.738328|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.738626|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.738924|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.739206|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.739514|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:46.739811|192.168.90.106| [debug] [ada947515240c4fe2bd0a99208ed7864] database.class.inc (48) Database->query() : select name from artist where id = 8
+08/11/2017 10:20:55.172538|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:20:55.177891|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select id,name,image from artist where status = 'active'
+08/11/2017 10:20:55.178548|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select id,name from category where status = 'active'
+08/11/2017 10:20:55.178934|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select count(id) as total from product where artistid = 1 and status = 'active'
+08/11/2017 10:20:55.179414|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select count(id) as total from product where artistid = 3 and status = 'active'
+08/11/2017 10:20:55.179742|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select count(id) as total from product where artistid = 4 and status = 'active'
+08/11/2017 10:20:55.180062|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select count(id) as total from product where artistid = 5 and status = 'active'
+08/11/2017 10:20:55.180425|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select count(id) as total from product where artistid = 6 and status = 'active'
+08/11/2017 10:20:55.180751|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select count(id) as total from product where artistid = 7 and status = 'active'
+08/11/2017 10:20:55.181071|192.168.90.106| [debug] [b15f46ddff2cfff63c289af910023432] database.class.inc (48) Database->query() : select count(id) as total from product where artistid = 8 and status = 'active'
+08/11/2017 10:20:57.026921|192.168.90.106| [debug] [f50e74b0a6d336da89a985d2202e2f7d] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:20:57.031760|192.168.90.106| [info] [f50e74b0a6d336da89a985d2202e2f7d] author.php (113) require() : array ( 'id' => '1', )
+08/11/2017 10:20:57.031982|192.168.90.106| [debug] [f50e74b0a6d336da89a985d2202e2f7d] database.class.inc (48) Database->query() : select * from artist where id = 1 and status = 'active'
+08/11/2017 10:20:57.032881|192.168.90.106| [debug] [f50e74b0a6d336da89a985d2202e2f7d] database.class.inc (48) Database->query() : select id,name from category where status = 'active'
+08/11/2017 10:21:00.160631|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:21:00.185750|192.168.90.106| [info] [48cc5fa14da4f7ebf12f396eb9400ddc] sale.php (113) require() : array ( 'aid' => '1', )
+08/11/2017 10:21:00.186415|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select * from product where artistid = 1 and status = 'active' and quantity != 0
+08/11/2017 10:21:00.187450|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select * from artist where id = 1 and status = 'active'
+08/11/2017 10:21:00.188328|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select id,name from category where status = 'active'
+08/11/2017 10:21:00.189207|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:21:00.189711|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:21:00.190131|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:21:00.190587|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:21:00.191062|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:21:00.191557|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:21:00.191977|192.168.90.106| [debug] [48cc5fa14da4f7ebf12f396eb9400ddc] database.class.inc (48) Database->query() : select name from artist where id = 1
+08/11/2017 10:21:10.134015|192.168.90.106| [debug] [210934e89da2fc5771e11bb338af33a3] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:21:11.791477|192.168.90.106| [debug] [83be0ad8737d32526d8af541b917fad5] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:21:11.797086|192.168.90.106| [info] [83be0ad8737d32526d8af541b917fad5] add.php (113) require_once() : array ( 'submit' => 'login', 'email' => 'user@gmail.com', 'password' => 'password', )
+08/11/2017 10:21:11.797522|192.168.90.106| [debug] [83be0ad8737d32526d8af541b917fad5] database.class.inc (48) Database->query() : select * from users where emailid = 'user@gmail.com' and password = 'password'
+08/11/2017 10:21:11.800488|192.168.90.106| [debug] [83be0ad8737d32526d8af541b917fad5] database.class.inc (48) Database->query() : select * from users where emailid = 'user@gmail.com'
+08/11/2017 10:46:11.496205|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (32) Database->connect() : Connecting to database. paintbrush
+08/11/2017 10:46:11.501738|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select * from product where featured = 'yes' and status = 'active' and quantity != 0 limit 5
+08/11/2017 10:46:11.502480|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select * from product where status = 'active' and quantity != 0 and new_status = 1 order by id desc limit 5
+08/11/2017 10:46:11.502988|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select * from banner where status = 'active' and show_status = 'active'
+08/11/2017 10:46:11.503618|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select id,name from category where status = 'active'
+08/11/2017 10:46:11.504246|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select name from style where id = 1
+08/11/2017 10:46:11.504681|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select name from style where id = 2
+08/11/2017 10:46:11.504955|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select name from style where id = 3
+08/11/2017 10:46:11.505223|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select name from style where id = 3
+08/11/2017 10:46:11.505534|192.168.64.68| [debug] [b977472774061d1ea71e39c837cadfd8] database.class.inc (48) Database->query() : select name from style where id = 7

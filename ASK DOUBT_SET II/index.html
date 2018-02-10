@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/mystyle.css" rel="stylesheet"/>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+$(document).ready(function() {
+    $('#loginForm').formValidation({
+        framework: 'bootstrap',
+        excluded: ':disabled',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required'
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'The password is required'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+</head>
+<body>
+<div class="top-content">
+<div class="background_bg">
+<div class="inner-bg">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-5 col-sm-offset-4 form-box">
+			<div class="form-top">
+				<div class="form-top-left text-center">
+					<img src="img/loginlogo.png" alt="m-tutor"/>
+				</div>
+			</div>
+			<div class="form-bottom">
+				<h4>Login to your M-tutor account</h4>
+					<form role="form" action="dashboard_1.html" method="post" class="login-form" id="loginForm">
+						<div class="input-group inputtype_box">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+						</div>
+						<div class="input-group inputtype_box">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+							<input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+						</div>
+						<!--<a class="btn btn-success btn-block" href="#"><strong>Login</strong></a>-->
+						<button type="submit" class="btn btn-success"><strong>Login</strong></button>
+					</form>
+			</div>
+		</div>
+	</div>
+</div><!-- /container -->
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/*****************************************************/
+/* Project Name	:	Chat    					     */
+/* Powered by	:	Mobile Tutor Pvt Ltd			 */
+/* Created by	:	Sankari. R						 */
+/* Created Date	:	03 June 2016					 */
+/*****************************************************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+
+body{background:#f2f2f2; font:normal 14px; line-height: 0px; font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; width:240px;}
+header{background:#27a70c; color:#fff; padding:10px 10px; margin:0px;}
+a{color:#000;}
+.dummyLayer{position:absolute; top:0px; left:241px;background:#fff;width:1110px; height:600px;opacity:0;}
+.minimise{float:right;}
+.add-friend{background:#d4edce;padding:5px 10px; height:30px;cursor:pointer;}
+.fa{font-size:20px;}
+.fa-cog, .fa-search, .fa-minus{cursor:pointer;}
+.fa-circle{font-size:12px;margin-top:8px;color:#27a70c;}
+.fa-mobile{margin-top:3px; color:#27a70c;}
+.individual-user-status{border-bottom:1px solid #eee;min-height:52px;cursor:pointer;}
+.individual-user-status h4{font-size:14px;}
+.individual-user-status small{color:#999;}
+.avatar, .name-university{float:left;}
+.web-mobile{width:20px; float:right; padding:12px 0px;}
+.avatar img, .name-dept-img img{width:50px; height:50px; padding:5px 5px; border-radius:200px;}
+.user-detail{background:#fff;font-size:13px;}
+.find-friend{padding:15px 5px; color:#999;background:#fff;padding:15px 8px; line-height:18px;}
+.find-friend input{border:0px solid #000;}
+.fa-cog{float:right;}
+.user-profile-box{background:#fff; width:400px; height:285px; border-radius:5px; box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5); float:right;}
+.name-dept-img{padding:5px 5px;}
+.user-profile-box hr{border-color: #ddd -moz-use-text-color -moz-use-text-color; border-style: solid none none; border-width: 1px 0 0;margin:5px auto; width:95%;}
+.name-dept-img .name-dept{float:left;padding-left:5px;}
+.name-dept-img .avatar-icon{float:right;}
+.user-profile-box .college-details{padding-left:10px;line-height:28px;}
+.arrow-left { font-size: 0px; line-height: 0%; width: 0px; border-top: 20px solid #f6f6f6; border-right: 20px solid #fff;
+border-bottom: 20px solid #f6f6f6;position:absolute; }
+.user-profile-box .title{float:left; color:#999;}
+.user-profile-box .data{float:left; margin-left:40px;}
+.user-profile-box .chat-btn{text-align:center; padding-top:15px;}
+.user-profile-box .btn{width: 250px;}

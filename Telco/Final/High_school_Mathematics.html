@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>High school Mathematics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+  $( document ).ready(function() {
+       $('.select-modules').on('click', 'li', function(){
+			$('.select-modules li').removeClass('active');
+			$(this).addClass('active');
+		});
+		$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').fadeIn(500); //.slideDown(250)
+        },
+        function(){
+            $(this).find('.caption').fadeOut(500); //slideUp(250)
+        }
+    );
+    });
+  </script>
+  
+</head>
+<body>
+	<!-- header part-->
+	<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<a href="index.html"><img src="img/logo.png"/></a>
+					</div>
+					<div class="col-md-6 col-xs-6 userlogin">
+						<a href="#"><span class="fa fa-user fa-4x pull-right fauser"></span></a>
+					</div>
+				</div>
+			</div>
+	</div><!-- header part-->
+	<!-- main content -->
+	<div class="main">
+		<div class="container">
+			<div class="row titleheaderrow">
+				<div class="col-md-6 col-xs-6">
+					<h3 class="title">High school Mathematics</h3>	
+				</div>
+				<div class="col-md-6 col-xs-6 text-right backbtn">
+					<a href="index.html" class="btn btn-success"><i class="fa fa fa-arrow-left"></i> Back to home</a>
+				</div>
+			</div>
+			<div class="row thumbnail_box text-center">
+				<div class="col-sm-6 col-md-4" style="padding:15px;">
+					<a href="High_school_Mathematics_II.html"><div class="thumbnail_bg">
+						<div class="overlay">
+ 						<img src="img/play.png" alt="" width="100%"/>
+						</div>
+						<div class="captionbg" style="">
+							<h4>Sets</h4>
+						</div>
+					</div></a>
+				</div>
+				<div class="col-sm-6 col-md-4" style="padding:15px;">
+					<a href="High_school_Mathematics_II_1.html"><div class="thumbnail_bg">
+						<div class="overlay">
+ 						<img src="img/play.png" alt="" width="100%"/>
+						</div>
+						<div class="captionbg" style="">
+							<h4>Polynomials</h4>
+						</div>
+					</div></a>
+				</div>
+				<div class="col-sm-6 col-md-4" style="padding:15px;">
+					<a href="High_school_Mathematics_II_2.html"><div class="thumbnail_bg">
+						<div class="overlay">
+ 						<img src="img/play.png" alt="" width="100%"/>
+						</div>
+						<div class="captionbg" style="">
+							<h4>Matrices and Determinants</h4>
+						</div>
+					</div></a>
+				</div>
+			</div>
+			
+			<div class="row thumbnail_box text-center">
+				<div class="col-sm-6 col-md-4" style="padding:15px;">
+					<a href="High_school_Mathematics_II_3.html"><div class="thumbnail_bg">
+						<div class="overlay">
+ 						<img src="img/play.png" alt="" width="100%"/>
+						</div>
+						<div class="captionbg" style="">
+							<h4>Trigonometry</h4>
+						</div>
+					</div></a>
+				</div>
+				<div class="col-sm-6 col-md-4" style="padding:15px;">
+					<a href="High_school_Mathematics_II_4.html"><div class="thumbnail_bg">
+						<div class="overlay">
+ 						<img src="img/play.png" alt="" width="100%"/>
+						</div>
+						<div class="captionbg" style="">
+							<h4>Integration</h4>
+						</div>
+					</div></a>
+				</div>
+				<div class="col-sm-6 col-md-4" style="padding:15px;">
+					<a href="#" data-toggle="modal" data-target="#myModal"><div class="thumbnail_bg">
+						<div class="overlay">
+ 						<img src="img/more.png" alt="" width="100%"/>
+						</div>
+					</div></a>
+				</div>
+			</div>
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header alert alert-info alertbox">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <strong>Info!</strong> This is a demo link, only limited topics are listed.
+				  </div>
+				  <div class="modal-footer" style="text-align:center">
+					<button type="button" class="btn btn-info text-center" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+
+			  </div>
+			</div>
+		</div>	
+	</div>
+	<div class="footer">
+		<p>&copy; 2016 Mobile Tutor Private Ltd., Privacy Policy. Terms & conditions</p>
+	</div>
+</body>
+</html>

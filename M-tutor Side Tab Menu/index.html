@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://online.m-tutor.com/mtutor/beta/profile.php -->
+<html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<title>m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor</title> 
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta name="keywords" content="m-tutor, mobile tutor, learn, videos, lectures, practice, exercises, skills ">	
+	<meta name="description" content=" mtutor provides Animated Video lessons &amp; lectures,Study Material and revision notes,Exercies, Maths, Physics, Chemistry, Biology, Social &amp; English">	
+	
+	<!-- CSS-->
+		<link rel="stylesheet" href="css/font-awesome.min.css">	
+	<link rel="stylesheet" href="css/BootSideMenu.css">	
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">	
+	<link href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/responsive.css" rel="stylesheet" type="text/css">
+	<link href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/mystyle.css" rel="stylesheet">
+	<link href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/font-style.css" rel="stylesheet">	
+	<link rel="stylesheet" href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/bootstrap-select.css">
+	<link rel="stylesheet" href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/font-awesome.css">
+	<link href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/betastyle.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css"/>
+    
+		
+	<!-- JS Files-->	
+	<script async src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/default" charset="UTF-8" crossorigin="*"></script><script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/jquery.min.js"></script>
+	<script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/modernizr.js"></script> <!-- Modernizr -->
+	 <script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/bootstrap-select.js"></script>
+	 <script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/jquery.validate.js" type="text/javascript"></script>
+	 <script src="js/SideNavi.js"></script>
+	 <script src="js/BootSideMenu.js"></script>
+      <script src="js/sidebar.js"></script>
+	 <script src="js/jquery.mCustomScrollbar.js"></script>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	
+
+<!--subject list start-->
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('#test').BootSideMenu({side:"left"});
+$(".side-navi-item").click(function(e) {
+        e.preventDefault();
+	
+        $("#sidemenuDiv").css({"margin-right":"400px"});
+    });	  
+  $(".ask-close").click(function(e) {
+        e.preventDefault();
+        $("#sidemenuDiv").css({"margin-right":"0px"});
+    });
+  
+  });
+  </script>
+<script type="text/javascript">
+        $(document).ready( function () {
+            /**
+             *  init sidenavi
+             *  first param String direction left or right
+             *  second param conf Object css data
+             **/
+            SideNavi.init('right', {
+                container : '#sideNavi',
+                item : '.side-navi-item',
+                data : '.side-navi-data',
+                tab : '.side-navi-tab',
+                active : '.active'
+            });
+
+        });
+		
+
+		function updatePos(_me) {
+			var topPos = $(_me).scrollTop();
+			if(topPos > 10) {
+				$('#test').css('top', '13px');
+			} else {
+				$('#test').css('top', '85px');
+			}
+		}
+    </script>
+<!--subject list end-->
+
+<style>
+/* *************  Search and subject Part Css Start************* */
+#menu-header-content{ position:relative;}
+#menu-header-content .container .row{margin:0;}
+#menu-header-content .menu a{color:#fff; font-size:18px;}
+.category-heading::before {color: #ffffff; content: ""; font-family: "FontAwesome";
+    font-size: 17px; left: 0; top: 0;
+    padding:20px 17px;
+    position: absolute;
+}
+.category-heading {background: #037fbf;color: #fff;
+    cursor: pointer;  display: inline-block;
+    float: left; font-size:15px;
+    padding:20px 30px 20px 40px;
+    position: relative; width:250px;
+    text-transform: uppercase;
+}
+
+.header-search{padding:22px 0px 22px 0px; }
+.search{float:left; width:100%; padding-left:0; padding-right:0;}
+.search .search-cat-btn{padding:0;}
+.search .search-cat-btn .search-category{width:25%; float:left; position:relative;}
+.search .search-cat-btn .search-category .dropdown-toggle{padding-right:12px;}
+.search .search-cat-btn .search-category .dropdown-toggle .bs-caret{display:none;}
+.search .search-cat-btn .search-category::after{border:1px solid #000; border-radius:15px; content:""; font-size:13px; width:15px; height:15px; line-height:13px; font-family:"FontAwesome"; position:absolute; z-index:1200; top:34%;right:-7px; color:#000; text-align:center; background:#fff;}
+
+.search-box{float:left;width:75%; position:relative;}
+.search-input input{height:40px;}
+.search-input .form-control::-moz-placeholder {color:#999;}
+.search-input input.form-control{border-radius:0;background:#ffffff/*#424449*/;border:none;color:#000;padding:6px 6px 6px 30px;}
+.search-input .input-group-addon{border-radius:0;border:none;background:#ffffff/*#424449*/;color:#000;}
+.search-input .input-group-addon button{border:none; background:#ffffff/*#424449*/;}
+
+.search .bootstrap-select > .dropdown-toggle{background:#ffffff/*#424449*/;height:40px;color:#000; border-radius:0;border:none;
+border-right:1px solid #000;}
+.cart-box{width:auto; float:right; margin:11px 0;}
+.cart-btn{border-radius:0; background:#ff9c00;border-color:#ff9c00; color:#ffffff; height:40px; padding:6px 15px;}
+.dropdown.myaccount{float:right;}
+.dropdown.myaccount a i{padding:13px 15px; color:#fff; background:#424449;} 
+.dropdown.myaccount a span {display:none;}
+.search-cat-btn .search-category{height:40px;}
+.logodiv{text-align:center;}
+@media (max-width: 1200px) and (min-width:1024px){
+	.search .col-sm-3.search-cat-btn .search-category .btn{width:;}
+	.search{width:91%;} .search-box{width:75%;}
+	.category-heading{width:205px;}
+	/*.header-search{width:63%;}*/
+}
+@media (max-width: 1023px) and (min-width:980px){
+	.category-heading{width:197px;}
+	.search{width:92%;} 
+	/*.header-search{width:62%;}*/
+	
+}
+@media(max-width: 991px){
+	/*.header-search{padding:11px 0px;}*/
+	.category-heading{display:none;}
+	.nav-inner{padding:18px 18px 18px 0px;}
+	/*.header-search{width:80%;} .search{width:91%;}*/
+}
+@media (max-width: 979px) {
+	.search .col-sm-3.search-cat-btn{width:30%;}
+	/*.header-search{width:60%;}*/
+	.nav-inner{padding:18px 18px 18px 0px;}
+	
+}
+@media (max-width: 767px) {
+	.header-nav{display:none;}
+	.cart-box{position:absolute; top:66px; right:0;z-index:2; margin:0 15px 0 0;}
+	.header-search, .search{width:100%;padding: 0px 0px 8px 0px;}
+	.dropdown.myaccount{position:absolute; top:66px; z-index:2; right:125px;}
+	.search-box{padding:0;width:50%;}
+	.search .search-cat-btn .search-category{ width:50%;}
+	.logo{height:66px;text-align:left;}	
+	.panel-title{padding-left: 21px;}
+	.logodiv{text-align:left;padding-right: 5px;
+padding-left: 5px;}
+}
+@media (max-width: 500px) {
+	.dropdown.myaccount {right:130px;}
+}
+@media only screen and (max-width: 479px) {
+	.search .search-cat-btn .search-category{ width:48%;}
+	.search-box{width:52%;}
+	.search{width:100%;}
+	.dropdown.myaccount {float: none;clear: both;text-align: center;	display:inline-block;position:absolute;top:66px; right:124px;}
+	
+}
+@media (max-width: 359px) and (min-width:320px){
+	.user-panel{position: absolute;top: -135px;
+right: -147px;}
+}
+@media (max-width: 479px) and (min-width:360px){
+	.user-panel{position: absolute;top: -135px;
+right: -169px;}
+	
+	
+}
+@media (max-width: 639px) and (min-width:480px){
+	.user-panel{position: absolute;top: -135px;
+right: -228px;}
+	
+	
+}
+@media (max-width: 700px) and (min-width:640px){
+	.user-panel{position: absolute;top: -135px;
+right: -310px;}	
+}
+/* *************  Search and subject Part Css End************* */
+
+
+
+
+
+
+/* Ask doubt and assesment css start*/
+.sidebar-main{
+	position:fixed;
+	top: 32%;
+    right: -152px;
+	z-index:999999;
+	}
+.fixednav {
+    /*border-top: 2px solid #36d9d8;*/
+    position: fixed;
+    top: 21%;
+	right:0px;
+    z-index: 9999;
+	transition: all 0.9s;
+	
+}
+.fixednav .navBtn {
+    background:#7ed321;
+	cursor: pointer;
+    display: block;
+    float: left;
+    height: 44px;
+    width: 44px;
+	background-position: 2px 0px;
+	font-size: 33px;
+	color:#fff;
+	
+}
+
+.navigation{height:44px;width:44px;overflow:hidden}
+.fixedulclass {
+    /*background-color: #7ed321;*/
+    float: left;
+    width: 44px;
+	padding:0px 10px;
+	border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+}
+.fixedulclass .fa{
+		border-radius:50%;
+		width:25px;
+		height:25px;
+		/*border:1px solid #fff;*/
+		padding:5px;
+		line-height:15px628;
+		color:#fff;
+		background:#7ed321;
+	}
+.ti-user, .ti-lock, .ti-help-alt, .ti-pencil-alt, .ti-mobile{margin:0px;color:#a1e9e6;}	
+.fixedulclass li {
+    /*border-top: 1px solid #5f6061;*/
+	border-bottom: 1px solid #fff;
+    font-size: 1.4em;
+    float: left;
+    width: 100%;
+	transition: 0.5s;
+}
+.ti-pencil-alt:hover,.ti-help-alt:hover,.ti-lock:hover,.ti-user:hover,.ti-mobile:hover{color:#fff;}	
+.fixedulclass li a{color:#fff;font-size:16px;transition:all 0.2s ease-in-out;display:block;padding:10px;}
+.fixedulclass li a:hover{color:#ddd;}
+.slideclose{right:300px;}
+.phonumber{margin-left:44px;}
+.angleright{display:none;padding: 6px 17px;}
+.angleleft{display:block;padding: 6px 17px;}
+.wholediv{transition:all 0.45s ease-in-out}
+.wholediv-slideclose{margin-right:300px;}
+.submenu-items{
+	height: 1000px;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: -172px;
+    left: 0px;
+	width:357px;
+	transition:all 0.4s ease-in-out;
+}
+.sidebarmenuicon{
+	position:fixed;
+	right:0px;
+	top:35%;
+	transition:all 0.4s ease-in-out;
+}
+/* ask doubt */
+.askdoubt_header{
+	background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    height: 48px;
+    max-width: 300px;
+    padding: 0 17px;
+    position: absolute;
+    top: 33px;
+    width: 100%;
+    z-index: 15000100;
+}
+.askdoubt_title{
+	left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 15000150;
+}
+.askdoubt_title h1{
+	color: #455a64;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 48px;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ask-header-btn{
+color: #455a64;
+    float: right;
+    font-size: 14px;
+    height: 48px;
+    line-height: 48px;
+    opacity: 0.6;
+    padding-left: 12px;
+    position: relative;
+    transition: opacity 0.2s ease 0s;
+    z-index: 15100000 !important;
+}
+.ask-fa-close::before {
+    content: "×" !important;
+    font-size: 20px;
+    line-height: 44px;
+}
+.check_content{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:35px;
+	left:0px;
+	padding:0px;
+	
+}
+.sidebarmenuicon ul li:first-child {
+	border-top-left-radius: 9px;
+}
+.sidebarmenuicon ul li {
+	width: 44px;
+    padding-left: 0px;
+    margin-left: -10px;
+	background:#7ed321;
+	color:#fff;
+}
+.sidebarmenuicon ul li.active{
+	width: 44px;
+    padding-left: 0px;
+    margin-left: -10px;
+	background:#fff;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	}
+.sidebarmenuicon ul li:hover{
+	width: 44px;
+    padding-left: 0px;
+    margin-left: -10px;
+	background:#7ed321;
+	opacity:.8
+}
+
+.sidebarmenuicon ul li.close-sidebar{
+	width: 44px;
+    padding-left: 0px;
+    margin-left: -10px;
+    border-bottom-left-radius: 9px;
+	background:#FF5722;
+	transition:all 0.2s ease-in-out;
+}
+.faclose{margin-left:0px;background:none !important;}
+.faask{margin-left:0px;}
+.faass{margin-left:0px;}
+.modaldiv{width:100%;}
+.modalsub{width:100%;padding-top:45px;}
+.modalsub.modal-header{border-bottom:0px solid trasparent;}
+.modalsub.modalsub h4{color:#fff;}
+.askdoubt_body{
+	max-width: 300px;
+    position: absolute;
+    top: 89px;
+    width: 100%;
+}
+.askdoubt_subheader {
+    padding: 23px 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.asmentdoubtlastdesign{
+	position:fixed;
+	top:248px;
+	right:0;	
+	}
+.check_contentass{
+	width: 282px;
+    float: left;
+    
+    font-size: 12px;
+	/*background-color:#e5e5e5;*/
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+}
+.modalsub p{
+	color: #455a64;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.askass-back-btn {
+    color: #455a64;
+    float: left;
+    font-size: 14px;
+    height: 48px;
+    line-height: 18px;
+    opacity: 0.6;
+    padding-left: 0px;
+    position: relative;
+    transition: opacity 0.2s ease 0s;
+    z-index: 15100000 !important;
+}
+.paragraphtext{font-size:16px;padding:10px;}
+.assesmenttext{  color: #455a64;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+li.Assesment{}
+li.close{border-bottom: none; opacity:1;}
+.fa-edit{width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    background-color: #337ab7;
+    color: #fff;
+}
+.assbook{color: #fff;}
+/* tab wrapper */
+.side-navi-tab {padding: 7px 0px 7px;margin-top:50px;}
+.form-padding{padding:13px;}
+.btn-padding{/*padding: 0px 15px 7px 15px;*/text-align:center;}
+.ask-title{/*background: #31708f;*/padding-left: 0px;color: #000;	margin: 0px;line-height: 1.42857143; font-size:20px; border-bottom:1px solid #ccc;}
+.ask-close{color: #b0b0b0;padding: 7px 0px 7px 7px !important; opacity:1 !important;font-size:0px;}
+.topicmsg{padding:7px 0px 7px 0px;}
+.assesmentdetailsdescription{margin:0;}
+.assesmentdetails{padding:0px;}
+.assesmtntbn{text-align:center; padding:0px;}
+.assesmt-close{color: #b0b0b0;padding: 7px 0px 7px 7px !important; opacity:1 !important;}
+.edit{border-radius: 100%;background: rgb(237, 206, 36) none repeat scroll 0% 0%;width: 75px;height: 75px;color: rgb(255, 255, 255);padding: 21px;}
+.btn-padding .btn{padding:6px 3px;}
+.dropdown a{font-size:18px;color:#333;}
+.dropdown-menu-new {border-radius: 0px;padding: 5px 10px;border: 1px solid rgb(204, 204, 204);	background-color: rgb(242, 242, 242);}
+.dropdown-menu-new li{border-bottom:1px solid #fff; font-size:13px !importent;}
+.dropdown-menu-new li a{font-size:14px; word-space:none;}
+.dropdown-menu-new li a:hover{color:red;}
+.sub_btn{padding: 6px 7px;}
+.assesment_headingbg {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    height: 45px;
+    max-width: 320px;
+    padding: 5px 17px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 15000100;
+}
+.askdoubt_head{
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    height: 45px;
+    max-width: 320px;
+    padding: 5px 17px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 15000100;
+	left:0px;
+}	
+.assesment_body{
+	margin-top: 63px;
+    padding: 16px;
+	
+}
+.closeBtn{line-height:36px;}
+@media screen and (max-width: 320px) {
+.check_content {
+    float: left;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0px; /*67px;*/
+    width: 320px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:69px;
+	left:0px;
+	padding:0px;
+	
+}
+}
+@media screen and (min-width: 360px) {
+.check_content {
+    float: left;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 37px;
+    width: 320px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:35px;
+	left:0px;
+	padding:0px;
+	
+}
+}
+@media (min-width:480px) and (max-width:599px){
+.check_content {
+    float: left;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 97px;
+    width: 320px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:104px;
+	left:0px;
+	padding:0px;
+	
+}
+}
+@media (min-width:600px) and (max-width:639px){
+.submenu-items {
+    background-color: #f7f7f7;
+    height: 1000px;
+    left: -70;
+    position: absolute;
+    top: -270px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 320px;
+}
+.check_content {
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 320px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+	
+}
+}
+@media (min-width:640px) and (max-width:767px){
+.submenu-items {
+    background-color: #f7f7f7;
+    height: 1000px;
+    left: -70;
+    position: absolute;
+    top: -78px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 320px;
+}
+.check_content {
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 320px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+}
+}
+@media (min-width:768px) and (max-width:799px){
+.check_content {
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 320px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+}
+.submenu-items {
+    background-color: #f7f7f7;
+    height: 1000px;
+    left: -70;
+    position: absolute;
+    top: -215px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 320px;
+}
+}
+@media (min-width:800px) and (max-width:899px){
+.check_content {
+    float: left;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 320px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+}
+.submenu-items {
+    background-color: #f7f7f7;
+    height: 1000px;
+    left: -70;
+    position: absolute;
+    top: -268px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 320px;
+}
+}
+@media (min-width:900px) and (max-width:979px){
+.check_content {
+    float: left;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 320px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+}
+.submenu-items {
+    background-color: #f7f7f7;
+    height: 1000px;
+    left: -70;
+    position: absolute;
+    top: -402px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 320px;
+}
+}
+@media (min-width:980px) and (max-width:1023px){
+.check_content {
+    float: left;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 282px;
+}
+.check_contentass{
+	width: 320px;
+    float: left;
+    font-size: 12px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+}
+.submenu-items {
+    background-color: #f7f7f7;
+    height: 1000px;
+    left: -70;
+    position: absolute;
+    top: -268px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 320px;
+}
+}
+@media (min-width:1024px) and (max-width:1279px){
+.check_content {
+    float: left;
+    font-size: 12px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    width: 320px;
+}
+.submenu-items {
+    background-color: #f7f7f7;
+    height: 800px;
+    left: -70;
+    position: absolute;
+    top: -163px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 320px;
+}
+}
+
+.bottomiconbar{
+	background-color: #7ed321;
+    width: 100%;
+    position: fixed;   
+    bottom: 0;
+    z-index: 99999999;
+	display:none;
+}
+
+.sidebarmenuicon-bottompart ul {
+	margin:0;padding:0;
+}
+
+.sidebarmenuicon-bottompart ul li {
+	
+   	background:#7ed321;
+	color:#fff;
+	
+	
+}
+.Assesment, .Askdoubt{float:left;}
+.closeleft{float:right;font-size:14px;text-align:center;}
+.sidebarmenuicon-bottompart ul li.active{
+	color:#7ed321;
+   	background:#fff;
+	
+	}
+.sidebarmenuicon-bottompart ul li:hover{
+    padding-left: 0px;  
+	background:#7ed321;
+	opacity:.8;
+}
+
+.sidebarmenuicon-bottompart ul li.close-sidebar{
+	
+    background:#FF5722;
+	transition:all 0.2s ease-in-out;
+	font-weight:normal;
+	font-size:12px;
+	padding:6px;
+	text-shadow:none;
+}	
+.fixedulclass-bottompart {
+   text-align:center;
+	
+}
+.assesment, .askadoubt{font-size: 20px;}
+.assesment, .askadoubt, .fixedulclassclose{color: #555;
+display: block;
+padding: 7px 15px;
+}
+.bordercolor{border-right:1px solid #fff;border-bottom:1px solid none;}
+.sidebarmenuicon-bottompart ul li a:hover{background-color:#fff;color:green;}
+.fixedulclass-bottompart .fixedulclassclose:hover{color:#000;background-color:#FF5722;}
+.sidebarmenuicon-bottompart .fa{
+		border-radius:50%;
+		width:25px;
+		height:25px;
+		padding:5px;
+		line-height:15px628;
+		color:#fff;
+		background:#7ed321;
+	}
+	
+@media (min-width:320px){
+	.bottomiconbar{display:block;}
+	.sidebarmenuicon{display:none;}
+	}
+@media (min-width:480px){
+	.bottomiconbar{display:none;}
+	.sidebarmenuicon{display:block;}
+	}	
+.askdummybg{width:100%;height:100%;position:absolute;top:0;z-index:9999;display:none;}
+
+/* Ask doubt and assesment bottom icon bar End*/	
+
+.glyphiconsize{
+font-size:12px;
+} 
+
+</style>
+ </head>
+<body class="textureBg">
+<div class="askdummybg"></div>
+<!--  sidebar Code-->
+<div class="sidebar-main">
+<div class="fixednav" >
+	<div class="submenu-items">
+		<div class="side-navi-tab">
+			<div class="check_content active" id="tab1">
+				<div class="modaldiv">
+					<div class="modalsub">
+						<div class="askdoubt_head">
+						<button type="button" class="close closeBtn" data-dismiss="modal" id="closeclick" style="opacity:1"><img src="img/close.png" alt="close-icon"/></button>
+						 <h2 style="color:#626262">Ask a doubt?</h2>
+						</div>
+						<div class="row">
+							<!--<div class="col-md-2">
+								<label class="control-label"> Subject</label>
+							</div>-->
+							<div class="col-md-12 form-group">
+								<select class="form-control">
+									<option value="">--Select subject--</option>
+									<option value="745">Basics of Civil Engineering</option>
+									<option value="746">Basics of Mechanical Engineering</option>
+									<option value="747">Environmental Science and Engineering</option>
+									<option value="748">Introduction to Computer and Programming</option>
+									<option value="749">Engineering Chemistry</option>
+									<option value="750">Engineering Mathematics</option>
+									<option value="751">Fundamentals of Chemical Engineering</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				 </div>
+				<div class="row">
+					<!--<div class="col-md-2">
+						<label class="control-label"> Comments</label>
+					</div>-->
+					<div class="col-md-12">
+							<textarea rows="3" cols="50" maxlength="1000" name="question" id="question" class="form-control" placeholder="Type your question here..."></textarea>
+						<small style="font-size:11px;">Maximum 1000 characters</small>
+						<span class="errmsg" style="display:none; color:red;">Enter Your Questions</span>
+						<span class="suerrmsg" style="display:none; color:red;"></span>
+					</div>
+				</div>
+				
+				<div class="modal-footer submit" style="margin-top:10px;margin-left:0px;padding:0; text-align:center;">
+				<button type="button" name="ask_submit" id="ask_submit" value="ask_question" class="btn btn-success submit sub_btn" data-dismiss="modal"><i class="fa fa-check"></i> Submit your question</button>
+				<button type="button" class="btn btn-default sub_btn" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
+			  </div>
+			</div>
+			<div class="check_contentass hide" id="tab2">
+				<div class="assesmtntbn">
+				<div class="assesment_headingbg">
+				
+				<button type="button" class="close closeBtn" data-dismiss="modal" id="ass-closeclick" style="opacity:1"><img src="img/close.png" alt="close-icon"/></button>
+				<p class="assesmenttext"><h2 style="color:#626262;text-align:left;">Assesment</h2></p>
+				</div>
+				<div class="assesment_body">
+				<i class="fa fa-edit fa-3x"></i>
+				<p class="paragraphtext">Enables the student to demonstrate their potential </p>
+				<button class="btn btn-success"> Take a Test <i class="fa fa-long-arrow-right"></i> </button>
+				</div>
+				</div>
+			</div>				
+		</div>
+	</div>		
+    </div>
+	<div class="sidebarmenuicon">
+	<ul class="fixedulclass">
+    
+				<li class="Askdoubt" id="askdoubt_tab"><a href="#" data-toggle="tooltip"  title="Ask&nbsp;a&nbsp;doubt" class="askadoubt" data-placement="left"><span class="fa fa-question faask"></span></a></li>                
+				<li class="Assesment" id="assesment_tab"><a href="#" data-toggle="tooltip"  title="Assesment" class="assesment" data-placement="left"><span class="fa fa-pencil-square-o faass"></span> </a> </li>
+				<li class="close close-sidebar" style="display:none"><a href="#" data-toggle="tooltip"  title="Close" data-placement="left"class="fixedulclassclose"><img src="img/close2.png" alt="close-icon" style="margin-left:5px;" width="12px" height="12px;"/> </a> </li>
+			</ul>
+			</div>
+    </div><!--  sidebar Code end-->  
+	<!-- Header Start Here-->
+<div class="wholediv">
+<header>
+
+		<section class="container containerDiv">
+<header>
+	<section class="container containerDiv">
+	<div class="row">
+		<div class="col-sm-3 col-md-3 col-xs-6 logodiv"> 
+			<a href="http://online.m-tutor.com/mtutor/beta/index.php"><img src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/mtutor-logo.png" alt="Mobile Tutor" title="Mobile Tutor" class="logo"></a>
+		</div>		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Search Part-->
+        <div class="col-sm-7 col-md-7 col-xs-12 header-search"  align="center">         
+<div id="menu-header-content">
+		<div>
+			<div class="search">
+				<div class="search-cat-btn">
+					<select class="search-category selectpicker show-menu-arrow form-control" name="category_id" data-size="10">					 
+						<option value="0"><a href="#" class="list-group-item">Applied Mathematics - II</a></option>
+						<option value="1"><a href="#" class="list-group-item">Engineering Drawing and Graphics</a></option>
+						<option value="2"><a href="#" class="list-group-item">Fundamentals of Biotechnology</a></option>
+						<option value="3"><a href="#" class="list-group-item">Applied Chemistry</a></option>
+						<option value="4"><a href="#" class="list-group-item">Basics of Electronics Engineering</a></option>
+						<option value="5"><a href="#" class="list-group-item">Technical Communication</a></option>
+						<option value="6"><a href="#" class="list-group-item">Electrical Technology Fundamentals</a></option>
+						<option value="7"><a href="#" class="list-group-item">Manufacturing Technology and Process</a></option>
+						<option value="8"><a href="#" class="list-group-item">Introduction to Computer Programming</a></option>
+						<option value="9"><a href="#" class="list-group-item">Introduction to Computer Programming</a></option>
+						<option value="10"><a href="#" class="list-group-item">Introduction to Computer Programming</a></option >
+						<option value="11"><a href="#" class="list-group-item">Introduction to Computer Programming</a></option>
+						<option value="12"><a href="#" class="list-group-item">Introduction to Computer Programming</a></option>
+						<option value="13"><a href="#" class="list-group-item">Introduction to Computer Programming</a></option>
+					</select>
+					<div class="search-box">
+					<form>							  
+						<div class="input-group search-input">
+						  <input type="text" placeholder="Search" class="form-control">
+							<span class="input-group-addon">
+								<button type="submit">
+									<span class="fa fa-search"></span>
+								</button>  
+							</span>
+						  </input>
+						</div>
+					 </form>
+				</div>
+				</div>
+			</div>			
+		</div>		
+		</div>
+       
+
+ 
+           </div><!-- ============== Search part End ================= -->
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+		<div class="col-md-2 col-xs-6 col-sm-2"  align="center">					
+			<div class="user-panel" >		
+				<div class="user-panel-inner dropdown">
+				   
+					<a data-toggle="dropdown" class="dropdown-toggle" href="http://online.m-tutor.com/mtutor/beta/profile.php#"> 
+					 
+					 						<img alt="User Image" class="img-circle" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/50_14929808551469602259.jpg">
+					 					</a>			
+					  
+					<ul role="menu" class="dropdown-menu">
+						<li>
+							<h5 class="userinfo">ramya							<small>ramya@gmail.com</small></h5>
+						</li>
+						<li class="divider"></li>
+						<li><a href="http://online.m-tutor.com/mtutor/beta/dashboard.php"><i class="fa fa-comments"></i> Ask a doubt</a></li>
+						<li><a href="http://online.m-tutor.com/mtutor/beta/profile.php"><i class="fa fa-user"> </i> My profile</a></li>
+                        <!-- <li><a href="#"><i class="fa fa-credit-card"> </i> Unique User Code</a></li>-->						
+						<li><a href="http://online.m-tutor.com/mtutor/beta/logout.php"><i class="fa fa-power-off"> </i> Logout</a></li>
+					  </ul>
+					  
+				</div>
+			</div>	
+			</div>
+			</div>
+	</section>
+</header>
+<script>
+	function validateForm() {
+    var x = document.forms["searchfrm"]["searchTxt"].value;
+    if (x == null || x == "") {
+        alert("Search must be filled out");
+        return false;
+    }
+}
+</script>
+<script>
+	jQuery(function ($) {
+            $('[data-toggle="collapse"]').on('click', function() {
+                var $this = $(this),
+                        $parent = typeof $this.data('parent')!== 'undefined' ? $($this.data('parent')) : undefined;
+                if($parent === undefined) { /* Just toggle my  */
+                    $this.find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+                    return true;
+                }
+
+                /* Open element will be close if parent !== undefined */
+                var currentIcon = $this.find('.glyphicon');
+                currentIcon.toggleClass('glyphicon-plus glyphicon-minus');
+                $parent.find('.glyphicon').not(currentIcon).removeClass('glyphicon-minus').addClass('glyphicon-plus');
+
+            });
+    });
+ </script>
+</section>
+	</header>
+<!-- Header End here //-->
+	
+	<!-- Content part Start Here-->	
+		<section class="container ">
+			<h4><i class="fa fa-user"></i> Profile details</h4>
+				<hr>		
+			<div class="row white">  
+			
+			<form name="profileimgform" id="profileimg" encrypt="multipart/form-data" method="post">
+				<div class="col-md-3">				
+					<div id="profile-main">					
+						<div class="pmo-pic">
+							<div class="p-relative">
+							        										<img alt="" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/50_14929808551469602259.jpg" style="max-height:200px;" class="img-responsive mCS_img_loaded"> 
+																	<a class="pmop-edit" href="http://online.m-tutor.com/mtutor/beta/profile.php#">
+									<i class="fa fa-camera"></i> <span class="hidden-xs imgcaption">Change Profile Picture</span>
+								</a>
+							</div>
+						</div>
+                    <span class="errmsg" style="color:red;"></span>
+					<span class="profile_cmds">
+					<p><span class="text-center" style="display:block;text-align:center;line-height:20px;color:green;"><i class="fa fa-warning"></i> Thank you for updating us with your profile picture!</span>  We will upload it soon.</p></span>
+					</div>
+				</div>
+				<input type="file" class="upload" id="profile_image" style="display:none;" name="profile_image" accept="image/jpeg, image/png">
+			</form>
+			
+			
+			<div class="col-md-9" style="border-left:1px solid #e4e3e3;padding:15px 15px;">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+				<a data-toggle="collapse" data-parent="#accordion" href="#panel1" style="display:block;background-color: #f5f5f5;border-color: #ddd;color: #333;">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-md-1 col-sm-1 col-xs-1" style="text-align:center;padding-right:0px;font-size:22px;">
+								<i class="fa fa-user" style="color:#626262"></i>
+							</div>
+							<div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0px;padding-top:3px;">
+								<h4 class="panel-title">Basic information<i class="glyphicon glyphicon-minus glyphiconsize pull-right"></i>	
+								</h4>
+							</div>
+						</div>
+					</div>
+					</a>
+					<div id="panel1" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div id="basic-details">
+								<dl class="dl-horizontal">
+									<dt>Name</dt>
+									
+									<dd>Ramya</dd>
+								</dl>
+								<dl class="dl-horizontal">
+									<dt>Email</dt>
+									<dd>ramya@gmail.com</dd>
+								</dl>
+								<dl class="dl-horizontal">
+									<dt>Phone</dt>
+									<dd>9789755101</dd>
+								</dl>	
+								<dl class="dl-horizontal">
+									<dt>University</dt>
+									<dd>Kurukshetra University</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-md-1 col-sm-1 col-xs-1" style="text-align:center;padding-right:0px;font-size:22px;">
+								<i class="fa fa-lock" style="color:#626262"></i>
+							</div>
+							<div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0px;padding-top:3px;">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#panel2" style="display:block">Password Information
+									<i class="glyphicon glyphicon-plus glyphiconsize pull-right"></i>
+									</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div id="panel2" class="panel-collapse collapse">
+						<div class="panel-body">
+							<div id="pwd-info">					
+								<form action="http://online.m-tutor.com/mtutor/beta/profile.php" id="changepassword" method="post" class="form-horizontal" novalidate>	
+									<!-- Old Passsword start -->			
+									<div class="form-group">
+										<label class="col-sm-3 control-label" for="inputEmail3">Old Password</label>
+										<div class="col-sm-4">
+										  <input type="password" placeholder="Old Password" name="oldpassword" id="oldpassword" class="form-control">
+										</div>
+									</div>
+									<!-- Old password end -->
+
+									<!-- New Passsword start -->			
+									<div class="form-group">
+										<label class="col-sm-3 control-label" for="inputEmail3"> New Password</label>
+										<div class="col-sm-4">
+										  <input type="password" placeholder="New Password" name="newpassword" id="newpassword" class="form-control">
+										</div>
+									</div>
+									<!-- New password end -->
+									<!-- Confirm Passsword start -->			
+									<div class="form-group">
+										<label class="col-sm-3 control-label" for="inputEmail3">Confirm Password</label>
+										<div class="col-sm-4">
+										  <input type="password" placeholder="Confirm Password" name="conpassword" id="conpassword" class="form-control">
+										</div>
+									</div>
+									
+									<!-- Confirm password end -->
+									<!-- Submit BTN -->
+									<div class="form-group">
+										<div class="col-sm-offset-3 col-sm-9">
+											<input type="submit" name="passsubmit" class="btn btn-primary" id="passsubmit" value="submit"> 
+											<input type="reset" class="btn btn-default" id="reset" value="Reset"> 
+											<input type="hidden" value="id=&quot;user_id&quot;" name="user_id">
+										</div>
+									</div>						  
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-md-1 col-sm-1 col-xs-1" style="text-align:center;padding-right:0px;font-size:22px;">
+								<i class="fa fa-credit-card" style="color:#626262"></i>
+							</div>
+							<div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0px;padding-top:3px;">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#panel3" style="display:block">Account Validity Details
+									<i class="glyphicon glyphicon-plus glyphiconsize pull-right"></i>
+									</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div id="panel3" class="panel-collapse collapse">
+						<div class="panel-body">
+							<div id="actdetail-sub">
+								<dl class="dl-horizontal">
+									<dt>Promo code</dt>
+									<dd>123456</dd>
+								</dl>
+								<dl class="dl-horizontal">
+									<dt>Expiry Date</dt>
+									<dd>03-08-16</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>	
+		
+			<!-- 	<div class="col-md-9" style="border-left:1px solid #e4e3e3;">
+				
+				<div id="basic-info" style="position:relative;"><h4><i class="fa fa-user"></i> Basic Information</h4><div class="plusdiv"><i class="fa fa-plus"></i></div><div class="minusdiv"><i class="fa fa-minus"></i></div></div>
+				<div id="basic-details">
+				<dl class="dl-horizontal">
+					<dt>Name</dt>
+					<dd>Ramya</dd>
+				</dl>
+				
+									<dl class="dl-horizontal">
+						<dt>Email</dt>
+						<dd>ramya@gmail.com</dd>
+					</dl>
+			   			 
+			 			
+			 				<dl class="dl-horizontal">
+					<dt>Phone</dt>
+					<dd>9789755101</dd>
+				</dl>
+						
+				<dl class="dl-horizontal">
+					<dt>University</dt>
+					<dd>Kurukshetra University</dd>
+				</dl>
+              </div>
+				<hr> 
+                
+				<!-- password details		
+				<div id="password-dtls" style="position:relative;">
+				  					<h4><i class="fa fa-lock"></i> Password Information</h4><div class="pwd-plusdiv"><i class="fa fa-plus"></i></div><div class="pwd-minusdiv"><i class="fa fa-minus"></i></div></div>
+                                    <div id="pwd-info">					
+						<form action="http://online.m-tutor.com/mtutor/beta/profile.php" id="changepassword" method="post" class="form-horizontal" novalidate>	
+							<!-- Old Passsword start
+							<div class="form-group">
+								<label class="col-sm-3 control-label" for="inputEmail3">Old Password</label>
+								<div class="col-sm-4">
+								  <input type="password" placeholder="Old Password" name="oldpassword" id="oldpassword" class="form-control">
+								</div>
+							  </div>
+							<!-- Old password end
+
+							<!-- New Passsword start		
+							<div class="form-group">
+								<label class="col-sm-3 control-label" for="inputEmail3"> New Password</label>
+								<div class="col-sm-4">
+								  <input type="password" placeholder="New Password" name="newpassword" id="newpassword" class="form-control">
+								</div>
+							  </div>
+							<!-- New password end
+							<!-- Confirm Passsword start	
+							<div class="form-group">
+								<label class="col-sm-3 control-label" for="inputEmail3">Confirm Password</label>
+								<div class="col-sm-4">
+								  <input type="password" placeholder="Confirm Password" name="conpassword" id="conpassword" class="form-control">
+								</div>
+							  </div>
+                            
+							<!-- Confirm password end
+							<!-- Submit BTN 
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9">
+								  <input type="submit" name="passsubmit" class="btn btn-primary" id="passsubmit" value="submit"> 
+								   <input type="reset" class="btn btn-default" id="reset" value="Reset"> 
+								   <input type="hidden" value="id=&quot;user_id&quot;" name="user_id">
+								</div>
+							  </div>						  
+					</form>
+				</div>
+                 
+                 			
+				<hr style="display:block;">
+				
+				<!-- password details			
+				
+            <div class="account-dtls" style="display:block;position:relative;">
+					<div id="actdetail-head"><h4><i class="fa fa-credit-card"></i> Account Validity Details</h4><div class="acc-plusdiv"><i class="fa fa-plus"></i></div><div class="acc-minusdiv"><i class="fa fa-minus"></i></div></div>					
+					<div id="actdetail-sub">
+                    <dl class="dl-horizontal">
+					<dt>Promo code</dt>
+					<dd>123456</dd>
+				</dl>
+				<dl class="dl-horizontal">
+					<dt>Expiry Date</dt>
+					<dd>03-08-16</dd>
+				</dl>
+				</div>
+				<hr style="display:block;">
+			</div>
+            </div>-->
+		</div></section>
+<!--left subject list start-->
+	<!--<div id="test">
+		<h4><i class="fa fa-book"></i>&nbsp;&nbsp;Subject List</h4>
+		<div class="list-group">
+			<a href="#" class="list-group-item">Applied Mathematics - II</a>
+			<a href="#" class="list-group-item">Applied Physics - II</a>
+			<a href="#" class="list-group-item">Engineering Drawing and Graphics</a>
+			<a href="#" class="list-group-item">Fundamentals of Biotechnology</a>
+			<a href="#" class="list-group-item">Applied Chemistry</a>
+			<a href="#" class="list-group-item">Basics of Electronics Engineering</a>
+			<a href="#" class="list-group-item">Technical Communication</a>
+			<a href="#" class="list-group-item">Electrical Technology Fundamentals</a>
+			<a href="#" class="list-group-item">Manufacturing Technology and Process</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+			<a href="#" class="list-group-item">Introduction to Computer Programming</a>
+		</div>
+  </div>-->
+  <!--left subject list end-->		
+	<!-- <div class="sidebar">
+		<div id="asktutor_sidebar" class='topics'></div> 
+	</div> -->
+	
+	<!--- ASK TUTOR POPUP PART START HERE --->
+		<div id="askModal" class="modal fade bs-example-modal-sm4" role="dialog">
+		<form class="form-horizontal" style="height:100%" role="form" id="ask_question_form" onsubmit="return false;" name="ask_question_form">
+			   <input name="ask_subject" id="subject_id" type="hidden" value="">
+				   <input name="ask_register" id="idregister" type="hidden" value="50">
+				   <input name="ask_topic" id="topicid" type="hidden" value="">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header bg-primary" style="padding:10px">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title" style="font-size:18px">Ask a doubt ?</h4>
+      </div>
+
+      <div class="modal-body">
+		<div class="alert alert-danger errmsg" style="display:none">Enter Your Questions</div>
+		<div class="alert alert-danger suerrmsg" style="display:none"></div>
+			<!--<span class="errmsg" style="display:none; color:red;"><br>Enter Your Questions</span>
+			<span class="suerrmsg" style="display:none; color:red;"></span>-->			
+	  	  <input name="subjectdropdown" value="1" type="hidden" id="subjectdropdown">
+				<div class="form-group subjectdrop" name="subject_part" id="subject_dropdown_div">
+					<!-- <label class="col-sm-2 col-md-2 control-label">Subject</label> -->
+					<div class="col-sm-12 col-md-12">
+						<select name="subject_dropdown" id="subject_dropdown" class="form-control">
+							<option value="">--Select subject--</option>
+							 
+							<option value="288">Applied Mathematics - II</option>
+							 
+							<option value="289">Applied Physics - II</option>
+													</select>
+
+					</div>								
+				</div>
+						
+	  		<div id="topicmsg">
+        <p style="font-size:16px;font-weight:bold;margin:0px" id="subject_name"></p>
+		<p id="topic_name"></p>
+			<textarea rows="3" cols="50" maxlength="1000" name="question" id="question" class="form-control" placeholder="Type your question here..."></textarea>
+			<small>Maximum 1000 characters</small>
+
+		</div>
+
+			<!--<div id="captcha_img_container">
+				<span style="margin-top: 7px;margin-right:10px;">CAPTCHA Code:</span>
+				<img src="captcha.php" border="0" alt="CAPTCHA!" id="captcha_img">
+				<a href="javascript:void(0);" id="new_captcha">
+					<img src="images/reload.png" style="width: 22px;margin-left:3px;" />
+				</a>				
+			</div>-->
+								
+				<div id="captcha_div" class="clearfix" style="padding:10px;">
+						<h5>CAPTCHA:</h5>
+						<hr>
+					
+						<div class="row">
+							<div class="col-md-5"></div>
+								<div class="col-md-7"><img src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/captcha.php" border="0" alt="CAPTCHA!" id="captcha_img"> <a href="javascript:void(0);" id="new_captcha">
+									<img src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/reload.png" style="width: 30px; margin-left:3px;"></a>
+								</div>
+						</div>
+						
+						
+						<div class="row" style="padding-top:15px;line-height:18px;">
+							<div class="col-md-5">Enter the characters shown in the image</div>
+							<div class="col-md-7"><input type="text" class="form-control" id="captcha_key" name="captcha_key" value=""> </div>
+						</div>
+							
+							
+				
+		</div>
+		<div id="thanksmsg">
+		
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" name="ask_submit" id="ask_submit" value="ask_question" class="btn btn-success submit" data-dismiss="modal"><i class="fa fa-check"></i> Submit your question</button>
+		<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
+      </div>
+    </div>
+  </div>
+</form>
+		</div>	
+		
+<style>
+.modal-footer {
+    border: 0 none;
+    padding: 0 15px 15px;
+}
+#thanksmsg {
+    font-size: 1.3em;
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+/*
+#captcha_txt_container {margin:10px;}*/
+.alert {padding:7px}
+
+
+
+/*#captcha_div {border: 1px solid lightgray;border-radius: 6px;width:100%;padding: 10px 5px;}
+@media (min-width: 300px) and (max-width: 350px) {
+	#captcha_div {border: 1px solid lightgray;border-radius: 6px;width:74%;padding: 10px 5px;}
+}
+@media (min-width: 351px) and (max-width: 400px) {
+	#captcha_div {border: 1px solid lightgray;border-radius: 6px;width:63%;padding: 10px 5px;}
+}
+@media (min-width: 401px) and (max-width: 720px) {
+	#captcha_div {border: 1px solid lightgray;border-radius: 6px;width:60%;padding: 10px 5px;}
+}
+@media (min-width: 721px) and (max-width: 767px) {
+	#captcha_div {border: 1px solid lightgray;border-radius: 6px;width:45%;padding: 10px 5px;}
+}
+@media (min-width: 768px) {
+	#captcha_div {border: 1px solid lightgray;border-radius: 6px;width:54%;padding: 10px 5px;}
+}*/
+
+
+
+</style>		<script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/asktutor.js"></script>
+	<!--- ASK TUTOR POPUP END HERE --->
+</div>
+<!--- Bottom Part Ask a doubt and assesment Start--->
+	<div class="bottomiconbar">
+    	<div class="sidebarmenuicon-bottompart">
+	<ul class="fixedulclass-bottompart">
+    <li class="Askdoubt bordercolor" id="askdoubt_tab1"><a href="#" data-toggle="tooltip"  title="Ask&nbsp;a&nbsp;doubt" class="askadoubt" data-placement="top"><span class="fa fa-question faask"></span></a></li>                
+				<li class="Assesment bordercolor" id="assesment_tab1"><a href="#" data-toggle="tooltip"  title="Assesment" class="assesment" data-placement="top"><span class="fa fa-pencil-square-o faass"></span> </a> </li>
+				<li class="close close-sidebar bordercolor closeleft" style="display:none;"><a href="#" title="Close" class="fixedulclassclose">Close <img src="img/close.png" alt="close-icon" width="12px" height="12px"/></a></li>   
+ 				
+    </ul></div>
+    </div><!--- Bottom Part Ask a doubt and assesment End--->
+    <footer>
+	<p>Copyright © 2016 Mobile Tutor Private Ltd., | <i class="fa fa-phone"> </i>  1800 102 5831 ( Toll Free )  |  <i class="fa fa-envelope"></i> <a href="mailto:support@m-tutor.com"> support@m-tutor.com </a>  </p>
+</footer>
+<script>
+function checksessionvalid() {
+	$.ajax({
+		type:"GET",
+		url:"../web/checksession.php",
+		data :{
+			sessionid:'io2pahij6vlb7gi968trice2c5',
+			idreg:'50', 
+		},          
+		success:function(res){ 
+			console.log("result :: "+res);
+			if(res == 1){
+				window.location = "index.php?logout=fr";
+			}
+		}
+	});
+}
+$(document).ready(function() {
+	
+setInterval(function(){
+		console.log("in check session function");
+	 checksessionvalid();
+},60000);
+
+});
+
+</script>
+<link rel="stylesheet" href="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/font-style(1).css"><script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/bootstrap.min.js"></script>
+<script src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/jquery.menu-aim.js"></script> <!-- menu aim -->
+<script>
+		$(document).ready(function() {
+			$(function(){
+				 $('[data-toggle="tooltip"]').tooltip(); 
+			});			
+	        /* PASSWORD VALIDATION PART */	
+			$("#changepassword").validate({
+				rules: {
+					oldpassword: {
+						required: true
+					},
+					newpassword:{
+						required: true
+					},
+					conpassword:{
+						required: true
+					},
+				},
+				messages: {
+					oldpassword: "Please enter your old password",
+					newpassword: "Please enter your new password",
+					conpassword: "Please enter your confirm password",
+				}
+			});
+		/* PASSWORD VALIDATION PART END HERE */
+		
+		/* PROFILE IMAGE PART START HERE */
+		loadCSS = function(href){
+			var csslink = $("<link rel='stylesheet' type='text/css' href='"+href+"'>");
+			$("head").append(csslink);
+		};
+		document.getElementById('profile-main').onclick = function() {
+			document.getElementById('profile_image').click();
+		};
+		$("#profile_image").on("change", function() {
+			$("#profileimg").submit();
+		});
+		
+		$("#profileimg").on('submit', function(e){
+			e.preventDefault();
+			var file_val                = $("#profile_image").val();
+			
+			var allow_extension = ['jpeg', 'jpg', 'png'];
+			/*if(file_val === ''){
+				$(".errmsg").show();
+				$(".errmsg").text('Please upload your profile image');
+				return false;
+			}*/
+			if(file_val){
+				var file_ext        = file_val.split('.').reverse();
+				if(file_ext.length >= 3){
+					$(".profile_cmds").hide();
+					$(".errmsg").show();
+					$(".errmsg").text('Uploaded file have wrong extension');
+					return false;
+				}
+				if ( $.inArray ( file_ext[0].toLowerCase(), allow_extension ) === -1 ){
+					$(".profile_cmds").hide();
+					$(".errmsg").show();
+					$(".errmsg").text('Image should be in JPEG/JPG/PNG format');
+					return false;
+				}
+				
+				if(file_ext[1].indexOf(' ') >= 0){
+					$(".profile_cmds").hide();
+					$(".errmsg").show();
+					$(".errmsg").text('File name is not valid format');
+					return false;
+				}
+				
+			}
+			$('.errmsg').hide();   
+			$.ajax({
+				url: 'profileimg_upload.php',
+				type:'post',
+				data:  new FormData(this),
+				contentType: false,
+				cache: false,
+				processData:false,
+				beforeSend:function(){
+					loadCSS("../resources/user/css/jquery.loadmask.css");
+						$.getScript("../resources/user/js/jquery.loadmask.min.js").done(function() {
+						$(".p-relative").mask('uploading...');	
+					});
+				},
+				success:function(res){
+					if(res !== ''){
+						var pars_res = $.parseJSON(res);
+						
+						if(pars_res['error'] === 0){
+							$('.img-responsive').load(function() {
+								$(".profile_cmds").show();
+								$(".p-relative").unmask("uploading...") ;
+								$(".imgcaption").text("Change Profile Picture");
+								$(".profile_cmds").html("<p ><span class='text-center' style='display:block;text-align:center;line-height:20px;color:green;'><i class='fa fa-warning'></i> Thank you for updating us with your profile picture!</span>  We will upload it soon.</p>");								
+							}).attr('src',pars_res['path']);
+							$(".img-circle").attr('src',pars_res['path']);
+							$(".before_upload").hide();
+						}else if(pars_res['error'] === 1){
+                           $(".profile_cmds").hide();
+							$(".img-responsive").html(pars_res['err_msg']);
+							$(".p-relative").unmask();
+
+						}
+					}
+				}
+			});
+		});
+		/* PROFILE IMAGE PART END HERE */
+});
+			
+	</script>
+	<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/56fa92aa2c34f720663f70a9/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+	
+
+
+<!--<div id="tawkchat-iframe-container" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; position: fixed !important; border: 0px !important; min-height: 0px !important; min-width: 0px !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: auto !important; z-index: 2000000000 !important; cursor: auto !important; float: none !important; bottom: 0px !important; right: 0px !important; left: auto !important; display: block; background: none transparent !important;"><iframe id="tawkchat-maximized-iframe-element" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/saved_resource.html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 320px !important; height: 400px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; display: none !important; background: none transparent !important;"></iframe><iframe id="tawkchat-minified-iframe-element" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/saved_resource(1).html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; height: 40px !important; min-height: 40px !important; max-height: 40px !important; width: 320px !important; min-width: 320px !important; max-width: 320px !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center 0px !important; margin: 0px !important; top: auto !important; bottom: 0px !important; right: 10px !important; left: auto !important; display: block !important; background: none transparent !important;"></iframe><iframe id="chat-indicator-iframe" src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/saved_resource(2).html" frameborder="0" scrolling="no" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px 0px 0px -330px !important; transition-property: none !important; transform: none !important; display: none !important; z-index: 1000002 !important; cursor: auto !important; float: none !important; top: auto !important; bottom: 40px !important; right: 10px !important; left: auto !important; width: 320px !important; max-width: 320px !important; min-width: 320px !important; height: 37px !important; max-height: 37px !important; min-height: 37px !important; background: none transparent !important;"></iframe><div id="tawkchat-drag-element" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 0 !important; top: 1px !important; bottom: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: 45px !important; display: block !important; z-index: 999997 !important; cursor: move !important; float: none !important; left: 0px !important; right: 96px !important; background: none rgb(255, 255, 255) !important;"></div><div id="tawkchat-resize-left" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: 96px !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-right" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: e-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-top" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-bottom" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: s-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-top-left" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-top-right" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: ne-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-bottom-left" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: 0px !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: sw-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-resize-bottom-right" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999999 !important; cursor: se-resize !important; float: none !important; background: none transparent !important;"></div><div id="tawkchat-overlay" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important; background: none transparent !important;"></div></div>--><iframe src="./m-Tutor.com - The No.1 Site for eLearning, online Tutor, mobile tutor_files/saved_resource(3).html" style="display: none !important;"></iframe></body></html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mtutor Learning Demo</title>
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->	
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<style>
+		.board_div{margin:0 15px;}
+		.board_div .board_label{text-align:right;}
+		@media only screen and (max-width: 320px) {
+			.board_div .board_label{text-align:left;}
+			.board_div{padding:0 15px;margin:0px -15px;}
+		}
+		@media only screen and (max-width: 480px) {
+			.board_div .board_label{text-align:left;}
+			.board_div{padding:0 15px;margin:0px -15px;}
+		}
+		@media only screen and (max-width: 360px) {
+			.board_div .board_label{text-align:left;}
+			.board_div{padding:0 15px;margin:0px -15px;}
+		}
+		@media only screen and (max-width: 640px) {
+			.board_div .board_label{text-align:left;}
+			.board_div{padding:0 15px;margin:0px -15px;}
+		}
+	</style>
+</head>
+<body class="textureBg">
+	<a href="#cd-nav" class="cd-nav-trigger">
+		Menu<span><!-- used to create the menu icon --></span>
+	</a> <!-- .cd-nav-trigger -->	
+	<main>
+		<section class="cd-section index cd-selected">
+	<!-- header -->
+	<header>
+		<div class="logo">
+			<img src="images/logo1.png" alt="" title="">							
+		</div> 
+	</header><!-- /header -->	
+	   <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">	  
+        <div class="item active">
+          <img src="images/banner1.jpg" alt="banner" width="100%" height="100%">
+          <div class="carousel-caption">
+            <h3>Stay Learned, Stay Ahead</h3>            
+          </div>
+        </div>
+      </div>
+	 <!-- main --> 
+	<section class="container">
+		<h3>M-Tutor Learning Demo</h3>
+		<hr>
+		<div class="row">
+			<div class="col-md-4 col-xs-12 col-sm-6">
+			<a href="maths.html">
+				<div class="display-item bg1">									
+					<div><img src="images/compass.png" alt="" title=""></div>
+					<button class="btn">Mathematics</button>
+				</div>
+			</a>
+			</div>			
+			<div class="col-md-4 col-xs-12 col-sm-6">
+			<a href="biology.html">
+				<div class="display-item bg2">									
+					<div><img src="images/microscope.png" alt="" title=""></div>
+					<button class="btn">Biology</button>
+				</div>
+			</a>
+			</div>
+			<div class="col-md-4 col-xs-12 col-sm-6">
+			<a href="physics.html">
+				<div class="display-item bg9">									
+					<div><img src="images/atom.png" alt="" title=""></div>
+					<button class="btn">Physics</button>
+				</div>
+			</a>
+			</div>
+		</div>	
+	</section><!-- /Main -->
+	</section> <!-- .cd-section -->
+	</main>
+	<!-- Side Nav Bar -->
+	<nav class="cd-nav-container" id="cd-nav">
+		<header>
+			<h3>Navigation</h3>
+			<a href="#0" class="cd-close-nav">Close</a>
+		</header>
+		<div class="row board_div">
+			<div class="col-md-3 col-sm-6 co1-xs-12 board_label">				
+				<label for="sel1">Select Boards:</label>
+			</div>
+			<div class="col-md-9 co1-sm-6 col-xs-12">
+				<form>
+					<div class="form-group">
+					  
+					  <select class="form-control" id="sel1">
+						<option>CBSE</option>
+						<option>Cambridge</option>
+						<option>ICSE</option>
+					  </select>
+					</div>
+			</form>
+			</div>
+		</div>
+		<div class="row board_div">
+			<div class="col-md-3 col-sm-6 co1-xs-12 board_label">				
+				<label for="sel2">Select Class:</label>
+			</div>
+			<div class="col-md-9 co1-sm-6 col-xs-12">
+				<form>
+					<div class="form-group">
+					  <select class="form-control" id="sel2">
+						<option>Class 1</option>
+						<option>Class 2</option>
+						<option>Class 3</option>
+						<option>Class 4</option>
+						<option>Class 5</option>
+						<option>Class 6</option>
+						<option>Class 7</option>
+						<option>Class 8</option>
+						<option>Class 9</option>
+						<option>Class 10</option>
+						<option>Class 11</option>
+						<option>Class 12</option>
+					  </select>
+					</div>
+			</form>
+			</div>
+		</div>
+		<div class="row board_div">
+			<div class="col-md-3 col-sm-6 co1-xs-12 board_label">				
+				<label for="sel3">Select Subjects:</label>
+			</div>
+			<div class="col-md-9 co1-sm-6 col-xs-12">
+				<form>
+					<div class="form-group">
+					  <select class="form-control" id="sel3">
+						<option>Biology</option>
+						<option>Chemistry</option>
+						<option>English</option>
+						<option>Hindi</option>
+						<option>Maths</option>
+						<option>Physics</option>
+					  </select>
+					</div>
+			</form>
+			</div>
+		</div>
+		<div class="row board_div">
+			<div class="col-md-3 col-sm-6 co1-xs-12 board_label">				
+				<label for="sel4">Select Lesson:</label>
+			</div>
+			<div class="col-md-9 co1-sm-6 col-xs-12">
+				<form>
+					<div class="form-group">
+					  <select class="form-control" id="sel4">
+						<option>Lesson 1</option>
+						<option>Lesson 2</option>
+						<option>Lesson 3</option>
+						<option>Lesson 4</option>
+						<option>Lesson 5</option>
+						<option>Lesson 6</option>
+						<option>Lesson 7</option>
+						<option>Lesson 8</option>
+						<option>Lesson 9</option>
+						<option>Lesson 10</option>
+						<option>Lesson 11</option>
+						<option>Lesson 12</option>
+					  </select>
+					</div>
+			</form>
+			</div>
+		</div>
+		<div class="row board_div">
+			<div class="col-md-3 col-sm-6 co1-xs-12 board_label">				
+				<label for="sel4">Select Worksheet:</label>
+			</div>
+			<div class="col-md-9 co1-sm-6 col-xs-12">
+				<form>
+					<div class="form-group">
+					  <select class="form-control" id="sel4">
+						<option>Worksheet 1</option>
+						<option>Worksheet 2</option>
+						<option>Worksheet 3</option>
+						<option>Worksheet 4</option>
+						<option>Worksheet 5</option>
+						<option>Worksheet 6</option>
+						<option>Worksheet 7</option>
+						<option>Worksheet 8</option>
+						<option>Worksheet 9</option>
+						<option>Worksheet 10</option>
+						<option>Worksheet 11</option>
+						<option>Worksheet 12</option>
+						<option>Worksheet 13</option>
+						<option>Worksheet 14</option>
+						<option>Worksheet 15</option>
+						<option>Worksheet 16</option>
+						<option>Worksheet 17</option>
+						<option>Worksheet 18</option>
+						<option>Worksheet 19</option>
+						<option>Worksheet 20</option>
+					  </select>
+					</div>
+				<a href="maths.html" type="button" class="btn btn-primary btn-lg btn-block">Submit</a>	
+			</form>
+			</div>
+		</div>			
+		<p class="text-center">
+			<small class="text-muted">Copyright © 2017 Mobile Tutor Private Ltd.</small>
+		</p>
+	</nav>
+	<div class="cd-overlay"><!-- shadow layer visible when navigation is visible --></div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

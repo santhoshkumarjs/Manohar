@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<circle fill="none" stroke="#f0b000" stroke-miterlimit="10" stroke-dasharray="12.4322,12.4322" cx="49.5" cy="50" r="47.5">
+	<animateTransform attributeName="transform"
+		attributeType="XML"
+		type="rotate"
+		from="0 50 50"
+		to="360 50 50"
+		dur="10s"
+		repeatCount="indefinite"/>
+
+</circle>
+<circle fill="#f0b000" cx="50.5" cy="51" r="38.5"/>
+<path fill="#FFFFFF" d="M33,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C28.231,66,27,64.769,27,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>	
+<path fill="#FFFFFF" d="M43,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C38.231,66,37,64.769,37,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		begin=".1"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M52,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C47.231,66,46,64.769,46,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		begin=".2"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M62,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C57.231,66,56,64.769,56,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one3"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		begin=".3"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>
+<path fill="#FFFFFF" d="M72,63.25c0,1.519-1.231,2.75-2.75,2.75h-0.5C67.231,66,66,64.769,66,63.25v-20.5
+	c0-1.519,1.231-2.75,2.75-2.75h0.5c1.519,0,2.75,1.231,2.75,2.75V63.25z">	
+	<animateTransform id="one4"
+		attributeName="transform"
+		attributeType="XML"
+		type="translate"
+		begin=".4"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+</path>
+</svg>
